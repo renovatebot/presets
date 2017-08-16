@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "np": "np",
     "pretty": "prettier-package-json --write ./package.json"
