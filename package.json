@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "renovate-config",
+  "description": "Monorepo for Renovate preset configs",
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/singapore/renovate-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://rarkins@github.com/singapore/renovate-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/singapore/renovate-config/issues"
+  },
+  "version": "0.0.1",
+  "scripts": {
+    "pretty": "prettier-package-json --write ./package.json"
+  }
+}
