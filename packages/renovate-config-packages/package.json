@@ -1,0 +1,49 @@
+{
+  "name": "renovate-config-packages",
+  "description": "Preset packages configs for Renovate",
+  "author": "Rhys Arkins <rhys@arkins.net>",
+  "license": "MIT",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "renovate-config": {
+    "angularJs": {
+      "description": "All angular.js packages",
+      "packageNames": [
+        "angular",
+        "angular-animate",
+        "angular-scroll",
+        "angular-sanitize"
+      ]
+    },
+    "mapbox": {
+      "description": "All mapbox-related packages",
+      "packagePatterns": [
+        "^(leaflet|mapbox)"
+      ]
+    },
+    "eslint": {
+      "description": "All eslint packages",
+      "packagePatterns": [
+        "^eslint"
+      ]
+    },
+    "stylelint": {
+      "description": "All stylelint packages",
+      "packagePatterns": [
+        "^stylelint"
+      ]
+    },
+    "linters": {
+      "description": "All lint-related packages",
+      "extends": [
+        "packages:allEslint",
+        "packages:allStyleLint"
+      ],
+      "packageNames": [
+        "remark-lint"
+      ]
+    }
+  }
+}
