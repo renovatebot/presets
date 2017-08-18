@@ -1,0 +1,48 @@
+{
+  "name": "renovate-config-schedule",
+  "description": "Preset schedule configs for Renovate",
+  "author": "Rhys Arkins <rhys@arkins.net>",
+  "license": "MIT",
+  "homepage": "https://github.com/singapore/renovate-config/packages/renovate-config-schedule",
+  "bugs": {
+    "url": "https://github.com/singapore/renovate-config/issues"
+  },
+  "version": "0.0.1",
+  "scripts": {
+    "pretty": "prettier-package-json --write ./package.json"
+  },
+  "devDependencies": {
+    "prettier-package-json": "1.4.0"
+  },
+  "renovate-config": {
+    "earlyMondays": {
+      "description": "Weekly schedule on early monday mornings",
+      "schedule": "before 3am on Mondays"
+    },
+    "weekly": {
+      "description": "Schedule weekly",
+      "extends": [
+        "schedule/earlyMondays"
+      ]
+    },
+    "monthly": {
+      "description": "Schedule monthly",
+      "schedule": "before 5am on first day of the month"
+    },
+    "weekends": {
+      "description": "Schedule for weekends",
+      "schedule": "every weekend"
+    },
+    "weekdays": {
+      "description": "Schedule for weekdays",
+      "schedule": "every weekday"
+    },
+    "nonOfficeHours": {
+      "description": "Schedule for typical non-office hours (night time and weekends)",
+      "schedule": [
+        "after 10pm and before 5am every weekday",
+        "every weekend"
+      ]
+    }
+  }
+}
