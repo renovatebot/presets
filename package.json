@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "renovate-config",
   "description": "Monorepo for Renovate preset configs",
   "author": "",
