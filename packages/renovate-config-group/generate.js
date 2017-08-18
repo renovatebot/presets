@@ -10,7 +10,7 @@ async function go() {
 
   const monorepoNames = [];
   for (const monorepo of Object.keys(monorepos)) {
-    const name = `monorepo-${monorepo}`;
+    const name = `${monorepo}Monorepo`;
     monorepoNames.push(`group:${name}`);
     config[name] = {
       packageRules: [
@@ -32,7 +32,7 @@ async function go() {
   for (const rule of Object.keys(config).sort()) {
     pJson['renovate-config'][rule] = config[rule];
   }
-  fs.writeFileSync('package.json', JSON.stringify(pJson, null, 2));
+  fs.writeFileSync('package.json', `${JSON.stringify(pJson, null, 2)}\n`);
 }
 
 go();

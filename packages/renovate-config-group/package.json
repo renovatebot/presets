@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "pretty": "prettier-package-json --write ./package.json"
   },
@@ -15,11 +15,7 @@
     "prettier-package-json": "1.4.0"
   },
   "renovate-config": {
-    "linters": {
-      "extends": "packages:linters",
-      "groupName": "linters"
-    },
-    "monorepo-angular": {
+    "angularMonorepo": {
       "packageRules": [
         {
           "description": "Group packages from angular monorepo together",
@@ -28,7 +24,7 @@
         }
       ]
     },
-    "monorepo-babel": {
+    "babelMonorepo": {
       "packageRules": [
         {
           "description": "Group packages from babel monorepo together",
@@ -37,7 +33,7 @@
         }
       ]
     },
-    "monorepo-jest": {
+    "jestMonorepo": {
       "packageRules": [
         {
           "description": "Group packages from jest monorepo together",
@@ -46,7 +42,11 @@
         }
       ]
     },
-    "monorepo-lodash": {
+    "linters": {
+      "extends": "packages:linters",
+      "groupName": "linters"
+    },
+    "lodashMonorepo": {
       "packageRules": [
         {
           "description": "Group packages from lodash monorepo together",
@@ -55,7 +55,19 @@
         }
       ]
     },
-    "monorepo-pouchdb": {
+    "monorepos": {
+      "description": "Group monorepo packages together",
+      "extends": [
+        "group:angularMonorepo",
+        "group:babelMonorepo",
+        "group:jestMonorepo",
+        "group:lodashMonorepo",
+        "group:pouchdbMonorepo",
+        "group:reactMonorepo",
+        "group:storybookMonorepo"
+      ]
+    },
+    "pouchdbMonorepo": {
       "packageRules": [
         {
           "description": "Group packages from pouchdb monorepo together",
@@ -64,7 +76,7 @@
         }
       ]
     },
-    "monorepo-react": {
+    "reactMonorepo": {
       "packageRules": [
         {
           "description": "Group packages from react monorepo together",
@@ -73,25 +85,13 @@
         }
       ]
     },
-    "monorepo-storybook": {
+    "storybookMonorepo": {
       "packageRules": [
         {
           "description": "Group packages from storybook monorepo together",
           "extends": "monorepo:storybook",
           "groupName": "storybook monorepo"
         }
-      ]
-    },
-    "monorepos": {
-      "description": "Group monorepo packages together",
-      "extends": [
-        "group:monorepo-angular",
-        "group:monorepo-babel",
-        "group:monorepo-jest",
-        "group:monorepo-lodash",
-        "group:monorepo-pouchdb",
-        "group:monorepo-react",
-        "group:monorepo-storybook"
       ]
     }
   }
