@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "np": "np",
     "pretty": "prettier-package-json --write ./package.json"
@@ -28,10 +28,6 @@
     "disableRenovate": {
       "description": "Disable renovate",
       "enabled": false
-    },
-    "scheduleMondayMornings": {
-      "description": "Schedule to run Mondays before 5am",
-      "schedule": "On mondays before 5am"
     },
     "includeNodeModules": {
       "description": "Include <code>package.json</code> files found within <code>node_modules</code> folders",
@@ -163,7 +159,7 @@
       "description": "Run lock file maintenance (updates) early Monday mornings",
       "lockFileMaintenance": {
         "enabled": true,
-        "extends": ":scheduleMondayMornings"
+        "extends": "schedule:weekly"
       }
     },
     "ignoreUnstable": {
