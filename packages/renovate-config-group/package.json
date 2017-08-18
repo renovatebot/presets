@@ -1,0 +1,18 @@
+{
+  "name": "renovate-config-group",
+  "description": "Preset group configs for Renovate",
+  "author": "Rhys Arkins <rhys@arkins.net>",
+  "license": "MIT",
+  "homepage": "https://github.com/singapore/renovate-config/packages/renovate-config-monorepo",
+  "bugs": {
+    "url": "https://github.com/singapore/renovate-config/issues"
+  },
+  "version": "0.0.1",
+  "scripts": {
+    "pretty": "prettier-package-json --write ./package.json"
+  },
+  "devDependencies": {
+    "prettier-package-json": "1.4.0"
+  },
+  "renovate-config": {}
+}
