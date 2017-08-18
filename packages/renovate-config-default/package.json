@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "pretty": "prettier-package-json --write ./package.json"
   },
@@ -116,7 +116,7 @@
       "prCreation": "not-pending"
     },
     "automergeDisabled": {
-      "description": "Do not automerge any upgrades - wait for humans to merge PRs",
+      "description": "Disable automerging feature - wait for humans to merge all PRs",
       "automerge": "none"
     },
     "automergePatch": {
@@ -165,7 +165,7 @@
       "ignoreUnstable": true
     },
     "respectLatest": {
-      "description": "Do not upgrade versions past the \"latest\" tag in npm registry",
+      "description": "Upgrade versions up to the \"latest\" tag in npm registry",
       "respectLatest": true
     },
     "automergeLinters": {
