@@ -7,12 +7,92 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "pretty": "prettier-package-json --write ./package.json"
   },
   "devDependencies": {
     "prettier-package-json": "1.4.0"
   },
-  "renovate-config": {}
+  "renovate-config": {
+    "linters": {
+      "extends": "packages:linters",
+      "groupName": "linters"
+    },
+    "monorepo-angular": {
+      "packageRules": [
+        {
+          "description": "Group packages from angular monorepo together",
+          "extends": "monorepo:angular",
+          "groupName": "angular monorepo"
+        }
+      ]
+    },
+    "monorepo-babel": {
+      "packageRules": [
+        {
+          "description": "Group packages from babel monorepo together",
+          "extends": "monorepo:babel",
+          "groupName": "babel monorepo"
+        }
+      ]
+    },
+    "monorepo-jest": {
+      "packageRules": [
+        {
+          "description": "Group packages from jest monorepo together",
+          "extends": "monorepo:jest",
+          "groupName": "jest monorepo"
+        }
+      ]
+    },
+    "monorepo-lodash": {
+      "packageRules": [
+        {
+          "description": "Group packages from lodash monorepo together",
+          "extends": "monorepo:lodash",
+          "groupName": "lodash monorepo"
+        }
+      ]
+    },
+    "monorepo-pouchdb": {
+      "packageRules": [
+        {
+          "description": "Group packages from pouchdb monorepo together",
+          "extends": "monorepo:pouchdb",
+          "groupName": "pouchdb monorepo"
+        }
+      ]
+    },
+    "monorepo-react": {
+      "packageRules": [
+        {
+          "description": "Group packages from react monorepo together",
+          "extends": "monorepo:react",
+          "groupName": "react monorepo"
+        }
+      ]
+    },
+    "monorepo-storybook": {
+      "packageRules": [
+        {
+          "description": "Group packages from storybook monorepo together",
+          "extends": "monorepo:storybook",
+          "groupName": "storybook monorepo"
+        }
+      ]
+    },
+    "monorepos": {
+      "description": "Group monorepo packages together",
+      "extends": [
+        "group:monorepo-angular",
+        "group:monorepo-babel",
+        "group:monorepo-jest",
+        "group:monorepo-lodash",
+        "group:monorepo-pouchdb",
+        "group:monorepo-react",
+        "group:monorepo-storybook"
+      ]
+    }
+  }
 }
