@@ -13,11 +13,9 @@
   },
   "version": "0.0.2",
   "scripts": {
-    "np": "np",
     "pretty": "prettier-package-json --write ./package.json"
   },
   "devDependencies": {
-    "np": "2.16.0",
     "prettier-package-json": "1.4.0"
   },
   "renovate-config": {
