@@ -22,7 +22,7 @@
     "weekly": {
       "description": "Schedule weekly",
       "extends": [
-        "schedule/earlyMondays"
+        "schedule:earlyMondays"
       ]
     },
     "monthly": {
