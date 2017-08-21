@@ -17,7 +17,7 @@
   "renovate-config": {
     "earlyMondays": {
       "description": "Weekly schedule on early monday mornings",
-      "schedule": "before 3am on Mondays"
+      "schedule": "before 3am on Monday"
     },
     "weekly": {
       "description": "Schedule weekly",
