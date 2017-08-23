@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "pretty": "prettier-package-json --write ./package.json"
   },
@@ -40,7 +40,8 @@
     "nonOfficeHours": {
       "description": "Schedule for typical non-office hours (night time and weekends)",
       "schedule": [
-        "after 10pm and before 5am every weekday",
+        "after 10pm every weekday",
+        "before 5am every weekday",
         "every weekend"
       ]
     }
