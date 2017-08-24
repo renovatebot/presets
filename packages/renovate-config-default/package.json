@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "pretty": "prettier-package-json --write ./package.json"
   },
@@ -117,19 +117,23 @@
     },
     "automergeDisabled": {
       "description": "Disable automerging feature - wait for humans to merge all PRs",
-      "automerge": "none"
+      "automerge": false
     },
     "automergePatch": {
       "description": "Automerge patch upgrades if they pass tests",
-      "automerge": "patch"
+      "patch": {
+        "automerge": true
+      }
     },
     "automergeMinor": {
       "description": "Automerge patch or minor upgrades if they pass tests",
-      "automerge": "minor"
+      "minor": {
+        "automerge": true
+      }
     },
     "automergeMajor": {
       "description": "Automerge all upgrades (inluding major) if they pass tests",
-      "automerge": "any"
+      "automerge": true
     },
     "automergeBranchMergeCommit": {
       "description": "If automerging, perform a merge-commit on branch (no PR)",
@@ -175,7 +179,7 @@
           "extends": [
             "packages:linters"
           ],
-          "automerge": "any"
+          "automerge": true
         }
       ]
     },
