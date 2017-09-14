@@ -3,7 +3,7 @@ module.exports = {
     node: true
   },
   extends: ["airbnb-base", "prettier"],
-  plugins: ["import", "promise", "prettier"],
+  plugins: ["import", "promise", "prettier", "json"],
   rules: {
     "import/no-extraneous-dependencies": 0,
     "no-use-before-define": 0,
