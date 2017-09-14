@@ -8,12 +8,6 @@
     "url": "https://github.com/singapore/renovate-config/issues"
   },
   "version": "0.0.2",
-  "scripts": {
-    "pretty": "prettier-package-json --write ./package.json"
-  },
-  "devDependencies": {
-    "prettier-package-json": "1.4.0"
-  },
   "renovate-config": {
     "angularJs": {
       "description": "All angular.js packages",

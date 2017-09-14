@@ -1,0 +1,11 @@
+machine:
+  node:
+    version: 6
+
+dependencies:
+  pre:
+    - npm i -g npm@5
+
+test:
+  override:
+    - npm run lint

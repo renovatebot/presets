@@ -13,15 +13,17 @@
   },
   "version": "0.0.1",
   "scripts": {
-    "pretty": "prettier-package-json --write ./package.json"
+    "lint": "eslint . --ext .json --ext .js"
   },
   "devDependencies": {
     "eslint": "4.4.1",
     "eslint-config-airbnb-base": "11.3.1",
     "eslint-config-prettier": "2.3.0",
     "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-json": "1.2.0",
     "eslint-plugin-prettier": "2.2.0",
     "eslint-plugin-promise": "3.5.0",
+    "gh-got": "6.0.0",
     "prettier": "1.5.3",
     "prettier-package-json": "1.4.0"
   }

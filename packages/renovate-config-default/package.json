@@ -12,12 +12,6 @@
     "url": "https://github.com/singapore/renovate-config/issues"
   },
   "version": "0.0.4",
-  "scripts": {
-    "pretty": "prettier-package-json --write ./package.json"
-  },
-  "devDependencies": {
-    "prettier-package-json": "1.4.0"
-  },
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -193,6 +187,18 @@
           "pinVersions": false
         }
       ]
+    },
+    "docker": {
+      "description": "Enable Dockerfile FROM updating",
+      "docker": {
+        "enabled": true
+      }
+    },
+    "meteor": {
+      "description": "Enable Meteor package.js Npm.depends updating",
+      "meteor": {
+        "enabled": true
+      }
     },
     "group": {
       "description": "Group {{arg1}} packages into same branch/PR",
