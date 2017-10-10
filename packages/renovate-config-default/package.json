@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.10",
+  "version": "0.0.11",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -195,7 +195,7 @@
         }
       ]
     },
-    "javascript": {
+    "npm": {
       "description": "Keep package.json npm dependencies updated",
       "javascript": {
         "enabled": true

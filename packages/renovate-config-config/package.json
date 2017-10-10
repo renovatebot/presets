@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "renovate-config": {
     "base": {
       "description": "Default base configuration for all languages",
@@ -29,7 +29,7 @@
       "description": "Base configuration for Javascript",
       "extends": [
         "config:base",
-        ":javascript",
+        ":npm",
         ":maintainLockFilesDisabled",
         ":respectLatest",
         ":unpublishSafeDisabled",
