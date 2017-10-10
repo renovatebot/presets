@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.9",
+  "version": "0.0.10",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -224,50 +224,13 @@
         }
       ]
     },
-    "base": {
-      "description": "Default base configuration for all languages",
-      "extends": [
-        ":separateMajorReleases",
-        ":combinePatchMinorReleases",
-        ":ignoreUnstable",
-        ":prImmediately",
-        ":renovatePrefix",
-        ":semanticPrefixFixDepsChoreOthers",
-        ":automergeDisabled"
-      ]
-    },
-    "base-js": {
-      "description": "Base configuration for Javascript",
-      "extends": [
-        ":base",
-        ":javascript",
-        ":maintainLockFilesDisabled",
-        ":respectLatest",
-        ":unpublishSafeDisabled",
-        "group:monorepos"
-      ]
-    },
-    "js-app": {
-      "description": "Default configuration for webapps",
-      "extends": [
-        ":base-js",
-        ":pinVersions"
-      ]
-    },
-    "js-lib": {
-      "description": "Default configuration for libraries",
-      "extends": [
-        ":base-js",
-        ":pinOnlyDevDependencies"
-      ]
-    },
     "app": {
-      "description": "deprecated alias for js-app",
-      "extends": [":js-app"]
+      "description": "deprecated alias for config:js-app",
+      "extends": ["config:js-app"]
     },
     "library": {
-      "description": "deprecated alias for js-lib",
-      "extends": [":js-lib"]
+      "description": "deprecated alias for config:js-lib",
+      "extends": ["config:js-lib"]
     }
   }
 }

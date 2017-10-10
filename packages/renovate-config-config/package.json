@@ -11,8 +11,45 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "renovate-config": {
+    "base": {
+      "description": "Default base configuration for all languages",
+      "extends": [
+        ":separateMajorReleases",
+        ":combinePatchMinorReleases",
+        ":ignoreUnstable",
+        ":prImmediately",
+        ":renovatePrefix",
+        ":semanticPrefixFixDepsChoreOthers",
+        ":automergeDisabled"
+      ]
+    },
+    "base-js": {
+      "description": "Base configuration for Javascript",
+      "extends": [
+        "config:base",
+        ":javascript",
+        ":maintainLockFilesDisabled",
+        ":respectLatest",
+        ":unpublishSafeDisabled",
+        "group:monorepos"
+      ]
+    },
+    "js-app": {
+      "description": "Default configuration for webapps",
+      "extends": [
+        "config:base-js",
+        ":pinVersions"
+      ]
+    },
+    "js-lib": {
+      "description": "Default configuration for libraries",
+      "extends": [
+        "config:base-js",
+        ":pinOnlyDevDependencies"
+      ]
+    },
     "semverAllMonthly": {
       "description": "Preserve semver ranges and update everything together once a month",
       "extends": [
