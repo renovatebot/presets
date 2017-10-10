@@ -57,7 +57,7 @@
       "separatePatchReleases": true
     },
     "combinePatchMinorReleases": {
-      "description": "Use the same branch/PR for both patch and minor upgrades of a dependency",
+      "description": "Combine any patch and minor upgrades together into same branch/PR",
       "separatePatchReleases": false
     },
     "renovatePrefix": {
@@ -166,7 +166,7 @@
       }
     },
     "ignoreUnstable": {
-      "description": "Only upgrade to stable npm versions",
+      "description": "Upgrade to unstable versions only if the existing version is unstable",
       "ignoreUnstable": true
     },
     "respectLatest": {
