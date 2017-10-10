@@ -1,0 +1,26 @@
+{
+  "name": "renovate-config-config",
+  "description": "Opinionated full preset configs for Renovate",
+  "author": "Rhys Arkins <rhys@arkins.net>",
+  "license": "MIT",
+  "homepage": "https://github.com/singapore/renovate-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://rarkins@github.com/singapore/renovate-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/singapore/renovate-config/issues"
+  },
+  "version": "0.0.1",
+  "renovate-config": {
+    "semverAllMonthly": {
+      "description": "Preserve semver ranges and update everything together once a month",
+      "extends": [
+        ":preserveSemverRanges",
+        ":group(all)",
+        "schedule:monthly",
+        ":maintainLockFilesMonthly"
+      ]
+    }
+  }
+}
