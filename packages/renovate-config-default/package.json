@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.11",
+  "version": "0.0.12",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -223,6 +223,10 @@
           "groupName": "{{arg1}}"
         }
       ]
+    },
+    "base": {
+      "description": "deprecated alias for config:base",
+      "extends": ["config:base"]
     },
     "app": {
       "description": "deprecated alias for config:js-app",
