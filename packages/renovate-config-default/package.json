@@ -195,6 +195,12 @@
         }
       ]
     },
+    "javascript": {
+      "description": "Keep package.json npm dependencies updated",
+      "javascript": {
+        "enabled": true
+      }
+    },
     "docker": {
       "description": "Enable Dockerfile FROM updating",
       "docker": {
