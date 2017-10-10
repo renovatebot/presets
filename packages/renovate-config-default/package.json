@@ -230,29 +230,44 @@
         ":separateMajorReleases",
         ":combinePatchMinorReleases",
         ":ignoreUnstable",
-        ":respectLatest",
-        ":unpublishSafeDisabled",
         ":prImmediately",
         ":renovatePrefix",
         ":semanticPrefixFixDepsChoreOthers",
-        ":automergeDisabled",
+        ":automergeDisabled"
+      ]
+    },
+    "base-js": {
+      "description": "Base configuration for Javascript",
+      "extends": [
+        ":base",
+        ":javascript",
         ":maintainLockFilesDisabled",
+        ":respectLatest",
+        ":unpublishSafeDisabled",
         "group:monorepos"
       ]
     },
-    "app": {
+    "js-app": {
       "description": "Default configuration for webapps",
       "extends": [
-        ":pinVersions",
-        ":base"
+        ":base-js",
+        ":pinVersions"
       ]
     },
-    "library": {
+    "js-lib": {
       "description": "Default configuration for libraries",
       "extends": [
-        ":pinOnlyDevDependencies",
-        ":base"
+        ":base-js",
+        ":pinOnlyDevDependencies"
       ]
+    },
+    "app": {
+      "description": "deprecated alias for js-app",
+      "extends": [":js-app"]
+    },
+    "library": {
+      "description": "deprecated alias for js-lib",
+      "extends": [":js-lib"]
     }
   }
 }
