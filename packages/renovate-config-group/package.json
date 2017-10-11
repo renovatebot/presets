@@ -7,8 +7,12 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "renovate-config": {
+    "all": {
+      "description": "Group all updates together",
+      "groupName": "all"
+    },
     "angularMonorepo": {
       "packageRules": [
         {

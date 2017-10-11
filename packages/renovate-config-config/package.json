@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "renovate-config": {
     "base": {
       "description": "Default base configuration for all languages",
@@ -54,7 +54,7 @@
       "description": "Preserve semver ranges and update everything together once a month",
       "extends": [
         ":preserveSemverRanges",
-        ":group(all)",
+        "group:all",
         "schedule:monthly",
         ":maintainLockFilesMonthly"
       ]
