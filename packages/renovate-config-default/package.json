@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.12",
+  "version": "0.0.13",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -172,6 +172,14 @@
     "respectLatest": {
       "description": "Upgrade versions up to the \"latest\" tag in npm registry",
       "respectLatest": true
+    },
+    "updateNotScheduled": {
+      "description": "Keep existing branches updated even when not scheduled",
+      "updateNotScheduled": true
+    },
+    "noUnscheduledUpdates": {
+      "description": "Make no updates to branches when not scheduled",
+      "updateNotScheduled": false
     },
     "automergeLinters": {
       "description": "Update lint packages automatically if tests pass",
