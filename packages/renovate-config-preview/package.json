@@ -1,0 +1,28 @@
+{
+  "name": "renovate-config-preview",
+  "description": "Preset configs for Renovate preview features",
+  "author": "Rhys Arkins <rhys@arkins.net>",
+  "license": "MIT",
+  "homepage": "https://github.com/singapore/renovate-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://rarkins@github.com/singapore/renovate-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/singapore/renovate-config/issues"
+  },
+  "version": "0.0.1",
+  "renovate-config": {
+    "dockerVersions": {
+      "description": "Upgrade docker tags to newer versions",
+      "docker": {
+        "major": {
+          "enabled": true
+        },
+        "minor": {
+          "enabled": true
+        }
+      }
+    }
+  }
+}
