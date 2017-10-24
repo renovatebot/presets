@@ -47,7 +47,16 @@ async function go() {
     const packages = [];
     for (const item of dirListing) {
       if (item.type === 'dir') {
-        packages.push(item.name);
+        // https://raw.githubusercontent.com/babel/babel/master/packages/babel-cli/package.json
+        const packageJsonUrl = `https://raw.githubusercontent.com/${data.repo}/master/${path}/${item.name}/package.json`;
+        try {
+          const packageJson = (await got(packageJsonUrl)).body;
+          if (packageJson.name && packageJson.private !== true) {
+            packages.push(packageJson.name);
+          }
+        } catch (err) {
+          // No package.json
+        }
       }
     }
     config[monorepo] = {
