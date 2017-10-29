@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.5",
+  "version": "0.0.6",
   "renovate-config": {
     "base": {
       "description": "Default base configuration for all languages",
@@ -23,31 +23,29 @@
         ":renovatePrefix",
         ":semanticPrefixFixDepsChoreOthers",
         ":updateNotScheduled",
-        ":automergeDisabled"
+        ":automergeDisabled",
+        ":maintainLockFilesDisabled",
+        ":autodetectPinVersions",
+        "group:monorepos"
       ]
     },
     "base-js": {
-      "description": "Base configuration for Javascript",
+      "description": "Base configuration for Javascript (deprecated)",
       "extends": [
-        "config:base",
-        ":npm",
-        ":maintainLockFilesDisabled",
-        ":respectLatest",
-        ":unpublishSafeDisabled",
-        "group:monorepos"
+        "config:base"
       ]
     },
     "js-app": {
       "description": "Default configuration for webapps",
       "extends": [
-        "config:base-js",
+        "config:base",
         ":pinVersions"
       ]
     },
     "js-lib": {
       "description": "Default configuration for libraries",
       "extends": [
-        "config:base-js",
+        "config:base",
         ":pinOnlyDevDependencies"
       ]
     },

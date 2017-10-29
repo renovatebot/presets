@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.13",
+  "version": "0.0.14",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -47,6 +47,10 @@
       "peerDependencies": {
         "extends": ":preserveSemverRanges"
       }
+    },
+    ":autodetectPinVersions" : {
+      "description": "Autodetect whether to pin dependencies or maintain ranges",
+      "pinVersions": null
     },
     "separateMajorReleases": {
       "description": "Separate major versions of dependencies into individual branches/PRs",
