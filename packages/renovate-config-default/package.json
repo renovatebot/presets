@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.15",
+  "version": "0.0.16",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -211,6 +211,15 @@
       "description": "Keep package.json npm dependencies updated",
       "javascript": {
         "enabled": true
+      }
+    },
+    "onlyNpm": {
+      "description": "Renovate only npm dependencies",
+      "docker": {
+        "enabled": false
+      },
+      "meteor": {
+        "enabled": false
       }
     },
     "docker": {
