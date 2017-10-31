@@ -3,7 +3,7 @@ module.exports = {
     description: 'Group all updates together',
     groupName: 'all',
     lockFileMaintenance: {
-      enabled: 'false',
+      enabled: false,
     },
   },
   linters: {
