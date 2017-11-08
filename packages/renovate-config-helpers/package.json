@@ -7,14 +7,14 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "renovate-config": {
     "oddIsUnstable": {
       "description": "Odd version numbers are classified as unstable",
       "unstablePattern": "^\\d*[13579]($|.)"
     },
     "oddIsUnstablePackages": {
-      "description": "Dependencies where an odd leading digit indicates unstable",
+      "description": "Preconfigure dependencies where an odd leading digit indicates unstable",
       "extends": ["helpers:oddIsUnstable"],
       "packageNames": ["node"]
     }
