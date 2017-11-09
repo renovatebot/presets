@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "renovate-config": {
     "oddIsUnstable": {
       "description": "Odd version numbers are classified as unstable",
@@ -16,7 +16,11 @@
     "oddIsUnstablePackages": {
       "description": "Preconfigure dependencies where an odd leading digit indicates unstable",
       "extends": ["helpers:oddIsUnstable"],
-      "packageNames": ["node"]
+      "packageNames": [
+        "mhart/alpine-node",
+        "node",
+        "ubuntu"
+      ]
     }
   }
 }
