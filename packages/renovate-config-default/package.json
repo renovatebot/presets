@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.17",
+  "version": "0.0.18",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -116,6 +116,12 @@
     "automergeDisabled": {
       "description": "Disable automerging feature - wait for humans to merge all PRs",
       "automerge": false
+    },
+    "automergeDigest": {
+      "description": "Automerge digest upgrades if they pass tests",
+      "digest": {
+        "automerge": true
+      }
     },
     "automergePatch": {
       "description": "Automerge patch upgrades if they pass tests",
