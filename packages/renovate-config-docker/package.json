@@ -7,11 +7,18 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "renovate-config": {
     "disable": {
       "docker": {
         "enabled": false
+      }
+    },
+    "enableMajor": {
+      "docker": {
+        "major": {
+          "enabled": true
+        }
       }
     },
     "disableMajor": {
