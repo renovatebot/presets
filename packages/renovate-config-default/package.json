@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.16",
+  "version": "0.0.17",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -48,7 +48,7 @@
         "extends": ":preserveSemverRanges"
       }
     },
-    "autodetectPinVersions" : {
+    "autodetectPinVersions": {
       "description": "Autodetect whether to pin dependencies or maintain ranges",
       "pinVersions": null
     },
@@ -155,6 +155,10 @@
         "enabled": false
       }
     },
+    "pinDigestsDisabled": {
+      "description": "Disable pinning of docker dependency digests",
+      "pinDigests": false
+    },
     "maintainLockFilesWeekly": {
       "description": "Run lock file maintenance (updates) early Monday mornings",
       "lockFileMaintenance": {
@@ -189,9 +193,7 @@
       "description": "Update lint packages automatically if tests pass",
       "packageRules": [
         {
-          "extends": [
-            "packages:linters"
-          ],
+          "extends": ["packages:linters"],
           "automerge": true
         }
       ]
@@ -200,9 +202,7 @@
       "description": "Disable version pinning for <code>{{arg0}}</code>",
       "packageRules": [
         {
-          "packageNames": [
-            "{{arg0}}"
-          ],
+          "packageNames": ["{{arg0}}"],
           "pinVersions": false
         }
       ]
@@ -238,9 +238,7 @@
       "description": "Group {{arg1}} packages into same branch/PR",
       "packageRules": [
         {
-          "extends": [
-            "{{arg0}}"
-          ],
+          "extends": ["{{arg0}}"],
           "groupName": "{{arg1}}"
         }
       ]
