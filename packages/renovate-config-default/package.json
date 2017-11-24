@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.18",
+  "version": "0.0.23",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -68,13 +68,17 @@
       "description": "Use <code>renovate/</code> as prefix for all branch names",
       "branchprefix": "renovate/"
     },
+    "semanticCommitType": {
+      "description": "Use <code>{{arg0}}</code> as semantic commit type for commit messages and PR titles",
+      "semanticCommitType": "{{arg0}}"
+    },
     "semanticPrefixChore": {
-      "description": "Use <code>chore(deps):</code> as semantic prefix for commit messages and PR titles",
-      "semanticPrefix": "chore(deps):"
+      "description": "Use <code>chore</code> as semantic commit type for commit messages and PR titles",
+      "extends": [":semanticCommitType(chore)"]
     },
     "semanticPrefixFix": {
-      "description": "Use <code>fix(deps):</code> as semantic prefix for commit messages and PR titles",
-      "semanticPrefix": "fix(deps):"
+      "description": "Use <code>fix</code> as semantic commit type for commit messages and PR titles",
+      "extends": [":semanticCommitType(fix)"]
     },
     "disablePeerDependencies": {
       "description": "Do not renovate <code>peerDependencies</code> versions/ranges",
@@ -83,18 +87,39 @@
       }
     },
     "semanticPrefixFixDepsChoreOthers": {
-      "description": "If semantic commits detected, use <code>fix(deps):</code> for dependencies and <code>chore(deps):</code> for all others",
+      "description": "If semantic commits detected, use semantic commit type <code>fix</code> for dependencies and <code>chore</code> for all others",
       "dependencies": {
-        "extends": ":semanticPrefixFix"
+        "extends": ":semanticCommitType(fix)"
       },
       "devDependencies": {
-        "extends": ":semanticPrefixChore"
+        "extends": ":semanticCommitType(chore)"
       },
       "optionalDependencies": {
-        "extends": ":semanticPrefixChore"
+        "extends": ":semanticCommitType(chore)"
       },
       "peerDependencies": {
-        "extends": ":semanticPrefixChore"
+        "extends": ":semanticCommitType(chore)"
+      }
+    },
+    "semanticCommitTypeAll": {
+      "description": "If semantic commits detected, use semantic commit type <code>{{arg0}}</code> for all",
+      "dependencies": {
+        "extends": ":semanticCommitType({{arg0}})"
+      },
+      "devDependencies": {
+        "extends": ":semanticCommitType({{arg0}})"
+      },
+      "optionalDependencies": {
+        "extends": ":semanticCommitType({{arg0}})"
+      },
+      "peerDependencies": {
+        "extends": ":semanticCommitType({{arg0}})"
+      },
+      "pin": {
+        "extends": ":semanticCommitType({{arg0}})"
+      },
+      "digest": {
+        "extends": ":semanticCommitType({{arg0}})"
       }
     },
     "unpublishSafe": {
@@ -248,6 +273,10 @@
           "groupName": "{{arg1}}"
         }
       ]
+    },
+    "semanticCommitScope": {
+      "description": "Use semantic scope <code>{{arg0}}</code> for all commits and PR titles",
+      "semanticCommitScope": "{{arg0}}"
     },
     "base": {
       "description": "deprecated alias for config:base",
