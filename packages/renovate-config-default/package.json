@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.23",
+  "version": "0.0.27",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -121,6 +121,10 @@
       "digest": {
         "extends": ":semanticCommitType({{arg0}})"
       }
+    },
+    "rebaseStalePrs": {
+      "description": "Rebase existing PRs any time the base branch has been updated",
+      "rebaseStalePrs": true
     },
     "unpublishSafe": {
       "description": "Set a status check to warn when upgrades <  24 hours old might get unpublished",
@@ -273,6 +277,26 @@
           "groupName": "{{arg1}}"
         }
       ]
+    },
+    "label": {
+      "description": "Apply label <code>{{arg0}}</code> to PRs",
+      "labels": ["{{arg0}}"]
+    },
+    "labels": {
+      "description": "Apply labels <code>{{arg0}}</code> and <code>{{arg1}}</code> to PRs",
+      "labels": ["{{arg0}}", "{{arg1}}"]
+    },
+    "assignee": {
+      "description": "Assign PRs to <code>{{arg0}}</code>",
+      "assignees": ["{{arg0}}"]
+    },
+    "reviewer": {
+      "description": "Add <code>{{arg0}}</code> as reviewer for PRs",
+      "reviewers": ["{{arg0}}"]
+    },
+    "assignAndReview": {
+      "description": "Set <code>{{arg0}}</code> as assignee and reviewer of PRs",
+      "extends": [":assignee({{arg0}})", ":reviewer({{arg0}})"]
     },
     "semanticCommitScope": {
       "description": "Use semantic scope <code>{{arg0}}</code> for all commits and PR titles",
