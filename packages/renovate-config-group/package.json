@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.6",
+  "version": "0.0.7",
   "renovate-config": {
     "all": {
       "description": "Group all updates together",
@@ -31,6 +31,15 @@
           "description": "Group packages from babel monorepo together",
           "extends": "monorepo:babel",
           "groupName": "babel monorepo"
+        }
+      ]
+    },
+    "gatsbyMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from gatsby monorepo together",
+          "extends": "monorepo:gatsby",
+          "groupName": "gatsby monorepo"
         }
       ]
     },
@@ -61,6 +70,7 @@
       "extends": [
         "group:angularMonorepo",
         "group:babelMonorepo",
+        "group:gatsbyMonorepo",
         "group:jestMonorepo",
         "group:lodashMonorepo",
         "group:pouchdbMonorepo",
