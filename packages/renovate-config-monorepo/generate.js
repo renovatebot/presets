@@ -29,6 +29,9 @@ const dynamicSources = {
   react: {
     repo: 'facebook/react',
   },
+  gatsby: {
+    repo: 'gatsbyjs/gatsby',
+  },
 };
 
 async function go() {
