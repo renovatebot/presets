@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.28",
+  "version": "0.0.29",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -301,9 +301,17 @@
       "description": "Set <code>{{arg0}}</code> as assignee and reviewer of PRs",
       "extends": [":assignee({{arg0}})", ":reviewer({{arg0}})"]
     },
+    "semanticCommits": {
+      "description": "Use semantic commits for commit messages and PR titles",
+      "semanticCommits": true
+    },
     "semanticCommitScope": {
       "description": "Use semantic scope <code>{{arg0}}</code> for all commits and PR titles",
       "semanticCommitScope": "{{arg0}}"
+    },
+    "timezone": {
+      "description": "Evaluate schedules according to timezone {{arg0}}",
+      "timezone": "{{arg0}}"
     },
     "base": {
       "description": "deprecated alias for config:base",
