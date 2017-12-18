@@ -17,7 +17,7 @@ const staticSources = {
       'angular-messages',
       'angular-mocks',
       'angular-parse-ext',
-      'angular-resources',
+      'angular-resource',
       'angular-route',
       'angular-sanitize',
       'angular-scenario',
