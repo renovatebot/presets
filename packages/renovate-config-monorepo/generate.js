@@ -6,6 +6,24 @@ const staticSources = {
   angular: {
     packagePatterns: ['^@angular/'],
   },
+  angular1: {
+    packageNames: [
+      'angular',
+      'angular-animate',
+      'angular-aria',
+      'angular-cookies',
+      'angular-loader',
+      'angular-message-format',
+      'angular-messages',
+      'angular-mocks',
+      'angular-parse-ext',
+      'angular-resources',
+      'angular-route',
+      'angular-sanitize',
+      'angular-scenario',
+      'angular-touch',
+    ],
+  },
   lodash: {
     packageNames: ['babel-plugin-lodash', 'lodash-webpack-plugin', 'lodash-es'],
     packagePatterns: ['^lodash'],
