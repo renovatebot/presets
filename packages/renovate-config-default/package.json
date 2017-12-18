@@ -23,7 +23,7 @@
     },
     "includeNodeModules": {
       "description": "Include <code>package.json</code> files found within <code>node_modules</code> folders",
-      "ignorePaths": ["node_modules/"]
+      "ignorePaths": []
     },
     "pinVersions": {
       "description": "Use version pinning (maintain a single version only and not semver ranges)",
