@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.7",
+  "version": "0.0.8",
   "renovate-config": {
     "all": {
       "description": "Group all updates together",
@@ -15,6 +15,15 @@
       "lockFileMaintenance": {
         "enabled": false
       }
+    },
+    "angular1Monorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from angular1 monorepo together",
+          "extends": "monorepo:angular1",
+          "groupName": "angular1 monorepo"
+        }
+      ]
     },
     "angularMonorepo": {
       "packageRules": [
@@ -69,6 +78,7 @@
       "description": "Group monorepo packages together",
       "extends": [
         "group:angularMonorepo",
+        "group:angular1Monorepo",
         "group:babelMonorepo",
         "group:gatsbyMonorepo",
         "group:jestMonorepo",
