@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.29",
+  "version": "0.1.0",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -74,11 +74,15 @@
     },
     "semanticPrefixChore": {
       "description": "Use <code>chore</code> as semantic commit type for commit messages and PR titles",
-      "extends": [":semanticCommitType(chore)"]
+      "extends": [
+        ":semanticCommitType(chore)"
+      ]
     },
     "semanticPrefixFix": {
       "description": "Use <code>fix</code> as semantic commit type for commit messages and PR titles",
-      "extends": [":semanticCommitType(fix)"]
+      "extends": [
+        ":semanticCommitType(fix)"
+      ]
     },
     "disablePeerDependencies": {
       "description": "Do not renovate <code>peerDependencies</code> versions/ranges",
@@ -231,7 +235,9 @@
       "description": "Update lint packages automatically if tests pass",
       "packageRules": [
         {
-          "extends": ["packages:linters"],
+          "extends": [
+            "packages:linters"
+          ],
           "automerge": true
         }
       ]
@@ -240,7 +246,9 @@
       "description": "Disable version pinning for <code>{{arg0}}</code>",
       "packageRules": [
         {
-          "packageNames": ["{{arg0}}"],
+          "packageNames": [
+            "{{arg0}}"
+          ],
           "pinVersions": false
         }
       ]
@@ -276,30 +284,44 @@
       "description": "Group {{arg1}} packages into same branch/PR",
       "packageRules": [
         {
-          "extends": ["{{arg0}}"],
+          "extends": [
+            "{{arg0}}"
+          ],
           "groupName": "{{arg1}}"
         }
       ]
     },
     "label": {
       "description": "Apply label <code>{{arg0}}</code> to PRs",
-      "labels": ["{{arg0}}"]
+      "labels": [
+        "{{arg0}}"
+      ]
     },
     "labels": {
       "description": "Apply labels <code>{{arg0}}</code> and <code>{{arg1}}</code> to PRs",
-      "labels": ["{{arg0}}", "{{arg1}}"]
+      "labels": [
+        "{{arg0}}",
+        "{{arg1}}"
+      ]
     },
     "assignee": {
       "description": "Assign PRs to <code>{{arg0}}</code>",
-      "assignees": ["{{arg0}}"]
+      "assignees": [
+        "{{arg0}}"
+      ]
     },
     "reviewer": {
       "description": "Add <code>{{arg0}}</code> as reviewer for PRs",
-      "reviewers": ["{{arg0}}"]
+      "reviewers": [
+        "{{arg0}}"
+      ]
     },
     "assignAndReview": {
       "description": "Set <code>{{arg0}}</code> as assignee and reviewer of PRs",
-      "extends": [":assignee({{arg0}})", ":reviewer({{arg0}})"]
+      "extends": [
+        ":assignee({{arg0}})",
+        ":reviewer({{arg0}})"
+      ]
     },
     "semanticCommits": {
       "description": "Use semantic commits for commit messages and PR titles",
@@ -315,15 +337,21 @@
     },
     "base": {
       "description": "deprecated alias for config:base",
-      "extends": ["config:base"]
+      "extends": [
+        "config:base"
+      ]
     },
     "app": {
       "description": "deprecated alias for config:js-app",
-      "extends": ["config:js-app"]
+      "extends": [
+        "config:js-app"
+      ]
     },
     "library": {
       "description": "deprecated alias for config:js-lib",
-      "extends": ["config:js-lib"]
+      "extends": [
+        "config:js-lib"
+      ]
     }
   }
 }
