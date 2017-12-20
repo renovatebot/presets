@@ -305,6 +305,15 @@
         "^lodash"
       ]
     },
+    "neutrino": {
+      "description": "neutrino monorepo",
+      "packageNames": [
+        "neutrino"
+      ],
+      "packagePatterns": [
+        "^@neutrinojs/"
+      ]
+    },
     "pouchdb": {
       "description": "pouchdb monorepo",
       "packageNames": [
