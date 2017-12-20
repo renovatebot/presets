@@ -28,6 +28,10 @@ const staticSources = {
     packageNames: ['babel-plugin-lodash', 'lodash-webpack-plugin', 'lodash-es'],
     packagePatterns: ['^lodash'],
   },
+  neutrino: {
+    packageNames: ['neutrino'],
+    packagePatterns: ['^@neutrinojs/'],
+  },
   storybook: {
     packagePatterns: ['^@storybook/'],
   },

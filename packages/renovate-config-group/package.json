@@ -83,9 +83,19 @@
         "group:gatsbyMonorepo",
         "group:jestMonorepo",
         "group:lodashMonorepo",
+        "group:neutrinoMonorepo",
         "group:pouchdbMonorepo",
         "group:reactMonorepo",
         "group:storybookMonorepo"
+      ]
+    },
+    "neutrinoMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from neutrino monorepo together",
+          "extends": "monorepo:neutrino",
+          "groupName": "neutrino monorepo"
+        }
       ]
     },
     "pouchdbMonorepo": {
