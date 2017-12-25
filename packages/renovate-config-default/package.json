@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.1",
+  "version": "0.1.3",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -255,7 +255,13 @@
     },
     "pinSkipCi": {
       "description": "Add [skip ci] to commit message body whenever pinning",
-      "commitBody": "[skip ci]"
+      "pin": {
+        "commitBody": "[skip ci]"        
+      }
+    },
+    "gitSignOff": {
+      "description": "Append git Signed-off-by signature to git commits.",
+      "commitBody": "Signed-off-by: {{{gitAuthor}}}"
     },
     "npm": {
       "description": "Keep package.json npm dependencies updated",
