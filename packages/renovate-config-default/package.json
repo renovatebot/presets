@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -252,6 +252,10 @@
           "pinVersions": false
         }
       ]
+    },
+    "pinSkipCi": {
+      "description": "Add [skip ci] to commit message body whenever pinning",
+      "commitBody": "[skip ci]"
     },
     "npm": {
       "description": "Keep package.json npm dependencies updated",
