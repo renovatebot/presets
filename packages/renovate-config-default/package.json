@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.3",
+  "version": "0.1.4",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -334,8 +334,12 @@
       ]
     },
     "semanticCommits": {
-      "description": "Use semantic commits for commit messages and PR titles",
+      "description": "Use semantic prefixes for commit messages and PR titles",
       "semanticCommits": true
+    },
+    "semanticCommitsDisabled": {
+      "description": "Disable semantic prefixes for commit messages and PR titles",
+      "semanticCommits": false
     },
     "semanticCommitScope": {
       "description": "Use semantic scope <code>{{arg0}}</code> for all commits and PR titles",
