@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.4",
+  "version": "0.1.5",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -342,8 +342,12 @@
       "semanticCommits": false
     },
     "semanticCommitScope": {
-      "description": "Use semantic scope <code>{{arg0}}</code> for all commits and PR titles",
+      "description": "Use semantic commit scope <code>{{arg0}}</code> for all commits and PR titles",
       "semanticCommitScope": "{{arg0}}"
+    },
+    "semanticCommitScopeDisabled": {
+      "description": "Disable semantic commit scope for all commits and PR titles",
+      "semanticCommitScope": null
     },
     "timezone": {
       "description": "Evaluate schedules according to timezone {{arg0}}",
