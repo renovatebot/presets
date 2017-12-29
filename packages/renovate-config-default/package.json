@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.6",
+  "version": "0.1.7",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -190,6 +190,10 @@
     "automergeRequireAllStatusChecks": {
       "description": "Require all status checks to pass before any automerging",
       "requiredStatusChecks": []
+    },
+    "skipStatusChecks": {
+      "description": "Skip status checks and automerge right away",
+      "requiredStatusChecks": null
     },
     "maintainLockFilesDisabled": {
       "description": "Update existing lock files only when <code>package.json</code> is modified",
