@@ -22,7 +22,7 @@
       "enabled": false
     },
     "includeNodeModules": {
-      "description": "Include <code>package.json</code> files found within <code>node_modules</code> folders",
+      "description": "Include <code>package.json</code> files found within <code>node_modules</code> folders or <code>bower_components</code>.",
       "ignorePaths": []
     },
     "pinVersions": {
