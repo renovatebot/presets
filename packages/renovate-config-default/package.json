@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.5",
+  "version": "0.1.6",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -352,6 +352,15 @@
     "timezone": {
       "description": "Evaluate schedules according to timezone {{arg0}}",
       "timezone": "{{arg0}}"
+    },
+    "pathSemanticCommitType": {
+      "description": "Use semanticCommitType {{arg0}} for all package files matching path {{arg1}}",
+      "pathRules": [
+        {
+          "paths": ["{{arg0}}"],
+          "extends": [":semanticCommitTypeAll({{arg1}})"]
+        }
+      ]
     },
     "base": {
       "description": "deprecated alias for config:base",
