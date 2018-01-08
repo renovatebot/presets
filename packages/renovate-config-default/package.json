@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.7",
+  "version": "0.1.8",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -20,6 +20,14 @@
     "disableRenovate": {
       "description": "Disable renovate",
       "enabled": false
+    },
+    "ignoreModulesAndTests": {
+      "description": "Ignore node_modules, bower_components, and __tests__ directories",
+      "ignorePaths": [
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/__tests__/**"
+      ]
     },
     "includeNodeModules": {
       "description": "Include <code>package.json</code> files found within <code>node_modules</code> folders or <code>bower_components</code>.",
@@ -260,7 +268,7 @@
     "pinSkipCi": {
       "description": "Add [skip ci] to commit message body whenever pinning",
       "pin": {
-        "commitBody": "[skip ci]"        
+        "commitBody": "[skip ci]"
       }
     },
     "gitSignOff": {
