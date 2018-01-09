@@ -45,6 +45,12 @@
       "packageNames": [
         "remark-lint"
       ]
+    },
+    "babel": {
+      "description": "All Babel-related packages",
+      "packagePatterns": [
+        "^babel"
+      ]
     }
   }
 }
