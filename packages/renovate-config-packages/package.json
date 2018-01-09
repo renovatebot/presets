@@ -45,6 +45,12 @@
       "packageNames": [
         "remark-lint"
       ]
+    },
+    "react": {
+      "description": "All React-related packages",
+      "packagePatterns": [
+        "^react"
+      ]
     }
   }
 }
