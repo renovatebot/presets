@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.10",
+  "version": "0.1.11",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -155,6 +155,14 @@
     "prNotPending": {
       "description": "Wait until branch tests have passed or failed before creating the PR",
       "prCreation": "not-pending"
+    },
+    "prHourlyLimit1": {
+      "description": "Rate limit PR creation to a maximum of one per hour",
+      "prHourlyLimit": 1
+    },
+    "prHourlyLimit2": {
+      "description": "Rate limit PR creation to a maximum of two per hour",
+      "prHourlyLimit": 2
     },
     "automergeDisabled": {
       "description": "Disable automerging feature - wait for humans to merge all PRs",
