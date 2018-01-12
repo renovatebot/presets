@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.10",
+  "version": "0.0.11",
   "renovate-config": {
     "base": {
       "description": "Default base configuration for all languages",
@@ -27,7 +27,7 @@
         ":ignoreModulesAndTests",
         ":maintainLockFilesDisabled",
         ":autodetectPinVersions",
-        ":prHourlyLimit2",
+        ":prHourlyLimit4",
         "group:monorepos",
         "helpers:oddIsUnstablePackages"
       ]
