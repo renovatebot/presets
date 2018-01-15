@@ -314,6 +314,15 @@
         "^@neutrinojs/"
       ]
     },
+    "nrwl": {
+      "description": "nrwl monorepo",
+      "packageNames": [
+        "nrwl"
+      ],
+      "packagePatterns": [
+        "^@nrwl/"
+      ]
+    },
     "pouchdb": {
       "description": "pouchdb monorepo",
       "packageNames": [
