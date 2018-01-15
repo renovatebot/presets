@@ -32,6 +32,14 @@ const staticSources = {
     packageNames: ['neutrino'],
     packagePatterns: ['^@neutrinojs/'],
   },
+  ngrx: {
+    packageNames: ['ngrx'],
+    packagePatterns: ['^@ngrx/'],
+  },
+  nrwl: {
+    packageNames: ['nrwl'],
+    packagePatterns: ['^@nrwl/'],
+  },
   storybook: {
     packagePatterns: ['^@storybook/'],
   },
