@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "renovate-config": {
     "all": {
       "description": "Group all updates together",
@@ -31,6 +31,15 @@
           "description": "Group packages from angular monorepo together",
           "extends": "monorepo:angular",
           "groupName": "angular monorepo"
+        }
+      ]
+    },
+    "babel6Monorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from babel6 monorepo together",
+          "extends": "monorepo:babel6",
+          "groupName": "babel6 monorepo"
         }
       ]
     },
@@ -80,10 +89,13 @@
         "group:angularMonorepo",
         "group:angular1Monorepo",
         "group:babelMonorepo",
+        "group:babel6Monorepo",
         "group:gatsbyMonorepo",
         "group:jestMonorepo",
         "group:lodashMonorepo",
         "group:neutrinoMonorepo",
+        "group:ngrxMonorepo",
+        "group:nrwlMonorepo",
         "group:pouchdbMonorepo",
         "group:reactMonorepo",
         "group:storybookMonorepo"
@@ -95,6 +107,24 @@
           "description": "Group packages from neutrino monorepo together",
           "extends": "monorepo:neutrino",
           "groupName": "neutrino monorepo"
+        }
+      ]
+    },
+    "ngrxMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from ngrx monorepo together",
+          "extends": "monorepo:ngrx",
+          "groupName": "ngrx monorepo"
+        }
+      ]
+    },
+    "nrwlMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from nrwl monorepo together",
+          "extends": "monorepo:nrwl",
+          "groupName": "nrwl monorepo"
         }
       ]
     },

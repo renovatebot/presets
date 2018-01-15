@@ -46,6 +46,10 @@ const staticSources = {
 };
 
 const dynamicSources = {
+  babel6: {
+    repo: 'babel/babel',
+    branch: '6.x',
+  },
   babel: {
     repo: 'babel/babel',
   },
@@ -74,14 +78,14 @@ async function go() {
   }
   for (const monorepo of Object.keys(dynamicSources)) {
     const data = dynamicSources[monorepo];
+    const branch = data.branch || 'master';
     const path = data.path || 'packages';
     const url = `https://api.github.com/repos/${data.repo}/contents/${path}`;
     const dirListing = (await got(url)).body;
     const packages = [];
     for (const item of dirListing) {
       if (item.type === 'dir') {
-        // https://raw.githubusercontent.com/babel/babel/master/packages/babel-cli/package.json
-        const packageJsonUrl = `https://raw.githubusercontent.com/${data.repo}/master/${path}/${item.name}/package.json`;
+        const packageJsonUrl = `https://raw.githubusercontent.com/${data.repo}/${branch}/${path}/${item.name}/package.json`;
         try {
           const packageJson = (await got(packageJsonUrl)).body;
           if (packageJson.name && packageJson.private !== true) {
