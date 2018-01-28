@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.13",
+  "version": "0.1.14",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -26,6 +26,7 @@
       "ignorePaths": [
         "**/node_modules/**",
         "**/bower_components/**",
+        "**/examples/**",
         "**/__tests__/**",
         "**/test/**",
         "**/tests/**"
