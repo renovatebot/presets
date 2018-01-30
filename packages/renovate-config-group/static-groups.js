@@ -7,6 +7,7 @@ module.exports = {
     },
   },
   definitelyTyped: {
+    description: 'Group all @types packages together',
     groupName: 'definitelyTyped',
     packagePatterns: ['^@types/'],
   },

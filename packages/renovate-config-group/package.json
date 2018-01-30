@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.2.1",
+  "version": "0.2.2",
   "renovate-config": {
     "all": {
       "description": "Group all updates together",
@@ -53,6 +53,7 @@
       ]
     },
     "definitelyTyped": {
+      "description": "Group all @types packages together",
       "groupName": "definitelyTyped",
       "packagePatterns": [
         "^@types/"
