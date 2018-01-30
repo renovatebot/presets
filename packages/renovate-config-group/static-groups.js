@@ -6,6 +6,10 @@ module.exports = {
       enabled: false,
     },
   },
+  definitelyTyped: {
+    groupName: 'definitelyTyped',
+    packagePatterns: ['^@types/'],
+  },
   linters: {
     extends: 'packages:linters',
     groupName: 'linters',

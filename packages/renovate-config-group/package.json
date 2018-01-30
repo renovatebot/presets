@@ -52,6 +52,12 @@
         }
       ]
     },
+    "definitelyTyped": {
+      "groupName": "definitelyTyped",
+      "packagePatterns": [
+        "^@types/"
+      ]
+    },
     "gatsbyMonorepo": {
       "packageRules": [
         {
