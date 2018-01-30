@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.14",
+  "version": "0.1.15",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -168,6 +168,14 @@
     "prHourlyLimit4": {
       "description": "Rate limit PR creation to a maximum of four per hour",
       "prHourlyLimit": 4
+    },
+    "prConcurrentLimit10": {
+      "description": "Limit to maximum 10 concurrent Renovate PRs at any time",
+      "prConcurrentLimit": 10
+    },
+    "prConcurrentLimit20": {
+      "description": "Limit to maximum 20 concurrent Renovate PRs at any time",
+      "prConcurrentLimit": 20
     },
     "automergeDisabled": {
       "description": "Disable automerging feature - wait for humans to merge all PRs",
