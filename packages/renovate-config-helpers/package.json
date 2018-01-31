@@ -7,8 +7,20 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.4",
+  "version": "0.1.0",
   "renovate-config": {
+    "disableTypesNodeMajor": {
+      "packageRules": [
+        {
+          "packageNames": [
+            "@types/node"
+          ],
+          "major": {
+            "enabled": false
+          }
+        }
+      ]
+    },
     "oddIsUnstable": {
       "description": "Odd version numbers are classified as unstable",
       "unstablePattern": "^\\d*[13579]($|.)"
