@@ -7,11 +7,18 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.2.2",
+  "version": "0.2.3",
   "renovate-config": {
     "all": {
       "description": "Group all updates together",
-      "groupName": "all",
+      "packageRules": [
+        {
+          "packagePatterns": [
+            "*"
+          ],
+          "groupName": "all"
+        }
+      ],
       "lockFileMaintenance": {
         "enabled": false
       }
