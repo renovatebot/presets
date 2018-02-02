@@ -1,6 +1,7 @@
 module.exports = {
   all: {
     description: 'Group all updates together',
+    groupName: 'all',
     packageRules: [
       {
         packagePatterns: ['*'],

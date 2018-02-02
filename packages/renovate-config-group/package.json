@@ -7,10 +7,11 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.2.3",
+  "version": "0.2.4",
   "renovate-config": {
     "all": {
       "description": "Group all updates together",
+      "groupName": "all",
       "packageRules": [
         {
           "packagePatterns": [
