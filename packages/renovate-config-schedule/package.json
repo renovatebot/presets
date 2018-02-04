@@ -7,11 +7,15 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.6",
+  "version": "0.0.7",
   "renovate-config": {
     "earlyMondays": {
       "description": "Weekly schedule on early monday mornings",
       "schedule": "before 3am on Monday"
+    },
+    "daily": {
+      "description": "Schedule daily",
+      "schedule": "before 2am"
     },
     "weekly": {
       "description": "Schedule weekly",
