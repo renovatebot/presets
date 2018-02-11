@@ -14,8 +14,12 @@ module.exports = {
   },
   definitelyTyped: {
     description: 'Group all @types packages together',
-    groupName: 'definitelyTyped',
-    packagePatterns: ['^@types/'],
+    packageRules: [
+      {
+        groupName: 'definitelyTyped',
+        packagePatterns: ['^@types/']
+      },
+    ],
   },
   linters: {
     extends: 'packages:linters',
