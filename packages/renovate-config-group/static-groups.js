@@ -17,7 +17,7 @@ module.exports = {
     packageRules: [
       {
         groupName: 'definitelyTyped',
-        packagePatterns: ['^@types/']
+        packagePatterns: ['^@types/'],
       },
     ],
   },
