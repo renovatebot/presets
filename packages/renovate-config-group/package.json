@@ -60,6 +60,15 @@
         }
       ]
     },
+    "commitlintMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from commitlint monorepo together",
+          "extends": "monorepo:commitlint",
+          "groupName": "commitlint monorepo"
+        }
+      ]
+    },
     "definitelyTyped": {
       "description": "Group all @types packages together",
       "packageRules": [
@@ -109,6 +118,7 @@
         "group:angular1Monorepo",
         "group:babelMonorepo",
         "group:babel6Monorepo",
+        "group:commitlintMonorepo",
         "group:gatsbyMonorepo",
         "group:jestMonorepo",
         "group:lodashMonorepo",
