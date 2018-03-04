@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.15",
+  "version": "0.2.0",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -203,6 +203,10 @@
       }
     },
     "automergeMajor": {
+      "description": "Automerge all upgrades (inluding major) if they pass tests",
+      "automerge": true
+    },
+    "automergeAll": {
       "description": "Automerge all upgrades (inluding major) if they pass tests",
       "automerge": true
     },
