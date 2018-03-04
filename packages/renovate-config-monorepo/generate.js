@@ -24,6 +24,10 @@ const staticSources = {
       'angular-touch',
     ],
   },
+  commitlint: {
+    packageNames: ['commitlint'],
+    packagePatterns: ['^@commitlint/'],
+  },
   lodash: {
     packageNames: ['babel-plugin-lodash', 'lodash-webpack-plugin', 'lodash-es'],
     packagePatterns: ['^lodash'],

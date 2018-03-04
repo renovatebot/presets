@@ -246,6 +246,15 @@
         "babel-types"
       ]
     },
+    "commitlint": {
+      "description": "commitlint monorepo",
+      "packageNames": [
+        "commitlint"
+      ],
+      "packagePatterns": [
+        "^@commitlint/"
+      ]
+    },
     "gatsby": {
       "description": "gatsby monorepo",
       "packageNames": [
