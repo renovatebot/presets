@@ -3,9 +3,6 @@ const got = require('gh-got');
 const pJson = require('./package.json');
 
 const staticSources = {
-  angular: {
-    packagePatterns: ['^@angular/'],
-  },
   angular1: {
     packageNames: [
       'angular',
@@ -50,6 +47,10 @@ const staticSources = {
 };
 
 const dynamicSources = {
+  angular: {
+    repo: 'angular/angular',
+    path: 'packages',
+  },
   babel6: {
     repo: 'babel/babel',
     branch: '6.x',

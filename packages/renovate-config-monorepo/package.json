@@ -7,12 +7,29 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.4.0",
+  "version": "0.4.1",
   "renovate-config": {
     "angular": {
       "description": "angular monorepo",
-      "packagePatterns": [
-        "^@angular/"
+      "packageNames": [
+        "@angular/animations",
+        "@angular/bazel",
+        "@angular/benchpress",
+        "@angular/common",
+        "@angular/compiler-cli",
+        "@angular/compiler",
+        "@angular/core",
+        "@angular/forms",
+        "@angular/http",
+        "@angular/language-service",
+        "@angular/platform-browser-dynamic",
+        "@angular/platform-browser",
+        "@angular/platform-server",
+        "@angular/platform-webworker-dynamic",
+        "@angular/platform-webworker",
+        "@angular/router",
+        "@angular/service-worker",
+        "@angular/upgrade"
       ]
     },
     "angular1": {
