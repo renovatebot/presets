@@ -416,6 +416,12 @@
         "^lodash"
       ]
     },
+    "material": {
+      "description": "material monorepo",
+      "packagePatterns": [
+        "^@material/"
+      ]
+    },
     "neutrino": {
       "description": "neutrino monorepo",
       "packageNames": [

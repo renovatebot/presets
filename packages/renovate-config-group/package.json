@@ -111,6 +111,15 @@
         }
       ]
     },
+    "materialMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from material monorepo together",
+          "extends": "monorepo:material",
+          "groupName": "material monorepo"
+        }
+      ]
+    },
     "monorepos": {
       "description": "Group monorepo packages together",
       "extends": [
@@ -122,6 +131,7 @@
         "group:gatsbyMonorepo",
         "group:jestMonorepo",
         "group:lodashMonorepo",
+        "group:materialMonorepo",
         "group:neutrinoMonorepo",
         "group:ngrxMonorepo",
         "group:nrwlMonorepo",
