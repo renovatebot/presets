@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.3.0",
+  "version": "0.3.1",
   "renovate-config": {
     "all": {
       "description": "Group all updates together",
@@ -99,8 +99,13 @@
       ]
     },
     "linters": {
-      "extends": "packages:linters",
-      "groupName": "linters"
+      "description": "Group various lint packages together",
+      "packageRules": [
+        {
+          "extends": "packages:linters",
+          "groupName": "linters"
+        }
+      ]
     },
     "lodashMonorepo": {
       "packageRules": [

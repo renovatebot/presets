@@ -22,7 +22,12 @@ module.exports = {
     ],
   },
   linters: {
-    extends: 'packages:linters',
-    groupName: 'linters',
+    description: 'Group various lint packages together',
+    packageRules: [
+      {
+        extends: 'packages:linters',
+        groupName: 'linters',
+      }
+    ],
   },
 };
