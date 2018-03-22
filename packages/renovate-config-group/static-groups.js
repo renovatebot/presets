@@ -27,7 +27,7 @@ module.exports = {
       {
         extends: 'packages:linters',
         groupName: 'linters',
-      }
+      },
     ],
   },
 };
