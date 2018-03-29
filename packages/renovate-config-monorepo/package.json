@@ -7,8 +7,26 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.4.1",
+  "version": "0.5.0",
   "renovate-config": {
+    "accounts": {
+      "description": "accounts monorepo",
+      "packageNames": [
+        "@accounts/client",
+        "@accounts/common",
+        "@accounts/mongo",
+        "@accounts/error",
+        "@accounts/oauth-instagram",
+        "@accounts/oauth-twitter",
+        "@accounts/oauth",
+        "@accounts/password",
+        "@accounts/rest-client",
+        "@accounts/rest-express",
+        "@accounts/server",
+        "@accounts/two-factor",
+        "@accounts/types"
+      ]
+    },
     "angular": {
       "description": "angular monorepo",
       "packageNames": [

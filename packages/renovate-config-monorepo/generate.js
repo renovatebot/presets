@@ -47,6 +47,9 @@ const staticSources = {
 };
 
 const dynamicSources = {
+  accounts: {
+    repo: 'accounts-js/accounts',
+  },
   angular: {
     repo: 'angular/angular',
     path: 'packages',
