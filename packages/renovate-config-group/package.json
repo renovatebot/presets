@@ -7,8 +7,17 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.3.1",
+  "version": "0.4.0",
   "renovate-config": {
+    "accountsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from accounts monorepo together",
+          "extends": "monorepo:accounts",
+          "groupName": "accounts monorepo"
+        }
+      ]
+    },
     "all": {
       "description": "Group all updates together",
       "groupName": "all",
@@ -119,6 +128,7 @@
     "monorepos": {
       "description": "Group monorepo packages together",
       "extends": [
+        "group:accountsMonorepo",
         "group:angularMonorepo",
         "group:angular1Monorepo",
         "group:babelMonorepo",
