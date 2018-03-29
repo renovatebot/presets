@@ -29,6 +29,9 @@ const staticSources = {
     packageNames: ['babel-plugin-lodash', 'lodash-webpack-plugin', 'lodash-es'],
     packagePatterns: ['^lodash'],
   },
+  material: {
+    packagePatterns: ['^@material/'],
+  },
   neutrino: {
     packageNames: ['neutrino'],
     packagePatterns: ['^@neutrinojs/'],
