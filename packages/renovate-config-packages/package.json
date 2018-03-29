@@ -36,11 +36,22 @@
         "^stylelint"
       ]
     },
+    "tslint": {
+      "description": "All tslint packages",
+      "packageNames": [
+        "codelyzer"
+      ],
+      "packagePatterns": [
+        "(^|-)tslint(-|$)"
+      ]
+    },
     "linters": {
       "description": "All lint-related packages",
       "extends": [
         "packages:eslint",
-        "packages:stylelint"
+        "packages:stylelint",
+        "packages:tslint",
+        "monorepo:fimbullinter"
       ],
       "packageNames": [
         "remark-lint"
