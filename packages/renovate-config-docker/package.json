@@ -7,10 +7,16 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.3",
+  "version": "0.0.4",
   "renovate-config": {
     "disable": {
       "docker": {
+        "enabled": false
+      },
+      "docker-compose": {
+        "enabled": false
+      },
+      "circleci": {
         "enabled": false
       }
     },
