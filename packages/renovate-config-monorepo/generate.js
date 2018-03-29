@@ -74,6 +74,9 @@ const dynamicSources = {
   gatsby: {
     repo: 'gatsbyjs/gatsby',
   },
+  material: {
+    repo: 'material-components/material-components-web',
+  },
 };
 
 async function go() {
