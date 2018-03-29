@@ -71,6 +71,10 @@ const dynamicSources = {
   gatsby: {
     repo: 'gatsbyjs/gatsby',
   },
+  accounts: {
+    repo: 'accounts-js/accounts',
+    path: 'packages',
+  },
 };
 
 async function go() {
