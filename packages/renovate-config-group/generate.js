@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const pJson = require('./package.json');
 const staticGroups = require('./static-groups');
 const monorepos = require('../renovate-config-monorepo/package.json')[
@@ -32,7 +33,7 @@ async function go() {
   for (const rule of Object.keys(config).sort()) {
     pJson['renovate-config'][rule] = config[rule];
   }
-  fs.writeFileSync('package.json', `${JSON.stringify(pJson, null, 2)}\n`);
+  fs.writeFileSync(path.join(__dirname, 'package.json'), `${JSON.stringify(pJson, null, 2)}\n`);
 }
 
 go();
