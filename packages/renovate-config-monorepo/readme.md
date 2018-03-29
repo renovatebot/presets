@@ -10,4 +10,4 @@ The goal of these lists and patterns is to define packages from within the monor
 
 ## Contributing
 
-Do not edit the `package.json` directly. Instead, add entries to `generate.js`.
+Do not edit the `package.json` directly. Instead, add entries to `generate.js` and then run `node generate.js` to update the `package.json` from there. Often there may be other updates included since the last time it was generated - if so then you may want to run `generate.js` once on its own and commit and that and then push your own changes afterwards in a second commit. Please also bump the `package.json` version too.
