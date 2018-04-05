@@ -33,7 +33,10 @@ async function go() {
   for (const rule of Object.keys(config).sort()) {
     pJson['renovate-config'][rule] = config[rule];
   }
-  fs.writeFileSync(path.join(__dirname, 'package.json'), `${JSON.stringify(pJson, null, 2)}\n`);
+  fs.writeFileSync(
+    path.join(__dirname, 'package.json'),
+    `${JSON.stringify(pJson, null, 2)}\n`
+  );
 }
 
 go();
