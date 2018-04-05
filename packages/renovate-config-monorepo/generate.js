@@ -45,6 +45,9 @@ const staticSources = {
   storybook: {
     packagePatterns: ['^@storybook/'],
   },
+  fimbullinter: {
+    packagePatterns: ['^@fimbul/'],
+  },
 };
 
 const dynamicSources = {

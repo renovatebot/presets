@@ -89,6 +89,15 @@
         }
       ]
     },
+    "fimbullinterMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from fimbullinter monorepo together",
+          "extends": "monorepo:fimbullinter",
+          "groupName": "fimbullinter monorepo"
+        }
+      ]
+    },
     "gatsbyMonorepo": {
       "packageRules": [
         {
@@ -143,6 +152,7 @@
         "group:babelMonorepo",
         "group:babel6Monorepo",
         "group:commitlintMonorepo",
+        "group:fimbullinterMonorepo",
         "group:gatsbyMonorepo",
         "group:jestMonorepo",
         "group:lodashMonorepo",

@@ -293,6 +293,12 @@
         "^@commitlint/"
       ]
     },
+    "fimbullinter": {
+      "description": "fimbullinter monorepo",
+      "packagePatterns": [
+        "^@fimbul/"
+      ]
+    },
     "gatsby": {
       "description": "gatsby monorepo",
       "packageNames": [
