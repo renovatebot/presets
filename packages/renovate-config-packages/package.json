@@ -42,7 +42,7 @@
         "codelyzer"
       ],
       "packagePatterns": [
-        "(^|-)tslint(-|$)"
+        "\\btslint\\b"
       ]
     },
     "linters": {
