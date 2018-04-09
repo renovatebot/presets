@@ -157,6 +157,10 @@
       "description": "Wait until branch tests have passed or failed before creating the PR",
       "prCreation": "not-pending"
     },
+    "prHourlyLimitNone": {
+      "description": "Removes rate limit for PR creation per hour",
+      "prHourlyLimit": 0
+    },
     "prHourlyLimit1": {
       "description": "Rate limit PR creation to a maximum of one per hour",
       "prHourlyLimit": 1
