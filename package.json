@@ -13,7 +13,8 @@
   },
   "version": "0.0.1",
   "scripts": {
-    "lint": "eslint . --ext .json --ext .js"
+    "lint": "eslint . --ext .json --ext .js",
+    "validate": "bash validate.sh"
   },
   "prettier": {
     "singleQuote": true,
@@ -29,6 +30,6 @@
     "eslint-plugin-promise": "3.5.0",
     "gh-got": "6.0.0",
     "prettier": "1.5.3",
-    "prettier-package-json": "1.4.0"
+    "renovate": "12.1.5"
   }
 }
