@@ -28,7 +28,7 @@
     "eslint-plugin-json": "1.2.0",
     "eslint-plugin-prettier": "2.6.0",
     "eslint-plugin-promise": "3.7.0",
-    "gh-got": "6.0.0",
+    "gh-got": "7.0.0",
     "prettier": "1.11.1",
     "renovate": "12.1.5"
   }
