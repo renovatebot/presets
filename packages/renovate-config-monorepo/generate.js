@@ -95,12 +95,16 @@ async function go() {
     const data = dynamicSources[monorepo];
     const branch = data.branch || 'master';
     const packagesPath = data.path || 'packages';
-    const url = `https://api.github.com/repos/${data.repo}/contents/${packagesPath}`;
+    const url = `https://api.github.com/repos/${
+      data.repo
+    }/contents/${packagesPath}`;
     const dirListing = (await got(url)).body;
     const packages = [];
     for (const item of dirListing) {
       if (item.type === 'dir') {
-        const packageJsonUrl = `https://raw.githubusercontent.com/${data.repo}/${branch}/${packagesPath}/${item.name}/package.json`;
+        const packageJsonUrl = `https://raw.githubusercontent.com/${
+          data.repo
+        }/${branch}/${packagesPath}/${item.name}/package.json`;
         try {
           const packageJson = (await got(packageJsonUrl)).body;
           if (packageJson.name && packageJson.private !== true) {
