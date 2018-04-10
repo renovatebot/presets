@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.4.0",
+  "version": "0.5.0",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -44,20 +44,31 @@
       "description": "Preserve (but continue to upgrade) any existing semver ranges",
       "pinVersions": false
     },
+    "pinAllExceptPeerDependencies": {
+      "description": "Pin dependency versions for all except <code>peerDependencies</code>",
+      "packageRules": [
+        {
+          "packagePatterns": ["*"],
+          "pinVersions": true
+        },
+        {
+          "depTypeList": ["peerDependencies"],
+          "pinVersions": false
+        }
+      ]
+    },
     "pinOnlyDevDependencies": {
       "description": "Pin dependency versions for <code>devDependencies</code> and retain semver ranges for others",
-      "dependencies": {
-        "extends": ":preserveSemverRanges"
-      },
-      "devDependencies": {
-        "extends": ":pinVersions"
-      },
-      "optionalDependencies": {
-        "extends": ":preserveSemverRanges"
-      },
-      "peerDependencies": {
-        "extends": ":preserveSemverRanges"
-      }
+      "packageRules": [
+        {
+          "packagePatterns": ["*"],
+          "pinVersions": false
+        },
+        {
+          "depTypeList": ["devDependencies"],
+          "pinVersions": true
+        }
+      ]
     },
     "autodetectPinVersions": {
       "description": "Autodetect whether to pin dependencies or maintain ranges",
@@ -103,39 +114,25 @@
     },
     "semanticPrefixFixDepsChoreOthers": {
       "description": "If semantic commits detected, use semantic commit type <code>fix</code> for dependencies and <code>chore</code> for all others",
-      "dependencies": {
-        "extends": ":semanticCommitType(fix)"
-      },
-      "devDependencies": {
-        "extends": ":semanticCommitType(chore)"
-      },
-      "optionalDependencies": {
-        "extends": ":semanticCommitType(chore)"
-      },
-      "peerDependencies": {
-        "extends": ":semanticCommitType(chore)"
-      }
+      "packageRules": [
+        {
+          "packagePatterns": ["*"],
+          "semanticCommitType": "chore"
+        },
+        {
+          "depTypeList": ["dependencies"],
+          "semanticCommitType": "fix"
+        }
+      ]
     },
     "semanticCommitTypeAll": {
       "description": "If semantic commits detected, use semantic commit type <code>{{arg0}}</code> for all",
-      "dependencies": {
-        "extends": ":semanticCommitType({{arg0}})"
-      },
-      "devDependencies": {
-        "extends": ":semanticCommitType({{arg0}})"
-      },
-      "optionalDependencies": {
-        "extends": ":semanticCommitType({{arg0}})"
-      },
-      "peerDependencies": {
-        "extends": ":semanticCommitType({{arg0}})"
-      },
-      "pin": {
-        "extends": ":semanticCommitType({{arg0}})"
-      },
-      "digest": {
-        "extends": ":semanticCommitType({{arg0}})"
-      }
+      "packageRules": [
+        {
+          "packagePattern": ["*"],
+          "semanticCommitType": "{{arg0}}"
+        }
+      ]
     },
     "rebaseStalePrs": {
       "description": "Rebase existing PRs any time the base branch has been updated",
