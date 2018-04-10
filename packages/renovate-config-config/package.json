@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.14",
+  "version": "0.0.15",
   "renovate-config": {
     "base": {
       "description": "Default base configuration for all languages",
@@ -44,7 +44,7 @@
       "description": "Default configuration for webapps",
       "extends": [
         "config:base",
-        ":pinVersions"
+        ":pinAllExceptPeerDependencies"
       ]
     },
     "js-lib": {
