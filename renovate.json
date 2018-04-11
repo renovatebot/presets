@@ -1,8 +1,9 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    ":automergeAll",
+    ":automergeBranchPush"
   ],
-  "automerge": true,
   "packageRules": [
     {
       "packagePatterns": ["eslint", "prettier"],
