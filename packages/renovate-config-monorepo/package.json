@@ -7,13 +7,14 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.7.0",
+  "version": "0.7.1",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
       "packageNames": [
         "@accounts/client",
         "@accounts/common",
+        "@accounts/database-manager",
         "@accounts/mongo",
         "@accounts/error",
         "@accounts/oauth-instagram",
@@ -67,7 +68,21 @@
         "angular-route",
         "angular-sanitize",
         "angular-scenario",
-        "angular-touch"
+        "angular-touch",
+        "@types/angular",
+        "@types/angular-animate",
+        "@types/angular-aria",
+        "@types/angular-cookies",
+        "@types/angular-loader",
+        "@types/angular-message-format",
+        "@types/angular-messages",
+        "@types/angular-mocks",
+        "@types/angular-parse-ext",
+        "@types/angular-resource",
+        "@types/angular-route",
+        "@types/angular-sanitize",
+        "@types/angular-scenario",
+        "@types/angular-touch"
       ]
     },
     "babel": {
@@ -474,6 +489,7 @@
         "@material/rtl",
         "@material/select",
         "@material/selection-control",
+        "@material/shape",
         "@material/slider",
         "@material/snackbar",
         "@material/switch",
