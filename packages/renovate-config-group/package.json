@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.6.0",
+  "version": "0.6.1",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -20,13 +20,15 @@
     },
     "all": {
       "description": "Group all updates together",
-      "groupName": "all",
+      "groupName": "all dependencies",
+      "groupSlug": "all",
       "packageRules": [
         {
           "packagePatterns": [
             "*"
           ],
-          "groupName": "all"
+          "groupName": "all dependencies",
+          "groupSlug": "all"
         }
       ],
       "lockFileMaintenance": {

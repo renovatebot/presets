@@ -1,11 +1,13 @@
 module.exports = {
   all: {
     description: 'Group all updates together',
-    groupName: 'all',
+    groupName: 'all dependencies',
+    groupSlug: 'all',
     packageRules: [
       {
         packagePatterns: ['*'],
-        groupName: 'all',
+        groupName: 'all dependencies',
+        groupSlug: 'all',
       },
     ],
     lockFileMaintenance: {
