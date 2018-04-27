@@ -29,6 +29,12 @@
           "enabled": true
         }
       }
+    },
+    "buildkite": {
+      "description": "Enable buildkite functionality",
+      "buildkite": {
+        "enabled": true
+      }
     }
   }
 }
