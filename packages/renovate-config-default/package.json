@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.5.2",
+  "version": "0.5.3",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -408,9 +408,7 @@
           "paths": [
             "{{arg0}}"
           ],
-          "extends": [
-            ":semanticCommitTypeAll({{arg1}})"
-          ]
+          "semanticCommitType": "{{arg1}}"
         }
       ]
     },
