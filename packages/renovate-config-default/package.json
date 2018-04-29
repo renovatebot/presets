@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.5.3",
+  "version": "0.5.4",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -108,9 +108,12 @@
     },
     "disablePeerDependencies": {
       "description": "Do not renovate <code>peerDependencies</code> versions/ranges",
-      "peerDependencies": {
-        "enabled": false
-      }
+      "packageRules": [
+        {
+          "depTypeList": ["peerDependencies"],
+          "enabled": false
+        }
+      ]
     },
     "semanticPrefixFixDepsChoreOthers": {
       "description": "If semantic commits detected, use semantic commit type <code>fix</code> for dependencies and <code>chore</code> for all others",
@@ -395,7 +398,12 @@
     },
     "widenPeerDependencies": {
       "description": "Always widen peerDependencies semver ranges when updating, instead of replacing",
-      "versionStrategy": "widen"
+      "packageRules": [
+        {
+          "depTypeList": ["peerDependencies"],
+          "versionStrategy": "widen"
+        }
+      ]
     },
     "timezone": {
       "description": "Evaluate schedules according to timezone {{arg0}}",
