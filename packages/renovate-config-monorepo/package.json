@@ -8,6 +8,7 @@
     "url": "https://github.com/singapore/renovate-config/issues"
   },
   "version": "0.7.1",
+  "version": "0.7.2",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -104,6 +105,7 @@
         "@babel/helper-function-name",
         "@babel/helper-get-function-arity",
         "@babel/helper-hoist-variables",
+        "@babel/helper-member-expression-to-functions",
         "@babel/helper-module-imports",
         "@babel/helper-module-transforms",
         "@babel/helper-optimise-call-expression",
@@ -382,6 +384,7 @@
         "gatsby-source-lever",
         "gatsby-source-medium",
         "gatsby-source-mongodb",
+        "gatsby-source-npm-package-search",
         "gatsby-source-wordpress-com",
         "gatsby-source-wordpress",
         "gatsby-transformer-csv",
@@ -398,6 +401,7 @@
         "gatsby-transformer-remark",
         "gatsby-transformer-screenshot",
         "gatsby-transformer-sharp",
+        "gatsby-transformer-sqip",
         "gatsby-transformer-toml",
         "gatsby-transformer-xml",
         "gatsby-transformer-yaml",
