@@ -79,6 +79,9 @@ const dynamicSources = {
   babel: {
     repo: 'babel/babel',
   },
+  graphqlcodegenerator: {
+    repo: 'dotansimha/graphql-code-generator'
+  },
   jest: {
     repo: 'facebook/jest',
   },
