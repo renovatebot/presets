@@ -62,6 +62,12 @@ const staticSources = {
   fimbullinter: {
     packagePatterns: ['^@fimbul/'],
   },
+  angularmaterial: {
+    packageNames: [
+      '@angular/material',
+      '@angular/cdk',
+    ],
+  },
 };
 
 const dynamicSources = {
