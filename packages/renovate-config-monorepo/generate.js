@@ -63,10 +63,7 @@ const staticSources = {
     packagePatterns: ['^@fimbul/'],
   },
   angularmaterial: {
-    packageNames: [
-      '@angular/material',
-      '@angular/cdk',
-    ],
+    packageNames: ['@angular/material', '@angular/cdk'],
   },
 };
 
