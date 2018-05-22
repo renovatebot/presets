@@ -80,7 +80,7 @@ const dynamicSources = {
     repo: 'babel/babel',
   },
   graphqlcodegenerator: {
-    repo: 'dotansimha/graphql-code-generator'
+    repo: 'dotansimha/graphql-code-generator',
   },
   jest: {
     repo: 'facebook/jest',
