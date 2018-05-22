@@ -85,6 +85,13 @@
         "@types/angular-touch"
       ]
     },
+    "angularmaterial": {
+      "description": "angularmaterial monorepo",
+      "packageNames": [
+        "@angular/material",
+        "@angular/cdk"
+      ]
+    },
     "babel": {
       "description": "babel monorepo",
       "packageNames": [
@@ -584,7 +591,6 @@
       "packageNames": [
         "create-subscription",
         "react-art",
-        "react-call-return",
         "react-dom",
         "react-is",
         "react-reconciler",
