@@ -42,7 +42,7 @@
     },
     "preserveSemverRanges": {
       "description": "Preserve (but continue to upgrade) any existing semver ranges",
-      "rangeStrategy": "auto"
+      "rangeStrategy": "replace"
     },
     "pinAllExceptPeerDependencies": {
       "description": "Pin dependency versions for all except <code>peerDependencies</code>",
