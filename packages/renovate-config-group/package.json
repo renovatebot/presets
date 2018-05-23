@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.6.1",
+  "version": "0.7.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -34,6 +34,20 @@
       "lockFileMaintenance": {
         "enabled": false
       }
+    },
+    "allNonMajor": {
+      "description": "Group all minor and patch updates together",
+      "packageRules": [
+        {
+          "packagePatterns": [
+            "*"
+          ],
+          "minor": {
+            "groupName": "all non-major dependencies",
+            "groupSlug": "all-minor-patch"
+          }
+        }
+      ]
     },
     "angular1Monorepo": {
       "packageRules": [

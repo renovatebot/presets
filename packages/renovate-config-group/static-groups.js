@@ -14,6 +14,18 @@ module.exports = {
       enabled: false,
     },
   },
+  allNonMajor: {
+    description: 'Group all minor and patch updates together',
+    packageRules: [
+      {
+        packagePatterns: ['*'],
+        minor: {
+          groupName: 'all non-major dependencies',
+          groupSlug: 'all-minor-patch',
+        }
+      },
+    ]
+  },
   definitelyTyped: {
     description: 'Group all @types packages together',
     packageRules: [
