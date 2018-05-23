@@ -22,9 +22,9 @@ module.exports = {
         minor: {
           groupName: 'all non-major dependencies',
           groupSlug: 'all-minor-patch',
-        }
+        },
       },
-    ]
+    ],
   },
   definitelyTyped: {
     description: 'Group all @types packages together',

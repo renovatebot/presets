@@ -308,7 +308,7 @@
     },
     "npm": {
       "description": "Keep package.json npm dependencies updated",
-      "javascript": {
+      "npm": {
         "enabled": true
       }
     },
