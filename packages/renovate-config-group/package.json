@@ -67,6 +67,15 @@
         }
       ]
     },
+    "angularmaterialMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from angularmaterial monorepo together",
+          "extends": "monorepo:angularmaterial",
+          "groupName": "angularmaterial monorepo"
+        }
+      ]
+    },
     "babel6Monorepo": {
       "packageRules": [
         {
@@ -123,6 +132,15 @@
         }
       ]
     },
+    "graphqlcodegeneratorMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from graphqlcodegenerator monorepo together",
+          "extends": "monorepo:graphqlcodegenerator",
+          "groupName": "graphqlcodegenerator monorepo"
+        }
+      ]
+    },
     "jestMonorepo": {
       "packageRules": [
         {
@@ -165,11 +183,13 @@
         "group:accountsMonorepo",
         "group:angularMonorepo",
         "group:angular1Monorepo",
+        "group:angularmaterialMonorepo",
         "group:babelMonorepo",
         "group:babel6Monorepo",
         "group:commitlintMonorepo",
         "group:fimbullinterMonorepo",
         "group:gatsbyMonorepo",
+        "group:graphqlcodegeneratorMonorepo",
         "group:jestMonorepo",
         "group:lodashMonorepo",
         "group:materialMonorepo",
