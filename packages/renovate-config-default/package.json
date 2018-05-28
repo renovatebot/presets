@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.5.5",
+  "version": "0.6.0",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -38,22 +38,26 @@
     },
     "pinVersions": {
       "description": "Use version pinning (maintain a single version only and not semver ranges)",
-      "pinVersions": true
+      "rangeStrategy": "pin"
     },
     "preserveSemverRanges": {
       "description": "Preserve (but continue to upgrade) any existing semver ranges",
-      "pinVersions": false
+      "rangeStrategy": "replace"
     },
     "pinAllExceptPeerDependencies": {
       "description": "Pin dependency versions for all except <code>peerDependencies</code>",
       "packageRules": [
         {
-          "packagePatterns": ["*"],
-          "pinVersions": true
+          "packagePatterns": [
+            "*"
+          ],
+          "rangeStrategy": "pin"
         },
         {
-          "depTypeList": ["peerDependencies"],
-          "pinVersions": false
+          "depTypeList": [
+            "peerDependencies"
+          ],
+          "rangeStrategy": "auto"
         }
       ]
     },
@@ -61,18 +65,22 @@
       "description": "Pin dependency versions for <code>devDependencies</code> and retain semver ranges for others",
       "packageRules": [
         {
-          "packagePatterns": ["*"],
-          "pinVersions": false
+          "packagePatterns": [
+            "*"
+          ],
+          "rangeStrategy": "auto"
         },
         {
-          "depTypeList": ["devDependencies"],
-          "pinVersions": true
+          "depTypeList": [
+            "devDependencies"
+          ],
+          "rangeStrategy": "pin"
         }
       ]
     },
     "autodetectPinVersions": {
       "description": "Autodetect whether to pin dependencies or maintain ranges",
-      "pinVersions": null
+      "rangeStrategy": "auto"
     },
     "separateMajorReleases": {
       "description": "Separate major versions of dependencies into individual branches/PRs",
@@ -110,7 +118,9 @@
       "description": "Do not renovate <code>peerDependencies</code> versions/ranges",
       "packageRules": [
         {
-          "depTypeList": ["peerDependencies"],
+          "depTypeList": [
+            "peerDependencies"
+          ],
           "enabled": false
         }
       ]
@@ -119,11 +129,15 @@
       "description": "If semantic commits detected, use semantic commit type <code>fix</code> for dependencies and <code>chore</code> for all others",
       "packageRules": [
         {
-          "packagePatterns": ["*"],
+          "packagePatterns": [
+            "*"
+          ],
           "semanticCommitType": "chore"
         },
         {
-          "depTypeList": ["dependencies"],
+          "depTypeList": [
+            "dependencies"
+          ],
           "semanticCommitType": "fix"
         }
       ]
@@ -132,7 +146,9 @@
       "description": "If semantic commits detected, use semantic commit type <code>{{arg0}}</code> for all",
       "packageRules": [
         {
-          "packagePatterns": ["*"],
+          "packagePatterns": [
+            "*"
+          ],
           "semanticCommitType": "{{arg0}}"
         }
       ]
@@ -292,7 +308,7 @@
           "packageNames": [
             "{{arg0}}"
           ],
-          "pinVersions": false
+          "rangeStrategy": "replace"
         }
       ]
     },
@@ -400,7 +416,9 @@
       "description": "Always widen peerDependencies semver ranges when updating, instead of replacing",
       "packageRules": [
         {
-          "depTypeList": ["peerDependencies"],
+          "depTypeList": [
+            "peerDependencies"
+          ],
           "versionStrategy": "widen"
         }
       ]
