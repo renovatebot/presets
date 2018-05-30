@@ -29,7 +29,7 @@
     "eslint-plugin-prettier": "2.6.0",
     "eslint-plugin-promise": "3.8.0",
     "gh-got": "7.0.0",
-    "prettier": "1.13.2",
+    "prettier": "1.13.3",
     "renovate": "12.34.5"
   }
 }
