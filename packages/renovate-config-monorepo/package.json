@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.9.2",
+  "version": "0.10.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -91,6 +91,17 @@
       "packageNames": [
         "@angular/material",
         "@angular/cdk"
+      ]
+    },
+    "apolloclient": {
+      "description": "apolloclient monorepo",
+      "packageNames": [
+        "apollo-boost",
+        "apollo-cache-inmemory",
+        "apollo-cache",
+        "apollo-client",
+        "apollo-utilities",
+        "graphql-anywhere"
       ]
     },
     "babel": {
