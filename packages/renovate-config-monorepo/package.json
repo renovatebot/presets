@@ -16,6 +16,7 @@
         "@accounts/common",
         "@accounts/database-manager",
         "@accounts/mongo",
+        "@accounts/redis",
         "@accounts/error",
         "@accounts/oauth-instagram",
         "@accounts/oauth-twitter",
@@ -127,6 +128,7 @@
         "@babel/helpers",
         "@babel/highlight",
         "@babel/node",
+        "@babel/parser",
         "@babel/plugin-external-helpers",
         "@babel/plugin-proposal-async-generator-functions",
         "@babel/plugin-proposal-class-properties",
@@ -136,6 +138,7 @@
         "@babel/plugin-proposal-export-namespace-from",
         "@babel/plugin-proposal-function-bind",
         "@babel/plugin-proposal-function-sent",
+        "@babel/plugin-proposal-json-strings",
         "@babel/plugin-proposal-logical-assignment-operators",
         "@babel/plugin-proposal-nullish-coalescing-operator",
         "@babel/plugin-proposal-numeric-separator",
@@ -146,6 +149,7 @@
         "@babel/plugin-proposal-throw-expressions",
         "@babel/plugin-proposal-unicode-property-regex",
         "@babel/plugin-syntax-async-generators",
+        "@babel/plugin-syntax-bigint",
         "@babel/plugin-syntax-class-properties",
         "@babel/plugin-syntax-decorators",
         "@babel/plugin-syntax-do-expressions",
@@ -156,6 +160,7 @@
         "@babel/plugin-syntax-function-bind",
         "@babel/plugin-syntax-function-sent",
         "@babel/plugin-syntax-import-meta",
+        "@babel/plugin-syntax-json-strings",
         "@babel/plugin-syntax-jsx",
         "@babel/plugin-syntax-logical-assignment-operators",
         "@babel/plugin-syntax-nullish-coalescing-operator",
@@ -232,8 +237,7 @@
         "@babel/standalone",
         "@babel/template",
         "@babel/traverse",
-        "@babel/types",
-        "babylon"
+        "@babel/types"
       ]
     },
     "babel6": {
@@ -438,6 +442,7 @@
         "jest-config",
         "jest-diff",
         "jest-docblock",
+        "jest-each",
         "jest-editor-support",
         "jest-environment-jsdom",
         "jest-environment-node",
@@ -460,6 +465,7 @@
         "jest-test-typescript-parser",
         "jest-util",
         "jest-validate",
+        "jest-watch",
         "jest-worker",
         "jest",
         "pretty-format"
@@ -494,6 +500,7 @@
         "@material/floating-label",
         "@material/form-field",
         "@material/grid-list",
+        "@material/icon-button",
         "@material/icon-toggle",
         "@material/image-list",
         "@material/layout-grid",
