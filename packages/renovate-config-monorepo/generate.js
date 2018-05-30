@@ -75,6 +75,10 @@ const dynamicSources = {
     repo: 'angular/angular',
     path: 'packages',
   },
+  apolloclient: {
+    repo: 'apollographql/apollo-client',
+    includePrivatePackage: true,
+  },
   babel6: {
     repo: 'babel/babel',
     branch: '6.x',
@@ -115,6 +119,7 @@ async function go() {
     const data = dynamicSources[monorepo];
     const branch = data.branch || 'master';
     const packagesPath = data.path || 'packages';
+    const includePrivatePackage = !!data.includePrivatePackage;
     const url = `https://api.github.com/repos/${
       data.repo
     }/contents/${packagesPath}`;
@@ -127,7 +132,10 @@ async function go() {
         }/${branch}/${packagesPath}/${item.name}/package.json`;
         try {
           const packageJson = (await got(packageJsonUrl)).body;
-          if (packageJson.name && packageJson.private !== true) {
+          if (
+            packageJson.name &&
+            (includePrivatePackage || packageJson.private !== true)
+          ) {
             packages.push(packageJson.name);
           }
         } catch (err) {
