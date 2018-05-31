@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.6.1",
+  "version": "0.6.2",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -68,7 +68,7 @@
           "packagePatterns": [
             "*"
           ],
-          "rangeStrategy": "auto"
+          "rangeStrategy": "replace"
         },
         {
           "depTypeList": [
