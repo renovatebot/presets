@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.6.2",
+  "version": "0.6.3",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -75,6 +75,12 @@
             "devDependencies"
           ],
           "rangeStrategy": "pin"
+        },
+        {
+          "depTypeList": [
+            "peerDependencies"
+          ],
+          "rangeStrategy": "widen"
         }
       ]
     },
