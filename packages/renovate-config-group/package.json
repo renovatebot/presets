@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.8.0",
+  "version": "0.9.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -208,6 +208,7 @@
         "group:nrwlMonorepo",
         "group:pouchdbMonorepo",
         "group:reactMonorepo",
+        "group:reactrouterMonorepo",
         "group:storybookMonorepo"
       ]
     },
@@ -253,6 +254,15 @@
           "description": "Group packages from react monorepo together",
           "extends": "monorepo:react",
           "groupName": "react monorepo"
+        }
+      ]
+    },
+    "reactrouterMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from reactrouter monorepo together",
+          "extends": "monorepo:reactrouter",
+          "groupName": "reactrouter monorepo"
         }
       ]
     },
