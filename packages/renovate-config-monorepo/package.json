@@ -7,13 +7,13 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.10.0",
+  "version": "0.10.1",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
       "packageNames": [
+        "@accounts/client-password",
         "@accounts/client",
-        "@accounts/common",
         "@accounts/database-manager",
         "@accounts/mongo",
         "@accounts/redis",
@@ -476,7 +476,7 @@
         "jest-test-typescript-parser",
         "jest-util",
         "jest-validate",
-        "jest-watch",
+        "jest-watcher",
         "jest-worker",
         "jest",
         "pretty-format"
