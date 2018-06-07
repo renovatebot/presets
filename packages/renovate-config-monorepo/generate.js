@@ -99,6 +99,9 @@ const dynamicSources = {
   react: {
     repo: 'facebook/react',
   },
+  reactrouter: {
+    repo: 'ReactTraining/react-router',
+  },
   gatsby: {
     repo: 'gatsbyjs/gatsby',
   },
