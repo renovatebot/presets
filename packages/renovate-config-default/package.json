@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.6.3",
+  "version": "0.6.4",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
