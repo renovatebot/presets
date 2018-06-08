@@ -53,12 +53,34 @@ module.exports = {
       },
     ],
   },
+  jsUnitTestNonMajor: {
+    description: 'Group JS unit test packages together',
+    packageRules: [
+      {
+        extends: 'packages:jsUnitTest',
+        minor: {
+          groupName: 'JS unit test packages',
+        },
+      },
+    ],
+  },
   unitTest: {
     description: 'Group all unit test packages together',
     packageRules: [
       {
         extends: 'packages:unitTest',
         groupName: 'unit test packages',
+      },
+    ],
+  },
+  unitTestNonMajor: {
+    description: 'Group all unit test packages together',
+    packageRules: [
+      {
+        extends: 'packages:unitTest',
+        minor: {
+          groupName: 'unit test packages',
+        },
       },
     ],
   },
@@ -71,12 +93,34 @@ module.exports = {
       },
     ],
   },
+  jsTestMonMajor: {
+    description: 'Group non-major JS test package updates together',
+    packageRules: [
+      {
+        extends: 'packages:jsTest',
+        minor: {
+          groupName: 'JS test packages',
+        },
+      },
+    ],
+  },
   test: {
     description: 'Group all test packages together',
     packageRules: [
       {
         extends: 'packages:test',
         groupName: 'test packages',
+      },
+    ],
+  },
+  testNonMajor: {
+    description: 'Group all non-major test package updates together',
+    packageRules: [
+      {
+        extends: 'packages:test',
+        minor: {
+          groupName: 'test packages',
+        },
       },
     ],
   },
