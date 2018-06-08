@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.3",
+  "version": "0.1.0",
   "renovate-config": {
     "angularJs": {
       "description": "All angular.js packages",
@@ -56,6 +56,37 @@
       "packageNames": [
         "remark-lint"
       ]
+    },
+    "jsUnitTest": {
+      "description": "Unit test packages for javascript",
+      "packageNames": [
+        "coveralls",
+        "istanbul",
+        "mocha",
+        "mock-fs",
+        "nock",
+        "nyc",
+        "proxyquire",
+        "supertest"
+      ],
+      "packagePatterns": [
+        "^chai",
+        "^sinon"
+      ]
+    },
+    "unitTest": {
+      "description": "All unit test packages",
+      "extends": [
+        "packages:testUnitJs"
+      ]
+    },
+    "jsTest": {
+      "description": "JavaScript test packages",
+      "extends": ["packages:testUnitJs"]
+    },
+    "test": {
+      "description": "Test packages",
+      "extends": ["packages:testUnit"]
     }
   }
 }
