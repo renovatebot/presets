@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.10.0",
+  "version": "0.10.1",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -163,7 +163,7 @@
       "description": "Group JS test packages together",
       "packageRules": [
         {
-          "extends": "packages:jsTests",
+          "extends": "packages:jsTest",
           "groupName": "JS test packages"
         }
       ]
@@ -172,7 +172,7 @@
       "description": "Group JS unit test packages together",
       "packageRules": [
         {
-          "extends": "packages:jsUnitTests",
+          "extends": "packages:jsUnitTest",
           "groupName": "JS unit test packages"
         }
       ]
@@ -297,7 +297,7 @@
       "description": "Group all test packages together",
       "packageRules": [
         {
-          "extends": "packages:tests",
+          "extends": "packages:test",
           "groupName": "test packages"
         }
       ]
@@ -306,7 +306,7 @@
       "description": "Group all unit test packages together",
       "packageRules": [
         {
-          "extends": "packages:unitTests",
+          "extends": "packages:unitTest",
           "groupName": "unit test packages"
         }
       ]
