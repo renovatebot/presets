@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "renovate-config": {
     "angularJs": {
       "description": "All angular.js packages",
@@ -77,16 +77,16 @@
     "unitTest": {
       "description": "All unit test packages",
       "extends": [
-        "packages:testUnitJs"
+        "packages:jsUnitTest"
       ]
     },
     "jsTest": {
       "description": "JavaScript test packages",
-      "extends": ["packages:testUnitJs"]
+      "extends": ["packages:jsUnitTest"]
     },
     "test": {
       "description": "Test packages",
-      "extends": ["packages:testUnit"]
+      "extends": ["packages:unitTest"]
     }
   }
 }
