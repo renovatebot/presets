@@ -44,4 +44,40 @@ module.exports = {
       },
     ],
   },
+  jsUnitTest: {
+    description: 'Group JS unit test packages together',
+    packageRules: [
+      {
+        extends: 'packages:jsUnitTests',
+        groupName: 'JS unit test packages',
+      },
+    ],
+  },
+  unitTest: {
+    description: 'Group all unit test packages together',
+    packageRules: [
+      {
+        extends: 'packages:unitTests',
+        groupName: 'unit test packages',
+      },
+    ],
+  },
+  jsTest: {
+    description: 'Group JS test packages together',
+    packageRules: [
+      {
+        extends: 'packages:jsTests',
+        groupName: 'JS test packages',
+      },
+    ],
+  },
+  test: {
+    description: 'Group all test packages together',
+    packageRules: [
+      {
+        extends: 'packages:tests',
+        groupName: 'test packages',
+      },
+    ],
+  },
 };
