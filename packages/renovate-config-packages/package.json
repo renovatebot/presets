@@ -57,7 +57,7 @@
         "remark-lint"
       ]
     },
-    "testUnitJs": {
+    "jsUnitTest": {
       "description": "Unit test packages for javascript",
       "packageNames": [
         "coveralls",
@@ -74,13 +74,13 @@
         "^sinon"
       ]
     },
-    "testUnit": {
+    "unitTest": {
       "description": "All unit test packages",
       "extends": [
         "packages:testUnitJs"
       ]
     },
-    "testJs": {
+    "jsTest": {
       "description": "JavaScript test packages",
       "extends": ["packages:testUnitJs"]
     },
