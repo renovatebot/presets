@@ -105,6 +105,24 @@
         "graphql-anywhere"
       ]
     },
+    "apollolink": {
+      "description": "apollolink monorepo",
+      "packageNames": [
+        "apollo-link-batch-http",
+        "apollo-link-batch",
+        "apollo-link-context",
+        "apollo-link-dedup",
+        "apollo-link-error",
+        "apollo-link-http-common",
+        "apollo-link-http",
+        "apollo-link-polling",
+        "apollo-link-retry",
+        "apollo-link-schema",
+        "apollo-link-ws",
+        "apollo-link",
+        "zen-observable-ts"
+      ]
+    },
     "babel": {
       "description": "babel monorepo",
       "packageNames": [
