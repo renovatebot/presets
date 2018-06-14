@@ -35,6 +35,15 @@
         "enabled": false
       }
     },
+    "allApollographql": {
+      "description": "Group all packages published by Apollo GraphQL together",
+      "packageRules": [
+        {
+          "extends": "packages:apollographql",
+          "groupName": "all apollo-graphql packages"
+        }
+      ]
+    },
     "allNonMajor": {
       "description": "Group all minor and patch updates together",
       "packageRules": [
