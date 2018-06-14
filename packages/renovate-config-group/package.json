@@ -85,6 +85,15 @@
         }
       ]
     },
+    "apollolinkMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from apollolink monorepo together",
+          "extends": "monorepo:apollolink",
+          "groupName": "apollolink monorepo"
+        }
+      ]
+    },
     "babel6Monorepo": {
       "packageRules": [
         {
@@ -234,6 +243,7 @@
         "group:angular1Monorepo",
         "group:angularmaterialMonorepo",
         "group:apolloclientMonorepo",
+        "group:apollolinkMonorepo",
         "group:babelMonorepo",
         "group:babel6Monorepo",
         "group:commitlintMonorepo",
