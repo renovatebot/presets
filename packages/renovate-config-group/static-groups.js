@@ -26,6 +26,15 @@ module.exports = {
       },
     ],
   },
+  allApollographql: {
+    description: 'Group all packages published by Apollo GraphQL together',
+    packageRules: [
+      {
+        extends: 'packages:apollographql',
+        groupName: 'all apollo-graphql packages',
+      },
+    ],
+  },
   definitelyTyped: {
     description: 'Group all @types packages together',
     packageRules: [

@@ -18,6 +18,17 @@
         "angular-sanitize"
       ]
     },
+    "apollographql": {
+      "description": "All packages published by Apollo GraphQL",
+      "extends": [
+        "monorepo:apolloclient",
+        "monorepo:apollolink"
+      ],
+      "packageNames": [
+        "graphql-tag",
+        "react-apollo"
+      ]
+    },
     "mapbox": {
       "description": "All mapbox-related packages",
       "packagePatterns": [
