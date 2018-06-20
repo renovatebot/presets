@@ -79,6 +79,10 @@ const dynamicSources = {
     repo: 'apollographql/apollo-client',
     includePrivatePackage: true,
   },
+  apollolink: {
+    repo: 'apollographql/apollo-link',
+    includePrivatePackage: true,
+  },
   babel6: {
     repo: 'babel/babel',
     branch: '6.x',
