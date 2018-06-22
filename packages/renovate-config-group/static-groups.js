@@ -44,6 +44,15 @@ module.exports = {
       },
     ],
   },
+  polymer: {
+    description: 'Group all @polymer packages together',
+    packageRules: [
+      {
+        groupName: 'polymer packages',
+        packagePatterns: ['^@polymer/'],
+      },
+    ],
+  },
   linters: {
     description: 'Group various lint packages together',
     packageRules: [

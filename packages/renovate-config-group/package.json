@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.13.0",
+  "version": "0.14.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -295,6 +295,17 @@
           "description": "Group packages from nrwl monorepo together",
           "extends": "monorepo:nrwl",
           "groupName": "nrwl monorepo"
+        }
+      ]
+    },
+    "polymer": {
+      "description": "Group all @polymer packages together",
+      "packageRules": [
+        {
+          "groupName": "polymer packages",
+          "packagePatterns": [
+            "^@polymer/"
+          ]
         }
       ]
     },
