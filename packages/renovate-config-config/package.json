@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.15",
+  "version": "0.1.0",
   "renovate-config": {
     "base": {
       "description": "Default base configuration for all languages",
@@ -61,7 +61,11 @@
         "group:all",
         "schedule:monthly",
         ":maintainLockFilesMonthly"
-      ]
+      ],
+      "lockFileMaintenance": {
+        "extends": ["group:all"],
+        "commitMessageAction": "Update"
+      }
     }
   }
 }
