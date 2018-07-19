@@ -73,7 +73,9 @@ const dynamicSources = {
   },
   angular: {
     repo: 'angular/angular',
-    path: 'packages',
+  },
+  awsappsync: {
+    repo: 'awslabs/aws-mobile-appsync-sdk-js',
   },
   apolloclient: {
     repo: 'apollographql/apollo-client',
