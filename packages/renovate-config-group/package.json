@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.15.0",
+  "version": "0.16.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
