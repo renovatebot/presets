@@ -12,6 +12,7 @@
     "accounts": {
       "description": "accounts monorepo",
       "packageNames": [
+        "@accounts/apollo-link",
         "@accounts/client-password",
         "@accounts/client",
         "@accounts/database-manager",
@@ -19,6 +20,8 @@
         "@accounts/redis",
         "@accounts/error",
         "@accounts/express-session",
+        "@accounts/graphql-api",
+        "@accounts/graphql-client",
         "@accounts/oauth-instagram",
         "@accounts/oauth-twitter",
         "@accounts/oauth",
@@ -121,6 +124,13 @@
         "apollo-link-ws",
         "apollo-link",
         "zen-observable-ts"
+      ]
+    },
+    "awsappsync": {
+      "description": "awsappsync monorepo",
+      "packageNames": [
+        "aws-appsync-react",
+        "aws-appsync"
       ]
     },
     "babel": {
@@ -252,9 +262,6 @@
         "@babel/polyfill",
         "@babel/preset-env-standalone",
         "@babel/preset-env",
-        "@babel/preset-es2015",
-        "@babel/preset-es2016",
-        "@babel/preset-es2017",
         "@babel/preset-flow",
         "@babel/preset-react",
         "@babel/preset-stage-0",
@@ -325,9 +332,6 @@
         "babel-plugin-transform-runtime",
         "babel-plugin-transform-strict-mode",
         "babel-polyfill",
-        "babel-preset-es2015",
-        "babel-preset-es2016",
-        "babel-preset-es2017",
         "babel-preset-flow",
         "babel-preset-react",
         "babel-preset-stage-0",
@@ -580,17 +584,13 @@
       "description": "pouchdb monorepo",
       "packageNames": [
         "pouchdb-abstract-mapreduce",
-        "pouchdb-adapter-fruitdown",
         "pouchdb-adapter-http",
         "pouchdb-adapter-idb",
         "pouchdb-adapter-leveldb-core",
         "pouchdb-adapter-leveldb",
         "pouchdb-adapter-localstorage",
         "pouchdb-adapter-memory",
-        "pouchdb-adapter-node-websql",
         "pouchdb-adapter-utils",
-        "pouchdb-adapter-websql-core",
-        "pouchdb-adapter-websql",
         "pouchdb-binary-utils",
         "pouchdb-browser",
         "pouchdb-changes-filter",
