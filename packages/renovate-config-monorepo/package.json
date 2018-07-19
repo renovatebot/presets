@@ -354,6 +354,23 @@
         "^@commitlint/"
       ]
     },
+    "emotion": {
+      "description": "emotion monorepo",
+      "packageNames": [
+        "babel-plugin-emotion",
+        "create-emotion-server",
+        "create-emotion-styled",
+        "create-emotion",
+        "emotion-server",
+        "emotion-theming",
+        "emotion",
+        "eslint-plugin-emotion",
+        "jest-emotion",
+        "preact-emotion",
+        "@emotion/primitives",
+        "react-emotion"
+      ]
+    },
     "fimbullinter": {
       "description": "fimbullinter monorepo",
       "packagePatterns": [
