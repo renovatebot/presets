@@ -141,6 +141,15 @@
         }
       ]
     },
+    "emotionMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from emotion monorepo together",
+          "extends": "monorepo:emotion",
+          "groupName": "emotion monorepo"
+        }
+      ]
+    },
     "fimbullinterMonorepo": {
       "packageRules": [
         {
@@ -256,6 +265,7 @@
         "group:babelMonorepo",
         "group:babel6Monorepo",
         "group:commitlintMonorepo",
+        "group:emotionMonorepo",
         "group:fimbullinterMonorepo",
         "group:gatsbyMonorepo",
         "group:graphqlcodegeneratorMonorepo",

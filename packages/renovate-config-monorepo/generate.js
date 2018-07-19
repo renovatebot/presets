@@ -92,6 +92,9 @@ const dynamicSources = {
   babel: {
     repo: 'babel/babel',
   },
+  emotion: {
+    repo: 'emotion-js/emotion',
+  },
   graphqlcodegenerator: {
     repo: 'dotansimha/graphql-code-generator',
   },
