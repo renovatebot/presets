@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.16.0",
+  "version": "0.17.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -282,6 +282,7 @@
         "group:jestMonorepo",
         "group:lodashMonorepo",
         "group:materialMonorepo",
+        "group:muiMonorepo",
         "group:neutrinoMonorepo",
         "group:ngrxMonorepo",
         "group:nrwlMonorepo",
@@ -289,6 +290,15 @@
         "group:reactMonorepo",
         "group:reactrouterMonorepo",
         "group:storybookMonorepo"
+      ]
+    },
+    "muiMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from mui monorepo together",
+          "extends": "monorepo:mui",
+          "groupName": "mui monorepo"
+        }
       ]
     },
     "neutrinoMonorepo": {
