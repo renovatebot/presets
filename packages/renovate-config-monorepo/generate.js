@@ -111,6 +111,10 @@ const dynamicSources = {
   reactrouter: {
     repo: 'ReactTraining/react-router',
   },
+  mui: {
+    repo: 'mui-org/material-ui',
+    includePrivatePackage: true,
+  },
   gatsby: {
     repo: 'gatsbyjs/gatsby',
   },

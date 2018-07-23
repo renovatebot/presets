@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.14.0",
+  "version": "0.15.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -407,6 +407,7 @@
         "gatsby-plugin-nprogress",
         "gatsby-plugin-offline",
         "gatsby-plugin-page-creator",
+        "gatsby-plugin-postcss",
         "gatsby-plugin-preact",
         "gatsby-plugin-react-css-modules",
         "gatsby-plugin-react-helmet",
@@ -568,6 +569,17 @@
         "@material/toolbar",
         "@material/top-app-bar",
         "@material/typography"
+      ]
+    },
+    "mui": {
+      "description": "mui monorepo",
+      "packageNames": [
+        "eslint-plugin-material-ui",
+        "@material-ui/codemod",
+        "@material-ui/docs",
+        "@material-ui/icons",
+        "@material-ui/lab",
+        "@material-ui/core"
       ]
     },
     "neutrino": {
