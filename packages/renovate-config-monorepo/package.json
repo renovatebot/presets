@@ -407,6 +407,7 @@
         "gatsby-plugin-nprogress",
         "gatsby-plugin-offline",
         "gatsby-plugin-page-creator",
+        "gatsby-plugin-postcss",
         "gatsby-plugin-preact",
         "gatsby-plugin-react-css-modules",
         "gatsby-plugin-react-helmet",
@@ -568,6 +569,17 @@
         "@material/toolbar",
         "@material/top-app-bar",
         "@material/typography"
+      ]
+    },
+    "mui": {
+      "description": "mui monorepo",
+      "packageNames": [
+        "eslint-plugin-material-ui",
+        "@material-ui/codemod",
+        "@material-ui/docs",
+        "@material-ui/icons",
+        "@material-ui/lab",
+        "@material-ui/core"
       ]
     },
     "neutrino": {
