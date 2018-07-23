@@ -377,6 +377,20 @@
         "^@fimbul/"
       ]
     },
+    "fusion": {
+      "description": "fusion monorepo",
+      "packageNames": [
+        "fusion-cli",
+        "fusion-core",
+        "fusion-test-utils",
+        "fusion-tokens"
+      ],
+      "packagePatterns": [
+        "^fusion-plugin-*",
+        "^fusion-react*",
+        "^fusion-apollo*"
+      ]
+    },
     "gatsby": {
       "description": "gatsby monorepo",
       "packageNames": [
