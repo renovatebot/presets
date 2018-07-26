@@ -40,6 +40,15 @@ const staticSources = {
     packageNames: ['commitlint'],
     packagePatterns: ['^@commitlint/'],
   },
+  fusion: {
+    packageNames: [
+      'fusion-cli',
+      'fusion-core',
+      'fusion-test-utils',
+      'fusion-tokens',
+    ],
+    packagePatterns: ['^fusion-plugin-*', '^fusion-react*', '^fusion-apollo*'],
+  },
   lodash: {
     packageNames: ['babel-plugin-lodash', 'lodash-webpack-plugin', 'lodash-es'],
     packagePatterns: ['^lodash'],
