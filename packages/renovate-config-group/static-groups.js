@@ -44,6 +44,16 @@ module.exports = {
       },
     ],
   },
+  fusionjs: {
+    description: 'Fusion.js packages',
+    packageNames: [
+      'fusion-cli',
+      'fusion-core',
+      'fusion-test-utils',
+      'fusion-tokens',
+    ],
+    packagePatterns: ['^fusion-plugin-*', '^fusion-react*', '^fusion-apollo*'],
+  },
   polymer: {
     description: 'Group all @polymer packages together',
     packageRules: [

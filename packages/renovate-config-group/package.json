@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.17.0",
+  "version": "0.18.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -166,6 +166,20 @@
           "extends": "monorepo:fimbullinter",
           "groupName": "fimbullinter monorepo"
         }
+      ]
+    },
+    "fusionjs": {
+      "description": "Fusion.js packages",
+      "packageNames": [
+        "fusion-cli",
+        "fusion-core",
+        "fusion-test-utils",
+        "fusion-tokens"
+      ],
+      "packagePatterns": [
+        "^fusion-plugin-*",
+        "^fusion-react*",
+        "^fusion-apollo*"
       ]
     },
     "gatsbyMonorepo": {
