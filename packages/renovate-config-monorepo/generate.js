@@ -62,6 +62,9 @@ const staticSources = {
   fimbullinter: {
     packagePatterns: ['^@fimbul/'],
   },
+  wordpress: {
+    packagePatterns: ['^@wordpress/'],
+  },
   angularmaterial: {
     packageNames: ['@angular/material', '@angular/cdk'],
   },

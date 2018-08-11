@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.15.1",
+  "version": "0.16.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -681,6 +681,12 @@
       "description": "storybook monorepo",
       "packagePatterns": [
         "^@storybook/"
+      ]
+    },
+    "wordpress": {
+      "description": "wordpress monorepo",
+      "packagePatterns": [
+        "^@wordpress/"
       ]
     }
   }
