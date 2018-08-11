@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.18.0",
+  "version": "0.19.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -303,7 +303,8 @@
         "group:pouchdbMonorepo",
         "group:reactMonorepo",
         "group:reactrouterMonorepo",
-        "group:storybookMonorepo"
+        "group:storybookMonorepo",
+        "group:wordpressMonorepo"
       ]
     },
     "muiMonorepo": {
@@ -426,6 +427,15 @@
           "minor": {
             "groupName": "unit test packages"
           }
+        }
+      ]
+    },
+    "wordpressMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from wordpress monorepo together",
+          "extends": "monorepo:wordpress",
+          "groupName": "wordpress monorepo"
         }
       ]
     }
