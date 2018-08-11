@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.15.0",
+  "version": "0.15.1",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -270,6 +270,7 @@
         "@babel/preset-stage-3",
         "@babel/preset-typescript",
         "@babel/register",
+        "@babel/runtime-corejs2",
         "@babel/runtime",
         "@babel/standalone",
         "@babel/template",
@@ -366,7 +367,9 @@
         "emotion",
         "eslint-plugin-emotion",
         "jest-emotion",
+        "@emotion/native",
         "preact-emotion",
+        "@emotion/primitives-core",
         "@emotion/primitives",
         "react-emotion"
       ]
@@ -382,6 +385,7 @@
       "packageNames": [
         "babel-plugin-remove-graphql-queries",
         "gatsby-cli",
+        "gatsby-codemods",
         "gatsby-dev-cli",
         "gatsby-image",
         "gatsby-link",
@@ -438,6 +442,7 @@
         "gatsby-source-drupal",
         "gatsby-source-faker",
         "gatsby-source-filesystem",
+        "gatsby-source-graphql",
         "gatsby-source-hacker-news",
         "gatsby-source-lever",
         "gatsby-source-medium",
@@ -563,6 +568,10 @@
         "@material/slider",
         "@material/snackbar",
         "@material/switch",
+        "@material/tab-bar",
+        "@material/tab-indicator",
+        "@material/tab-scroller",
+        "@material/tab",
         "@material/tabs",
         "@material/textfield",
         "@material/theme",
