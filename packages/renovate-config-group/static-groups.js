@@ -2,6 +2,7 @@ module.exports = {
   all: {
     description: 'Group all updates together',
     groupName: 'all dependencies',
+    separateMajorMinor: false,
     groupSlug: 'all',
     packageRules: [
       {

@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "renovate-config": {
     "base": {
       "description": "Default base configuration for all languages",
@@ -56,6 +56,7 @@
     },
     "semverAllMonthly": {
       "description": "Preserve semver ranges and update everything together once a month",
+      "separateMajorMinor": false,
       "extends": [
         ":preserveSemverRanges",
         "group:all",
