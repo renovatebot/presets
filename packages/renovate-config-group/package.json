@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.19.1",
+  "version": "0.20.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -304,6 +304,7 @@
         "group:pouchdbMonorepo",
         "group:reactMonorepo",
         "group:reactrouterMonorepo",
+        "group:semantic-releaseMonorepo",
         "group:storybookMonorepo",
         "group:wordpressMonorepo"
       ]
@@ -379,6 +380,15 @@
           "description": "Group packages from reactrouter monorepo together",
           "extends": "monorepo:reactrouter",
           "groupName": "reactrouter monorepo"
+        }
+      ]
+    },
+    "semantic-releaseMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from semantic-release monorepo together",
+          "extends": "monorepo:semantic-release",
+          "groupName": "semantic-release monorepo"
         }
       ]
     },
