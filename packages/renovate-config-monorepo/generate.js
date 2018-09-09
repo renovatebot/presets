@@ -40,6 +40,10 @@ const staticSources = {
     packageNames: ['commitlint'],
     packagePatterns: ['^@commitlint/'],
   },
+  semanticrelease: {
+    packageNames: ['semantic-release'],
+    packagePatterns: ['^@semantic-release/'],
+  },
   lodash: {
     packageNames: ['babel-plugin-lodash', 'lodash-webpack-plugin', 'lodash-es'],
     packagePatterns: ['^lodash'],
