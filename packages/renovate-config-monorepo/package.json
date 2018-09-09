@@ -396,12 +396,14 @@
         "gatsby-plugin-emotion",
         "gatsby-plugin-facebook-analytics",
         "gatsby-plugin-feed",
+        "gatsby-plugin-flow",
         "gatsby-plugin-fullstory",
         "gatsby-plugin-glamor",
         "gatsby-plugin-google-analytics",
         "gatsby-plugin-google-tagmanager",
         "gatsby-plugin-guess-js",
         "gatsby-plugin-jss",
+        "gatsby-plugin-layout",
         "gatsby-plugin-less",
         "gatsby-plugin-lodash",
         "gatsby-plugin-manifest",
@@ -423,6 +425,7 @@
         "gatsby-plugin-styled-jsx",
         "gatsby-plugin-styletron",
         "gatsby-plugin-stylus",
+        "gatsby-plugin-subfont",
         "gatsby-plugin-twitter",
         "gatsby-plugin-typescript",
         "gatsby-plugin-typography",
@@ -432,6 +435,7 @@
         "gatsby-remark-copy-linked-files",
         "gatsby-remark-custom-blocks",
         "gatsby-remark-embed-snippet",
+        "gatsby-remark-graphviz",
         "gatsby-remark-images-contentful",
         "gatsby-remark-images",
         "gatsby-remark-katex",
@@ -544,6 +548,7 @@
         "@material/checkbox",
         "@material/chips",
         "@material/dialog",
+        "@material/dom",
         "@material/drawer",
         "@material/elevation",
         "@material/fab",
@@ -557,6 +562,7 @@
         "@material/line-ripple",
         "@material/linear-progress",
         "@material/list",
+        "@material/menu-surface",
         "@material/menu",
         "@material/notched-outline",
         "@material/radio",
@@ -664,6 +670,7 @@
         "react-reconciler",
         "react-test-renderer",
         "react",
+        "schedule",
         "simple-cache-provider"
       ]
     },
@@ -675,6 +682,15 @@
         "react-router-native",
         "react-router-redux",
         "react-router"
+      ]
+    },
+    "semanticrelease": {
+      "description": "semanticrelease monorepo",
+      "packageNames": [
+        "semantic-release"
+      ],
+      "packagePatterns": [
+        "^@semantic-release/"
       ]
     },
     "storybook": {
