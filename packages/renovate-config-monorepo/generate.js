@@ -40,7 +40,7 @@ const staticSources = {
     packageNames: ['commitlint'],
     packagePatterns: ['^@commitlint/'],
   },
-  semanticrelease: {
+  'semantic-release': {
     packageNames: ['semantic-release'],
     packagePatterns: ['^@semantic-release/'],
   },

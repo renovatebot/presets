@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.16.0",
+  "version": "0.17.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -684,8 +684,8 @@
         "react-router"
       ]
     },
-    "semanticrelease": {
-      "description": "semanticrelease monorepo",
+    "semantic-release": {
+      "description": "semantic-release monorepo",
       "packageNames": [
         "semantic-release"
       ],
