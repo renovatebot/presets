@@ -132,6 +132,17 @@
         }
       ]
     },
+    "disableDevDependencies": {
+      "description": "Do not renovate <code>devDependencies</code> versions/ranges",
+      "packageRules": [
+        {
+          "depTypeList": [
+            "devDependencies"
+          ],
+          "enabled": false
+        }
+      ]
+    },
     "semanticPrefixFixDepsChoreOthers": {
       "description": "If semantic commits detected, use semantic commit type <code>fix</code> for dependencies and <code>chore</code> for all others",
       "packageRules": [
