@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.8.0",
+  "version": "0.9.0",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -142,6 +142,12 @@
           "enabled": false
         }
       ]
+    },
+    "disableDigestUpdates": {
+      "description": "Disable digest and git hash updates",
+      "digest": {
+        "enabled": false
+      }
     },
     "semanticPrefixFixDepsChoreOthers": {
       "description": "If semantic commits detected, use semantic commit type <code>fix</code> for dependencies and <code>chore</code> for all others",
