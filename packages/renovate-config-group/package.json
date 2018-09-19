@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.20.0",
+  "version": "0.21.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -128,6 +128,15 @@
           "description": "Group packages from babel monorepo together",
           "extends": "monorepo:babel",
           "groupName": "babel monorepo"
+        }
+      ]
+    },
+    "basetMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from baset monorepo together",
+          "extends": "monorepo:baset",
+          "groupName": "baset monorepo"
         }
       ]
     },
@@ -289,6 +298,7 @@
         "group:awsappsyncMonorepo",
         "group:babelMonorepo",
         "group:babel6Monorepo",
+        "group:basetMonorepo",
         "group:commitlintMonorepo",
         "group:emotionMonorepo",
         "group:fimbullinterMonorepo",
