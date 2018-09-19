@@ -99,6 +99,9 @@ const dynamicSources = {
   babel: {
     repo: 'babel/babel',
   },
+  baset: {
+    repo: 'igmat/baset',
+  },
   emotion: {
     repo: 'emotion-js/emotion',
   },
