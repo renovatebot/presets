@@ -128,6 +128,9 @@ const dynamicSources = {
   material: {
     repo: 'material-components/material-components-web',
   },
+  'graphql-code-generator': {
+    repo: 'dotansimha/graphql-code-generator',
+  },
 };
 
 async function go() {
