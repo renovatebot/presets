@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.17.0",
+  "version": "0.18.1",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -687,7 +687,7 @@
         "react-reconciler",
         "react-test-renderer",
         "react",
-        "schedule",
+        "scheduler",
         "simple-cache-provider"
       ]
     },
