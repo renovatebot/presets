@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.17.0",
+  "version": "0.18.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -471,6 +471,14 @@
         "gatsby-transformer-yaml",
         "gatsby",
         "graphql-skip-limit"
+      ]
+    },
+    "graphql-code-generator": {
+      "description": "graphql-code-generator monorepo",
+      "packageNames": [
+        "graphql-code-generator",
+        "graphql-codegen-compiler",
+        "graphql-codegen-core"
       ]
     },
     "graphqlcodegenerator": {
