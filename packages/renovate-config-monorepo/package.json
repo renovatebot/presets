@@ -346,6 +346,23 @@
         "babel-types"
       ]
     },
+    "baset": {
+      "description": "baset monorepo",
+      "packageNames": [
+        "baset-baseliner-json",
+        "baset-baseliner-md",
+        "baset-cli",
+        "baset-core",
+        "baset-env-browser",
+        "baset-reader-babel",
+        "baset-reader-md",
+        "baset-reader-ts",
+        "baset-resolver-pixi",
+        "baset-resolver-react",
+        "baset-vm",
+        "baset"
+      ]
+    },
     "commitlint": {
       "description": "commitlint monorepo",
       "packageNames": [
