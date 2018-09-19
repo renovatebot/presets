@@ -670,7 +670,7 @@
         "react-reconciler",
         "react-test-renderer",
         "react",
-        "schedule",
+        "scheduler",
         "simple-cache-provider"
       ]
     },
