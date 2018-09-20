@@ -473,7 +473,7 @@
       ]
     },
     "followTag": {
-      "description": "For package <code>{{arg0}}, strictly follow release tag <code>{{arg1}}</code>",
+      "description": "For package <code>{{arg0}}</code>, strictly follow release tag <code>{{arg1}}</code>",
       "packageRules": [
         {
           "packageNames": ["{{arg0}}"],
