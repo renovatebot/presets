@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.10.0",
+  "version": "0.11.0",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -359,6 +359,12 @@
     "npm": {
       "description": "Keep package.json npm dependencies updated",
       "npm": {
+        "enabled": true
+      }
+    },
+    "gomod": {
+      "description": "Enable Go modules support",
+      "gomod": {
         "enabled": true
       }
     },
