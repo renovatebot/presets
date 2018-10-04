@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.12.0",
+  "version": "0.12.1",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -462,6 +462,10 @@
           "versionStrategy": "widen"
         }
       ]
+    },
+    "masterIssue": {
+      "description": "Enable Renovate master issue creation",
+      "masterIssue": true
     },
     "masterIssueApproval": {
       "description": "Enable Renovate master issue approval workflow",
