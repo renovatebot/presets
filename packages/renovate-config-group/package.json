@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.21.0",
+  "version": "0.22.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -391,6 +391,14 @@
           "extends": "monorepo:reactrouter",
           "groupName": "reactrouter monorepo"
         }
+      ]
+    },
+    "recommended": {
+      "description": "Recommended groupings of packages, even if not published from same monorepo",
+      "extends": [
+        "group:allApollographql",
+        "group:fusionjs",
+        "group:polymer"
       ]
     },
     "semantic-releaseMonorepo": {

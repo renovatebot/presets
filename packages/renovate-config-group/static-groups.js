@@ -27,6 +27,11 @@ module.exports = {
       },
     ],
   },
+  recommended: {
+    description:
+      'Recommended groupings of packages, even if not published from same monorepo',
+    extends: ['group:allApollographql', 'group:fusionjs', 'group:polymer'],
+  },
   allApollographql: {
     description: 'Group all packages published by Apollo GraphQL together',
     packageRules: [
