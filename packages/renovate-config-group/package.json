@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.22.0",
+  "version": "0.22.1",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -41,7 +41,7 @@
       "packageRules": [
         {
           "extends": "packages:apollographql",
-          "groupName": "all apollo-graphql packages"
+          "groupName": "Apollo GraphQL packages"
         }
       ]
     },

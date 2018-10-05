@@ -37,7 +37,7 @@ module.exports = {
     packageRules: [
       {
         extends: 'packages:apollographql',
-        groupName: 'all apollo-graphql packages',
+        groupName: 'Apollo GraphQL packages',
       },
     ],
   },
