@@ -30,7 +30,12 @@ module.exports = {
   recommended: {
     description:
       'Recommended groupings of packages, even if not published from same monorepo',
-    extends: ['group:allApollographql', 'group:fusionjs', 'group:polymer'],
+    extends: [
+      'group:allApollographql',
+      'group:fortawesome',
+      'group:fusionjs',
+      'group:polymer',
+    ],
   },
   allApollographql: {
     description: 'Group all packages published by Apollo GraphQL together',
@@ -47,6 +52,15 @@ module.exports = {
       {
         groupName: 'definitelyTyped',
         packagePatterns: ['^@types/'],
+      },
+    ],
+  },
+  fortawesome: {
+    description: 'Group all packages by Font Awesome together',
+    packageRules: [
+      {
+        groupName: 'fortawesome',
+        packagePatterns: ['^@fortawesome/'],
       },
     ],
   },
