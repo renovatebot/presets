@@ -69,6 +69,15 @@ module.exports = {
       },
     ],
   },
+  postcss: {
+    description: 'Group postcss packages together',
+    packageRules: [
+      {
+        extends: 'packages:postcss',
+        groupName: 'postcss packages'
+      }
+    ]
+  },
   linters: {
     description: 'Group various lint packages together',
     packageRules: [
