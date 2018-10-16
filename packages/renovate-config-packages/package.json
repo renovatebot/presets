@@ -68,6 +68,15 @@
         "remark-lint"
       ]
     },
+    "postcss": {
+      "description": "All postcss packages",
+      "packageNames": [
+        "postcss"
+      ],
+      "packagePatterns": [
+        "^postcss-"
+      ]
+    },
     "jsUnitTest": {
       "description": "Unit test packages for javascript",
       "packageNames": [
