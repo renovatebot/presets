@@ -59,7 +59,7 @@ module.exports = {
     description: 'Group all packages by Font Awesome together',
     packageRules: [
       {
-        groupName: 'fortawesome',
+        groupName: 'Fort Awesome',
         packagePatterns: ['^@fortawesome/'],
       },
     ],
