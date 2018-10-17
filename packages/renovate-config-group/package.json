@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.22.1",
+  "version": "0.23.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -363,6 +363,15 @@
           "packagePatterns": [
             "^@polymer/"
           ]
+        }
+      ]
+    },
+    "postcss": {
+      "description": "Group postcss packages together",
+      "packageRules": [
+        {
+          "extends": "packages:postcss",
+          "groupName": "postcss packages"
         }
       ]
     },
