@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.23.0",
+  "version": "0.24.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -175,6 +175,17 @@
           "description": "Group packages from fimbullinter monorepo together",
           "extends": "monorepo:fimbullinter",
           "groupName": "fimbullinter monorepo"
+        }
+      ]
+    },
+    "fortawesome": {
+      "description": "Group all packages by Font Awesome together",
+      "packageRules": [
+        {
+          "groupName": "Fort Awesome",
+          "packagePatterns": [
+            "^@fortawesome/"
+          ]
         }
       ]
     },
@@ -406,6 +417,7 @@
       "description": "Recommended groupings of packages, even if not published from same monorepo",
       "extends": [
         "group:allApollographql",
+        "group:fortawesome",
         "group:fusionjs",
         "group:polymer"
       ]
