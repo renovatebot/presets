@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.2.0",
+  "version": "0.3.0",
   "renovate-config": {
     "angularJs": {
       "description": "All angular.js packages",
