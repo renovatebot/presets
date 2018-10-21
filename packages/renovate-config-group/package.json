@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.24.0",
+  "version": "0.24.1",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -182,7 +182,7 @@
       "description": "Group all packages by Font Awesome together",
       "packageRules": [
         {
-          "groupName": "Fort Awesome",
+          "groupName": "Font Awesome",
           "packagePatterns": [
             "^@fortawesome/"
           ]
