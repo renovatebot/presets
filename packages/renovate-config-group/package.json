@@ -183,6 +183,7 @@
       "packageRules": [
         {
           "groupName": "Font Awesome",
+          "groupSlug": "fort-awesome",
           "packagePatterns": [
             "^@fortawesome/"
           ]
