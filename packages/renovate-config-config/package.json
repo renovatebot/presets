@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.2",
+  "version": "0.1.3",
   "renovate-config": {
     "base": {
       "description": "Default base configuration for all languages",
@@ -31,8 +31,7 @@
         ":prConcurrentLimit20",
         "group:monorepos",
         "group:recommended",
-        "helpers:disableTypesNodeMajor",
-        "helpers:oddIsUnstablePackages"
+        "helpers:disableTypesNodeMajor"
       ]
     },
     "base-js": {
