@@ -36,6 +36,7 @@ module.exports = {
       'group:fusionjs',
       'group:polymer',
     ],
+    ignoreDeps: [],
   },
   allApollographql: {
     description: 'Group all packages published by Apollo GraphQL together',

@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.24.1",
+  "version": "0.24.2",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -299,6 +299,7 @@
     },
     "monorepos": {
       "description": "Group monorepo packages together",
+      "ignoreDeps": [],
       "extends": [
         "group:accountsMonorepo",
         "group:angularMonorepo",
@@ -420,7 +421,8 @@
         "group:fortawesome",
         "group:fusionjs",
         "group:polymer"
-      ]
+      ],
+      "ignoreDeps": []
     },
     "semantic-releaseMonorepo": {
       "packageRules": [

@@ -25,6 +25,7 @@ async function go() {
   }
   config.monorepos = {
     description: 'Group monorepo packages together',
+    ignoreDeps: [],
     extends: monorepoNames,
   };
 
