@@ -29,7 +29,7 @@ module.exports = {
   },
   recommended: {
     description:
-      'Recommended groupings of packages, even if not published from same monorepo',
+      'Use curated list of recommended non-monorepo package groupings',
     extends: [
       'group:allApollographql',
       'group:fortawesome',

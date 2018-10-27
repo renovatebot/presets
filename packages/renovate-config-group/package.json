@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.24.2",
+  "version": "0.24.3",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -298,7 +298,7 @@
       ]
     },
     "monorepos": {
-      "description": "Group monorepo packages together",
+      "description": "Group known monorepo packages together",
       "ignoreDeps": [],
       "extends": [
         "group:accountsMonorepo",
@@ -415,7 +415,7 @@
       ]
     },
     "recommended": {
-      "description": "Recommended groupings of packages, even if not published from same monorepo",
+      "description": "Use curated list of recommended non-monorepo package groupings",
       "extends": [
         "group:allApollographql",
         "group:fortawesome",
