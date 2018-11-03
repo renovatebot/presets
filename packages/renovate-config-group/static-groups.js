@@ -35,6 +35,8 @@ module.exports = {
       'group:fortawesome',
       'group:fusionjs',
       'group:polymer',
+      'group:illuminate',
+      'group:symfony',
     ],
     ignoreDeps: [],
   },
@@ -74,6 +76,26 @@ module.exports = {
       'fusion-tokens',
     ],
     packagePatterns: ['^fusion-plugin-*', '^fusion-react*', '^fusion-apollo*'],
+  },
+  illuminate: {
+    description: 'Group PHP illuminate packages together',
+    packageRules: [
+      {
+        packagePatterns: ['^illuminate/'],
+        groupName: 'illuminate packages',
+        groupSlug: 'illuminate',
+      },
+    ],
+  },
+  symfony: {
+    description: 'Group PHP symfony packages together',
+    packageRules: [
+      {
+        packagePatterns: ['^symfony/'],
+        groupName: 'symfony packages',
+        groupSlug: 'symfony',
+      },
+    ],
   },
   polymer: {
     description: 'Group all @polymer packages together',

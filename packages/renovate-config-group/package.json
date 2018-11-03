@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.24.3",
+  "version": "0.25.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -221,6 +221,18 @@
         }
       ]
     },
+    "illuminate": {
+      "description": "Group PHP illuminate packages together",
+      "packageRules": [
+        {
+          "packagePatterns": [
+            "^illuminate/"
+          ],
+          "groupName": "illuminate packages",
+          "groupSlug": "illuminate"
+        }
+      ]
+    },
     "jestMonorepo": {
       "packageRules": [
         {
@@ -420,7 +432,9 @@
         "group:allApollographql",
         "group:fortawesome",
         "group:fusionjs",
-        "group:polymer"
+        "group:polymer",
+        "group:illuminate",
+        "group:symfony"
       ],
       "ignoreDeps": []
     },
@@ -439,6 +453,18 @@
           "description": "Group packages from storybook monorepo together",
           "extends": "monorepo:storybook",
           "groupName": "storybook monorepo"
+        }
+      ]
+    },
+    "symfony": {
+      "description": "Group PHP symfony packages together",
+      "packageRules": [
+        {
+          "packagePatterns": [
+            "^symfony/"
+          ],
+          "groupName": "symfony packages",
+          "groupSlug": "symfony"
         }
       ]
     },
