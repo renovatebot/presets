@@ -520,6 +520,7 @@
         "jest-get-type",
         "jest-haste-map",
         "jest-jasmine2",
+        "jest-junit",
         "jest-leak-detector",
         "jest-matcher-utils",
         "jest-message-util",
