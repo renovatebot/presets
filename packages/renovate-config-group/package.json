@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.25.0",
+  "version": "0.26.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -212,6 +212,15 @@
         }
       ]
     },
+    "graphql-modulesMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from graphql-modules monorepo together",
+          "extends": "monorepo:graphql-modules",
+          "groupName": "graphql-modules monorepo"
+        }
+      ]
+    },
     "graphqlcodegeneratorMonorepo": {
       "packageRules": [
         {
@@ -327,6 +336,7 @@
         "group:emotionMonorepo",
         "group:fimbullinterMonorepo",
         "group:gatsbyMonorepo",
+        "group:graphql-modulesMonorepo",
         "group:graphqlcodegeneratorMonorepo",
         "group:jestMonorepo",
         "group:lodashMonorepo",
