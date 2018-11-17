@@ -7,12 +7,13 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.19.0",
+  "version": "0.19.1",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
       "packageNames": [
         "@accounts/apollo-link",
+        "@accounts/boost",
         "@accounts/client-password",
         "@accounts/client",
         "@accounts/database-manager",
@@ -376,19 +377,31 @@
       "description": "emotion monorepo",
       "packageNames": [
         "babel-plugin-emotion",
+        "@emotion/cache",
+        "@emotion/core",
         "create-emotion-server",
-        "create-emotion-styled",
         "create-emotion",
+        "@emotion/css",
         "emotion-server",
         "emotion-theming",
         "emotion",
         "eslint-plugin-emotion",
+        "@emotion/hash",
+        "@emotion/is-prop-valid",
         "jest-emotion",
+        "@emotion/memoize",
         "@emotion/native",
-        "preact-emotion",
         "@emotion/primitives-core",
         "@emotion/primitives",
-        "react-emotion"
+        "react-emotion",
+        "@emotion/serialize",
+        "@emotion/sheet",
+        "@emotion/styled-base",
+        "@emotion/styled",
+        "@emotion/stylis",
+        "@emotion/unitless",
+        "@emotion/utils",
+        "@emotion/weak-memoize"
       ]
     },
     "fimbullinter": {
@@ -401,6 +414,8 @@
       "description": "gatsby monorepo",
       "packageNames": [
         "babel-plugin-remove-graphql-queries",
+        "babel-preset-gatsby-package",
+        "babel-preset-gatsby",
         "gatsby-cli",
         "gatsby-codemods",
         "gatsby-dev-cli",
@@ -410,6 +425,7 @@
         "gatsby-plugin-catch-links",
         "gatsby-plugin-coffeescript",
         "gatsby-plugin-create-client-paths",
+        "gatsby-plugin-cxs",
         "gatsby-plugin-emotion",
         "gatsby-plugin-facebook-analytics",
         "gatsby-plugin-feed",
@@ -417,6 +433,7 @@
         "gatsby-plugin-fullstory",
         "gatsby-plugin-glamor",
         "gatsby-plugin-google-analytics",
+        "gatsby-plugin-google-gtag",
         "gatsby-plugin-google-tagmanager",
         "gatsby-plugin-guess-js",
         "gatsby-plugin-jss",
@@ -478,6 +495,7 @@
         "gatsby-transformer-javascript-frontmatter",
         "gatsby-transformer-javascript-static-exports",
         "gatsby-transformer-json",
+        "gatsby-transformer-pdf",
         "gatsby-transformer-react-docgen",
         "gatsby-transformer-remark",
         "gatsby-transformer-screenshot",
@@ -494,7 +512,6 @@
       "description": "graphqlcodegenerator monorepo",
       "packageNames": [
         "graphql-code-generator",
-        "graphql-codegen-compiler",
         "graphql-codegen-core"
       ]
     },
@@ -514,7 +531,6 @@
         "jest-diff",
         "jest-docblock",
         "jest-each",
-        "jest-editor-support",
         "jest-environment-jsdom",
         "jest-environment-node",
         "jest-get-type",
@@ -533,7 +549,6 @@
         "jest-runtime",
         "jest-serializer",
         "jest-snapshot",
-        "jest-test-typescript-parser",
         "jest-util",
         "jest-validate",
         "jest-watcher",
@@ -607,10 +622,13 @@
       "description": "mui monorepo",
       "packageNames": [
         "eslint-plugin-material-ui",
+        "@material-ui/benchmark",
         "@material-ui/codemod",
         "@material-ui/docs",
         "@material-ui/icons",
         "@material-ui/lab",
+        "@material-ui/styles",
+        "@material-ui/utils",
         "@material-ui/core"
       ]
     },
@@ -681,14 +699,14 @@
       "description": "react monorepo",
       "packageNames": [
         "create-subscription",
+        "jest-react",
         "react-art",
         "react-dom",
         "react-is",
         "react-reconciler",
         "react-test-renderer",
         "react",
-        "scheduler",
-        "simple-cache-provider"
+        "scheduler"
       ]
     },
     "reactrouter": {
@@ -697,7 +715,6 @@
         "react-router-config",
         "react-router-dom",
         "react-router-native",
-        "react-router-redux",
         "react-router"
       ]
     },
