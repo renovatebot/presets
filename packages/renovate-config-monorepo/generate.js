@@ -131,6 +131,9 @@ const dynamicSources = {
   material: {
     repo: 'material-components/material-components-web',
   },
+  'graphql-modules': {
+    repo: 'Urigo/graphql-modules',
+  },
 };
 
 async function go() {
