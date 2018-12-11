@@ -134,6 +134,10 @@ const dynamicSources = {
   'graphql-modules': {
     repo: 'Urigo/graphql-modules',
   },
+  vue: {
+    repo: 'vuejs/vue',
+    includeRoot: true,
+  },
 };
 
 async function go() {

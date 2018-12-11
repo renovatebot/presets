@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.20.0",
+  "version": "0.21.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -742,6 +742,16 @@
       "description": "storybook monorepo",
       "packagePatterns": [
         "^@storybook/"
+      ]
+    },
+    "vue": {
+      "description": "vue monorepo",
+      "packageNames": [
+        "vue-server-renderer",
+        "vue-template-compiler",
+        "weex-template-compiler",
+        "weex-vue-framework",
+        "vue"
       ]
     },
     "wordpress": {
