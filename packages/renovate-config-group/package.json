@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.28.0",
+  "version": "0.29.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -230,6 +230,50 @@
         }
       ]
     },
+    "hibernateCommons": {
+      "description": "Group Java Hibernate Commons packages",
+      "packageRules": [
+        {
+          "packagePatterns": [
+            "^org.hibernate.common:"
+          ],
+          "groupName": "hibernate commons"
+        }
+      ]
+    },
+    "hibernateCore": {
+      "description": "Group Java Hibernate Core packages",
+      "packageRules": [
+        {
+          "packagePatterns": [
+            "^org.hibernate:"
+          ],
+          "groupName": "hibernate core"
+        }
+      ]
+    },
+    "hibernateOgm": {
+      "description": "Group Java Hibernate OGM packages",
+      "packageRules": [
+        {
+          "packagePatterns": [
+            "^org.hibernate.ogm:"
+          ],
+          "groupName": "hibernate ogm"
+        }
+      ]
+    },
+    "hibernateValidator": {
+      "description": "Group Java Hibernate Validator packages",
+      "packageRules": [
+        {
+          "packagePatterns": [
+            "^org.hibernate.validator:"
+          ],
+          "groupName": "hibernate validator"
+        }
+      ]
+    },
     "illuminate": {
       "description": "Group PHP illuminate packages together",
       "packageRules": [
@@ -446,7 +490,11 @@
         "group:polymer",
         "group:illuminate",
         "group:symfony",
-        "group:socketio"
+        "group:socketio",
+        "group:hibernateCore",
+        "group:hibernateValidator",
+        "group:hibernateOgm",
+        "group:hibernateCommons"
       ],
       "ignoreDeps": []
     },

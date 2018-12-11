@@ -38,6 +38,10 @@ module.exports = {
       'group:illuminate',
       'group:symfony',
       'group:socketio',
+      'group:hibernateCore',
+      'group:hibernateValidator',
+      'group:hibernateOgm',
+      'group:hibernateCommons',
     ],
     ignoreDeps: [],
   },
@@ -104,6 +108,42 @@ module.exports = {
       {
         groupName: 'polymer packages',
         packagePatterns: ['^@polymer/'],
+      },
+    ],
+  },
+  hibernateCore: {
+    description: 'Group Java Hibernate Core packages',
+    packageRules: [
+      {
+        packagePatterns: ['^org.hibernate:'],
+        groupName: 'hibernate core',
+      },
+    ],
+  },
+  hibernateValidator: {
+    description: 'Group Java Hibernate Validator packages',
+    packageRules: [
+      {
+        packagePatterns: ['^org.hibernate.validator:'],
+        groupName: 'hibernate validator',
+      },
+    ],
+  },
+  hibernateOgm: {
+    description: 'Group Java Hibernate OGM packages',
+    packageRules: [
+      {
+        packagePatterns: ['^org.hibernate.ogm:'],
+        groupName: 'hibernate ogm',
+      },
+    ],
+  },
+  hibernateCommons: {
+    description: 'Group Java Hibernate Commons packages',
+    packageRules: [
+      {
+        packagePatterns: ['^org.hibernate.common:'],
+        groupName: 'hibernate commons',
       },
     ],
   },
