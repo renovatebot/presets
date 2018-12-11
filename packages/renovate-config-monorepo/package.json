@@ -146,6 +146,7 @@
         "@babel/helper-builder-binary-assignment-operator-visitor",
         "@babel/helper-builder-react-jsx",
         "@babel/helper-call-delegate",
+        "@babel/helper-create-class-features-plugin",
         "@babel/helper-define-map",
         "@babel/helper-explode-assignable-expression",
         "@babel/helper-explode-class",
@@ -187,6 +188,7 @@
         "@babel/plugin-proposal-optional-catch-binding",
         "@babel/plugin-proposal-optional-chaining",
         "@babel/plugin-proposal-pipeline-operator",
+        "@babel/plugin-proposal-private-methods",
         "@babel/plugin-proposal-throw-expressions",
         "@babel/plugin-proposal-unicode-property-regex",
         "@babel/plugin-syntax-async-generators",
@@ -393,7 +395,6 @@
         "@emotion/native",
         "@emotion/primitives-core",
         "@emotion/primitives",
-        "react-emotion",
         "@emotion/serialize",
         "@emotion/sheet",
         "@emotion/styled-base",
@@ -512,8 +513,10 @@
       "description": "graphql-modules monorepo",
       "packageNames": [
         "@graphql-modules/core",
+        "@graphql-modules/di",
         "@graphql-modules/epoxy",
-        "@graphql-modules/sonar"
+        "@graphql-modules/sonar",
+        "@graphql-modules/utils"
       ]
     },
     "graphqlcodegenerator": {
