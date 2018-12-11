@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.27.0",
+  "version": "0.28.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -445,7 +445,8 @@
         "group:fusionjs",
         "group:polymer",
         "group:illuminate",
-        "group:symfony"
+        "group:symfony",
+        "group:socketio"
       ],
       "ignoreDeps": []
     },
@@ -455,6 +456,17 @@
           "description": "Group packages from semantic-release monorepo together",
           "extends": "monorepo:semantic-release",
           "groupName": "semantic-release monorepo"
+        }
+      ]
+    },
+    "socketio": {
+      "description": "Group socket.io packages",
+      "packageRules": [
+        {
+          "groupName": "socket.io packages",
+          "packagePatterns": [
+            "^socket.io"
+          ]
         }
       ]
     },

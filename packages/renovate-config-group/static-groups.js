@@ -37,6 +37,7 @@ module.exports = {
       'group:polymer',
       'group:illuminate',
       'group:symfony',
+      'group:socketio',
     ],
     ignoreDeps: [],
   },
@@ -103,6 +104,15 @@ module.exports = {
       {
         groupName: 'polymer packages',
         packagePatterns: ['^@polymer/'],
+      },
+    ],
+  },
+  socketio: {
+    description: 'Group socket.io packages',
+    packageRules: [
+      {
+        groupName: 'socket.io packages',
+        packagePatterns: ['^socket.io'],
       },
     ],
   },
