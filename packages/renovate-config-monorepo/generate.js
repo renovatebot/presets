@@ -138,6 +138,11 @@ const dynamicSources = {
     repo: 'vuejs/vue',
     includeRoot: true,
   },
+  'vue-cli': {
+    repo: 'vuejs/vue-cli',
+    branch: 'dev',
+    path: 'packages/@vue',
+  },
 };
 
 async function go() {
@@ -162,7 +167,10 @@ async function go() {
       if (item.type === 'dir') {
         const packageJsonUrl = `https://raw.githubusercontent.com/${
           data.repo
-        }/${branch}/${packagesPath}/${item.name}/package.json`;
+        }/${branch}/${packagesPath}/${item.name}/package.json`.replace(
+          /@/g,
+          '%40'
+        );
         try {
           const packageJson = (await got(packageJsonUrl)).body;
           if (

@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.21.0",
+  "version": "0.22.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -752,6 +752,35 @@
         "weex-template-compiler",
         "weex-vue-framework",
         "vue"
+      ]
+    },
+    "vue-cli": {
+      "description": "vue-cli monorepo",
+      "packageNames": [
+        "@vue/babel-preset-app",
+        "@vue/cli-init",
+        "@vue/cli-overlay",
+        "@vue/cli-plugin-babel",
+        "@vue/cli-plugin-e2e-cypress",
+        "@vue/cli-plugin-e2e-nightwatch",
+        "@vue/cli-plugin-eslint",
+        "@vue/cli-plugin-pwa",
+        "@vue/cli-plugin-typescript",
+        "@vue/cli-plugin-unit-jest",
+        "@vue/cli-plugin-unit-mocha",
+        "@vue/cli-service-global",
+        "@vue/cli-service",
+        "@vue/cli-shared-utils",
+        "@vue/cli-test-utils",
+        "@vue/cli-ui-addon-webpack",
+        "@vue/cli-ui-addon-widgets",
+        "@vue/cli-ui",
+        "@vue/cli-upgrade",
+        "@vue/cli",
+        "@vue/eslint-config-airbnb",
+        "@vue/eslint-config-prettier",
+        "@vue/eslint-config-standard",
+        "@vue/eslint-config-typescript"
       ]
     },
     "wordpress": {
