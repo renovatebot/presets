@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.26.0",
+  "version": "0.27.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -350,6 +350,7 @@
         "group:reactrouterMonorepo",
         "group:semantic-releaseMonorepo",
         "group:storybookMonorepo",
+        "group:vueMonorepo",
         "group:wordpressMonorepo"
       ]
     },
@@ -515,6 +516,15 @@
           "minor": {
             "groupName": "unit test packages"
           }
+        }
+      ]
+    },
+    "vueMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from vue monorepo together",
+          "extends": "monorepo:vue",
+          "groupName": "vue monorepo"
         }
       ]
     },
