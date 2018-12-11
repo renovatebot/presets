@@ -172,6 +172,23 @@ async function go() {
         }
       }
     }
+    if (data.includeRoot) {
+      // Now check root of repo
+      try {
+        const packageJsonUrl = `https://raw.githubusercontent.com/${
+          data.repo
+        }/${branch}/package.json`;
+        const packageJson = (await got(packageJsonUrl)).body;
+        if (
+          packageJson.name &&
+          (includePrivatePackage || packageJson.private !== true)
+        ) {
+          packages.push(packageJson.name);
+        }
+      } catch (err) {
+        // No package.json
+      }
+    }
     config[monorepo] = {
       description: `${monorepo} monorepo`,
       packageNames: packages,
