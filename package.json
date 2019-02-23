@@ -30,6 +30,6 @@
     "eslint-plugin-promise": "4.0.1",
     "gh-got": "8.1.0",
     "prettier": "1.16.4",
-    "renovate": "14.27.1"
+    "renovate": "14.28.0"
   }
 }
