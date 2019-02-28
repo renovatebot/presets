@@ -72,6 +72,9 @@ const staticSources = {
   angularmaterial: {
     packageNames: ['@angular/material', '@angular/cdk'],
   },
+  angularcli: {
+    sourceUrlPrefixes: ["https://github.com/angular/angular-cli"],
+  },
 };
 
 const dynamicSources = {
