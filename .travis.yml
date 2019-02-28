@@ -2,12 +2,9 @@ notifications:
   email: false
 
 language: node_js
+cache: yarn
 
 node_js:
-  - "8"
+  - "lts/*"
 
 sudo: false
-
-script:
-  - npm run lint
-  - npm run validate
