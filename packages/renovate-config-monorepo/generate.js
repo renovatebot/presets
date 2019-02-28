@@ -73,7 +73,7 @@ const staticSources = {
     packageNames: ['@angular/material', '@angular/cdk'],
   },
   angularcli: {
-    sourceUrlPrefixes: ["https://github.com/angular/angular-cli"],
+    sourceUrlPrefixes: ['https://github.com/angular/angular-cli'],
   },
 };
 
