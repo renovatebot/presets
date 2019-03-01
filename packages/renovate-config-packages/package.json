@@ -111,6 +111,12 @@
       "extends": [
         "packages:unitTest"
       ]
+    },
+    "gatsby": {
+      "description": "All packages published by Gatsby",
+      "extends": [
+        "monorepo:gatsby"
+      ]
     }
   }
 }
