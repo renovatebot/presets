@@ -14,7 +14,8 @@
   "version": "0.0.1",
   "scripts": {
     "lint": "eslint . --ext .json --ext .js",
-    "validate": "bash validate.sh"
+    "validate": "bash validate.sh",
+    "test": "yarn lint && yarn validate"
   },
   "prettier": {
     "singleQuote": true,
