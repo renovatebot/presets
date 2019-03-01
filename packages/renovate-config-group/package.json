@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.30.0",
+  "version": "0.31.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -74,6 +74,15 @@
           "description": "Group packages from angular monorepo together",
           "extends": "monorepo:angular",
           "groupName": "angular monorepo"
+        }
+      ]
+    },
+    "angularcliMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from angularcli monorepo together",
+          "extends": "monorepo:angularcli",
+          "groupName": "angularcli monorepo"
         }
       ]
     },
@@ -369,6 +378,7 @@
         "group:accountsMonorepo",
         "group:angularMonorepo",
         "group:angular1Monorepo",
+        "group:angularcliMonorepo",
         "group:angularmaterialMonorepo",
         "group:apolloclientMonorepo",
         "group:apollolinkMonorepo",
