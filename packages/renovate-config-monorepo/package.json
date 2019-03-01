@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.22.0",
+  "version": "0.23.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
