@@ -19,6 +19,7 @@
         "@accounts/database-manager",
         "@accounts/mongo",
         "@accounts/redis",
+        "@accounts/typeorm",
         "@accounts/error",
         "@accounts/express-session",
         "@accounts/graphql-api",
@@ -89,6 +90,12 @@
         "@types/angular-sanitize",
         "@types/angular-scenario",
         "@types/angular-touch"
+      ]
+    },
+    "angularcli": {
+      "description": "angularcli monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/angular/angular-cli"
       ]
     },
     "angularmaterial": {
@@ -236,6 +243,7 @@
         "@babel/plugin-transform-modules-commonjs",
         "@babel/plugin-transform-modules-systemjs",
         "@babel/plugin-transform-modules-umd",
+        "@babel/plugin-transform-named-capturing-groups-regex",
         "@babel/plugin-transform-new-target",
         "@babel/plugin-transform-object-assign",
         "@babel/plugin-transform-object-set-prototype-of-to-assign",
@@ -379,6 +387,8 @@
       "description": "emotion monorepo",
       "packageNames": [
         "babel-plugin-emotion",
+        "@emotion/babel-plugin-jsx-pragmatic",
+        "@emotion/babel-preset-css-prop",
         "@emotion/cache",
         "@emotion/core",
         "create-emotion-server",
@@ -487,8 +497,10 @@
         "gatsby-source-medium",
         "gatsby-source-mongodb",
         "gatsby-source-npm-package-search",
+        "gatsby-source-shopify",
         "gatsby-source-wikipedia",
         "gatsby-source-wordpress",
+        "gatsby-transformer-asciidoc",
         "gatsby-transformer-csv",
         "gatsby-transformer-documentationjs",
         "gatsby-transformer-excel",
@@ -514,9 +526,7 @@
       "packageNames": [
         "@graphql-modules/core",
         "@graphql-modules/di",
-        "@graphql-modules/epoxy",
-        "@graphql-modules/sonar",
-        "@graphql-modules/utils"
+        "graphql-modules"
       ]
     },
     "graphqlcodegenerator": {
@@ -539,11 +549,14 @@
         "jest-circus",
         "jest-cli",
         "jest-config",
+        "@jest/core",
         "jest-diff",
         "jest-docblock",
         "jest-each",
         "jest-environment-jsdom",
         "jest-environment-node",
+        "@jest/environment",
+        "@jest/fake-timers",
         "jest-get-type",
         "jest-haste-map",
         "jest-jasmine2",
@@ -554,12 +567,15 @@
         "jest-phabricator",
         "jest-regex-util",
         "jest-repl",
+        "@jest/reporters",
         "jest-resolve-dependencies",
         "jest-resolve",
         "jest-runner",
         "jest-runtime",
         "jest-serializer",
         "jest-snapshot",
+        "@jest/transform",
+        "@jest/types",
         "jest-util",
         "jest-validate",
         "jest-watcher",
@@ -595,11 +611,11 @@
         "@material/drawer",
         "@material/elevation",
         "@material/fab",
+        "@material/feature-targeting",
         "@material/floating-label",
         "@material/form-field",
         "@material/grid-list",
         "@material/icon-button",
-        "@material/icon-toggle",
         "@material/image-list",
         "@material/layout-grid",
         "@material/line-ripple",
@@ -612,7 +628,6 @@
         "@material/ripple",
         "@material/rtl",
         "@material/select",
-        "@material/selection-control",
         "@material/shape",
         "@material/slider",
         "@material/snackbar",
@@ -632,6 +647,7 @@
     "mui": {
       "description": "mui monorepo",
       "packageNames": [
+        "babel-plugin-unwrap-createStyles",
         "eslint-plugin-material-ui",
         "@material-ui/benchmark",
         "@material-ui/codemod",
@@ -639,6 +655,7 @@
         "@material-ui/icons",
         "@material-ui/lab",
         "@material-ui/styles",
+        "@material-ui/system",
         "@material-ui/utils",
         "@material-ui/core"
       ]
@@ -710,6 +727,7 @@
       "description": "react monorepo",
       "packageNames": [
         "create-subscription",
+        "eslint-plugin-react-hooks",
         "jest-react",
         "react-art",
         "react-dom",
