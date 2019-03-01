@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.22.0",
+  "version": "0.23.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -90,6 +90,12 @@
         "@types/angular-sanitize",
         "@types/angular-scenario",
         "@types/angular-touch"
+      ]
+    },
+    "angularcli": {
+      "description": "angularcli monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/angular/angular-cli"
       ]
     },
     "angularmaterial": {
@@ -520,9 +526,7 @@
       "packageNames": [
         "@graphql-modules/core",
         "@graphql-modules/di",
-        "@graphql-modules/epoxy",
-        "@graphql-modules/sonar",
-        "@graphql-modules/utils"
+        "graphql-modules"
       ]
     },
     "graphqlcodegenerator": {
@@ -545,11 +549,14 @@
         "jest-circus",
         "jest-cli",
         "jest-config",
+        "@jest/core",
         "jest-diff",
         "jest-docblock",
         "jest-each",
         "jest-environment-jsdom",
         "jest-environment-node",
+        "@jest/environment",
+        "@jest/fake-timers",
         "jest-get-type",
         "jest-haste-map",
         "jest-jasmine2",
@@ -560,12 +567,15 @@
         "jest-phabricator",
         "jest-regex-util",
         "jest-repl",
+        "@jest/reporters",
         "jest-resolve-dependencies",
         "jest-resolve",
         "jest-runner",
         "jest-runtime",
         "jest-serializer",
         "jest-snapshot",
+        "@jest/transform",
+        "@jest/types",
         "jest-util",
         "jest-validate",
         "jest-watcher",
@@ -606,7 +616,6 @@
         "@material/form-field",
         "@material/grid-list",
         "@material/icon-button",
-        "@material/icon-toggle",
         "@material/image-list",
         "@material/layout-grid",
         "@material/line-ripple",
@@ -619,7 +628,6 @@
         "@material/ripple",
         "@material/rtl",
         "@material/select",
-        "@material/selection-control",
         "@material/shape",
         "@material/slider",
         "@material/snackbar",
@@ -639,6 +647,7 @@
     "mui": {
       "description": "mui monorepo",
       "packageNames": [
+        "babel-plugin-unwrap-createStyles",
         "eslint-plugin-material-ui",
         "@material-ui/benchmark",
         "@material-ui/codemod",
@@ -718,6 +727,7 @@
       "description": "react monorepo",
       "packageNames": [
         "create-subscription",
+        "eslint-plugin-react-hooks",
         "jest-react",
         "react-art",
         "react-dom",
