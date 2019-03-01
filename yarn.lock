@@ -4227,10 +4227,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@14.33.4:
-  version "14.33.4"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-14.33.4.tgz#2cac5e277d258765ffe1210697f3c99aec0550f9"
-  integrity sha512-1oaUBCoEAFzpNsBN7pKc2LJgWGSpyo7N4PbxiXsyPUXgZLMz3XDRDsi8F1ZPRnwVzT4GwTMZ4w3um/NnWj4XUA==
+renovate@14.33.5:
+  version "14.33.5"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-14.33.5.tgz#071b2e90b098c875bc0ff49342ec1b9774338465"
+  integrity sha512-pgU9jROx3+wbXIAKzyp575dwwKXk580LX1uTwdQ5o5jOxO+crXM87UTCPzZpm4RJgHxzWIG3/b04qfZIWC+rVw==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
