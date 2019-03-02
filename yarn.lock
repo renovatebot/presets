@@ -2786,10 +2786,10 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-luxon@1.11.2:
-  version "1.11.2"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.11.2.tgz#0073566e8b6f493d68891c6b871dd72196547c24"
-  integrity sha512-dD6sJotzprPhqJAp9eZbc1y1cc0CMiwRabsaEfFBJT2lRkWdOqJe3QmxB8GNwjOHZ6fciuGiLK3htgxZgphGxA==
+luxon@1.11.3:
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.11.3.tgz#e1542026473f708b03b102d475be64b2a3055a6e"
+  integrity sha512-/0jMa+JfTRBx1ixsSBs5ZPAQ32H+TPeP9BvgRf0Gi4VxCqhUpRNWagwupy6wA8MckazneKWBLCcwwAH8hkQamg==
 
 make-dir@^1.0.0:
   version "1.3.0"
@@ -4235,10 +4235,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@14.34.1:
-  version "14.34.1"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-14.34.1.tgz#7150cdeb73c3a7d5ca31bf9fdcbc56da4a20c55e"
-  integrity sha512-olA4rz581eJaXmitdrwic0eXBp+YJo5iUKXFi9sl0fe6oW019Vyd1Jo5NN/mXnniAX0TGooEXrBpaWfdTtNMmg==
+renovate@14.34.2:
+  version "14.34.2"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-14.34.2.tgz#481d3073727a90b24de2188d9a2013f2cc8e16ec"
+  integrity sha512-C7Ah0IKjHxa04OdNbwQ7Sqkn59/53Q+fDUYDyoz0If9csSBwqCtYf4SIlWFy/inQ71aHbF6+BpjNK4LDW5VkHQ==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4276,7 +4276,7 @@ renovate@14.34.1:
     later "1.2.0"
     linkify-markdown "1.0.0"
     lodash "4.17.11"
-    luxon "1.11.2"
+    luxon "1.11.3"
     markdown-it "8.4.2"
     minimatch "3.0.4"
     moment "2.24.0"
