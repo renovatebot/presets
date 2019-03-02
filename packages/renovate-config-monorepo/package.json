@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.23.0",
+  "version": "0.24.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -33,6 +33,18 @@
         "@accounts/server",
         "@accounts/two-factor",
         "@accounts/types"
+      ]
+    },
+    "ag-grid": {
+      "description": "ag-grid monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/ag-grid/ag-grid"
+      ]
+    },
+    "algolia-react-instantsearch": {
+      "description": "algolia-react-instantsearch monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/algolia/react-instantsearch"
       ]
     },
     "angular": {
@@ -132,6 +144,12 @@
         "apollo-link-ws",
         "apollo-link",
         "zen-observable-ts"
+      ]
+    },
+    "aws-java-sdk": {
+      "description": "aws-java-sdk monorepo",
+      "packagePatterns": [
+        "^com.amazonaws:aws-java-sdk-"
       ]
     },
     "awsappsync": {
@@ -374,6 +392,18 @@
         "baset"
       ]
     },
+    "bugsnag-js": {
+      "description": "bugsnag-js monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/bugsnag/bugsnag-js"
+      ]
+    },
+    "capacitor": {
+      "description": "capacitor monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/ionic-team/capacitor"
+      ]
+    },
     "commitlint": {
       "description": "commitlint monorepo",
       "packageNames": [
@@ -381,6 +411,12 @@
       ],
       "packagePatterns": [
         "^@commitlint/"
+      ]
+    },
+    "devextreme-reactive": {
+      "description": "devextreme-reactive monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/DevExpress/devextreme-reactive"
       ]
     },
     "emotion": {
@@ -415,10 +451,22 @@
         "@emotion/weak-memoize"
       ]
     },
+    "expo": {
+      "description": "expo monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/expo/expo"
+      ]
+    },
     "fimbullinter": {
       "description": "fimbullinter monorepo",
       "packagePatterns": [
         "^@fimbul/"
+      ]
+    },
+    "flopflip": {
+      "description": "flopflip monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/tdeekens/flopflip"
       ]
     },
     "gatsby": {
@@ -536,6 +584,12 @@
         "graphql-codegen-core"
       ]
     },
+    "ionic-native": {
+      "description": "ionic-native monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/ionic-team/ionic-native"
+      ]
+    },
     "jest": {
       "description": "jest monorepo",
       "packageNames": [
@@ -644,6 +698,12 @@
         "@material/typography"
       ]
     },
+    "mdx": {
+      "description": "mdx monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/mdx-js/mdx"
+      ]
+    },
     "mui": {
       "description": "mui monorepo",
       "packageNames": [
@@ -676,6 +736,12 @@
       ],
       "packagePatterns": [
         "^@ngrx/"
+      ]
+    },
+    "ngxs-store": {
+      "description": "ngxs-store monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/ngxs/store"
       ]
     },
     "nrwl": {
@@ -738,6 +804,12 @@
         "scheduler"
       ]
     },
+    "react-dnd": {
+      "description": "react-dnd monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/react-dnd/react-dnd"
+      ]
+    },
     "reactrouter": {
       "description": "reactrouter monorepo",
       "packageNames": [
@@ -756,10 +828,52 @@
         "^@semantic-release/"
       ]
     },
+    "sentry": {
+      "description": "sentry monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/getsentry/sentry-javascript"
+      ]
+    },
     "storybook": {
       "description": "storybook monorepo",
       "packagePatterns": [
         "^@storybook/"
+      ]
+    },
+    "strapi": {
+      "description": "strapi monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/strapi/strapi"
+      ]
+    },
+    "stryker": {
+      "description": "stryker monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/stryker-mutator/stryker"
+      ]
+    },
+    "telus-tds": {
+      "description": "telus-tds monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/telusdigital/tds"
+      ]
+    },
+    "typefaces": {
+      "description": "typefaces monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/KyleAMathews/typefaces"
+      ]
+    },
+    "typography-js": {
+      "description": "typography-js monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/KyleAMathews/typography.js"
+      ]
+    },
+    "uppy": {
+      "description": "uppy monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/transloadit/uppy"
       ]
     },
     "vue": {
@@ -805,6 +919,12 @@
       "description": "wordpress monorepo",
       "packagePatterns": [
         "^@wordpress/"
+      ]
+    },
+    "workbox": {
+      "description": "workbox monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/googlechrome/workbox"
       ]
     }
   }

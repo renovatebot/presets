@@ -75,6 +75,66 @@ const staticSources = {
   angularcli: {
     sourceUrlPrefixes: ['https://github.com/angular/angular-cli'],
   },
+  'bugsnag-js': {
+    sourceUrlPrefixes: ['https://github.com/bugsnag/bugsnag-js'],
+  },
+  flopflip: {
+    sourceUrlPrefixes: ['https://github.com/tdeekens/flopflip'],
+  },
+  uppy: {
+    sourceUrlPrefixes: ['https://github.com/transloadit/uppy'],
+  },
+  strapi: {
+    sourceUrlPrefixes: ['https://github.com/strapi/strapi'],
+  },
+  'telus-tds': {
+    sourceUrlPrefixes: ['https://github.com/telusdigital/tds'],
+  },
+  'devextreme-reactive': {
+    sourceUrlPrefixes: ['https://github.com/DevExpress/devextreme-reactive'],
+  },
+  'react-dnd': {
+    sourceUrlPrefixes: ['https://github.com/react-dnd/react-dnd'],
+  },
+  'ag-grid': {
+    sourceUrlPrefixes: ['https://github.com/ag-grid/ag-grid'],
+  },
+  stryker: {
+    sourceUrlPrefixes: ['https://github.com/stryker-mutator/stryker'],
+  },
+  'typography-js': {
+    sourceUrlPrefixes: ['https://github.com/KyleAMathews/typography.js'],
+  },
+  'aws-java-sdk': {
+    packagePatterns: ['^com.amazonaws:aws-java-sdk-'],
+  },
+  capacitor: {
+    sourceUrlPrefixes: ['https://github.com/ionic-team/capacitor'],
+  },
+  'algolia-react-instantsearch': {
+    sourceUrlPrefixes: ['https://github.com/algolia/react-instantsearch'],
+  },
+  typefaces: {
+    sourceUrlPrefixes: ['https://github.com/KyleAMathews/typefaces'],
+  },
+  expo: {
+    sourceUrlPrefixes: ['https://github.com/expo/expo'],
+  },
+  'ionic-native': {
+    sourceUrlPrefixes: ['https://github.com/ionic-team/ionic-native'],
+  },
+  'ngxs-store': {
+    sourceUrlPrefixes: ['https://github.com/ngxs/store'],
+  },
+  mdx: {
+    sourceUrlPrefixes: ['https://github.com/mdx-js/mdx'],
+  },
+  workbox: {
+    sourceUrlPrefixes: ['https://github.com/googlechrome/workbox'],
+  },
+  sentry: {
+    sourceUrlPrefixes: ['https://github.com/getsentry/sentry-javascript'],
+  },
 };
 
 const dynamicSources = {
