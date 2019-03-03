@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.31.0",
+  "version": "0.32.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -15,6 +15,24 @@
           "description": "Group packages from accounts monorepo together",
           "extends": "monorepo:accounts",
           "groupName": "accounts monorepo"
+        }
+      ]
+    },
+    "ag-gridMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from ag-grid monorepo together",
+          "extends": "monorepo:ag-grid",
+          "groupName": "ag-grid monorepo"
+        }
+      ]
+    },
+    "algolia-react-instantsearchMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from algolia-react-instantsearch monorepo together",
+          "extends": "monorepo:algolia-react-instantsearch",
+          "groupName": "algolia-react-instantsearch monorepo"
         }
       ]
     },
@@ -113,6 +131,15 @@
         }
       ]
     },
+    "aws-java-sdkMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from aws-java-sdk monorepo together",
+          "extends": "monorepo:aws-java-sdk",
+          "groupName": "aws-java-sdk monorepo"
+        }
+      ]
+    },
     "awsappsyncMonorepo": {
       "packageRules": [
         {
@@ -149,6 +176,24 @@
         }
       ]
     },
+    "bugsnag-jsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from bugsnag-js monorepo together",
+          "extends": "monorepo:bugsnag-js",
+          "groupName": "bugsnag-js monorepo"
+        }
+      ]
+    },
+    "capacitorMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from capacitor monorepo together",
+          "extends": "monorepo:capacitor",
+          "groupName": "capacitor monorepo"
+        }
+      ]
+    },
     "commitlintMonorepo": {
       "packageRules": [
         {
@@ -169,6 +214,15 @@
         }
       ]
     },
+    "devextreme-reactiveMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from devextreme-reactive monorepo together",
+          "extends": "monorepo:devextreme-reactive",
+          "groupName": "devextreme-reactive monorepo"
+        }
+      ]
+    },
     "emotionMonorepo": {
       "packageRules": [
         {
@@ -178,12 +232,30 @@
         }
       ]
     },
+    "expoMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from expo monorepo together",
+          "extends": "monorepo:expo",
+          "groupName": "expo monorepo"
+        }
+      ]
+    },
     "fimbullinterMonorepo": {
       "packageRules": [
         {
           "description": "Group packages from fimbullinter monorepo together",
           "extends": "monorepo:fimbullinter",
           "groupName": "fimbullinter monorepo"
+        }
+      ]
+    },
+    "flopflipMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from flopflip monorepo together",
+          "extends": "monorepo:flopflip",
+          "groupName": "flopflip monorepo"
         }
       ]
     },
@@ -295,6 +367,15 @@
         }
       ]
     },
+    "ionic-nativeMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from ionic-native monorepo together",
+          "extends": "monorepo:ionic-native",
+          "groupName": "ionic-native monorepo"
+        }
+      ]
+    },
     "jestMonorepo": {
       "packageRules": [
         {
@@ -371,42 +452,71 @@
         }
       ]
     },
+    "mdxMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from mdx monorepo together",
+          "extends": "monorepo:mdx",
+          "groupName": "mdx monorepo"
+        }
+      ]
+    },
     "monorepos": {
       "description": "Group known monorepo packages together",
       "ignoreDeps": [],
       "extends": [
         "group:accountsMonorepo",
+        "group:ag-gridMonorepo",
+        "group:algolia-react-instantsearchMonorepo",
         "group:angularMonorepo",
         "group:angular1Monorepo",
         "group:angularcliMonorepo",
         "group:angularmaterialMonorepo",
         "group:apolloclientMonorepo",
         "group:apollolinkMonorepo",
+        "group:aws-java-sdkMonorepo",
         "group:awsappsyncMonorepo",
         "group:babelMonorepo",
         "group:babel6Monorepo",
         "group:basetMonorepo",
+        "group:bugsnag-jsMonorepo",
+        "group:capacitorMonorepo",
         "group:commitlintMonorepo",
+        "group:devextreme-reactiveMonorepo",
         "group:emotionMonorepo",
+        "group:expoMonorepo",
         "group:fimbullinterMonorepo",
+        "group:flopflipMonorepo",
         "group:gatsbyMonorepo",
         "group:graphql-modulesMonorepo",
         "group:graphqlcodegeneratorMonorepo",
+        "group:ionic-nativeMonorepo",
         "group:jestMonorepo",
         "group:lodashMonorepo",
         "group:materialMonorepo",
+        "group:mdxMonorepo",
         "group:muiMonorepo",
         "group:neutrinoMonorepo",
         "group:ngrxMonorepo",
+        "group:ngxs-storeMonorepo",
         "group:nrwlMonorepo",
         "group:pouchdbMonorepo",
         "group:reactMonorepo",
+        "group:react-dndMonorepo",
         "group:reactrouterMonorepo",
         "group:semantic-releaseMonorepo",
+        "group:sentryMonorepo",
         "group:storybookMonorepo",
+        "group:strapiMonorepo",
+        "group:strykerMonorepo",
+        "group:telus-tdsMonorepo",
+        "group:typefacesMonorepo",
+        "group:typography-jsMonorepo",
+        "group:uppyMonorepo",
         "group:vueMonorepo",
         "group:vue-cliMonorepo",
-        "group:wordpressMonorepo"
+        "group:wordpressMonorepo",
+        "group:workboxMonorepo"
       ]
     },
     "muiMonorepo": {
@@ -433,6 +543,15 @@
           "description": "Group packages from ngrx monorepo together",
           "extends": "monorepo:ngrx",
           "groupName": "ngrx monorepo"
+        }
+      ]
+    },
+    "ngxs-storeMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from ngxs-store monorepo together",
+          "extends": "monorepo:ngxs-store",
+          "groupName": "ngxs-store monorepo"
         }
       ]
     },
@@ -471,6 +590,15 @@
           "description": "Group packages from pouchdb monorepo together",
           "extends": "monorepo:pouchdb",
           "groupName": "pouchdb monorepo"
+        }
+      ]
+    },
+    "react-dndMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from react-dnd monorepo together",
+          "extends": "monorepo:react-dnd",
+          "groupName": "react-dnd monorepo"
         }
       ]
     },
@@ -518,6 +646,15 @@
         }
       ]
     },
+    "sentryMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from sentry monorepo together",
+          "extends": "monorepo:sentry",
+          "groupName": "sentry monorepo"
+        }
+      ]
+    },
     "socketio": {
       "description": "Group socket.io packages",
       "packageRules": [
@@ -538,6 +675,24 @@
         }
       ]
     },
+    "strapiMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from strapi monorepo together",
+          "extends": "monorepo:strapi",
+          "groupName": "strapi monorepo"
+        }
+      ]
+    },
+    "strykerMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from stryker monorepo together",
+          "extends": "monorepo:stryker",
+          "groupName": "stryker monorepo"
+        }
+      ]
+    },
     "symfony": {
       "description": "Group PHP symfony packages together",
       "packageRules": [
@@ -547,6 +702,15 @@
           ],
           "groupName": "symfony packages",
           "groupSlug": "symfony"
+        }
+      ]
+    },
+    "telus-tdsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from telus-tds monorepo together",
+          "extends": "monorepo:telus-tds",
+          "groupName": "telus-tds monorepo"
         }
       ]
     },
@@ -570,6 +734,24 @@
         }
       ]
     },
+    "typefacesMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from typefaces monorepo together",
+          "extends": "monorepo:typefaces",
+          "groupName": "typefaces monorepo"
+        }
+      ]
+    },
+    "typography-jsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from typography-js monorepo together",
+          "extends": "monorepo:typography-js",
+          "groupName": "typography-js monorepo"
+        }
+      ]
+    },
     "unitTest": {
       "description": "Group all unit test packages together",
       "packageRules": [
@@ -587,6 +769,15 @@
           "minor": {
             "groupName": "unit test packages"
           }
+        }
+      ]
+    },
+    "uppyMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from uppy monorepo together",
+          "extends": "monorepo:uppy",
+          "groupName": "uppy monorepo"
         }
       ]
     },
@@ -614,6 +805,15 @@
           "description": "Group packages from wordpress monorepo together",
           "extends": "monorepo:wordpress",
           "groupName": "wordpress monorepo"
+        }
+      ]
+    },
+    "workboxMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from workbox monorepo together",
+          "extends": "monorepo:workbox",
+          "groupName": "workbox monorepo"
         }
       ]
     }
