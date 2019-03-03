@@ -135,6 +135,59 @@ const staticSources = {
   sentry: {
     sourceUrlPrefixes: ['https://github.com/getsentry/sentry-javascript'],
   },
+  lingui: {
+    sourceUrlPrefixes: ['https://github.com/lingui/js-lingui'],
+  },
+  'typescript-eslint': {
+    sourceUrlPrefixes: [
+      'https://github.com/typescript-eslint/typescript-eslint',
+    ],
+  },
+  nest: {
+    sourceUrlPrefixes: ['https://github.com/nestjs/nest'],
+  },
+  'ember-decorators': {
+    sourceUrlPrefixes: ['https://github.com/ember-decorators/ember-decorators'],
+  },
+  'apollo-server': {
+    sourceUrlPrefixes: ['https://github.com/apollographql/apollo-server'],
+  },
+  surveyjs: {
+    sourceUrlPrefixes: ['https://github.com/surveyjs/surveyjs'],
+  },
+  'aspnet Extensions': {
+    sourceUrlPrefixes: ['https://github.com/aspnet/Extensions'],
+  },
+  framework7: {
+    sourceUrlPrefixes: ['https://github.com/framework7io/framework7'],
+  },
+  emotion: {
+    sourceUrlPrefixes: ['https://github.com/emotion-js/emotion'],
+  },
+  picasso: {
+    sourceUrlPrefixes: ['https://github.com/qlik-oss/picasso.js'],
+  },
+  clarity: {
+    sourceUrlPrefixes: ['https://github.com/vmware/clarity'],
+  },
+  infrastructure: {
+    sourceUrlPrefixes: ['https://github.com/instructure/instructure-ui'],
+  },
+  webdriverio: {
+    sourceUrlPrefixes: ['https://github.com/webdriverio/webdriverio'],
+  },
+  'reactivestack-cookies': {
+    sourceUrlPrefixes: ['https://github.com/reactivestack/cookies'],
+  },
+  router5: {
+    sourceUrlPrefixes: ['https://github.com/router5/router5'],
+  },
+  lerna: {
+    sourceUrlPrefixes: ['https://github.com/lerna/lerna'],
+  },
+  'electron-forge': {
+    sourceUrlPrefixes: ['https://github.com/electron-userland/electron-forge'],
+  },
 };
 
 const dynamicSources = {

@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.24.0",
+  "version": "0.25.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -117,6 +117,12 @@
         "@angular/cdk"
       ]
     },
+    "apollo-server": {
+      "description": "apollo-server monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/apollographql/apollo-server"
+      ]
+    },
     "apolloclient": {
       "description": "apolloclient monorepo",
       "packageNames": [
@@ -144,6 +150,12 @@
         "apollo-link-ws",
         "apollo-link",
         "zen-observable-ts"
+      ]
+    },
+    "aspnet Extensions": {
+      "description": "aspnet Extensions monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/aspnet/Extensions"
       ]
     },
     "aws-java-sdk": {
@@ -404,6 +416,12 @@
         "https://github.com/ionic-team/capacitor"
       ]
     },
+    "clarity": {
+      "description": "clarity monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/vmware/clarity"
+      ]
+    },
     "commitlint": {
       "description": "commitlint monorepo",
       "packageNames": [
@@ -417,6 +435,18 @@
       "description": "devextreme-reactive monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/DevExpress/devextreme-reactive"
+      ]
+    },
+    "electron-forge": {
+      "description": "electron-forge monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/electron-userland/electron-forge"
+      ]
+    },
+    "ember-decorators": {
+      "description": "ember-decorators monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/ember-decorators/ember-decorators"
       ]
     },
     "emotion": {
@@ -467,6 +497,12 @@
       "description": "flopflip monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/tdeekens/flopflip"
+      ]
+    },
+    "framework7": {
+      "description": "framework7 monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/framework7io/framework7"
       ]
     },
     "gatsby": {
@@ -584,6 +620,12 @@
         "graphql-codegen-core"
       ]
     },
+    "infrastructure": {
+      "description": "infrastructure monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/instructure/instructure-ui"
+      ]
+    },
     "ionic-native": {
       "description": "ionic-native monorepo",
       "sourceUrlPrefixes": [
@@ -636,6 +678,18 @@
         "jest-worker",
         "jest",
         "pretty-format"
+      ]
+    },
+    "lerna": {
+      "description": "lerna monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/lerna/lerna"
+      ]
+    },
+    "lingui": {
+      "description": "lingui monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/lingui/js-lingui"
       ]
     },
     "lodash": {
@@ -720,6 +774,12 @@
         "@material-ui/core"
       ]
     },
+    "nest": {
+      "description": "nest monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/nestjs/nest"
+      ]
+    },
     "neutrino": {
       "description": "neutrino monorepo",
       "packageNames": [
@@ -751,6 +811,12 @@
       ],
       "packagePatterns": [
         "^@nrwl/"
+      ]
+    },
+    "picasso": {
+      "description": "picasso monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/qlik-oss/picasso.js"
       ]
     },
     "pouchdb": {
@@ -810,6 +876,12 @@
         "https://github.com/react-dnd/react-dnd"
       ]
     },
+    "reactivestack-cookies": {
+      "description": "reactivestack-cookies monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/reactivestack/cookies"
+      ]
+    },
     "reactrouter": {
       "description": "reactrouter monorepo",
       "packageNames": [
@@ -817,6 +889,12 @@
         "react-router-dom",
         "react-router-native",
         "react-router"
+      ]
+    },
+    "router5": {
+      "description": "router5 monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/router5/router5"
       ]
     },
     "semantic-release": {
@@ -852,6 +930,12 @@
         "https://github.com/stryker-mutator/stryker"
       ]
     },
+    "surveyjs": {
+      "description": "surveyjs monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/surveyjs/surveyjs"
+      ]
+    },
     "telus-tds": {
       "description": "telus-tds monorepo",
       "sourceUrlPrefixes": [
@@ -862,6 +946,12 @@
       "description": "typefaces monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/KyleAMathews/typefaces"
+      ]
+    },
+    "typescript-eslint": {
+      "description": "typescript-eslint monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/typescript-eslint/typescript-eslint"
       ]
     },
     "typography-js": {
@@ -913,6 +1003,12 @@
         "@vue/eslint-config-prettier",
         "@vue/eslint-config-standard",
         "@vue/eslint-config-typescript"
+      ]
+    },
+    "webdriverio": {
+      "description": "webdriverio monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/webdriverio/webdriverio"
       ]
     },
     "wordpress": {
