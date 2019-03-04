@@ -36,6 +36,10 @@ const staticSources = {
       '@types/angular-touch',
     ],
   },
+  'aws-cdk': {
+    packageNames: ['aws-cdk', 'decdk', 'simple-resource-bundler'],
+    packagePatterns: ['^@aws-cdk/'],
+  },
   commitlint: {
     packageNames: ['commitlint'],
     packagePatterns: ['^@commitlint/'],
