@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.32.0",
+  "version": "0.33.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -113,6 +113,15 @@
         }
       ]
     },
+    "apollo-serverMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from apollo-server monorepo together",
+          "extends": "monorepo:apollo-server",
+          "groupName": "apollo-server monorepo"
+        }
+      ]
+    },
     "apolloclientMonorepo": {
       "packageRules": [
         {
@@ -128,6 +137,15 @@
           "description": "Group packages from apollolink monorepo together",
           "extends": "monorepo:apollolink",
           "groupName": "apollolink monorepo"
+        }
+      ]
+    },
+    "aspnet ExtensionsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from aspnet Extensions monorepo together",
+          "extends": "monorepo:aspnet Extensions",
+          "groupName": "aspnet Extensions monorepo"
         }
       ]
     },
@@ -194,6 +212,15 @@
         }
       ]
     },
+    "clarityMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from clarity monorepo together",
+          "extends": "monorepo:clarity",
+          "groupName": "clarity monorepo"
+        }
+      ]
+    },
     "commitlintMonorepo": {
       "packageRules": [
         {
@@ -220,6 +247,24 @@
           "description": "Group packages from devextreme-reactive monorepo together",
           "extends": "monorepo:devextreme-reactive",
           "groupName": "devextreme-reactive monorepo"
+        }
+      ]
+    },
+    "electron-forgeMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from electron-forge monorepo together",
+          "extends": "monorepo:electron-forge",
+          "groupName": "electron-forge monorepo"
+        }
+      ]
+    },
+    "ember-decoratorsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from ember-decorators monorepo together",
+          "extends": "monorepo:ember-decorators",
+          "groupName": "ember-decorators monorepo"
         }
       ]
     },
@@ -267,6 +312,15 @@
           "packagePatterns": [
             "^@fortawesome/"
           ]
+        }
+      ]
+    },
+    "framework7Monorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from framework7 monorepo together",
+          "extends": "monorepo:framework7",
+          "groupName": "framework7 monorepo"
         }
       ]
     },
@@ -367,6 +421,15 @@
         }
       ]
     },
+    "infrastructureMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from infrastructure monorepo together",
+          "extends": "monorepo:infrastructure",
+          "groupName": "infrastructure monorepo"
+        }
+      ]
+    },
     "ionic-nativeMonorepo": {
       "packageRules": [
         {
@@ -425,6 +488,24 @@
         }
       ]
     },
+    "lernaMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from lerna monorepo together",
+          "extends": "monorepo:lerna",
+          "groupName": "lerna monorepo"
+        }
+      ]
+    },
+    "linguiMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from lingui monorepo together",
+          "extends": "monorepo:lingui",
+          "groupName": "lingui monorepo"
+        }
+      ]
+    },
     "linters": {
       "description": "Group various lint packages together",
       "packageRules": [
@@ -472,8 +553,10 @@
         "group:angular1Monorepo",
         "group:angularcliMonorepo",
         "group:angularmaterialMonorepo",
+        "group:apollo-serverMonorepo",
         "group:apolloclientMonorepo",
         "group:apollolinkMonorepo",
+        "group:aspnet ExtensionsMonorepo",
         "group:aws-java-sdkMonorepo",
         "group:awsappsyncMonorepo",
         "group:babelMonorepo",
@@ -481,40 +564,54 @@
         "group:basetMonorepo",
         "group:bugsnag-jsMonorepo",
         "group:capacitorMonorepo",
+        "group:clarityMonorepo",
         "group:commitlintMonorepo",
         "group:devextreme-reactiveMonorepo",
+        "group:electron-forgeMonorepo",
+        "group:ember-decoratorsMonorepo",
         "group:emotionMonorepo",
         "group:expoMonorepo",
         "group:fimbullinterMonorepo",
         "group:flopflipMonorepo",
+        "group:framework7Monorepo",
         "group:gatsbyMonorepo",
         "group:graphql-modulesMonorepo",
         "group:graphqlcodegeneratorMonorepo",
+        "group:infrastructureMonorepo",
         "group:ionic-nativeMonorepo",
         "group:jestMonorepo",
+        "group:lernaMonorepo",
+        "group:linguiMonorepo",
         "group:lodashMonorepo",
         "group:materialMonorepo",
         "group:mdxMonorepo",
         "group:muiMonorepo",
+        "group:nestMonorepo",
         "group:neutrinoMonorepo",
         "group:ngrxMonorepo",
         "group:ngxs-storeMonorepo",
         "group:nrwlMonorepo",
+        "group:picassoMonorepo",
         "group:pouchdbMonorepo",
         "group:reactMonorepo",
         "group:react-dndMonorepo",
+        "group:reactivestack-cookiesMonorepo",
         "group:reactrouterMonorepo",
+        "group:router5Monorepo",
         "group:semantic-releaseMonorepo",
         "group:sentryMonorepo",
         "group:storybookMonorepo",
         "group:strapiMonorepo",
         "group:strykerMonorepo",
+        "group:surveyjsMonorepo",
         "group:telus-tdsMonorepo",
         "group:typefacesMonorepo",
+        "group:typescript-eslintMonorepo",
         "group:typography-jsMonorepo",
         "group:uppyMonorepo",
         "group:vueMonorepo",
         "group:vue-cliMonorepo",
+        "group:webdriverioMonorepo",
         "group:wordpressMonorepo",
         "group:workboxMonorepo"
       ]
@@ -525,6 +622,15 @@
           "description": "Group packages from mui monorepo together",
           "extends": "monorepo:mui",
           "groupName": "mui monorepo"
+        }
+      ]
+    },
+    "nestMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from nest monorepo together",
+          "extends": "monorepo:nest",
+          "groupName": "nest monorepo"
         }
       ]
     },
@@ -561,6 +667,15 @@
           "description": "Group packages from nrwl monorepo together",
           "extends": "monorepo:nrwl",
           "groupName": "nrwl monorepo"
+        }
+      ]
+    },
+    "picassoMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from picasso monorepo together",
+          "extends": "monorepo:picasso",
+          "groupName": "picasso monorepo"
         }
       ]
     },
@@ -611,6 +726,15 @@
         }
       ]
     },
+    "reactivestack-cookiesMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from reactivestack-cookies monorepo together",
+          "extends": "monorepo:reactivestack-cookies",
+          "groupName": "reactivestack-cookies monorepo"
+        }
+      ]
+    },
     "reactrouterMonorepo": {
       "packageRules": [
         {
@@ -636,6 +760,15 @@
         "group:hibernateCommons"
       ],
       "ignoreDeps": []
+    },
+    "router5Monorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from router5 monorepo together",
+          "extends": "monorepo:router5",
+          "groupName": "router5 monorepo"
+        }
+      ]
     },
     "semantic-releaseMonorepo": {
       "packageRules": [
@@ -693,6 +826,15 @@
         }
       ]
     },
+    "surveyjsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from surveyjs monorepo together",
+          "extends": "monorepo:surveyjs",
+          "groupName": "surveyjs monorepo"
+        }
+      ]
+    },
     "symfony": {
       "description": "Group PHP symfony packages together",
       "packageRules": [
@@ -740,6 +882,15 @@
           "description": "Group packages from typefaces monorepo together",
           "extends": "monorepo:typefaces",
           "groupName": "typefaces monorepo"
+        }
+      ]
+    },
+    "typescript-eslintMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from typescript-eslint monorepo together",
+          "extends": "monorepo:typescript-eslint",
+          "groupName": "typescript-eslint monorepo"
         }
       ]
     },
@@ -796,6 +947,15 @@
           "description": "Group packages from vue monorepo together",
           "extends": "monorepo:vue",
           "groupName": "vue monorepo"
+        }
+      ]
+    },
+    "webdriverioMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from webdriverio monorepo together",
+          "extends": "monorepo:webdriverio",
+          "groupName": "webdriverio monorepo"
         }
       ]
     },
