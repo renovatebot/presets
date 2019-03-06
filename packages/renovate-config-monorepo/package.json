@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.26.0",
+  "version": "0.26.1",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -618,7 +618,8 @@
     "graphqlcodegenerator": {
       "description": "graphqlcodegenerator monorepo",
       "sourceUrlPrefixes": [
-        "https://github.com/dotansimha/graphql-code-generator"
+        "https://github.com/dotansimha/graphql-code-generator",
+        "https://github.com/dotansimha/graphql-codegen"
       ]
     },
     "infrastructure": {

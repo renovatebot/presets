@@ -189,7 +189,10 @@ const staticSources = {
     sourceUrlPrefixes: ['https://github.com/electron-userland/electron-forge'],
   },
   graphqlcodegenerator: {
-    sourceUrlPrefixes: ['https://github.com/dotansimha/graphql-code-generator'],
+    sourceUrlPrefixes: [
+      'https://github.com/dotansimha/graphql-code-generator',
+      'https://github.com/dotansimha/graphql-codegen',
+    ],
   },
 };
 
