@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.25.0",
+  "version": "0.26.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -248,6 +248,7 @@
         "@babel/plugin-syntax-object-rest-spread",
         "@babel/plugin-syntax-optional-catch-binding",
         "@babel/plugin-syntax-optional-chaining",
+        "@babel/plugin-syntax-partial-application",
         "@babel/plugin-syntax-pipeline-operator",
         "@babel/plugin-syntax-throw-expressions",
         "@babel/plugin-syntax-typescript",
@@ -513,6 +514,7 @@
         "babel-preset-gatsby",
         "gatsby-cli",
         "gatsby-codemods",
+        "gatsby-cypress",
         "gatsby-dev-cli",
         "gatsby-image",
         "gatsby-link",
@@ -615,9 +617,8 @@
     },
     "graphqlcodegenerator": {
       "description": "graphqlcodegenerator monorepo",
-      "packageNames": [
-        "graphql-code-generator",
-        "graphql-codegen-core"
+      "sourceUrlPrefixes": [
+        "https://github.com/dotansimha/graphql-code-generator"
       ]
     },
     "infrastructure": {
@@ -645,6 +646,7 @@
         "jest-circus",
         "jest-cli",
         "jest-config",
+        "@jest/console",
         "@jest/core",
         "jest-diff",
         "jest-docblock",
@@ -670,6 +672,8 @@
         "jest-runtime",
         "jest-serializer",
         "jest-snapshot",
+        "@jest/source-map",
+        "@jest/test-result",
         "@jest/transform",
         "@jest/types",
         "jest-util",

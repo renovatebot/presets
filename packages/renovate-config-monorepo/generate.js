@@ -188,6 +188,9 @@ const staticSources = {
   'electron-forge': {
     sourceUrlPrefixes: ['https://github.com/electron-userland/electron-forge'],
   },
+  graphqlcodegenerator: {
+    sourceUrlPrefixes: ['https://github.com/dotansimha/graphql-code-generator'],
+  },
 };
 
 const dynamicSources = {
@@ -220,9 +223,6 @@ const dynamicSources = {
   },
   emotion: {
     repo: 'emotion-js/emotion',
-  },
-  graphqlcodegenerator: {
-    repo: 'dotansimha/graphql-code-generator',
   },
   jest: {
     repo: 'facebook/jest',
