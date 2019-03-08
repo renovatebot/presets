@@ -1,6 +1,7 @@
 {
   "extends": [
     "config:base",
+    ":maintainLockFilesWeekly",
     ":automergeAll",
     ":automergeBranchPush"
   ],
