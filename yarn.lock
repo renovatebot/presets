@@ -3693,10 +3693,10 @@ pkg-dir@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
-pnpm@2.25.7:
-  version "2.25.7"
-  resolved "https://registry.yarnpkg.com/pnpm/-/pnpm-2.25.7.tgz#59c2527e3a0348eb6e7844498844c5ea150b669f"
-  integrity sha512-GSV9mvoZbSApIaPNyJRWxV2Bp7XYbZx9w8UJDh4V/TAvQVA+Uwl3W4CvjVWyVHyTTap2FPComCKIUBn1rzJqMw==
+pnpm@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/pnpm/-/pnpm-3.0.0.tgz#ff5d4f9296382bcae7634cf2cf8db4c452c905d8"
+  integrity sha512-MZHQ4ZejIod8EYtc/LZ3F4HUfSc6ilhMcZ1Shk631XoGrpXTJm44Jn9W1/BVrZVlt5jmkYKXpcWkjaxjgqhy1g==
 
 precond@0.2:
   version "0.2.3"
@@ -4123,10 +4123,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@14.48.1:
-  version "14.48.1"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-14.48.1.tgz#6eb76fe906343162d071914c4d3a182292ec1ed8"
-  integrity sha512-M8mfgqvgYzIpE+CQOyZLnvpQk6xKuu/KEsN4mBVpG7xDxWuL+R++MdFsp/IW7AUyYpXixDbgVYlWFSEe30SeCw==
+renovate@14.50.0:
+  version "14.50.0"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-14.50.0.tgz#6b7f9f7b83aa90ae145e964b29548edaa3db9193"
+  integrity sha512-A8dDFI/TToougEwlArQeB8VlUytEQop4NHV6odf0tVsG08LKjbT5IVYhvF0TNE0yIiW7h4BZRgSsnGCH45VSBw==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4173,7 +4173,7 @@ renovate@14.48.1:
     p-all "2.0.0"
     parse-diff "0.5.1"
     parse-link-header "1.0.1"
-    pnpm "2.25.7"
+    pnpm "3.0.0"
     proxy-agent "3.0.3"
     registry-auth-token "3.3.2"
     root-require "0.3.1"
