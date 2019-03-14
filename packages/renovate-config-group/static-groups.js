@@ -42,6 +42,29 @@ module.exports = {
       'group:hibernateValidator',
       'group:hibernateOgm',
       'group:hibernateCommons',
+      'group:springAmqp',
+      'group:springAndroid',
+      'group:springBatch',
+      'group:springBoot',
+      'group:springCloud',
+      'group:springCore',
+      'group:springData',
+      'group:springHateoas',
+      'group:springIntegration',
+      'group:springKafka',
+      'group:springLdap',
+      'group:springMobile',
+      'group:springOsgi',
+      'group:springRestDocs',
+      'group:springRoo',
+      'group:springScala',
+      'group:springSecurity',
+      'group:springSession',
+      'group:springShell',
+      'group:springSocial',
+      'group:springStatemachine',
+      'group:springWebflow',
+      'group:springWs'
     ],
     ignoreDeps: [],
   },
@@ -144,6 +167,213 @@ module.exports = {
       {
         packagePatterns: ['^org.hibernate.common:'],
         groupName: 'hibernate commons',
+      },
+    ],
+  },
+  springAmqp: {
+    description: 'Group Java Spring AMQP packages',
+    packageRules: [
+      {
+        groupName: 'spring amqp',
+        packagePatterns: ['^org.springframework.amqp:'],
+      },
+    ],
+  },
+  springAndroid: {
+    description: 'Group Java Spring Android packages',
+    packageRules: [
+      {
+        groupName: 'spring android',
+        packagePatterns: ['^org.springframework.android:'],
+      },
+    ],
+  },
+  springBatch: {
+    description: 'Group Java Spring Batch packages',
+    packageRules: [
+      {
+        groupName: 'spring batch',
+        packagePatterns: ['^org.springframework.batch:'],
+      },
+    ],
+  },
+  springBoot: {
+    description: 'Group Java Spring Boot packages',
+    packageRules: [
+      {
+        groupName: 'spring boot',
+        packagePatterns: ['^org.springframework.boot:'],
+      },
+    ],
+  },
+  springCloud: {
+    description: 'Group Java Spring Cloud packages',
+    packageRules: [
+      {
+        groupName: 'spring cloud',
+        packagePatterns: ['^org.springframework.cloud:'],
+      },
+    ],
+  },
+  springCore: {
+    description: 'Group Java Spring Core packages',
+    packageRules: [
+      {
+        groupName: 'spring core',
+        packagePatterns: ['^org.springframework:'],
+      },
+    ],
+  },
+  springData: {
+    description: 'Group Java Spring Data packages',
+    packageRules: [
+      {
+        groupName: 'spring data',
+        packagePatterns: ['^org.springframework.data:'],
+      },
+    ],
+  },
+  springHateoas: {
+    description: 'Group Java Spring HATEOAS packages',
+    packageRules: [
+      {
+        groupName: 'spring hateoas',
+        packagePatterns: ['^org.springframework.hateoas:'],
+      },
+    ],
+  },
+  springIntegration: {
+    description: 'Group Java Spring Integration packages',
+    packageRules: [
+      {
+        groupName: 'spring integration',
+        packagePatterns: ['^org.springframework.integration:'],
+      },
+    ],
+  },
+  springKafka: {
+    description: 'Group Java Spring Kafka packages',
+    packageRules: [
+      {
+        groupName: 'spring kafka',
+        packagePatterns: ['^org.springframework.kafka:'],
+      },
+    ],
+  },
+  springLdap: {
+    description: 'Group Java Spring LDAP packages',
+    packageRules: [
+      {
+        groupName: 'spring ldap',
+        packagePatterns: ['^org.springframework.ldap:'],
+      },
+    ],
+  },
+  springMobile: {
+    description: 'Group Java Spring Mobile packages',
+    packageRules: [
+      {
+        groupName: 'spring mobile',
+        packagePatterns: ['^org.springframework.mobile:'],
+      },
+    ],
+  },
+  springOsgi: {
+    description: 'Group Java Spring OSGi packages',
+    packageRules: [
+      {
+        groupName: 'spring osgi',
+        packagePatterns: ['^org.springframework.osgi:'],
+      },
+    ],
+  },
+  springRestDocs: {
+    description: 'Group Java Spring REST Docs packages',
+    packageRules: [
+      {
+        groupName: 'spring restdocs',
+        packagePatterns: ['^org.springframework.restdocs:'],
+      },
+    ],
+  },
+  springRoo: {
+    description: 'Group Java Spring Roo packages',
+    packageRules: [
+      {
+        groupName: 'spring roo',
+        packagePatterns: ['^org.springframework.roo:'],
+      },
+    ],
+  },
+  springScala: {
+    description: 'Group Java Spring Scala packages',
+    packageRules: [
+      {
+        groupName: 'spring scala',
+        packagePatterns: ['^org.springframework.scala:'],
+      },
+    ],
+  },
+  springSecurity: {
+    description: 'Group Java Spring Security packages',
+    packageRules: [
+      {
+        groupName: 'spring security',
+        packagePatterns: ['^org.springframework.security:'],
+      },
+    ],
+  },
+  springSession: {
+    description: 'Group Java Spring Session packages',
+    packageRules: [
+      {
+        groupName: 'spring session',
+        packagePatterns: ['^org.springframework.session:'],
+      },
+    ],
+  },
+  springShell: {
+    description: 'Group Java Spring Shell packages',
+    packageRules: [
+      {
+        groupName: 'spring shell',
+        packagePatterns: ['^org.springframework.shell:'],
+      },
+    ],
+  },
+  springSocial: {
+    description: 'Group Java Spring Social packages',
+    packageRules: [
+      {
+        groupName: 'spring social',
+        packagePatterns: ['^org.springframework.social:'],
+      },
+    ],
+  },
+  springStatemachine: {
+    description: 'Group Java Spring Statemachine packages',
+    packageRules: [
+      {
+        groupName: 'spring statemachine',
+        packagePatterns: ['^org.springframework.statemachine:'],
+      },
+    ],
+  },
+  springWebflow: {
+    description: 'Group Java Spring WebFlow packages',
+    packageRules: [
+      {
+        groupName: 'spring webflow',
+        packagePatterns: ['^org.springframework.webflow:'],
+      },
+    ],
+  },
+  springWs: {
+    description: 'Group Java Spring WS packages',
+    packageRules: [
+      {
+        groupName: 'spring ws',
+        packagePatterns: ['^org.springframework.ws:'],
       },
     ],
   },
