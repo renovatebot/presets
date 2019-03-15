@@ -503,7 +503,9 @@
       "description": "For package <code>{{arg0}}</code>, strictly follow release tag <code>{{arg1}}</code>",
       "packageRules": [
         {
-          "packageNames": ["{{arg0}}"],
+          "packageNames": [
+            "{{arg0}}"
+          ],
           "followTag": "{{arg1}}"
         }
       ]
