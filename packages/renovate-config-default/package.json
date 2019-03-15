@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.14.2",
+  "version": "0.14.3",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -92,15 +92,15 @@
     },
     "separateMajorReleases": {
       "description": "Separate major versions of dependencies into individual branches/PRs",
-      "separateMajorReleases": true
+      "separateMajorMinor": true
     },
     "separatePatchReleases": {
       "description": "Separate patch and minor releases of dependencies into separate PRs",
-      "separatePatchReleases": true
+      "separateMinorPatch": true
     },
     "combinePatchMinorReleases": {
       "description": "Do not separate patch and minor upgrades into separate PRs for the same dependency",
-      "separatePatchReleases": false
+      "separateMinorPatch": false
     },
     "renovatePrefix": {
       "description": "Use <code>renovate/</code> as prefix for all branch names",
