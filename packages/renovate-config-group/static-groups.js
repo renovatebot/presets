@@ -64,7 +64,7 @@ module.exports = {
       'group:springSocial',
       'group:springStatemachine',
       'group:springWebflow',
-      'group:springWs'
+      'group:springWs',
     ],
     ignoreDeps: [],
   },
