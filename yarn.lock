@@ -2194,7 +2194,15 @@ js-tokens@^4.0.0:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
-js-yaml@3.12.2, js-yaml@^3.12.0:
+js-yaml@3.13.0:
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.0.tgz#38ee7178ac0eea2c97ff6d96fff4b18c7d8cf98e"
+  integrity sha512-pZZoSxcCYco+DIKBTimr67J6Hy+EYGZDY/HCWC+iAEA9h1ByhMXAIVUXMcMFpOCxQ/xjXmPI2MkDL5HRm5eFrQ==
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
+
+js-yaml@^3.12.0:
   version "3.12.2"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.2.tgz#ef1d067c5a9d9cb65bd72f285b5d8105c77f14fc"
   integrity sha512-QHn/Lh/7HhZ/Twc7vJYQTkjuCa0kaCcDcjK5Zlk2rvnUpy7DxMJ23+Jc2dcyvltwQVg1nygAVlB2oRDFHoRS5Q==
@@ -3022,10 +3030,10 @@ node-gyp@^3.8.0:
     tar "^2.0.0"
     which "1"
 
-node-html-parser@1.1.12:
-  version "1.1.12"
-  resolved "https://registry.yarnpkg.com/node-html-parser/-/node-html-parser-1.1.12.tgz#dc345411496a7bb4313ad41ae044df5d4cd7220b"
-  integrity sha512-tS8QkN91I4LXPnCOXsMuD+q9/3k5K3ltzASKzrj1g6fkNeE0bHE3DYCtt/F9oC+z1Rrl16N9AHleMEY8R0v8jw==
+node-html-parser@1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/node-html-parser/-/node-html-parser-1.1.13.tgz#517377c205d663fcb23063b13628b9fc9a93eef8"
+  integrity sha512-g8H73/DHTFH17N0dukN1XkCdJm9TF9cpsaElT/4PeIQR+hBR2T3rmheO1EeFBOqg4ot2s1530XPD1/dsVk8MNQ==
   dependencies:
     he "1.1.1"
 
@@ -4116,10 +4124,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@14.54.11:
-  version "14.54.11"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-14.54.11.tgz#29314bdbb361d6db4caa6ae4ce91681770b935bd"
-  integrity sha512-X9uOx9oHX/RJ0U6zTdhNAV1pJQ+Bq2LUvj4BjCQehmIvA6+2LwUfMSIO1bU2e/Bvr+ikHM791MThhSqU4PUOkw==
+renovate@14.55.0:
+  version "14.55.0"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-14.55.0.tgz#6932acd036d796ececf8fac6247aa843fd14f89b"
+  integrity sha512-59AYXemSbjj+hMZU8ivX69dX5DkqlLPLYQxEvB9yOLvaocH4u1a/xQqYn72X8fjX5Mwi67OyycKwODYhztz83g==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4149,7 +4157,7 @@ renovate@14.54.11:
     got "9.6.0"
     handlebars "4.1.1"
     ini "1.3.5"
-    js-yaml "3.12.2"
+    js-yaml "3.13.0"
     json-dup-key-validator "1.0.2"
     json-stringify-pretty-compact "2.0.0"
     later "1.2.0"
@@ -4160,7 +4168,7 @@ renovate@14.54.11:
     minimatch "3.0.4"
     moment "2.24.0"
     moment-timezone "0.5.23"
-    node-html-parser "1.1.12"
+    node-html-parser "1.1.13"
     npm "6.9.0"
     openpgp "2.6.2"
     p-all "2.0.0"
