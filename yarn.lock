@@ -2194,7 +2194,15 @@ js-tokens@^4.0.0:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
-js-yaml@3.13.0, js-yaml@^3.13.0:
+js-yaml@3.13.1:
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
+  integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
+
+js-yaml@^3.13.0:
   version "3.13.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.0.tgz#38ee7178ac0eea2c97ff6d96fff4b18c7d8cf98e"
   integrity sha512-pZZoSxcCYco+DIKBTimr67J6Hy+EYGZDY/HCWC+iAEA9h1ByhMXAIVUXMcMFpOCxQ/xjXmPI2MkDL5HRm5eFrQ==
@@ -4125,10 +4133,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@15.2.2:
-  version "15.2.2"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-15.2.2.tgz#99ca6f444140720413b079fcee735f30675f8873"
-  integrity sha512-CJx2uCkANisw13i/f4mWv/2jS4Ze+qnl8Ib8Eh9aljexxo51P3si71DyD//G68ng6wTnH1K+a11OStb6ULTnBg==
+renovate@15.2.3:
+  version "15.2.3"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-15.2.3.tgz#a6c4b4fc337dad3296e7d5bc2dd11c14ee2db15a"
+  integrity sha512-WCXl4hs5rKJ4hfG4eBC7YDajn0DHdptSwfrP0hj1Wmj0NkPc6H6EKGAcNQn6ad3574gf4vRec9LSgll9/d6DWw==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4158,7 +4166,7 @@ renovate@15.2.2:
     got "9.6.0"
     handlebars "4.1.1"
     ini "1.3.5"
-    js-yaml "3.13.0"
+    js-yaml "3.13.1"
     json-dup-key-validator "1.0.2"
     json-stringify-pretty-compact "2.0.0"
     later "1.2.0"
