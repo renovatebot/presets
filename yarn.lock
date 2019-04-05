@@ -3022,10 +3022,10 @@ node-gyp@^3.8.0:
     tar "^2.0.0"
     which "1"
 
-node-html-parser@1.1.13:
-  version "1.1.13"
-  resolved "https://registry.yarnpkg.com/node-html-parser/-/node-html-parser-1.1.13.tgz#517377c205d663fcb23063b13628b9fc9a93eef8"
-  integrity sha512-g8H73/DHTFH17N0dukN1XkCdJm9TF9cpsaElT/4PeIQR+hBR2T3rmheO1EeFBOqg4ot2s1530XPD1/dsVk8MNQ==
+node-html-parser@1.1.14:
+  version "1.1.14"
+  resolved "https://registry.yarnpkg.com/node-html-parser/-/node-html-parser-1.1.14.tgz#2e5b44c830fc75ba0c828105d823be81026c5347"
+  integrity sha512-UcvX5vo3vqlDUpOVvy67Qdp8um0cYc30blTI1yLArF7g8SD3Ci1xomIkPBg1+AKZ8LgrYixvOQ9G2PkOFk2AEg==
   dependencies:
     he "1.1.1"
 
@@ -4125,10 +4125,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@15.2.0:
-  version "15.2.0"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-15.2.0.tgz#4ac138f23d5de949123614c9bc51e60ea9a2a8dd"
-  integrity sha512-yLHSFTX/B+gZvQ5am7oHZcfuqrH95rIlFIoJQqLESa5hQnB5cT2OeK2JLkiqyGk1Ni3VKc2zV/KIpErBaYCrgg==
+renovate@15.2.2:
+  version "15.2.2"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-15.2.2.tgz#99ca6f444140720413b079fcee735f30675f8873"
+  integrity sha512-CJx2uCkANisw13i/f4mWv/2jS4Ze+qnl8Ib8Eh9aljexxo51P3si71DyD//G68ng6wTnH1K+a11OStb6ULTnBg==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4169,7 +4169,7 @@ renovate@15.2.0:
     minimatch "3.0.4"
     moment "2.24.0"
     moment-timezone "0.5.23"
-    node-html-parser "1.1.13"
+    node-html-parser "1.1.14"
     npm "6.9.0"
     openpgp "2.6.2"
     p-all "2.0.0"
