@@ -3445,10 +3445,10 @@ osenv@0, osenv@^0.1.4, osenv@^0.1.5:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
-p-all@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/p-all/-/p-all-2.0.0.tgz#e2e834d2dc1f2b9896c57611f727afac742a6e0a"
-  integrity sha512-LJxRBJjRsMpvAAATYZDgW1y8mt/26hD9by0JpzdhzGVTt9Uf6I5EDlWxaOF2XcKvH2SaLYambtNNlzoD+Sn1/A==
+p-all@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/p-all/-/p-all-2.1.0.tgz#91419be56b7dee8fe4c5db875d55e0da084244a0"
+  integrity sha512-HbZxz5FONzz/z2gJfk6bFca0BCiSRF8jU3yCsWOen/vR6lZjfPOu/e7L3uFzTW1i0H8TlC3vqQstEJPQL4/uLA==
   dependencies:
     p-map "^2.0.0"
 
@@ -4138,10 +4138,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@15.4.2:
-  version "15.4.2"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-15.4.2.tgz#6b7c80b331fa1986253b2a5a5840817be28882ca"
-  integrity sha512-O9A0iESQ5xxcDf8p+z4bCqiO/GHt4/FGVI6EMjbgCxG2LN4pxQK9Ai5VtcbqsK9cd77bziQRTZ9ioFaLqj+cfA==
+renovate@15.4.3:
+  version "15.4.3"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-15.4.3.tgz#3220ed310048fc78bdedc1d200609e7abb65229a"
+  integrity sha512-7Z00JsiZX970TrF2k4IUMlbVjVXTiS7t3TFngoOd2rxNLR/P8v+q8auR6EI8CehPz9Kj2cVNfqIalEdGCyxAIw==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4185,7 +4185,7 @@ renovate@15.4.2:
     node-html-parser "1.1.14"
     npm "6.9.0"
     openpgp "2.6.2"
-    p-all "2.0.0"
+    p-all "2.1.0"
     parse-diff "0.5.1"
     parse-link-header "1.0.1"
     pnpm "3.0.1"
