@@ -670,7 +670,12 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@2.19.0, commander@~2.19.0:
+commander@2.20.0:
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
+  integrity sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
+
+commander@~2.19.0:
   version "2.19.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
   integrity sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==
@@ -4133,10 +4138,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@15.4.0:
-  version "15.4.0"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-15.4.0.tgz#699bbd5af5960b4cf98de26541bfc13427e956f3"
-  integrity sha512-b1A8L6oDMil2o5kEPGSGx+qb7GsSLQN6b9FgECczjaDiKiN0vS17q4lKGpPzT/WcgsoHF8/FdBJOwLm29RtLJg==
+renovate@15.4.1:
+  version "15.4.1"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-15.4.1.tgz#2433c94ea863555026e2854777ed9feb737ef17c"
+  integrity sha512-VlgUmIo++7HWOIuqok50fi8ynWiBwwrDeNIBXE5JudA1szrMidsqoVUT9qzEhntXc7uVnsBzm9YJekIg3XHdGQ==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4150,7 +4155,7 @@ renovate@15.4.0:
     changelog-filename-regex "2.0.1"
     child-process-promise "2.2.1"
     clean-git-ref "2.0.1"
-    commander "2.19.0"
+    commander "2.20.0"
     compare-versions "3.4.0"
     conventional-commits-detector "1.0.2"
     convert-hrtime "2.0.0"
