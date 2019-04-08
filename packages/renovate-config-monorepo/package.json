@@ -794,6 +794,18 @@
         "^@neutrinojs/"
       ]
     },
+    "next": {
+      "description": "next.js monorepo",
+      "packageNames": [
+        "next-bundle-analyzer",
+        "next-mdx",
+        "next-server",
+        "next"
+      ],
+      "packagePatterns": [
+        "^@next/"
+      ]
+    },
     "ngrx": {
       "description": "ngrx monorepo",
       "packageNames": [
