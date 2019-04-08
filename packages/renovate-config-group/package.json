@@ -611,6 +611,7 @@
         "group:uppyMonorepo",
         "group:vueMonorepo",
         "group:vue-cliMonorepo",
+        "group:vuepressMonorepo",
         "group:webdriverioMonorepo",
         "group:wordpressMonorepo",
         "group:workboxMonorepo"
@@ -1223,6 +1224,15 @@
           "description": "Group packages from vue monorepo together",
           "extends": "monorepo:vue",
           "groupName": "vue monorepo"
+        }
+      ]
+    },
+    "vuepressMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from vuepress monorepo together",
+          "extends": "monorepo:vuepress",
+          "groupName": "vuepress monorepo"
         }
       ]
     },

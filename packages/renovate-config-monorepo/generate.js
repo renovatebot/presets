@@ -262,6 +262,10 @@ const dynamicSources = {
     branch: 'dev',
     path: 'packages/@vue',
   },
+  vuepress: {
+    repo: 'vuejs/vuepress',
+    path: ['packages', 'packages/@vuepress'],
+  },
 };
 
 async function go() {
@@ -275,31 +279,35 @@ async function go() {
   for (const monorepo of Object.keys(dynamicSources)) {
     const data = dynamicSources[monorepo];
     const branch = data.branch || 'master';
-    const packagesPath = data.path || 'packages';
+    const packagesPaths = data.path || 'packages';
     const includePrivatePackage = !!data.includePrivatePackage;
-    const url = `https://api.github.com/repos/${
-      data.repo
-    }/contents/${packagesPath}`;
-    const dirListing = (await got(url)).body;
     const packages = [];
-    for (const item of dirListing) {
-      if (item.type === 'dir') {
-        const packageJsonUrl = `https://raw.githubusercontent.com/${
-          data.repo
-        }/${branch}/${packagesPath}/${item.name}/package.json`.replace(
-          /@/g,
-          '%40'
-        );
-        try {
-          const packageJson = (await got(packageJsonUrl)).body;
-          if (
-            packageJson.name &&
-            (includePrivatePackage || packageJson.private !== true)
-          ) {
-            packages.push(packageJson.name);
+    for (const packagesPath of Array.isArray(packagesPaths)
+      ? packagesPaths
+      : [packagesPaths]) {
+      const url = `https://api.github.com/repos/${
+        data.repo
+      }/contents/${packagesPath}`;
+      const dirListing = (await got(url)).body;
+      for (const item of dirListing) {
+        if (item.type === 'dir') {
+          const packageJsonUrl = `https://raw.githubusercontent.com/${
+            data.repo
+          }/${branch}/${packagesPath}/${item.name}/package.json`.replace(
+            /@/g,
+            '%40'
+          );
+          try {
+            const packageJson = (await got(packageJsonUrl)).body;
+            if (
+              packageJson.name &&
+              (includePrivatePackage || packageJson.private !== true)
+            ) {
+              packages.push(packageJson.name);
+            }
+          } catch (err) {
+            // No package.json
           }
-        } catch (err) {
-          // No package.json
         }
       }
     }
