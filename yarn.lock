@@ -931,10 +931,10 @@ degenerator@^1.0.4:
     escodegen "1.x.x"
     esprima "3.x.x"
 
-delay@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/delay/-/delay-4.1.0.tgz#474cd28809da41d1a048a70a1d835f47ac377cd2"
-  integrity sha512-8Hea6/aOu3bPdDBQhSRUEUzF0QwuWmSPuIK+sxNdvcJtSfzb6HXrTd9DFJBCJcV9o83fFECqTgllqdnmUfq9+w==
+delay@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/delay/-/delay-4.2.0.tgz#3f6c39dbd28aef50355e670fecee050ef01242ce"
+  integrity sha512-EBX+pZE4qSowGAMr6M0cLiPRQu2Kus/qTNLO7c+EoXpTPJH9ApFdHX+cQU1WsSHXgwhLyidfZ5Hxuq6ctWhSdw==
 
 delayed-stream@~1.0.0:
   version "1.0.0"
@@ -4130,10 +4130,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@15.11.6:
-  version "15.11.6"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-15.11.6.tgz#b27ea55e71c6ea8cdddefd8754649e6614ac00bd"
-  integrity sha512-AI0p/nCMn/AtKApfQOV/ws9KI0QukiXG+5NWqvT6rZuikU9RB24AwSj6q2+bV+bOavPuRI8Df5BVSKuSzSdIgw==
+renovate@15.12.1:
+  version "15.12.1"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-15.12.1.tgz#c24b7fee317dfcccebb61f7250d01ccc66f3dca1"
+  integrity sha512-g8fbxq4kbuvVRVvZk+P9xhMDiQOND3/aInL9WL4p/ajCCdZsHCoa0DUezlS0pztVXSbS+EUCrE/cHsn3c/C1dw==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4151,7 +4151,7 @@ renovate@15.11.6:
     compare-versions "3.4.0"
     conventional-commits-detector "1.0.2"
     convert-hrtime "2.0.0"
-    delay "4.1.0"
+    delay "4.2.0"
     detect-indent "5.0.0"
     email-addresses "3.0.3"
     form-data "2.3.3"
