@@ -1056,8 +1056,5 @@
         "https://github.com/googlechrome/workbox"
       ]
     }
-  },
-  "dependencies": {
-    "gh-got": "^8.1.0"
   }
 }
