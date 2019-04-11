@@ -152,6 +152,12 @@
         "zen-observable-ts"
       ]
     },
+    "aspnet AspNetWebStack": {
+      "description": "aspnet AspNetWebStack monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/aspnet/AspNetWebStack"
+      ]
+    },
     "aspnet Extensions": {
       "description": "aspnet Extensions monorepo",
       "sourceUrlPrefixes": [
@@ -169,6 +175,24 @@
       "packageNames": [
         "aws-appsync-react",
         "aws-appsync"
+      ]
+    },
+    "azure azure-libraries-for-net": {
+      "description": "azure azure-libraries-for-net monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/Azure/azure-libraries-for-net"
+      ]
+    },
+    "azure azure-sdk-for-net": {
+      "description": "azure azure-sdk-for-net monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/Azure/azure-sdk-for-net"
+      ]
+    },
+    "azure azure-storage-net": {
+      "description": "azure azure-storage-net monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/Azure/azure-storage-net"
       ]
     },
     "babel": {
@@ -1032,5 +1056,8 @@
         "https://github.com/googlechrome/workbox"
       ]
     }
+  },
+  "dependencies": {
+    "gh-got": "^8.1.0"
   }
 }
