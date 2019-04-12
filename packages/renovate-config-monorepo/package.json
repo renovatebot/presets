@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.27.0",
+  "version": "0.28.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -820,6 +820,12 @@
       ],
       "packagePatterns": [
         "^@neutrinojs/"
+      ]
+    },
+    "nextjs": {
+      "description": "nextjs monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/zeit/next.js"
       ]
     },
     "ngrx": {
