@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.34.0",
+  "version": "0.35.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -140,6 +140,15 @@
         }
       ]
     },
+    "aspnet AspNetWebStackMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from aspnet AspNetWebStack monorepo together",
+          "extends": "monorepo:aspnet AspNetWebStack",
+          "groupName": "aspnet AspNetWebStack monorepo"
+        }
+      ]
+    },
     "aspnet ExtensionsMonorepo": {
       "packageRules": [
         {
@@ -164,6 +173,33 @@
           "description": "Group packages from awsappsync monorepo together",
           "extends": "monorepo:awsappsync",
           "groupName": "awsappsync monorepo"
+        }
+      ]
+    },
+    "azure azure-libraries-for-netMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from azure azure-libraries-for-net monorepo together",
+          "extends": "monorepo:azure azure-libraries-for-net",
+          "groupName": "azure azure-libraries-for-net monorepo"
+        }
+      ]
+    },
+    "azure azure-sdk-for-netMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from azure azure-sdk-for-net monorepo together",
+          "extends": "monorepo:azure azure-sdk-for-net",
+          "groupName": "azure azure-sdk-for-net monorepo"
+        }
+      ]
+    },
+    "azure azure-storage-netMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from azure azure-storage-net monorepo together",
+          "extends": "monorepo:azure azure-storage-net",
+          "groupName": "azure azure-storage-net monorepo"
         }
       ]
     },
@@ -556,9 +592,13 @@
         "group:apollo-serverMonorepo",
         "group:apolloclientMonorepo",
         "group:apollolinkMonorepo",
+        "group:aspnet AspNetWebStackMonorepo",
         "group:aspnet ExtensionsMonorepo",
         "group:aws-java-sdkMonorepo",
         "group:awsappsyncMonorepo",
+        "group:azure azure-libraries-for-netMonorepo",
+        "group:azure azure-sdk-for-netMonorepo",
+        "group:azure azure-storage-netMonorepo",
         "group:babelMonorepo",
         "group:babel6Monorepo",
         "group:basetMonorepo",

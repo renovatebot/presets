@@ -158,6 +158,18 @@ const staticSources = {
   'aspnet Extensions': {
     sourceUrlPrefixes: ['https://github.com/aspnet/Extensions'],
   },
+  'aspnet AspNetWebStack': {
+    sourceUrlPrefixes: ['https://github.com/aspnet/AspNetWebStack'],
+  },
+  'azure azure-libraries-for-net': {
+    sourceUrlPrefixes: ['https://github.com/Azure/azure-libraries-for-net'],
+  },
+  'azure azure-storage-net': {
+    sourceUrlPrefixes: ['https://github.com/Azure/azure-storage-net'],
+  },
+  'azure azure-sdk-for-net': {
+    sourceUrlPrefixes: ['https://github.com/Azure/azure-sdk-for-net'],
+  },
   framework7: {
     sourceUrlPrefixes: ['https://github.com/framework7io/framework7'],
   },
