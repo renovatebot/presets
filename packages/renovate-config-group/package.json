@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.35.0",
+  "version": "0.36.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -628,6 +628,7 @@
         "group:muiMonorepo",
         "group:nestMonorepo",
         "group:neutrinoMonorepo",
+        "group:nextjsMonorepo",
         "group:ngrxMonorepo",
         "group:ngxs-storeMonorepo",
         "group:nrwlMonorepo",
@@ -680,6 +681,15 @@
           "description": "Group packages from neutrino monorepo together",
           "extends": "monorepo:neutrino",
           "groupName": "neutrino monorepo"
+        }
+      ]
+    },
+    "nextjsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from nextjs monorepo together",
+          "extends": "monorepo:nextjs",
+          "groupName": "nextjs monorepo"
         }
       ]
     },
