@@ -177,7 +177,7 @@ const staticSources = {
     sourceUrlPrefixes: ['https://github.com/emotion-js/emotion'],
   },
   nextjs: {
-    sourceUrlPrefixes: ['https://github.com/zeit/next.js']
+    sourceUrlPrefixes: ['https://github.com/zeit/next.js'],
   },
   picasso: {
     sourceUrlPrefixes: ['https://github.com/qlik-oss/picasso.js'],
