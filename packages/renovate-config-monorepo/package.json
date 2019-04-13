@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.28.0",
+  "version": "0.29.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -1042,6 +1042,12 @@
         "@vue/eslint-config-prettier",
         "@vue/eslint-config-standard",
         "@vue/eslint-config-typescript"
+      ]
+    },
+    "vuepress": {
+      "description": "vuepress monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/vuejs/vuepress"
       ]
     },
     "webdriverio": {

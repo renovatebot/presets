@@ -129,6 +129,9 @@ const staticSources = {
   mdx: {
     sourceUrlPrefixes: ['https://github.com/mdx-js/mdx'],
   },
+  vuepress: {
+    sourceUrlPrefixes: ['https://github.com/vuejs/vuepress'],
+  },
   workbox: {
     sourceUrlPrefixes: ['https://github.com/googlechrome/workbox'],
   },
