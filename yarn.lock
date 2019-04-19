@@ -2258,6 +2258,13 @@ json-stringify-safe@~5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
+json5@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-2.1.0.tgz#e7a0c62c48285c628d20a10b85c89bb807c32850"
+  integrity sha512-8Mh9h6xViijj36g7Dxi+Y4S6hNGV96vcJZr/SrlHh1LR/pEn/8j/+qIBbs44YKl69Lrfctp4QD+AdWLTMqEZAQ==
+  dependencies:
+    minimist "^1.2.0"
+
 jsonc-parser@^2.0.2:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-2.1.0.tgz#eb0d0c7a3c33048524ce3574c57c7278fb2f1bf3"
@@ -4134,10 +4141,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@16.0.5:
-  version "16.0.5"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-16.0.5.tgz#c6298812c135a81e71aaa489d95fc3fee0f19d89"
-  integrity sha512-iaBxllYppiCELxNZJ9iHXDYOMtocgNV1F1qwymKCloJDVLs5AjRNdGpHNDo1v+fJMoFlZOuUZU0l8jSzQth4lg==
+renovate@16.1.0:
+  version "16.1.0"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-16.1.0.tgz#c1afc1c43b0ac477cdb84ab8fadc0ae8c16ea56b"
+  integrity sha512-Wsjba+xoFSPLOKY+qsbagvTDN0DXGfIygESvrsKMUOHCnifWmdi9GRoGcMVjZvFLtc0/7A+dRpzKX6ZPVqx9uQ==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4170,6 +4177,7 @@ renovate@16.0.5:
     js-yaml "3.13.1"
     json-dup-key-validator "1.0.2"
     json-stringify-pretty-compact "2.0.0"
+    json5 "2.1.0"
     later "1.2.0"
     linkify-markdown "1.0.0"
     lodash "4.17.11"
