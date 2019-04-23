@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.29.0",
+  "version": "0.30.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -710,7 +710,54 @@
         "jest-watcher",
         "jest-worker",
         "jest",
-        "pretty-format"
+        "pretty-format",
+        "@types/babel-jest",
+        "@types/babel-plugin-jest-hoist",
+        "@types/babel-preset-jest",
+        "@types/diff-sequences",
+        "@types/eslint-config-fb-strict",
+        "@types/expect",
+        "@types/jest-changed-files",
+        "@types/jest-circus",
+        "@types/jest-cli",
+        "@types/jest-config",
+        "@types/jest__console",
+        "@types/jest__core",
+        "@types/jest-diff",
+        "@types/jest-docblock",
+        "@types/jest-each",
+        "@types/jest-environment-jsdom",
+        "@types/jest-environment-node",
+        "@types/jest__environment",
+        "@types/jest__fake-timers",
+        "@types/jest-get-type",
+        "@types/jest-haste-map",
+        "@types/jest-jasmine2",
+        "@types/jest-leak-detector",
+        "@types/jest-matcher-utils",
+        "@types/jest-message-util",
+        "@types/jest-mock",
+        "@types/jest-phabricator",
+        "@types/jest-regex-util",
+        "@types/jest-repl",
+        "@types/jest__reporters",
+        "@types/jest-resolve-dependencies",
+        "@types/jest-resolve",
+        "@types/jest-runner",
+        "@types/jest-runtime",
+        "@types/jest-serializer",
+        "@types/jest-snapshot",
+        "@types/jest__source-map",
+        "@types/jest__test-result",
+        "@types/jest__test-sequencer",
+        "@types/jest__transform",
+        "@types/jest__types",
+        "@types/jest-util",
+        "@types/jest-validate",
+        "@types/jest-watcher",
+        "@types/jest-worker",
+        "@types/jest",
+        "@types/pretty-format"
       ]
     },
     "lerna": {
@@ -906,7 +953,17 @@
         "react-reconciler",
         "react-test-renderer",
         "react",
-        "scheduler"
+        "scheduler",
+        "@types/create-subscription",
+        "@types/eslint-plugin-react-hooks",
+        "@types/jest-react",
+        "@types/react-art",
+        "@types/react-dom",
+        "@types/react-is",
+        "@types/react-reconciler",
+        "@types/react-test-renderer",
+        "@types/react",
+        "@types/scheduler"
       ]
     },
     "react-dnd": {
@@ -927,7 +984,11 @@
         "react-router-config",
         "react-router-dom",
         "react-router-native",
-        "react-router"
+        "react-router",
+        "@types/react-router-config",
+        "@types/react-router-dom",
+        "@types/react-router-native",
+        "@types/react-router"
       ]
     },
     "router5": {

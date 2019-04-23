@@ -247,6 +247,7 @@ const dynamicSources = {
   },
   jest: {
     repo: 'facebook/jest',
+    includeTypes: true,
   },
   pouchdb: {
     repo: 'pouchdb/pouchdb',
@@ -254,9 +255,11 @@ const dynamicSources = {
   },
   react: {
     repo: 'facebook/react',
+    includeTypes: true,
   },
   reactrouter: {
     repo: 'ReactTraining/react-router',
+    includeTypes: true,
   },
   mui: {
     repo: 'mui-org/material-ui',
@@ -340,7 +343,14 @@ async function go() {
     }
     config[monorepo] = {
       description: `${monorepo} monorepo`,
-      packageNames: packages,
+      packageNames: data.includeTypes
+        ? packages.concat(
+            packages.map(
+              packageName =>
+                `@types/${packageName.replace('/', '__').replace('@', '')}`
+            )
+          )
+        : packages,
     };
   }
   // Write rules in alphabetical order
