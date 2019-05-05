@@ -632,6 +632,7 @@
         "group:ngrxMonorepo",
         "group:ngxs-storeMonorepo",
         "group:nrwlMonorepo",
+        "group:nuxtjsMonorepo",
         "group:picassoMonorepo",
         "group:pouchdbMonorepo",
         "group:reactMonorepo",
@@ -718,6 +719,15 @@
           "description": "Group packages from nrwl monorepo together",
           "extends": "monorepo:nrwl",
           "groupName": "nrwl monorepo"
+        }
+      ]
+    },
+    "nuxtjsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from nuxtjs monorepo together",
+          "extends": "monorepo:nuxtjs",
+          "groupName": "nuxtjs monorepo"
         }
       ]
     },
