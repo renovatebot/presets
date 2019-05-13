@@ -43,10 +43,10 @@
     verror "1.x >=1.6.0"
     www-authenticate "0.6.x >=0.6.2"
 
-"@sindresorhus/is@0.16.0":
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.16.0.tgz#355a7801472ad3810365c1e8aecabcaf45227c54"
-  integrity sha512-QjJQRRsPoIBbvI0IFiY1NehCRgyw7BNobGVO9FSuMoX7OocwUMbsjXYFneoYT8XJbiXAEJvPvrj9eEb4ZMa84A==
+"@sindresorhus/is@0.17.0":
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.17.0.tgz#37d16c3df3a8b4dcc930210ff68ff3ace35f5ab4"
+  integrity sha512-hGqdhem3E9L+BBPpkRZQ9RtSg+MpbGfoDXNxuPFgJtM7/CiZHU+Jit0DywctJOsWV0jAPp9RpO8QB7GSaVZq8A==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -4152,14 +4152,14 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@17.2.5:
-  version "17.2.5"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-17.2.5.tgz#4e24974e84dcf21402892fbd7705c00ae409934f"
-  integrity sha512-fFnX/CU4NSmC+w+ozPPO/QeRc/cSE7/nKf4FQ7bFvbZshWTI+RnFnKiLD6TQfgRwUs00x7dspZ2eol1E1zKPBQ==
+renovate@17.2.7:
+  version "17.2.7"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-17.2.7.tgz#3e23670470d61565cbb989159cdd1a2b5921747d"
+  integrity sha512-saWGBgFf1Y8Jkn7aXFqgaKxL3sXzkzHaiwznCr7jJctfWQeVzQmE+ENay+cP2b16Q/VyTymaWPi6MV/7aIsIfA==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
-    "@sindresorhus/is" "0.16.0"
+    "@sindresorhus/is" "0.17.0"
     "@snyk/ruby-semver" "2.0.1"
     "@yarnpkg/lockfile" "1.1.0"
     azure-devops-node-api "7.2.0"
