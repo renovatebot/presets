@@ -852,6 +852,12 @@
         "^@nrwl/"
       ]
     },
+    "nuxtjs": {
+      "description": "nuxtjs monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/nuxt/nuxt.js"
+      ]
+    },
     "picasso": {
       "description": "picasso monorepo",
       "sourceUrlPrefixes": [

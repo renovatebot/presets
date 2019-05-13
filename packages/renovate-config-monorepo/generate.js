@@ -212,6 +212,9 @@ const staticSources = {
       'https://github.com/dotansimha/graphql-codegen',
     ],
   },
+  nuxtjs: {
+    sourceUrlPrefixes: ['https://github.com/nuxt/nuxt.js'],
+  },
 };
 
 const dynamicSources = {
