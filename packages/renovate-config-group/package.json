@@ -569,6 +569,15 @@
         }
       ]
     },
+    "mdc-reactMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from mdc-react monorepo together",
+          "extends": "monorepo:mdc-react",
+          "groupName": "mdc-react monorepo"
+        }
+      ]
+    },
     "mdxMonorepo": {
       "packageRules": [
         {
@@ -624,6 +633,7 @@
         "group:linguiMonorepo",
         "group:lodashMonorepo",
         "group:materialMonorepo",
+        "group:mdc-reactMonorepo",
         "group:mdxMonorepo",
         "group:muiMonorepo",
         "group:nestMonorepo",

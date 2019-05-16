@@ -3713,10 +3713,10 @@ pkg-dir@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
-pnpm@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/pnpm/-/pnpm-3.2.0.tgz#2a31308ea1564088b9089022d25caee5e727447a"
-  integrity sha512-bujIqiZBgpusV0N/m+PNQ/FAUKc7ue9WqK+FqfN89on44iLEkERYGBWQEZt2a4OMWH4RHzme7muKOQY8ZegD3Q==
+pnpm@3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/pnpm/-/pnpm-3.3.2.tgz#3780f1b3fe00cb7892df6b5ad86d1a3dc912a05d"
+  integrity sha512-amQ2kGiZYsuSOMKPCdUc1CiCAi9tn1SS5I5XydJqB/1N+3eg1jVknrg7A80iO6l3E6G8BQX6bMdeZ3w+gLHvFQ==
 
 precond@0.2:
   version "0.2.3"
@@ -3745,10 +3745,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@1.17.0:
-  version "1.17.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.17.0.tgz#53b303676eed22cc14a9f0cec09b477b3026c008"
-  integrity sha512-sXe5lSt2WQlCbydGETgfm1YBShgOX4HxQkFPvbxkcwgDvGDeqVau8h+12+lmSVlP3rHPz0oavfddSZg/q+Szjw==
+prettier@1.17.1:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.17.1.tgz#ed64b4e93e370cb8a25b9ef7fef3e4fd1c0995db"
+  integrity sha512-TzGRNvuUSmPgwivDqkZ9tM/qTGW9hqDKWOE9YHiyQdixlKbv7kvEqsmDPrcHJTKwthU774TQwZXVtaQ/mMsvjg==
 
 process-nextick-args@~2.0.0:
   version "2.0.0"
@@ -4152,10 +4152,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@17.2.7:
-  version "17.2.7"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-17.2.7.tgz#3e23670470d61565cbb989159cdd1a2b5921747d"
-  integrity sha512-saWGBgFf1Y8Jkn7aXFqgaKxL3sXzkzHaiwznCr7jJctfWQeVzQmE+ENay+cP2b16Q/VyTymaWPi6MV/7aIsIfA==
+renovate@17.5.1:
+  version "17.5.1"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-17.5.1.tgz#b4624c0d5540dde3a4c6234757068e7b5f53d6a5"
+  integrity sha512-+rnzeXrZhzPIJzZmekYdE/rFEDiexXmPLld1kHVHun6jwNBqv8ne2EyCCdMgOuSABf0ii5FFdaaOb3m+OBYW5Q==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4203,7 +4203,7 @@ renovate@17.2.7:
     p-all "2.1.0"
     parse-diff "0.5.1"
     parse-link-header "1.0.1"
-    pnpm "3.2.0"
+    pnpm "3.3.2"
     proxy-agent "3.0.3"
     registry-auth-token "3.3.2"
     root-require "0.3.1"
