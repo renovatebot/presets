@@ -3713,10 +3713,10 @@ pkg-dir@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
-pnpm@3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/pnpm/-/pnpm-3.3.2.tgz#3780f1b3fe00cb7892df6b5ad86d1a3dc912a05d"
-  integrity sha512-amQ2kGiZYsuSOMKPCdUc1CiCAi9tn1SS5I5XydJqB/1N+3eg1jVknrg7A80iO6l3E6G8BQX6bMdeZ3w+gLHvFQ==
+pnpm@3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/pnpm/-/pnpm-3.3.3.tgz#619b411207211e22b7aa1468a12ac2c88d3eeb31"
+  integrity sha512-PEm3o5t68O9CqbW3myikRyrRTy+6AMEPnHaIUfeka5QoFbC7i3ran+iSlUT6CU3/3y8Z0mJHdpZulWByUsToLA==
 
 precond@0.2:
   version "0.2.3"
@@ -4068,15 +4068,7 @@ regexpp@^2.0.1:
   resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-2.0.1.tgz#8d19d31cf632482b589049f8281f93dbcba4d07f"
   integrity sha512-lv0M6+TkDVniA3aD1Eg0DVpfU/booSu7Eev3TDO/mZKHBfVjgCGTV4t4buppESEYDtkArYFOxTJWv6S5C+iaNw==
 
-registry-auth-token@3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/registry-auth-token/-/registry-auth-token-3.3.2.tgz#851fd49038eecb586911115af845260eec983f20"
-  integrity sha512-JL39c60XlzCVgNrO+qq68FoNb56w/m7JYvGR2jT5iR1xBrUA3Mfx5Twk5rqTThPmQKMWydGmq8oFtDlxfrmxnQ==
-  dependencies:
-    rc "^1.1.6"
-    safe-buffer "^5.0.1"
-
-registry-auth-token@^3.0.1:
+registry-auth-token@3.4.0, registry-auth-token@^3.0.1:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/registry-auth-token/-/registry-auth-token-3.4.0.tgz#d7446815433f5d5ed6431cd5dca21048f66b397e"
   integrity sha512-4LM6Fw8eBQdwMYcES4yTnn2TqIasbXuwDx3um+QRs7S55aMKCBKBxvPXl2RiUjHwuJLTyYfxSpmfSAjQpcuP+A==
@@ -4152,10 +4144,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@17.5.1:
-  version "17.5.1"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-17.5.1.tgz#b4624c0d5540dde3a4c6234757068e7b5f53d6a5"
-  integrity sha512-+rnzeXrZhzPIJzZmekYdE/rFEDiexXmPLld1kHVHun6jwNBqv8ne2EyCCdMgOuSABf0ii5FFdaaOb3m+OBYW5Q==
+renovate@17.6.1:
+  version "17.6.1"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-17.6.1.tgz#a0b5488f27171399c21ee26255739a5ec900512a"
+  integrity sha512-XZBzwtB9F62pcUBsdDFJTZg5bP/VfNxk85RMQBY/RHtRsK32MbojKr0pNlA7f62+hN4ottUF/MWiGlY3FwsIsA==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4203,9 +4195,9 @@ renovate@17.5.1:
     p-all "2.1.0"
     parse-diff "0.5.1"
     parse-link-header "1.0.1"
-    pnpm "3.3.2"
+    pnpm "3.3.3"
     proxy-agent "3.0.3"
-    registry-auth-token "3.3.2"
+    registry-auth-token "3.4.0"
     root-require "0.3.1"
     safe-regex "2.0.2"
     semver "6.0.0"
