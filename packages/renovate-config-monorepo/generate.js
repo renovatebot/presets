@@ -271,6 +271,9 @@ const dynamicSources = {
   material: {
     repo: 'material-components/material-components-web',
   },
+  'mdc-react': {
+    repo: 'material-components/material-components-web-react',
+  },
   'graphql-modules': {
     repo: 'Urigo/graphql-modules',
   },

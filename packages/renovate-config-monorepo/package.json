@@ -785,6 +785,40 @@
         "@material/typography"
       ]
     },
+    "mdc-react": {
+      "description": "mdc-react monorepo",
+      "packageNames": [
+        "@material/react-button",
+        "@material/react-card",
+        "@material/react-checkbox",
+        "@material/react-chips",
+        "@material/react-dialog",
+        "@material/react-drawer",
+        "@material/react-fab",
+        "@material/react-floating-label",
+        "@material/react-icon-button",
+        "@material/react-layout-grid",
+        "@material/react-line-ripple",
+        "@material/react-linear-progress",
+        "@material/react-list",
+        "@material/react-material-icon",
+        "@material/react-menu-surface",
+        "@material/react-menu",
+        "@material/react-notched-outline",
+        "@material/react-radio",
+        "@material/react-ripple",
+        "@material/react-select",
+        "@material/react-snackbar",
+        "@material/react-switch",
+        "@material/react-tab-bar",
+        "@material/react-tab-indicator",
+        "@material/react-tab-scroller",
+        "@material/react-tab",
+        "@material/react-text-field",
+        "@material/react-top-app-bar",
+        "@material/react-typography"
+      ]
+    },
     "mdx": {
       "description": "mdx monorepo",
       "sourceUrlPrefixes": [
