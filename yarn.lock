@@ -53,10 +53,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@snyk/ruby-semver@github:rarkins/ruby-semver#semverfix":
+"@snyk/ruby-semver@git+https://github.com/rarkins/ruby-semver.git#semverfix":
   version "2.0.2-rc.0"
   uid aefe0848d062e417ade9d9529dfe3cbd2e53dad3
-  resolved "https://codeload.github.com/rarkins/ruby-semver/tar.gz/aefe0848d062e417ade9d9529dfe3cbd2e53dad3"
+  resolved "git+https://github.com/rarkins/ruby-semver.git#aefe0848d062e417ade9d9529dfe3cbd2e53dad3"
   dependencies:
     lodash "^4.17.11"
 
@@ -4138,15 +4138,15 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@17.10.0:
-  version "17.10.0"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-17.10.0.tgz#2d5fbaa427c34c20e90764c12447a665a72ee4a2"
-  integrity sha512-HvFYByAJqnUFCKjA7XEA+QVUEPktZBgpOMAnjMoZ7ZLW5JWCBfEF3dq5QZYmYaRv/HumVOe/GUq+V7ZCZzIc4g==
+renovate@17.10.1:
+  version "17.10.1"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-17.10.1.tgz#7ea3006edbde8648bddb45419278ab6aeb6863ce"
+  integrity sha512-mahuwrmjUqaA3TYTk3iJTuwFsbfRcDSpEIMfkYW4E8x/I8WPhw1eGm2+QibB9HMY2JvUcWRHtTRh/xcqGVNo/A==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
     "@sindresorhus/is" "0.17.0"
-    "@snyk/ruby-semver" "github:rarkins/ruby-semver#semverfix"
+    "@snyk/ruby-semver" "git+https://github.com/rarkins/ruby-semver.git#semverfix"
     "@yarnpkg/lockfile" "1.1.0"
     azure-devops-node-api "8.0.0"
     bunyan "1.8.12"
