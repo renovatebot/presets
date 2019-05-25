@@ -905,6 +905,11 @@ deep-is@~0.1.3:
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
   integrity sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
 
+deepmerge@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-3.2.0.tgz#58ef463a57c08d376547f8869fdc5bcee957f44e"
+  integrity sha512-6+LuZGU7QCNUnAJyX8cIrlzoEgggTM6B7mm+znKOX4t5ltluT9KLjN6g61ECMS0LTsLW7yDpNoxhix5FZcrIow==
+
 defaults@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/defaults/-/defaults-1.0.3.tgz#c656051e9817d9ff08ed881477f3fe4019f3ef7d"
@@ -4138,10 +4143,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@17.16.0:
-  version "17.16.0"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-17.16.0.tgz#0c05706b6f3a3be5e5deecab8e073c2fb396477b"
-  integrity sha512-NFBL4o966OrGxuA7t6UVFJGeFSLxP8HEaZ5IlZuEQPP08lNk18hD2XXHO8K/djEzMmEnBNAzclT9CsxmLZQ6CQ==
+renovate@18.0.4:
+  version "18.0.4"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.0.4.tgz#491a43ec024a302bf75c258f7c10771820a74543"
+  integrity sha512-6DhwMmdMsaGag65XsMFDYH9ImD+liL4p2hOOVXO0+GvDb20votEy7BzcUd+EZ/i8oOVzXoJ4QmzcPC4b384Uww==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4159,6 +4164,7 @@ renovate@17.16.0:
     compare-versions "3.4.0"
     conventional-commits-detector "1.0.2"
     convert-hrtime "2.0.0"
+    deepmerge "3.2.0"
     delay "4.2.0"
     detect-indent "5.0.0"
     email-addresses "3.0.3"
