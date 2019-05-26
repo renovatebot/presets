@@ -1675,13 +1675,6 @@ github-url-from-git@1.5.0:
   resolved "https://registry.yarnpkg.com/github-url-from-git/-/github-url-from-git-1.5.0.tgz#f985fedcc0a9aa579dc88d7aff068d55cc6251a0"
   integrity sha1-+YX+3MCpqledyI16/waNVcxiUaA=
 
-gl-got@9.0.3:
-  version "9.0.3"
-  resolved "https://registry.yarnpkg.com/gl-got/-/gl-got-9.0.3.tgz#ceddbbf71f09d9369d9179a35ca919ffb289259b"
-  integrity sha512-qT1Jx80DvD99G/gjG5ZHOEv9RS55mwyRakMhe4U4+BSvoTn0Mjjs01t7mRUHoB6TxaoublB2Bv0IYcXzOgKGrQ==
-  dependencies:
-    got "^9.2.0"
-
 glob@^6.0.1:
   version "6.0.4"
   resolved "https://registry.yarnpkg.com/glob/-/glob-6.0.4.tgz#0f08860f6a155127b2fadd4f9ce24b1aab6e4d22"
@@ -1737,7 +1730,7 @@ globals@^11.7.0:
   resolved "https://registry.yarnpkg.com/globals/-/globals-11.12.0.tgz#ab8795338868a0babd8525758018c2a7eb95c42e"
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
 
-got@9.6.0, got@^9.2.0, got@^9.5.0:
+got@9.6.0, got@^9.5.0:
   version "9.6.0"
   resolved "https://registry.yarnpkg.com/got/-/got-9.6.0.tgz#edf45e7d67f99545705de1f7bbeeeb121765ed85"
   integrity sha512-R7eWptXuGYxwijs0eV+v3o6+XH1IqVK8dJOEecQfTmkncw9AV4dcw/Dhxi8MdlqPthxxpZyizMzyg8RTmEsG+Q==
@@ -4143,10 +4136,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.2.0.tgz#b73ee810ee409c41ccdd0c81ebbf9cb0c42454da"
-  integrity sha512-Uyf2DMUrIigKUHUoTrrSBHMJ/VcUOMmEDTRxr6ygnT0RxKKf7ryOAviN9BbaF3SQ3bac4pFh0A342IztJ0XSpw==
+renovate@18.2.1:
+  version "18.2.1"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.2.1.tgz#da406d60ce2eb77dabda6d1f732f15f55bf98b68"
+  integrity sha512-yq9Idhe+BT4p3xAwXAezW5RiwlMoD+rwCYkDTOxBZf5CEr0TzFag3FYxVrsfLyWGe05qxQcwQO4bDPXMyQhGRw==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4173,7 +4166,6 @@ renovate@18.2.0:
     get-installed-path "4.0.8"
     gh-got "8.1.0"
     github-url-from-git "1.5.0"
-    gl-got "9.0.3"
     got "9.6.0"
     handlebars "4.1.2"
     ini "1.3.5"
