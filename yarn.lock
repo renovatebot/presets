@@ -4136,10 +4136,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@18.2.1:
-  version "18.2.1"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.2.1.tgz#da406d60ce2eb77dabda6d1f732f15f55bf98b68"
-  integrity sha512-yq9Idhe+BT4p3xAwXAezW5RiwlMoD+rwCYkDTOxBZf5CEr0TzFag3FYxVrsfLyWGe05qxQcwQO4bDPXMyQhGRw==
+renovate@18.2.2:
+  version "18.2.2"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.2.2.tgz#b722031a34c1109ac9e4f8e892b99ab373b9836e"
+  integrity sha512-f+nb5YmEWDecBMPwFJLtbgwPrWPgPFlM0MWja26Rkf823i/lCyjCtMmGOD+b75gY9DuRmQQHqQ8YhZm2Wq9fOQ==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4164,7 +4164,6 @@ renovate@18.2.1:
     form-data "2.3.3"
     fs-extra "7.0.1"
     get-installed-path "4.0.8"
-    gh-got "8.1.0"
     github-url-from-git "1.5.0"
     got "9.6.0"
     handlebars "4.1.2"
