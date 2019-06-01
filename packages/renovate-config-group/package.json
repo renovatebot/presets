@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.39.0",
+  "version": "0.40.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -829,6 +829,7 @@
         "group:hibernateValidator",
         "group:hibernateOgm",
         "group:hibernateCommons",
+        "group:rubyOmniauth",
         "group:springAmqp",
         "group:springAndroid",
         "group:springBatch",
@@ -861,6 +862,20 @@
           "description": "Group packages from router5 monorepo together",
           "extends": "monorepo:router5",
           "groupName": "router5 monorepo"
+        }
+      ]
+    },
+    "rubyOmniauth": {
+      "description": "Group omniauth packages together",
+      "packageRules": [
+        {
+          "datasources": [
+            "rubygems"
+          ],
+          "packagePatterns": [
+            "^omniauth"
+          ],
+          "groupName": "omniauth packages"
         }
       ]
     },

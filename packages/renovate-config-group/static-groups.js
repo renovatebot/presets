@@ -42,6 +42,7 @@ module.exports = {
       'group:hibernateValidator',
       'group:hibernateOgm',
       'group:hibernateCommons',
+      'group:rubyOmniauth',
       'group:springAmqp',
       'group:springAndroid',
       'group:springBatch',
@@ -392,6 +393,16 @@ module.exports = {
       {
         extends: 'packages:postcss',
         groupName: 'postcss packages',
+      },
+    ],
+  },
+  rubyOmniauth: {
+    description: 'Group omniauth packages together',
+    packageRules: [
+      {
+        datasources: ['rubygems'],
+        packagePatterns: ['^omniauth'],
+        groupName: 'omniauth packages',
       },
     ],
   },
