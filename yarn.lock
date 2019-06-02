@@ -2747,7 +2747,7 @@ markdown-it@8.4.2:
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
 
-markdown-table@^1.1.0:
+markdown-table@1.1.3, markdown-table@^1.1.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-1.1.3.tgz#9fcb69bcfdb8717bfd0398c6ec2d93036ef8de60"
   integrity sha512-1RUZVgQlpJSPWYbFSpmudq5nHY1doEIv89gBtF0s4gW1GF2XorxcA/70M5vq7rLv0a6mhOUccRsqkwhwLCIQ2Q==
@@ -4136,10 +4136,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@18.8.2:
-  version "18.8.2"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.8.2.tgz#bf4baeb263c7f32f1911b8796e29e3b10e74b207"
-  integrity sha512-/TXhLAo+8e3q0q/S2uCbNniM0b5BwZa2lklbCzfu18oHDAXivPVnCp1d0Gxf79Yo43TNs6likN47IohNOjaOuw==
+renovate@18.9.0:
+  version "18.9.0"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.9.0.tgz#3f67e53daf0f1feb47feb0ac7ce7b0c02d3f8bce"
+  integrity sha512-+8b/gsMsSPCrnmiUuLJ8/dzMy/iy+usR5dlnD0eKXXM9DlCS9Ny90TPgly6In1cK5K27StRDUDzhhj++OnjcCg==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4177,6 +4177,7 @@ renovate@18.8.2:
     lodash "4.17.11"
     luxon "1.15.0"
     markdown-it "8.4.2"
+    markdown-table "1.1.3"
     minimatch "3.0.4"
     moment "2.24.0"
     moment-timezone "0.5.25"
@@ -4201,7 +4202,7 @@ renovate@18.8.2:
     traverse "0.6.6"
     upath "1.1.2"
     validate-npm-package-name "3.0.0"
-    validator "10.11.0"
+    validator "11.0.0"
     www-authenticate "0.6.2"
     xmldoc "1.1.2"
     yarn "1.16.0"
@@ -5134,10 +5135,10 @@ validate-npm-package-name@3.0.0, validate-npm-package-name@^3.0.0, validate-npm-
   dependencies:
     builtins "^1.0.3"
 
-validator@10.11.0:
-  version "10.11.0"
-  resolved "https://registry.yarnpkg.com/validator/-/validator-10.11.0.tgz#003108ea6e9a9874d31ccc9e5006856ccd76b228"
-  integrity sha512-X/p3UZerAIsbBfN/IwahhYaBbY68EN/UQBWHtsbXGT5bfrH/p4NQzUCG1kF/rtKaNpnJ7jAu6NGTdSNtyNIXMw==
+validator@11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-11.0.0.tgz#fb10128bfb1fd14ce4ed36b79fc94289eae70667"
+  integrity sha512-+wnGLYqaKV2++nUv60uGzUJyJQwYVOin6pn1tgEiFCeCQO60yeu3Og9/yPccbBX574kxIcEJicogkzx6s6eyag==
 
 "vasync@1.x >=1.6.1":
   version "1.6.4"
