@@ -742,10 +742,10 @@ conventional-commits-detector@1.0.2:
     meow "^5.0.0"
     through2-concurrent "^2.0.0"
 
-convert-hrtime@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/convert-hrtime/-/convert-hrtime-2.0.0.tgz#19bfb2c9162f9e11c2f04c2c79de2b7e8095c627"
-  integrity sha1-Gb+yyRYvnhHC8Ewsed4rfoCVxic=
+convert-hrtime@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/convert-hrtime/-/convert-hrtime-3.0.0.tgz#62c7593f5809ca10be8da858a6d2f702bcda00aa"
+  integrity sha512-7V+KqSvMiHp8yWDuwfww06XleMWVVB9b9tURBx+G7UTADuo5hYPuowKloz4OzOqbPezxgo+fdQ1522WzPG4OeA==
 
 copy-concurrently@^1.0.0:
   version "1.0.5"
@@ -4136,10 +4136,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@18.9.2:
-  version "18.9.2"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.9.2.tgz#32cd706a6aa2fdd2888bfa65c4a15d58458c0923"
-  integrity sha512-5YeesmcGFbvJ17KCSnVEjxwtTIz6LdOcQQv+AxrMnjoXZldzpinHecPfF9Rd/RmOZGYDue1bS6icbRQCFVMqFg==
+renovate@18.9.3:
+  version "18.9.3"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.9.3.tgz#678351cdadddfb496ae895d62e8cbee455fe329d"
+  integrity sha512-bczZVyYtqvu3dWkooJPZeVq8eYIkJvVB4oeHOKwHKZvdz9MiRnTJ3jH87rY+K9k13Bv6VfmHVaIVn3NdJyneiQ==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4156,7 +4156,7 @@ renovate@18.9.2:
     commander "2.20.0"
     compare-versions "3.4.0"
     conventional-commits-detector "1.0.2"
-    convert-hrtime "2.0.0"
+    convert-hrtime "3.0.0"
     deepmerge "3.2.0"
     delay "4.2.0"
     detect-indent "5.0.0"
