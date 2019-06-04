@@ -958,7 +958,12 @@ depd@~1.1.2:
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
   integrity sha1-m81S4UwJd2PnSbJ0xDRu0uVgtak=
 
-detect-indent@5.0.0, detect-indent@~5.0.0:
+detect-indent@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-6.0.0.tgz#0abd0f549f69fc6659a254fe96786186b6f528fd"
+  integrity sha512-oSyFlqaTHCItVRGK5RmrmjB+CmaMOW7IaNA/kdxqhoa6d17j/5ce9O9eWXmV/KEdRwqpQA+Vqe8a8Bsybu4YnA==
+
+detect-indent@~5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-5.0.0.tgz#3871cc0a6a002e8c3e5b3cf7f336264675f06b9d"
   integrity sha1-OHHMCmoALow+Wzz38zYmRnXwa50=
@@ -1503,10 +1508,10 @@ from2@^2.1.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
-fs-extra@7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-7.0.1.tgz#4f189c44aa123b895f722804f55ea23eadc348e9"
-  integrity sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
+fs-extra@8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-8.0.1.tgz#90294081f978b1f182f347a440a209154344285b"
+  integrity sha512-W+XLrggcDzlle47X/XnS7FXrXu9sDo+Ze9zpndeBxdgv88FHLm1HtmkhEwavruS6koanBjp098rUpHs65EmG7A==
   dependencies:
     graceful-fs "^4.1.2"
     jsonfile "^4.0.0"
@@ -4136,10 +4141,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@18.9.5:
-  version "18.9.5"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.9.5.tgz#029c200a227bdf901434ecd066d871b6b5c94e78"
-  integrity sha512-Fp1oAWMUGS/C+vzu2kv0qaFiaJYfRTLpEJWhT7zzqZ8PVV+70LIabg2/Anm5SKPglJ34N8udG2dgxVreRHVIcw==
+renovate@18.9.6:
+  version "18.9.6"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.9.6.tgz#a2edeaac7a581af2448a568fec419df90d65313e"
+  integrity sha512-+sqUNQ2X3SdY0kEH1JBjmehAkOAN+m1HUduxLxsvoAd+HXQqI9CECMuN6sFAq6sOK94SPdTq6MdTnJHPQSMX6g==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4159,10 +4164,10 @@ renovate@18.9.5:
     convert-hrtime "3.0.0"
     deepmerge "3.2.0"
     delay "4.2.0"
-    detect-indent "5.0.0"
+    detect-indent "6.0.0"
     email-addresses "3.0.3"
     form-data "2.3.3"
-    fs-extra "7.0.1"
+    fs-extra "8.0.1"
     get-installed-path "4.0.8"
     github-url-from-git "1.5.0"
     got "9.6.0"
