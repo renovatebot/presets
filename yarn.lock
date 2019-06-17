@@ -4246,10 +4246,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@18.16.5:
-  version "18.16.5"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.16.5.tgz#4eed8a074a3cefb539fcac2c5703e7e554e4d700"
-  integrity sha512-QsUZXzmDUw1pnBnofc9zjfVv7E49gHp4RXuiLaUYIagJzREGRQTcDxjEojDwKVH4r9g4dpXUm+/Xu3MOQGHVeg==
+renovate@18.16.6:
+  version "18.16.6"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.16.6.tgz#050bee007aad98c694c6e7e990c9a740f48c6d69"
+  integrity sha512-Krlvdiqb0YWISQaH2DePZS6ZGLvMG/Yj0+h83DPbPk3zZC7iMdnF1fofK8GPFZ1cvPxQvhGbAoMcRG/rueZwOQ==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
