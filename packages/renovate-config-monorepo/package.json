@@ -970,12 +970,6 @@
         "react-router"
       ]
     },
-    "remark": {
-      "description": "remark monorepo",
-      "sourceUrlPrefixes": [
-        "https://github.com/remarkjs/remark"
-      ]
-    },
     "router5": {
       "description": "router5 monorepo",
       "sourceUrlPrefixes": [
