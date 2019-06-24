@@ -22,7 +22,7 @@
     "trailingComma": "es5"
   },
   "devDependencies": {
-    "eslint": "5.16.0",
+    "eslint": "6.0.0",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-config-prettier": "5.0.0",
     "eslint-plugin-import": "2.17.3",
@@ -31,6 +31,6 @@
     "eslint-plugin-promise": "4.1.1",
     "gh-got": "8.1.0",
     "prettier": "1.17.1",
-    "renovate": "18.16.13"
+    "renovate": "18.16.16"
   }
 }
