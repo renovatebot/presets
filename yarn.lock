@@ -4072,7 +4072,7 @@ raw-body@^2.2.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-rc@^1.0.1, rc@^1.1.6:
+rc@^1.0.1, rc@^1.1.6, rc@^1.2.8:
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
   integrity sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==
@@ -4235,7 +4235,15 @@ regexpp@^2.0.1:
   resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-2.0.1.tgz#8d19d31cf632482b589049f8281f93dbcba4d07f"
   integrity sha512-lv0M6+TkDVniA3aD1Eg0DVpfU/booSu7Eev3TDO/mZKHBfVjgCGTV4t4buppESEYDtkArYFOxTJWv6S5C+iaNw==
 
-registry-auth-token@3.4.0, registry-auth-token@^3.0.1:
+registry-auth-token@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/registry-auth-token/-/registry-auth-token-4.0.0.tgz#30e55961eec77379da551ea5c4cf43cbf03522be"
+  integrity sha512-lpQkHxd9UL6tb3k/aHAVfnVtn+Bcs9ob5InuFLLEDqSqeq+AljB8GZW9xY0x7F+xYwEcjKe07nyoxzEYz6yvkw==
+  dependencies:
+    rc "^1.2.8"
+    safe-buffer "^5.0.1"
+
+registry-auth-token@^3.0.1:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/registry-auth-token/-/registry-auth-token-3.4.0.tgz#d7446815433f5d5ed6431cd5dca21048f66b397e"
   integrity sha512-4LM6Fw8eBQdwMYcES4yTnn2TqIasbXuwDx3um+QRs7S55aMKCBKBxvPXl2RiUjHwuJLTyYfxSpmfSAjQpcuP+A==
@@ -4311,10 +4319,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@18.17.2:
-  version "18.17.2"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.17.2.tgz#93d2768f7adb3f776a0057695b125ac0d2b4a434"
-  integrity sha512-Jtnk//55kOJyoV3JQpJVRHV/XXVws2X2ax6VB//0umyt8h0/JPQjokukjpzQbp62Ky/P4eQkCF+eQmA10TEG+g==
+renovate@18.17.3:
+  version "18.17.3"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.17.3.tgz#f8027574ba2e54c615fd3ca7c407f547f56a59b1"
+  integrity sha512-7jEYai0QbMY81Sg/amIfePDwcuLLnMgT/6tQvLGXZbTmTOBEMwKgOBHlV6HsSoeBecM1KZ1e0KrX0lvPf6k6CQ==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4363,7 +4371,7 @@ renovate@18.17.2:
     parse-link-header "1.0.1"
     pnpm "3.5.0"
     proxy-agent "3.0.3"
-    registry-auth-token "3.4.0"
+    registry-auth-token "4.0.0"
     safe-regex "2.0.2"
     semver "6.1.1"
     semver-stable "2.0.4"
