@@ -24,13 +24,13 @@
   "devDependencies": {
     "eslint": "6.0.0",
     "eslint-config-airbnb-base": "13.1.0",
-    "eslint-config-prettier": "5.0.0",
+    "eslint-config-prettier": "6.0.0",
     "eslint-plugin-import": "2.17.3",
     "eslint-plugin-json": "1.4.0",
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-promise": "4.1.1",
     "gh-got": "8.1.0",
     "prettier": "1.17.1",
-    "renovate": "18.16.16"
+    "renovate": "18.17.3"
   }
 }
