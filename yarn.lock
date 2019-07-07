@@ -375,6 +375,11 @@ boolean@^0.2.0:
   resolved "https://registry.yarnpkg.com/boolean/-/boolean-0.2.0.tgz#808dff32ce1c87b828cc381428dc3b158d4f85cb"
   integrity sha512-mDcM3ChboDuhv4glLXEH1us7jMiWXRSs3R13Okoo+kkFOlLIjvF1y88507wTfDf9zsuv0YffSDFUwX95VAT/mg==
 
+boolean@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/boolean/-/boolean-1.0.0.tgz#45764b4aac187a050995b0a33d7579b6759f0dfd"
+  integrity sha512-IB1lgIywn37N9Aff8CciCblVpMUflgL42vyxPUH0IvaDdIi/QwBHKv1lq/HOkATHCfa7c4MbMYJ7Bo7hGuoI+w==
+
 bops@~0.0.6:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/bops/-/bops-0.0.7.tgz#b4a0a5a839a406454af0fe05a8b91a7a766a54e2"
@@ -1796,11 +1801,12 @@ glob@^7.0.3, glob@^7.1.1, glob@^7.1.3, glob@^7.1.4:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-global-agent@1.13.1:
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/global-agent/-/global-agent-1.13.1.tgz#e4ec5a02536ef4073acd1299e5bff8ab63344f05"
-  integrity sha512-LNU/fVB9OAOvrSGXSKgeq1ug3S8ZSs7hNmLPcOD0kJ5TennpnYnVWipYTYa5M/kIpY3fXPFYgqr9hx10Tis3BQ==
+global-agent@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/global-agent/-/global-agent-2.0.0.tgz#54dadd7d9b5df140752f732de6415ffa87f22a22"
+  integrity sha512-UxnV7o81DW5aNEg3AjmAbJI7PsXLrJZn3KM/eHDfxjKsLHB4RC2QzSajfTadPqYQCzaOd+Wb8zjvaiHiwwqPUQ==
   dependencies:
+    boolean "^1.0.0"
     core-js "^3.1.4"
     es6-error "^4.1.1"
     matcher "^2.0.0"
@@ -4339,10 +4345,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@18.21.13:
-  version "18.21.13"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.21.13.tgz#9615e4379728734428a96c7aa41f0488f131c143"
-  integrity sha512-tXgIylDiqCgPwAqZ0p9YKnSOPF6oji4b54BJCIobJkN3taZOmOd1ym8cNXrRgHLLW5xJPRkG47IsEed6AT+X0g==
+renovate@18.21.15:
+  version "18.21.15"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.21.15.tgz#b9c9426b562aa65c64350414b0a14a17789c48ac"
+  integrity sha512-0MfkJ66nihFasxOM+RngGuDrrXGE61If4klsaHRdslSINQp35CZJRhOzI/AX3zIfliECDS10PxOe6Wa3YO6ucA==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4366,7 +4372,7 @@ renovate@18.21.13:
     fs-extra "8.1.0"
     get-installed-path "4.0.8"
     github-url-from-git "1.5.0"
-    global-agent "1.13.1"
+    global-agent "2.0.0"
     got "9.6.0"
     handlebars "4.1.2"
     hasha "5.0.0"
