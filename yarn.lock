@@ -4234,10 +4234,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@18.29.0:
-  version "18.29.0"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.29.0.tgz#9ced5377cfa2663fae49b093f6e8092b9342f915"
-  integrity sha512-sgm45Gw/k6sdtU55y9GUJEd15QUmiUawd1D+btxywQwormuYL61RVrCBObodj/Oxl65I2NMdvefkuhFeT4fQ5Q==
+renovate@18.29.1:
+  version "18.29.1"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.29.1.tgz#62baeda3068dde55700cc7839b1aa779d24d3799"
+  integrity sha512-mbQYDJ4F3rMnGOFJEad4PS7kz4mkhod3YJ8pxnfPUCTMBkVkJQXH6IWp19TWsqz2fLF8/+4k6Ji/ptrm/wY8PQ==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4300,7 +4300,7 @@ renovate@18.29.0:
     validator "11.0.0"
     www-authenticate "0.6.2"
     xmldoc "1.1.2"
-    yarn "1.16.0"
+    yarn "1.17.3"
     yawn-yaml "1.4.0"
 
 repeat-string@^1.5.4:
@@ -5506,10 +5506,10 @@ yargs@^11.0.0:
     y18n "^3.2.1"
     yargs-parser "^9.0.2"
 
-yarn@1.16.0:
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.16.0.tgz#5701b58ac555ff91f7b889b7d791b3dc86f8f999"
-  integrity sha512-cfemyGlnWKA1zopUUgebTPf8C4WkPIZ+TJmklwcEAJ4u6oWPtJeAzrsamaGGh/+b1XWe8W51yzAImC4AWbWR1g==
+yarn@1.17.3:
+  version "1.17.3"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.17.3.tgz#60e0b77d079eb78e753bb616f7592b51b6a9adce"
+  integrity sha512-CgA8o7nRZaQvmeF/WBx2FC7f9W/0X59T2IaLYqgMo6637wfp5mMEsM3YXoJtKUspnpmDJKl/gGFhnqS+sON7hA==
 
 yawn-yaml@1.4.0:
   version "1.4.0"
