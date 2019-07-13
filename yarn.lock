@@ -2789,10 +2789,10 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-luxon@1.16.0:
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.16.0.tgz#93c915cfc3dff4bb806656595018fddc47cc96ec"
-  integrity sha512-qaqB+JwpGwtl7UbIXng3A/l4W/ySBr8drQvwtMLZBMiLD2V+0fEnPWMrs+UjnIy9PsktazQaKvwDUCLzoWz0Hw==
+luxon@1.17.1:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.17.1.tgz#7261aae6f7a2cc3cf83cbe24c62335cf3a48caad"
+  integrity sha512-+xo7Pj54xwyEzlMdXzDqm60Ewqbn0QqACwfIo6so9M1idUtYQrD7/PHjEFQQmLCBu8wUe2IDC2jrcJJ3Buk4Pw==
 
 make-dir@^1.0.0:
   version "1.3.0"
@@ -4231,10 +4231,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@18.25.6:
-  version "18.25.6"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.25.6.tgz#ca3d0c9d0cb3d1247ab117c0aae5367d2a896e82"
-  integrity sha512-mgLAzdQUd80ZSLakqc8yxrPnqKsQkq0xai5gSKtqavTrUzgZR7VKIjjgX+08HdktPSTneagrGPJHNo9PdrANyA==
+renovate@18.28.1:
+  version "18.28.1"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.28.1.tgz#3a5b73001b784259854c19fb7d13171f724bdb5f"
+  integrity sha512-R8g9ltfG4dQKtnSomnRD6Lshz4S+A8+ZtWBALIrA1598RZO8OkhcyhDnIEIKlQbUqwz/vdArccmS5JrBfYlARA==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4270,7 +4270,7 @@ renovate@18.25.6:
     later "1.2.0"
     linkify-markdown "1.0.0"
     lodash "4.17.14"
-    luxon "1.16.0"
+    luxon "1.17.1"
     markdown-it "8.4.2"
     markdown-table "1.1.3"
     minimatch "3.0.4"
