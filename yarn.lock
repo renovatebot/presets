@@ -4234,10 +4234,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@18.30.2:
-  version "18.30.2"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.30.2.tgz#c4c4469ce83c17132ae037729d6d8c876e662ad3"
-  integrity sha512-tmTIrtSm4M7VdvZUezivkd5yR5aDN6E9iIDQ8c13ph6Mxzsbn2iOucV1WDVNQ3D054jjmvf6nD1btohYBWUF/w==
+renovate@18.30.3:
+  version "18.30.3"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-18.30.3.tgz#f22b3ec86f40d7b67e87192c50f0e7edb1912503"
+  integrity sha512-FOB3Ajy7k2iiUQFqrxP/YU/VgJCSYNy8EPjfDIwL5wlWuyheiHdhG/FzIu8k6+rp3iefa2382RGSR2eYy3bZKw==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/docker-registry-client" "3.3.0"
@@ -4297,7 +4297,7 @@ renovate@18.30.2:
     traverse "0.6.6"
     upath "1.1.2"
     validate-npm-package-name "3.0.0"
-    validator "11.0.0"
+    validator "11.1.0"
     www-authenticate "0.6.2"
     xmldoc "1.1.2"
     yarn "1.17.3"
@@ -5253,10 +5253,10 @@ validate-npm-package-name@3.0.0, validate-npm-package-name@^3.0.0, validate-npm-
   dependencies:
     builtins "^1.0.3"
 
-validator@11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/validator/-/validator-11.0.0.tgz#fb10128bfb1fd14ce4ed36b79fc94289eae70667"
-  integrity sha512-+wnGLYqaKV2++nUv60uGzUJyJQwYVOin6pn1tgEiFCeCQO60yeu3Og9/yPccbBX574kxIcEJicogkzx6s6eyag==
+validator@11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-11.1.0.tgz#ac18cac42e0aa5902b603d7a5d9b7827e2346ac4"
+  integrity sha512-qiQ5ktdO7CD6C/5/mYV4jku/7qnqzjrxb3C/Q5wR3vGGinHTgJZN/TdFT3ZX4vXhX2R1PXx42fB1cn5W+uJ4lg==
 
 "vasync@1.x >=1.6.1":
   version "1.6.4"
