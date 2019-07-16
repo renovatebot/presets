@@ -165,6 +165,12 @@
         "https://github.com/aspnet/Extensions"
       ]
     },
+    "aws-cdk": {
+      "description": "aws-cdk monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/aws/aws-cdk"
+      ]
+    },
     "aws-java-sdk": {
       "description": "aws-java-sdk monorepo",
       "packagePatterns": [
