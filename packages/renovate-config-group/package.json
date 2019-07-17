@@ -158,6 +158,15 @@
         }
       ]
     },
+    "aws-cdkMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from aws-cdk monorepo together",
+          "extends": "monorepo:aws-cdk",
+          "groupName": "aws-cdk monorepo"
+        }
+      ]
+    },
     "aws-java-sdkMonorepo": {
       "packageRules": [
         {
@@ -603,6 +612,7 @@
         "group:apollolinkMonorepo",
         "group:aspnet AspNetWebStackMonorepo",
         "group:aspnet ExtensionsMonorepo",
+        "group:aws-cdkMonorepo",
         "group:aws-java-sdkMonorepo",
         "group:awsappsyncMonorepo",
         "group:azure azure-libraries-for-netMonorepo",

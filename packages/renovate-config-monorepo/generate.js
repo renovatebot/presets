@@ -105,6 +105,9 @@ const staticSources = {
   'typography-js': {
     sourceUrlPrefixes: ['https://github.com/KyleAMathews/typography.js'],
   },
+  'aws-cdk': {
+    sourceUrlPrefixes: ['https://github.com/aws/aws-cdk'],
+  },
   'aws-java-sdk': {
     packagePatterns: ['^com.amazonaws:aws-java-sdk-'],
   },
