@@ -86,6 +86,7 @@ const repoGroups = {
 };
 
 const patternGroups = {
+  babel6: '^babel6$',
   wordpress: '^@wordpress/',
   angularmaterial: ['^@angular/material', '^@angular/cdk'],
   'aws-java-sdk': '^com.amazonaws:aws-java-sdk-',

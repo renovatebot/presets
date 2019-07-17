@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.34.0",
+  "version": "0.34.1",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -122,6 +122,12 @@
       "description": "babel monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/babel/babel"
+      ]
+    },
+    "babel6": {
+      "description": "babel6 monorepo",
+      "packagePatterns": [
+        "^babel6$"
       ]
     },
     "baset": {
