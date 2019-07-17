@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.5.1",
+  "version": "0.5.2",
   "renovate-config": {
     "angularJs": {
       "description": "All angular.js packages",
@@ -61,8 +61,7 @@
       "extends": [
         "packages:eslint",
         "packages:stylelint",
-        "packages:tslint",
-        "monorepo:fimbullinter"
+        "packages:tslint"
       ],
       "packageNames": [
         "remark-lint"
