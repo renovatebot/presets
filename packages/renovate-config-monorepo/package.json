@@ -68,7 +68,8 @@
         "@angular/platform-webworker",
         "@angular/router",
         "@angular/service-worker",
-        "@angular/upgrade"
+        "@angular/upgrade",
+        "zone.js"
       ]
     },
     "angular1": {
@@ -164,6 +165,12 @@
         "https://github.com/aspnet/Extensions"
       ]
     },
+    "aws-cdk": {
+      "description": "aws-cdk monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/aws/aws-cdk"
+      ]
+    },
     "aws-java-sdk": {
       "description": "aws-java-sdk monorepo",
       "packagePatterns": [
@@ -237,6 +244,7 @@
         "@babel/plugin-proposal-class-properties",
         "@babel/plugin-proposal-decorators",
         "@babel/plugin-proposal-do-expressions",
+        "@babel/plugin-proposal-dynamic-import",
         "@babel/plugin-proposal-export-default-from",
         "@babel/plugin-proposal-export-namespace-from",
         "@babel/plugin-proposal-function-bind",
@@ -540,10 +548,14 @@
         "babel-preset-gatsby",
         "gatsby-cli",
         "gatsby-codemods",
+        "gatsby-core-utils",
         "gatsby-cypress",
+        "gatsby-design-tokens",
         "gatsby-dev-cli",
+        "gatsby-graphiql-explorer",
         "gatsby-image",
         "gatsby-link",
+        "gatsby-page-utils",
         "gatsby-plugin-canonical-urls",
         "gatsby-plugin-catch-links",
         "gatsby-plugin-coffeescript",
@@ -564,6 +576,7 @@
         "gatsby-plugin-less",
         "gatsby-plugin-lodash",
         "gatsby-plugin-manifest",
+        "gatsby-plugin-mdx",
         "gatsby-plugin-netlify-cms",
         "gatsby-plugin-netlify",
         "gatsby-plugin-no-sourcemaps",
@@ -747,6 +760,7 @@
         "@material/card",
         "@material/checkbox",
         "@material/chips",
+        "@material/data-table",
         "@material/dialog",
         "@material/dom",
         "@material/drawer",
@@ -777,10 +791,8 @@
         "@material/tab-indicator",
         "@material/tab-scroller",
         "@material/tab",
-        "@material/tabs",
         "@material/textfield",
         "@material/theme",
-        "@material/toolbar",
         "@material/top-app-bar",
         "@material/typography"
       ]
@@ -837,6 +849,7 @@
         "@material-ui/lab",
         "@material-ui/styles",
         "@material-ui/system",
+        "@material-ui/types",
         "@material-ui/utils",
         "@material-ui/core"
       ]
@@ -944,6 +957,7 @@
         "react-dom",
         "react-is",
         "react-reconciler",
+        "react-refresh",
         "react-test-renderer",
         "react",
         "scheduler"
@@ -1066,9 +1080,11 @@
         "@vue/cli-plugin-e2e-nightwatch",
         "@vue/cli-plugin-eslint",
         "@vue/cli-plugin-pwa",
+        "@vue/cli-plugin-router",
         "@vue/cli-plugin-typescript",
         "@vue/cli-plugin-unit-jest",
         "@vue/cli-plugin-unit-mocha",
+        "@vue/cli-plugin-vuex",
         "@vue/cli-service-global",
         "@vue/cli-service",
         "@vue/cli-shared-utils",
@@ -1076,12 +1092,7 @@
         "@vue/cli-ui-addon-webpack",
         "@vue/cli-ui-addon-widgets",
         "@vue/cli-ui",
-        "@vue/cli-upgrade",
-        "@vue/cli",
-        "@vue/eslint-config-airbnb",
-        "@vue/eslint-config-prettier",
-        "@vue/eslint-config-standard",
-        "@vue/eslint-config-typescript"
+        "@vue/cli"
       ]
     },
     "vuepress": {
