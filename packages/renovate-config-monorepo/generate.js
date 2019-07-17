@@ -206,6 +206,9 @@ const staticSources = {
   lerna: {
     sourceUrlPrefixes: ['https://github.com/lerna/lerna'],
   },
+  remark: {
+    sourceUrlPrefixes: ['https://github.com/remarkjs/remark'],
+  },
   'electron-forge': {
     sourceUrlPrefixes: ['https://github.com/electron-userland/electron-forge'],
   },
