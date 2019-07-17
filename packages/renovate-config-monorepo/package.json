@@ -7,32 +7,12 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.33.0",
+  "version": "0.28.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
-      "packageNames": [
-        "@accounts/apollo-link",
-        "@accounts/boost",
-        "@accounts/client-password",
-        "@accounts/client",
-        "@accounts/database-manager",
-        "@accounts/mongo",
-        "@accounts/redis",
-        "@accounts/typeorm",
-        "@accounts/error",
-        "@accounts/express-session",
-        "@accounts/graphql-api",
-        "@accounts/graphql-client",
-        "@accounts/oauth-instagram",
-        "@accounts/oauth-twitter",
-        "@accounts/oauth",
-        "@accounts/password",
-        "@accounts/rest-client",
-        "@accounts/rest-express",
-        "@accounts/server",
-        "@accounts/two-factor",
-        "@accounts/types"
+      "sourceUrlPrefixes": [
+        "https://github.com/accounts-js/accounts"
       ]
     },
     "ag-grid": {
@@ -49,60 +29,14 @@
     },
     "angular": {
       "description": "angular monorepo",
-      "packageNames": [
-        "@angular/animations",
-        "@angular/bazel",
-        "@angular/benchpress",
-        "@angular/common",
-        "@angular/compiler-cli",
-        "@angular/compiler",
-        "@angular/core",
-        "@angular/elements",
-        "@angular/forms",
-        "@angular/http",
-        "@angular/language-service",
-        "@angular/platform-browser-dynamic",
-        "@angular/platform-browser",
-        "@angular/platform-server",
-        "@angular/platform-webworker-dynamic",
-        "@angular/platform-webworker",
-        "@angular/router",
-        "@angular/service-worker",
-        "@angular/upgrade",
-        "zone.js"
+      "sourceUrlPrefixes": [
+        "https://github.com/angular/angular"
       ]
     },
     "angular1": {
       "description": "angular1 monorepo",
-      "packageNames": [
-        "angular",
-        "angular-animate",
-        "angular-aria",
-        "angular-cookies",
-        "angular-loader",
-        "angular-message-format",
-        "angular-messages",
-        "angular-mocks",
-        "angular-parse-ext",
-        "angular-resource",
-        "angular-route",
-        "angular-sanitize",
-        "angular-scenario",
-        "angular-touch",
-        "@types/angular",
-        "@types/angular-animate",
-        "@types/angular-aria",
-        "@types/angular-cookies",
-        "@types/angular-loader",
-        "@types/angular-message-format",
-        "@types/angular-messages",
-        "@types/angular-mocks",
-        "@types/angular-parse-ext",
-        "@types/angular-resource",
-        "@types/angular-route",
-        "@types/angular-sanitize",
-        "@types/angular-scenario",
-        "@types/angular-touch"
+      "sourceUrlPrefixes": [
+        "https://github.com/angular/angular.js"
       ]
     },
     "angularcli": {
@@ -113,9 +47,9 @@
     },
     "angularmaterial": {
       "description": "angularmaterial monorepo",
-      "packageNames": [
-        "@angular/material",
-        "@angular/cdk"
+      "packagePatterns": [
+        "^@angular/material",
+        "^@angular/cdk"
       ]
     },
     "apollo-server": {
@@ -126,31 +60,14 @@
     },
     "apolloclient": {
       "description": "apolloclient monorepo",
-      "packageNames": [
-        "apollo-boost",
-        "apollo-cache-inmemory",
-        "apollo-cache",
-        "apollo-client",
-        "apollo-utilities",
-        "graphql-anywhere"
+      "sourceUrlPrefixes": [
+        "https://github.com/apollographql/apollo-client"
       ]
     },
     "apollolink": {
       "description": "apollolink monorepo",
-      "packageNames": [
-        "apollo-link-batch-http",
-        "apollo-link-batch",
-        "apollo-link-context",
-        "apollo-link-dedup",
-        "apollo-link-error",
-        "apollo-link-http-common",
-        "apollo-link-http",
-        "apollo-link-polling",
-        "apollo-link-retry",
-        "apollo-link-schema",
-        "apollo-link-ws",
-        "apollo-link",
-        "zen-observable-ts"
+      "sourceUrlPrefixes": [
+        "https://github.com/apollographql/apollo-link"
       ]
     },
     "aspnet AspNetWebStack": {
@@ -179,9 +96,8 @@
     },
     "awsappsync": {
       "description": "awsappsync monorepo",
-      "packageNames": [
-        "aws-appsync-react",
-        "aws-appsync"
+      "sourceUrlPrefixes": [
+        "https://github.com/awslabs/aws-mobile-appsync-sdk-js"
       ]
     },
     "azure azure-libraries-for-net": {
@@ -204,239 +120,14 @@
     },
     "babel": {
       "description": "babel monorepo",
-      "packageNames": [
-        "@babel/cli",
-        "@babel/code-frame",
-        "@babel/core",
-        "@babel/generator",
-        "@babel/helper-annotate-as-pure",
-        "@babel/helper-bindify-decorators",
-        "@babel/helper-builder-binary-assignment-operator-visitor",
-        "@babel/helper-builder-react-jsx",
-        "@babel/helper-call-delegate",
-        "@babel/helper-create-class-features-plugin",
-        "@babel/helper-define-map",
-        "@babel/helper-explode-assignable-expression",
-        "@babel/helper-explode-class",
-        "@babel/helper-fixtures",
-        "@babel/helper-function-name",
-        "@babel/helper-get-function-arity",
-        "@babel/helper-hoist-variables",
-        "@babel/helper-member-expression-to-functions",
-        "@babel/helper-module-imports",
-        "@babel/helper-module-transforms",
-        "@babel/helper-optimise-call-expression",
-        "@babel/helper-plugin-test-runner",
-        "@babel/helper-plugin-utils",
-        "@babel/helper-regex",
-        "@babel/helper-remap-async-to-generator",
-        "@babel/helper-replace-supers",
-        "@babel/helper-simple-access",
-        "@babel/helper-split-export-declaration",
-        "@babel/helper-transform-fixture-test-runner",
-        "@babel/helper-wrap-function",
-        "@babel/helpers",
-        "@babel/highlight",
-        "@babel/node",
-        "@babel/parser",
-        "@babel/plugin-external-helpers",
-        "@babel/plugin-proposal-async-generator-functions",
-        "@babel/plugin-proposal-class-properties",
-        "@babel/plugin-proposal-decorators",
-        "@babel/plugin-proposal-do-expressions",
-        "@babel/plugin-proposal-dynamic-import",
-        "@babel/plugin-proposal-export-default-from",
-        "@babel/plugin-proposal-export-namespace-from",
-        "@babel/plugin-proposal-function-bind",
-        "@babel/plugin-proposal-function-sent",
-        "@babel/plugin-proposal-json-strings",
-        "@babel/plugin-proposal-logical-assignment-operators",
-        "@babel/plugin-proposal-nullish-coalescing-operator",
-        "@babel/plugin-proposal-numeric-separator",
-        "@babel/plugin-proposal-object-rest-spread",
-        "@babel/plugin-proposal-optional-catch-binding",
-        "@babel/plugin-proposal-optional-chaining",
-        "@babel/plugin-proposal-partial-application",
-        "@babel/plugin-proposal-pipeline-operator",
-        "@babel/plugin-proposal-private-methods",
-        "@babel/plugin-proposal-throw-expressions",
-        "@babel/plugin-proposal-unicode-property-regex",
-        "@babel/plugin-syntax-async-generators",
-        "@babel/plugin-syntax-bigint",
-        "@babel/plugin-syntax-class-properties",
-        "@babel/plugin-syntax-decorators",
-        "@babel/plugin-syntax-do-expressions",
-        "@babel/plugin-syntax-dynamic-import",
-        "@babel/plugin-syntax-export-default-from",
-        "@babel/plugin-syntax-export-namespace-from",
-        "@babel/plugin-syntax-flow",
-        "@babel/plugin-syntax-function-bind",
-        "@babel/plugin-syntax-function-sent",
-        "@babel/plugin-syntax-import-meta",
-        "@babel/plugin-syntax-json-strings",
-        "@babel/plugin-syntax-jsx",
-        "@babel/plugin-syntax-logical-assignment-operators",
-        "@babel/plugin-syntax-nullish-coalescing-operator",
-        "@babel/plugin-syntax-numeric-separator",
-        "@babel/plugin-syntax-object-rest-spread",
-        "@babel/plugin-syntax-optional-catch-binding",
-        "@babel/plugin-syntax-optional-chaining",
-        "@babel/plugin-syntax-partial-application",
-        "@babel/plugin-syntax-pipeline-operator",
-        "@babel/plugin-syntax-throw-expressions",
-        "@babel/plugin-syntax-typescript",
-        "@babel/plugin-transform-arrow-functions",
-        "@babel/plugin-transform-async-to-generator",
-        "@babel/plugin-transform-block-scoped-functions",
-        "@babel/plugin-transform-block-scoping",
-        "@babel/plugin-transform-classes",
-        "@babel/plugin-transform-computed-properties",
-        "@babel/plugin-transform-destructuring",
-        "@babel/plugin-transform-dotall-regex",
-        "@babel/plugin-transform-duplicate-keys",
-        "@babel/plugin-transform-exponentiation-operator",
-        "@babel/plugin-transform-flow-comments",
-        "@babel/plugin-transform-flow-strip-types",
-        "@babel/plugin-transform-for-of",
-        "@babel/plugin-transform-function-name",
-        "@babel/plugin-transform-instanceof",
-        "@babel/plugin-transform-jscript",
-        "@babel/plugin-transform-literals",
-        "@babel/plugin-transform-member-expression-literals",
-        "@babel/plugin-transform-modules-amd",
-        "@babel/plugin-transform-modules-commonjs",
-        "@babel/plugin-transform-modules-systemjs",
-        "@babel/plugin-transform-modules-umd",
-        "@babel/plugin-transform-named-capturing-groups-regex",
-        "@babel/plugin-transform-new-target",
-        "@babel/plugin-transform-object-assign",
-        "@babel/plugin-transform-object-set-prototype-of-to-assign",
-        "@babel/plugin-transform-object-super",
-        "@babel/plugin-transform-parameters",
-        "@babel/plugin-transform-property-literals",
-        "@babel/plugin-transform-property-mutators",
-        "@babel/plugin-transform-proto-to-assign",
-        "@babel/plugin-transform-react-constant-elements",
-        "@babel/plugin-transform-react-display-name",
-        "@babel/plugin-transform-react-inline-elements",
-        "@babel/plugin-transform-react-jsx-compat",
-        "@babel/plugin-transform-react-jsx-self",
-        "@babel/plugin-transform-react-jsx-source",
-        "@babel/plugin-transform-react-jsx",
-        "@babel/plugin-transform-regenerator",
-        "@babel/plugin-transform-reserved-words",
-        "@babel/plugin-transform-runtime",
-        "@babel/plugin-transform-shorthand-properties",
-        "@babel/plugin-transform-spread",
-        "@babel/plugin-transform-sticky-regex",
-        "@babel/plugin-transform-strict-mode",
-        "@babel/plugin-transform-template-literals",
-        "@babel/plugin-transform-typeof-symbol",
-        "@babel/plugin-transform-typescript",
-        "@babel/plugin-transform-unicode-regex",
-        "@babel/polyfill",
-        "@babel/preset-env-standalone",
-        "@babel/preset-env",
-        "@babel/preset-flow",
-        "@babel/preset-react",
-        "@babel/preset-stage-0",
-        "@babel/preset-stage-1",
-        "@babel/preset-stage-2",
-        "@babel/preset-stage-3",
-        "@babel/preset-typescript",
-        "@babel/register",
-        "@babel/runtime-corejs2",
-        "@babel/runtime-corejs3",
-        "@babel/runtime",
-        "@babel/standalone",
-        "@babel/template",
-        "@babel/traverse",
-        "@babel/types"
-      ]
-    },
-    "babel6": {
-      "description": "babel6 monorepo",
-      "packageNames": [
-        "babel-cli",
-        "babel-code-frame",
-        "babel-core",
-        "babel-generator",
-        "babel-helper-bindify-decorators",
-        "babel-helper-builder-binary-assignment-operator-visitor",
-        "babel-helper-builder-react-jsx",
-        "babel-helper-call-delegate",
-        "babel-helper-define-map",
-        "babel-helper-explode-assignable-expression",
-        "babel-helper-explode-class",
-        "babel-helper-fixtures",
-        "babel-helper-function-name",
-        "babel-helper-get-function-arity",
-        "babel-helper-hoist-variables",
-        "babel-helper-optimise-call-expression",
-        "babel-helper-plugin-test-runner",
-        "babel-helper-regex",
-        "babel-helper-remap-async-to-generator",
-        "babel-helper-replace-supers",
-        "babel-helper-transform-fixture-test-runner",
-        "babel-helpers",
-        "babel-plugin-external-helpers",
-        "babel-plugin-syntax-async-generators",
-        "babel-plugin-syntax-class-properties",
-        "babel-plugin-syntax-decorators",
-        "babel-plugin-syntax-do-expressions",
-        "babel-plugin-syntax-dynamic-import",
-        "babel-plugin-syntax-flow",
-        "babel-plugin-syntax-function-bind",
-        "babel-plugin-syntax-function-sent",
-        "babel-plugin-syntax-jsx",
-        "babel-plugin-syntax-object-rest-spread",
-        "babel-plugin-transform-async-to-generator",
-        "babel-plugin-transform-exponentiation-operator",
-        "babel-plugin-transform-flow-comments",
-        "babel-plugin-transform-flow-strip-types",
-        "babel-plugin-transform-jscript",
-        "babel-plugin-transform-object-assign",
-        "babel-plugin-transform-object-set-prototype-of-to-assign",
-        "babel-plugin-transform-proto-to-assign",
-        "babel-plugin-transform-react-constant-elements",
-        "babel-plugin-transform-react-display-name",
-        "babel-plugin-transform-react-inline-elements",
-        "babel-plugin-transform-react-jsx-compat",
-        "babel-plugin-transform-react-jsx-self",
-        "babel-plugin-transform-react-jsx-source",
-        "babel-plugin-transform-react-jsx",
-        "babel-plugin-transform-regenerator",
-        "babel-plugin-transform-runtime",
-        "babel-plugin-transform-strict-mode",
-        "babel-polyfill",
-        "babel-preset-flow",
-        "babel-preset-react",
-        "babel-preset-stage-0",
-        "babel-preset-stage-1",
-        "babel-preset-stage-2",
-        "babel-preset-stage-3",
-        "babel-register",
-        "babel-runtime",
-        "babel-template",
-        "babel-traverse",
-        "babel-types"
+      "sourceUrlPrefixes": [
+        "https://github.com/babel/babel"
       ]
     },
     "baset": {
       "description": "baset monorepo",
-      "packageNames": [
-        "baset-baseliner-json",
-        "baset-baseliner-md",
-        "baset-cli",
-        "baset-core",
-        "baset-env-browser",
-        "baset-reader-babel",
-        "baset-reader-md",
-        "baset-reader-ts",
-        "baset-resolver-pixi",
-        "baset-resolver-react",
-        "baset-vm",
-        "baset"
+      "sourceUrlPrefixes": [
+        "https://github.com/igmat/baset"
       ]
     },
     "bugsnag-js": {
@@ -459,11 +150,8 @@
     },
     "commitlint": {
       "description": "commitlint monorepo",
-      "packageNames": [
-        "commitlint"
-      ],
-      "packagePatterns": [
-        "^@commitlint/"
+      "sourceUrlPrefixes": [
+        "https://github.com/conventional-changelog/commitlint"
       ]
     },
     "devextreme-reactive": {
@@ -486,34 +174,8 @@
     },
     "emotion": {
       "description": "emotion monorepo",
-      "packageNames": [
-        "babel-plugin-emotion",
-        "@emotion/babel-plugin-jsx-pragmatic",
-        "@emotion/babel-preset-css-prop",
-        "@emotion/cache",
-        "@emotion/core",
-        "create-emotion-server",
-        "create-emotion",
-        "@emotion/css",
-        "emotion-server",
-        "emotion-theming",
-        "emotion",
-        "eslint-plugin-emotion",
-        "@emotion/hash",
-        "@emotion/is-prop-valid",
-        "jest-emotion",
-        "@emotion/memoize",
-        "@emotion/native",
-        "@emotion/primitives-core",
-        "@emotion/primitives",
-        "@emotion/serialize",
-        "@emotion/sheet",
-        "@emotion/styled-base",
-        "@emotion/styled",
-        "@emotion/stylis",
-        "@emotion/unitless",
-        "@emotion/utils",
-        "@emotion/weak-memoize"
+      "sourceUrlPrefixes": [
+        "https://github.com/emotion-js/emotion"
       ]
     },
     "expo": {
@@ -524,8 +186,8 @@
     },
     "fimbullinter": {
       "description": "fimbullinter monorepo",
-      "packagePatterns": [
-        "^@fimbul/"
+      "sourceUrlPrefixes": [
+        "https://github.com/fimbullinter/wotan"
       ]
     },
     "flopflip": {
@@ -542,117 +204,14 @@
     },
     "gatsby": {
       "description": "gatsby monorepo",
-      "packageNames": [
-        "babel-plugin-remove-graphql-queries",
-        "babel-preset-gatsby-package",
-        "babel-preset-gatsby",
-        "gatsby-cli",
-        "gatsby-codemods",
-        "gatsby-core-utils",
-        "gatsby-cypress",
-        "gatsby-design-tokens",
-        "gatsby-dev-cli",
-        "gatsby-graphiql-explorer",
-        "gatsby-image",
-        "gatsby-link",
-        "gatsby-page-utils",
-        "gatsby-plugin-canonical-urls",
-        "gatsby-plugin-catch-links",
-        "gatsby-plugin-coffeescript",
-        "gatsby-plugin-create-client-paths",
-        "gatsby-plugin-cxs",
-        "gatsby-plugin-emotion",
-        "gatsby-plugin-facebook-analytics",
-        "gatsby-plugin-feed",
-        "gatsby-plugin-flow",
-        "gatsby-plugin-fullstory",
-        "gatsby-plugin-glamor",
-        "gatsby-plugin-google-analytics",
-        "gatsby-plugin-google-gtag",
-        "gatsby-plugin-google-tagmanager",
-        "gatsby-plugin-guess-js",
-        "gatsby-plugin-jss",
-        "gatsby-plugin-layout",
-        "gatsby-plugin-less",
-        "gatsby-plugin-lodash",
-        "gatsby-plugin-manifest",
-        "gatsby-plugin-mdx",
-        "gatsby-plugin-netlify-cms",
-        "gatsby-plugin-netlify",
-        "gatsby-plugin-no-sourcemaps",
-        "gatsby-plugin-nprogress",
-        "gatsby-plugin-offline",
-        "gatsby-plugin-page-creator",
-        "gatsby-plugin-postcss",
-        "gatsby-plugin-preact",
-        "gatsby-plugin-react-css-modules",
-        "gatsby-plugin-react-helmet",
-        "gatsby-plugin-remove-trailing-slashes",
-        "gatsby-plugin-sass",
-        "gatsby-plugin-sharp",
-        "gatsby-plugin-sitemap",
-        "gatsby-plugin-styled-components",
-        "gatsby-plugin-styled-jsx",
-        "gatsby-plugin-styletron",
-        "gatsby-plugin-stylus",
-        "gatsby-plugin-subfont",
-        "gatsby-plugin-twitter",
-        "gatsby-plugin-typescript",
-        "gatsby-plugin-typography",
-        "gatsby-react-router-scroll",
-        "gatsby-remark-autolink-headers",
-        "gatsby-remark-code-repls",
-        "gatsby-remark-copy-linked-files",
-        "gatsby-remark-custom-blocks",
-        "gatsby-remark-embed-snippet",
-        "gatsby-remark-graphviz",
-        "gatsby-remark-images-contentful",
-        "gatsby-remark-images",
-        "gatsby-remark-katex",
-        "gatsby-remark-prismjs",
-        "gatsby-remark-responsive-iframe",
-        "gatsby-remark-smartypants",
-        "gatsby-source-contentful",
-        "gatsby-source-drupal",
-        "gatsby-source-faker",
-        "gatsby-source-filesystem",
-        "gatsby-source-graphql",
-        "gatsby-source-hacker-news",
-        "gatsby-source-lever",
-        "gatsby-source-medium",
-        "gatsby-source-mongodb",
-        "gatsby-source-npm-package-search",
-        "gatsby-source-shopify",
-        "gatsby-source-wikipedia",
-        "gatsby-source-wordpress",
-        "gatsby-telemetry",
-        "gatsby-transformer-asciidoc",
-        "gatsby-transformer-csv",
-        "gatsby-transformer-documentationjs",
-        "gatsby-transformer-excel",
-        "gatsby-transformer-hjson",
-        "gatsby-transformer-javascript-frontmatter",
-        "gatsby-transformer-javascript-static-exports",
-        "gatsby-transformer-json",
-        "gatsby-transformer-pdf",
-        "gatsby-transformer-react-docgen",
-        "gatsby-transformer-remark",
-        "gatsby-transformer-screenshot",
-        "gatsby-transformer-sharp",
-        "gatsby-transformer-sqip",
-        "gatsby-transformer-toml",
-        "gatsby-transformer-xml",
-        "gatsby-transformer-yaml",
-        "gatsby",
-        "graphql-skip-limit"
+      "sourceUrlPrefixes": [
+        "https://github.com/gatsbyjs/gatsby"
       ]
     },
     "graphql-modules": {
       "description": "graphql-modules monorepo",
-      "packageNames": [
-        "@graphql-modules/core",
-        "@graphql-modules/di",
-        "graphql-modules"
+      "sourceUrlPrefixes": [
+        "https://github.com/Urigo/graphql-modules"
       ]
     },
     "graphqlcodegenerator": {
@@ -676,54 +235,8 @@
     },
     "jest": {
       "description": "jest monorepo",
-      "packageNames": [
-        "babel-jest",
-        "babel-plugin-jest-hoist",
-        "babel-preset-jest",
-        "diff-sequences",
-        "eslint-config-fb-strict",
-        "expect",
-        "jest-changed-files",
-        "jest-circus",
-        "jest-cli",
-        "jest-config",
-        "@jest/console",
-        "@jest/core",
-        "jest-diff",
-        "jest-docblock",
-        "jest-each",
-        "jest-environment-jsdom",
-        "jest-environment-node",
-        "@jest/environment",
-        "@jest/fake-timers",
-        "jest-get-type",
-        "jest-haste-map",
-        "jest-jasmine2",
-        "jest-leak-detector",
-        "jest-matcher-utils",
-        "jest-message-util",
-        "jest-mock",
-        "jest-phabricator",
-        "jest-regex-util",
-        "jest-repl",
-        "@jest/reporters",
-        "jest-resolve-dependencies",
-        "jest-resolve",
-        "jest-runner",
-        "jest-runtime",
-        "jest-serializer",
-        "jest-snapshot",
-        "@jest/source-map",
-        "@jest/test-result",
-        "@jest/test-sequencer",
-        "@jest/transform",
-        "@jest/types",
-        "jest-util",
-        "jest-validate",
-        "jest-watcher",
-        "jest-worker",
-        "jest",
-        "pretty-format"
+      "sourceUrlPrefixes": [
+        "https://github.com/facebook/jest"
       ]
     },
     "lerna": {
@@ -740,95 +253,20 @@
     },
     "lodash": {
       "description": "lodash monorepo",
-      "packageNames": [
-        "babel-plugin-lodash",
-        "lodash-webpack-plugin",
-        "lodash-es"
-      ],
-      "packagePatterns": [
-        "^lodash"
+      "sourceUrlPrefixes": [
+        "https://github.com/lodash/"
       ]
     },
     "material": {
       "description": "material monorepo",
-      "packageNames": [
-        "material-components-web",
-        "@material/animation",
-        "@material/auto-init",
-        "@material/base",
-        "@material/button",
-        "@material/card",
-        "@material/checkbox",
-        "@material/chips",
-        "@material/data-table",
-        "@material/dialog",
-        "@material/dom",
-        "@material/drawer",
-        "@material/elevation",
-        "@material/fab",
-        "@material/feature-targeting",
-        "@material/floating-label",
-        "@material/form-field",
-        "@material/grid-list",
-        "@material/icon-button",
-        "@material/image-list",
-        "@material/layout-grid",
-        "@material/line-ripple",
-        "@material/linear-progress",
-        "@material/list",
-        "@material/menu-surface",
-        "@material/menu",
-        "@material/notched-outline",
-        "@material/radio",
-        "@material/ripple",
-        "@material/rtl",
-        "@material/select",
-        "@material/shape",
-        "@material/slider",
-        "@material/snackbar",
-        "@material/switch",
-        "@material/tab-bar",
-        "@material/tab-indicator",
-        "@material/tab-scroller",
-        "@material/tab",
-        "@material/textfield",
-        "@material/theme",
-        "@material/top-app-bar",
-        "@material/typography"
+      "sourceUrlPrefixes": [
+        "https://github.com/material-components/material-components-web"
       ]
     },
     "mdc-react": {
       "description": "mdc-react monorepo",
-      "packageNames": [
-        "@material/react-button",
-        "@material/react-card",
-        "@material/react-checkbox",
-        "@material/react-chips",
-        "@material/react-dialog",
-        "@material/react-drawer",
-        "@material/react-fab",
-        "@material/react-floating-label",
-        "@material/react-icon-button",
-        "@material/react-layout-grid",
-        "@material/react-line-ripple",
-        "@material/react-linear-progress",
-        "@material/react-list",
-        "@material/react-material-icon",
-        "@material/react-menu-surface",
-        "@material/react-menu",
-        "@material/react-notched-outline",
-        "@material/react-radio",
-        "@material/react-ripple",
-        "@material/react-select",
-        "@material/react-snackbar",
-        "@material/react-switch",
-        "@material/react-tab-bar",
-        "@material/react-tab-indicator",
-        "@material/react-tab-scroller",
-        "@material/react-tab",
-        "@material/react-text-field",
-        "@material/react-top-app-bar",
-        "@material/react-typography"
+      "sourceUrlPrefixes": [
+        "material-components/material-components-web-react"
       ]
     },
     "mdx": {
@@ -839,19 +277,8 @@
     },
     "mui": {
       "description": "mui monorepo",
-      "packageNames": [
-        "babel-plugin-unwrap-createStyles",
-        "eslint-plugin-material-ui",
-        "@material-ui/benchmark",
-        "@material-ui/codemod",
-        "@material-ui/docs",
-        "@material-ui/icons",
-        "@material-ui/lab",
-        "@material-ui/styles",
-        "@material-ui/system",
-        "@material-ui/types",
-        "@material-ui/utils",
-        "@material-ui/core"
+      "sourceUrlPrefixes": [
+        "https://github.com/mui-org/material-ui"
       ]
     },
     "nest": {
@@ -862,11 +289,8 @@
     },
     "neutrino": {
       "description": "neutrino monorepo",
-      "packageNames": [
-        "neutrino"
-      ],
-      "packagePatterns": [
-        "^@neutrinojs/"
+      "sourceUrlPrefixes": [
+        "https://github.com/neutrinojs/neutrino"
       ]
     },
     "nextjs": {
@@ -877,11 +301,8 @@
     },
     "ngrx": {
       "description": "ngrx monorepo",
-      "packageNames": [
-        "ngrx"
-      ],
-      "packagePatterns": [
-        "^@ngrx/"
+      "sourceUrlPrefixes": [
+        "https://github.com/ngrx/"
       ]
     },
     "ngxs-store": {
@@ -892,11 +313,8 @@
     },
     "nrwl": {
       "description": "nrwl monorepo",
-      "packageNames": [
-        "nrwl"
-      ],
-      "packagePatterns": [
-        "^@nrwl/"
+      "sourceUrlPrefixes": [
+        "https://github.com/nrwl/"
       ]
     },
     "nuxtjs": {
@@ -913,54 +331,14 @@
     },
     "pouchdb": {
       "description": "pouchdb monorepo",
-      "packageNames": [
-        "pouchdb-abstract-mapreduce",
-        "pouchdb-adapter-http",
-        "pouchdb-adapter-idb",
-        "pouchdb-adapter-leveldb-core",
-        "pouchdb-adapter-leveldb",
-        "pouchdb-adapter-localstorage",
-        "pouchdb-adapter-memory",
-        "pouchdb-adapter-utils",
-        "pouchdb-binary-utils",
-        "pouchdb-browser",
-        "pouchdb-changes-filter",
-        "pouchdb-checkpointer",
-        "pouchdb-collate",
-        "pouchdb-collections",
-        "pouchdb-core",
-        "pouchdb-debug",
-        "pouchdb-errors",
-        "pouchdb-fetch",
-        "pouchdb-find",
-        "pouchdb-generate-replication-id",
-        "pouchdb-json",
-        "pouchdb-mapreduce-utils",
-        "pouchdb-mapreduce",
-        "pouchdb-md5",
-        "pouchdb-merge",
-        "pouchdb-node",
-        "pouchdb-replication",
-        "pouchdb-selector-core",
-        "pouchdb-utils",
-        "pouchdb",
-        "sublevel-pouchdb"
+      "sourceUrlPrefixes": [
+        "https://github.com/pouchdb/pouchdb"
       ]
     },
     "react": {
       "description": "react monorepo",
-      "packageNames": [
-        "create-subscription",
-        "eslint-plugin-react-hooks",
-        "jest-react",
-        "react-art",
-        "react-dom",
-        "react-is",
-        "react-reconciler",
-        "react-refresh",
-        "react-test-renderer",
-        "react",
-        "scheduler"
+      "sourceUrlPrefixes": [
+        "https://github.com/facebook/react"
       ]
     },
     "react-dnd": {
@@ -977,11 +355,8 @@
     },
     "reactrouter": {
       "description": "reactrouter monorepo",
-      "packageNames": [
-        "react-router-config",
-        "react-router-dom",
-        "react-router-native",
-        "react-router"
+      "sourceUrlPrefixes": [
+        "https://github.com/ReactTraining/react-router"
       ]
     },
     "remark": {
@@ -998,11 +373,8 @@
     },
     "semantic-release": {
       "description": "semantic-release monorepo",
-      "packageNames": [
-        "semantic-release"
-      ],
-      "packagePatterns": [
-        "^@semantic-release/"
+      "sourceUrlPrefixes": [
+        "https://github.com/semantic-release/"
       ]
     },
     "sentry": {
@@ -1013,8 +385,8 @@
     },
     "storybook": {
       "description": "storybook monorepo",
-      "packagePatterns": [
-        "^@storybook/"
+      "sourceUrlPrefixes": [
+        "https://github.com/storybooks"
       ]
     },
     "strapi": {
@@ -1067,38 +439,14 @@
     },
     "vue": {
       "description": "vue monorepo",
-      "packageNames": [
-        "vue-server-renderer",
-        "vue-template-compiler",
-        "weex-template-compiler",
-        "weex-vue-framework",
-        "vue"
+      "sourceUrlPrefixes": [
+        "https://github.com/vuejs/vue"
       ]
     },
     "vue-cli": {
       "description": "vue-cli monorepo",
-      "packageNames": [
-        "@vue/babel-preset-app",
-        "@vue/cli-init",
-        "@vue/cli-overlay",
-        "@vue/cli-plugin-babel",
-        "@vue/cli-plugin-e2e-cypress",
-        "@vue/cli-plugin-e2e-nightwatch",
-        "@vue/cli-plugin-eslint",
-        "@vue/cli-plugin-pwa",
-        "@vue/cli-plugin-router",
-        "@vue/cli-plugin-typescript",
-        "@vue/cli-plugin-unit-jest",
-        "@vue/cli-plugin-unit-mocha",
-        "@vue/cli-plugin-vuex",
-        "@vue/cli-service-global",
-        "@vue/cli-service",
-        "@vue/cli-shared-utils",
-        "@vue/cli-test-utils",
-        "@vue/cli-ui-addon-webpack",
-        "@vue/cli-ui-addon-widgets",
-        "@vue/cli-ui",
-        "@vue/cli"
+      "sourceUrlPrefixes": [
+        "https://github.com/vuejs/vue-cli"
       ]
     },
     "vuepress": {
