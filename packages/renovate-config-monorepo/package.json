@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.32.0",
+  "version": "0.33.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -982,6 +982,12 @@
         "react-router-dom",
         "react-router-native",
         "react-router"
+      ]
+    },
+    "remark": {
+      "description": "remark monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/remarkjs/remark"
       ]
     },
     "router5": {
