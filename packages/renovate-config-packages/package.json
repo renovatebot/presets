@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.5.3",
+  "version": "0.5.4",
   "renovate-config": {
     "angularJs": {
       "description": "All angular.js packages",
@@ -20,14 +20,7 @@
     },
     "apollographql": {
       "description": "All packages published by Apollo GraphQL",
-      "extends": [
-        "monorepo:apolloclient",
-        "monorepo:apollolink"
-      ],
-      "packageNames": [
-        "graphql-tag",
-        "react-apollo"
-      ]
+      "sourceUrlPrefixes": ["https://github.com/apollographql/"]
     },
     "mapbox": {
       "description": "All mapbox-related packages",
