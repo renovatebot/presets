@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.40.0",
+  "version": "0.41.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -659,6 +659,7 @@
         "group:react-dndMonorepo",
         "group:reactivestack-cookiesMonorepo",
         "group:reactrouterMonorepo",
+        "group:remarkMonorepo",
         "group:router5Monorepo",
         "group:semantic-releaseMonorepo",
         "group:sentryMonorepo",
@@ -865,6 +866,15 @@
         "group:springWs"
       ],
       "ignoreDeps": []
+    },
+    "remarkMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from remark monorepo together",
+          "extends": "monorepo:remark",
+          "groupName": "remark monorepo"
+        }
+      ]
     },
     "router5Monorepo": {
       "packageRules": [
