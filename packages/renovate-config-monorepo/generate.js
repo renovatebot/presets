@@ -80,6 +80,11 @@ const repoGroups = {
   'graphql-modules': 'https://github.com/Urigo/graphql-modules',
   vue: 'https://github.com/vuejs/vue',
   'vue-cli': 'https://github.com/vuejs/vue-cli',
+  'aws-cdk': 'https://github.com/aws/aws-cdk',
+  'mdc-react': 'material-components/material-components-web-react',
+  nuxtjs: 'https://github.com/nuxt/nuxt.js',
+  remark: 'https://github.com/remarkjs/remark',
+  vuepress: 'https://github.com/vuejs/vuepress',
 };
 
 const patternGroups = {

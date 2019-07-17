@@ -82,6 +82,12 @@
         "https://github.com/aspnet/Extensions"
       ]
     },
+    "aws-cdk": {
+      "description": "aws-cdk monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/aws/aws-cdk"
+      ]
+    },
     "aws-java-sdk": {
       "description": "aws-java-sdk monorepo",
       "packagePatterns": [
@@ -257,6 +263,12 @@
         "https://github.com/material-components/material-components-web"
       ]
     },
+    "mdc-react": {
+      "description": "mdc-react monorepo",
+      "sourceUrlPrefixes": [
+        "material-components/material-components-web-react"
+      ]
+    },
     "mdx": {
       "description": "mdx monorepo",
       "sourceUrlPrefixes": [
@@ -305,6 +317,12 @@
         "https://github.com/nrwl/"
       ]
     },
+    "nuxtjs": {
+      "description": "nuxtjs monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/nuxt/nuxt.js"
+      ]
+    },
     "picasso": {
       "description": "picasso monorepo",
       "sourceUrlPrefixes": [
@@ -339,6 +357,12 @@
       "description": "reactrouter monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/ReactTraining/react-router"
+      ]
+    },
+    "remark": {
+      "description": "remark monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/remarkjs/remark"
       ]
     },
     "router5": {
@@ -423,6 +447,12 @@
       "description": "vue-cli monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/vuejs/vue-cli"
+      ]
+    },
+    "vuepress": {
+      "description": "vuepress monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/vuejs/vuepress"
       ]
     },
     "webdriverio": {

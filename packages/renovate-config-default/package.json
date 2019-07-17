@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.14.3",
+  "version": "0.15.1",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -20,6 +20,12 @@
     "disableRenovate": {
       "description": "Disable renovate",
       "enabled": false
+    },
+    "disableMajorUpdates": {
+      "description": "Disables major updates",
+      "major": {
+        "enabled": false
+      }
     },
     "ignoreModulesAndTests": {
       "description": "Ignore `node_modules`, `bower_components`, `vendor` and various test/tests directories",
@@ -444,6 +450,27 @@
         ":assignee({{arg0}})",
         ":reviewer({{arg0}})"
       ]
+    },
+    "enableVulnerabilityAlerts": {
+      "description": "Raise PR when vulnerability alerts are detected",
+      "vulnerabilityAlerts": {
+        "enabled": true
+      }
+    },
+    "enableVulnerabilityAlertsWithLabel": {
+      "description": "Raise PR when vulnerability alerts are detected with label <code>{{arg0}}</code>",
+      "vulnerabilityAlerts": {
+        "enabled": true,
+        "labels": [
+          "{{arg0}}"
+        ]
+      }
+    },
+    "disableVulnerabilityAlerts": {
+      "description": "Disable vulnerability alerts completely",
+      "vulnerabilityAlerts": {
+        "enabled": false
+      }
     },
     "semanticCommits": {
       "description": "Use semantic prefixes for commit messages and PR titles",

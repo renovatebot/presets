@@ -22,15 +22,15 @@
     "trailingComma": "es5"
   },
   "devDependencies": {
-    "eslint": "5.16.0",
+    "eslint": "6.0.0",
     "eslint-config-airbnb-base": "13.1.0",
-    "eslint-config-prettier": "4.1.0",
-    "eslint-plugin-import": "2.16.0",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-import": "2.17.3",
     "eslint-plugin-json": "1.4.0",
-    "eslint-plugin-prettier": "3.0.1",
+    "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-promise": "4.1.1",
     "gh-got": "8.1.0",
-    "prettier": "1.16.4",
-    "renovate": "15.15.0"
+    "prettier": "1.17.1",
+    "renovate": "19.2.3"
   }
 }
