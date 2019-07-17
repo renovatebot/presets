@@ -1,8 +1,7 @@
+const is = require('@sindresorhus/is');
 const fs = require('fs');
-const got = require('gh-got');
 const path = require('path');
 const pJson = require('./package.json');
-const is = require('@sindresorhus/is');
 
 const repoGroups = {
   'ag-grid': 'https://github.com/ag-grid/ag-grid',
@@ -43,7 +42,6 @@ const repoGroups = {
   capacitor: 'https://github.com/ionic-team/capacitor',
   clarity: 'https://github.com/vmware/clarity',
   commitlint: 'https://github.com/conventional-changelog/commitlint',
-  emotion: 'https://github.com/emotion-js/emotion',
   emotion: 'https://github.com/emotion-js/emotion',
   expo: 'https://github.com/expo/expo',
   fimbullinter: 'https://github.com/fimbullinter/wotan',
