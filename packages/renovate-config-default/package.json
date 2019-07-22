@@ -276,11 +276,11 @@
       }
     },
     "automergeMajor": {
-      "description": "Automerge all upgrades (inluding major) if they pass tests",
+      "description": "Automerge all upgrades (including major) if they pass tests",
       "automerge": true
     },
     "automergeAll": {
-      "description": "Automerge all upgrades (inluding major) if they pass tests",
+      "description": "Automerge all upgrades (including major) if they pass tests",
       "automerge": true
     },
     "automergeBranchMergeCommit": {
