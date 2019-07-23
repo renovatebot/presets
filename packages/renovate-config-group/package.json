@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.42.0",
+  "version": "0.43.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -212,6 +212,15 @@
         }
       ]
     },
+    "babel6Monorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from babel6 monorepo together",
+          "extends": "monorepo:babel6",
+          "groupName": "babel6 monorepo"
+        }
+      ]
+    },
     "babelMonorepo": {
       "packageRules": [
         {
@@ -380,6 +389,21 @@
           "description": "Group packages from gatsby monorepo together",
           "extends": "monorepo:gatsby",
           "groupName": "gatsby monorepo"
+        }
+      ]
+    },
+    "goOpenapi": {
+      "description": "Group go-openapi packages together",
+      "packageRules": [
+        {
+          "datasources": [
+            "go"
+          ],
+          "groupName": "go-openapi packages",
+          "groupSlug": "go-openapi",
+          "packagePatterns": [
+            "^github.com/go-openapi/"
+          ]
         }
       ]
     },
@@ -610,6 +634,7 @@
         "group:azure azure-sdk-for-netMonorepo",
         "group:azure azure-storage-netMonorepo",
         "group:babelMonorepo",
+        "group:babel6Monorepo",
         "group:basetMonorepo",
         "group:bugsnag-jsMonorepo",
         "group:capacitorMonorepo",
@@ -821,16 +846,16 @@
       "extends": [
         "group:allApollographql",
         "group:fortawesome",
+        "group:goOpenapi",
         "group:fusionjs",
-        "group:polymer",
-        "group:illuminate",
-        "group:symfony",
-        "group:socketio",
         "group:hibernateCore",
         "group:hibernateValidator",
         "group:hibernateOgm",
         "group:hibernateCommons",
+        "group:illuminate",
+        "group:polymer",
         "group:rubyOmniauth",
+        "group:socketio",
         "group:springAmqp",
         "group:springAndroid",
         "group:springBatch",
@@ -853,7 +878,8 @@
         "group:springSocial",
         "group:springStatemachine",
         "group:springWebflow",
-        "group:springWs"
+        "group:springWs",
+        "group:symfony"
       ],
       "ignoreDeps": []
     },
