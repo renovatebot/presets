@@ -212,6 +212,15 @@
         }
       ]
     },
+    "babel6Monorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from babel6 monorepo together",
+          "extends": "monorepo:babel6",
+          "groupName": "babel6 monorepo"
+        }
+      ]
+    },
     "babelMonorepo": {
       "packageRules": [
         {
@@ -610,6 +619,7 @@
         "group:azure azure-sdk-for-netMonorepo",
         "group:azure azure-storage-netMonorepo",
         "group:babelMonorepo",
+        "group:babel6Monorepo",
         "group:basetMonorepo",
         "group:bugsnag-jsMonorepo",
         "group:capacitorMonorepo",
