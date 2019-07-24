@@ -392,7 +392,7 @@
     "storybook": {
       "description": "storybook monorepo",
       "sourceUrlPrefixes": [
-        "https://github.com/storybooks"
+        "https://github.com/storybookjs/storybook"
       ]
     },
     "strapi": {
