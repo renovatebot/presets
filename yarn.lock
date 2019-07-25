@@ -35,12 +35,12 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@snyk/ruby-semver@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@snyk/ruby-semver/-/ruby-semver-2.0.3.tgz#68cec6254856fefbe076f6a5c292dc1cdf14e025"
-  integrity sha512-IIuBhzerBh8V26eml7qSyHHafayD1mncSk4zAQufRYjEVhRlJGyHWt4MzYepv8ZkgKBvCgqHxXj7iJSA/XCeRA==
+"@snyk/ruby-semver@2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@snyk/ruby-semver/-/ruby-semver-2.0.4.tgz#457686ea7a4d60b10efddde99587efb3a53ba884"
+  integrity sha512-ceMD4CBS3qtAg+O0BUvkKdsheUNCqi+/+Rju243Ul8PsUgZnXmGiqfk/2z7DCprRQnxUTra4+IyeDQT7wAheCQ==
   dependencies:
-    lodash "^4.17.11"
+    lodash "^4.17.14"
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
@@ -3902,14 +3902,14 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.15.2:
-  version "19.15.2"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.15.2.tgz#ec7850f5665015935cdf3f4e6fca1682dbe26071"
-  integrity sha512-EBJ3/zkI2xBdaexEVwvL9X9fwpOasGsdKZWKxXxQuhzcCs+l12+vZcGvQ+gPF2/jSKNdH8V13R4zCXb2DiLBqQ==
+renovate@19.15.3:
+  version "19.15.3"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.15.3.tgz#8666e2888f25b0935093ae8f8ce91da2fd709e5f"
+  integrity sha512-p5FCLCP4Kv9LKdstcOK/vGg9JVdJDEULR/lJUfaSi1u2XFfAedo28P+zJfoYs5d2JpIIONvmLX38xknVYaVzSw==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@sindresorhus/is" "1.0.0"
-    "@snyk/ruby-semver" "2.0.3"
+    "@snyk/ruby-semver" "2.0.4"
     "@yarnpkg/lockfile" "1.1.0"
     azure-devops-node-api "8.1.1"
     bunyan "1.8.12"
