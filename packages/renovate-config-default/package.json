@@ -354,6 +354,17 @@
         }
       ]
     },
+    "automergeTypes": {
+      "description": "Update @types/* packages automatically if tests pass",
+      "packageRules": [
+        {
+          "packagePatterns": [
+            "^@types/"
+          ],
+          "automerge": true
+        }
+      ]
+    },
     "doNotPinPackage": {
       "description": "Disable version pinning for <code>{{arg0}}</code>",
       "packageRules": [
