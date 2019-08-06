@@ -30,6 +30,9 @@
     },
     "eslint": {
       "description": "All eslint packages",
+      "packageNames": [
+        "babel-eslint"
+      ],
       "packagePatterns": [
         "^eslint"
       ]
