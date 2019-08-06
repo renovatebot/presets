@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.5.4",
+  "version": "0.6.0",
   "renovate-config": {
     "angularJs": {
       "description": "All angular.js packages",
@@ -20,7 +20,9 @@
     },
     "apollographql": {
       "description": "All packages published by Apollo GraphQL",
-      "sourceUrlPrefixes": ["https://github.com/apollographql/"]
+      "sourceUrlPrefixes": [
+        "https://github.com/apollographql/"
+      ]
     },
     "mapbox": {
       "description": "All mapbox-related packages",
