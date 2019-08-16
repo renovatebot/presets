@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.34.2",
+  "version": "0.35.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -345,6 +345,12 @@
       "description": "react monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/facebook/react"
+      ]
+    },
+    "react-apollo": {
+      "description": "react-apollo monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/apollographql/react-apollo"
       ]
     },
     "react-dnd": {

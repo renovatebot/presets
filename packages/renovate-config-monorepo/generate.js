@@ -23,6 +23,7 @@ const repoGroups = {
   'ionic-native': 'https://github.com/ionic-team/ionic-native',
   'mdc-react': 'material-components/material-components-web-react',
   'ngxs-store': 'https://github.com/ngxs/store',
+  'react-apollo': 'https://github.com/apollographql/react-apollo',
   'react-dnd': 'https://github.com/react-dnd/react-dnd',
   'reactivestack-cookies': 'https://github.com/reactivestack/cookies',
   'semantic-release': 'https://github.com/semantic-release/',
