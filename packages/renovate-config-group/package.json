@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.43.0",
+  "version": "0.44.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -671,6 +671,7 @@
         "group:picassoMonorepo",
         "group:pouchdbMonorepo",
         "group:reactMonorepo",
+        "group:react-apolloMonorepo",
         "group:react-dndMonorepo",
         "group:reactivestack-cookiesMonorepo",
         "group:reactrouterMonorepo",
@@ -802,6 +803,15 @@
           "description": "Group packages from pouchdb monorepo together",
           "extends": "monorepo:pouchdb",
           "groupName": "pouchdb monorepo"
+        }
+      ]
+    },
+    "react-apolloMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from react-apollo monorepo together",
+          "extends": "monorepo:react-apollo",
+          "groupName": "react-apollo monorepo"
         }
       ]
     },
