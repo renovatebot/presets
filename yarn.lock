@@ -3518,10 +3518,10 @@ pkg-dir@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
-pnpm@3.6.2:
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/pnpm/-/pnpm-3.6.2.tgz#cb8d1764bb5efaa857fb662da7d2b5ee3a5507e0"
-  integrity sha512-/UW87zxOU3p60deTeo94GX/ZR6ph1tGDDZmCnIFvo2gMsAaWAM/nePuAdT/RZ3cbSJfG3+/HXxsYOxetAjC/Sg==
+pnpm@3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/pnpm/-/pnpm-3.7.0.tgz#80e3ac52c9d580d99bc96537933684f7504a0ce0"
+  integrity sha512-afPv7koLIZX5hWq9u5ZDfjmVRhODDzBEs1FkvfxVVtkhR4fUpZSDyRqJHWyYEkgxxFkBkxnz91ldnKek0OzQbg==
 
 prelude-ls@~1.1.2:
   version "1.1.2"
@@ -3916,10 +3916,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.30.5:
-  version "19.30.5"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.30.5.tgz#3a072832676573eee6205acb13c8985106d1b9bc"
-  integrity sha512-sCdCe1i1yV3nL8kIpAQ4xNAUKPtjyHu1BT3l4q/o/NMODRGow7WPO1emcfNTBvbaZIA6KXAFR0tOKKZsP0bbnA==
+renovate@19.30.7:
+  version "19.30.7"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.30.7.tgz#429a925fd4382bd7ca5b2ca9561f077f5f1974cf"
+  integrity sha512-9Es3bd9UBI9eKhzvePrw1kKk2hRMCLLGMn5Nv2L+qsEgOE2pSZAB5ewhRyY+5VZULFOAD9cKIyplTtMLFv1tRw==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@sindresorhus/is" "1.0.0"
@@ -3964,7 +3964,7 @@ renovate@19.30.5:
     p-all "2.1.0"
     parse-diff "0.5.1"
     parse-link-header "1.0.1"
-    pnpm "3.6.2"
+    pnpm "3.7.0"
     registry-auth-token "4.0.0"
     safe-regex "2.0.2"
     semver "6.3.0"
