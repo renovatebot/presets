@@ -3686,6 +3686,13 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+re2@1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/re2/-/re2-1.10.0.tgz#8cd1b8fd555c9fec481ffd1fff46028b3c5f063b"
+  integrity sha512-8l/x8dbjI80727ORzrIn1H8zZfhKS6izoxHC+/6r7+w2Qt+tfrxz+9b0vc5hJSBWNkvlg4+VjFYNLAnuYbhI5A==
+  dependencies:
+    nan "^2.14.0"
+
 read-chunk@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/read-chunk/-/read-chunk-2.1.0.tgz#6a04c0928005ed9d42e1a6ac5600e19cbc7ff655"
@@ -3921,10 +3928,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.30.12:
-  version "19.30.12"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.30.12.tgz#9e3b1fbcebcb033956aaf7f8eb65bf5ea05739b4"
-  integrity sha512-Y6nJ6e6XnyZ/3KvEZlBhBvcPAuGfG/WtB6/lAT9b03EVol+gC3tzxc2eOh+RPls66NN4Tmgj2wRAY5xT+73sng==
+renovate@19.31.0:
+  version "19.31.0"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.31.0.tgz#5ad2b3e71feafc29b0dbf9c7f8fea09960825d29"
+  integrity sha512-cpUJEi+UHbrcCfgtPAHwekG2SWatikD7v1tSqNJ9+cAdhrM6tpZfLWZGy3OSW2Xmja0cjii4LHH0nK6MwiWHuA==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@sindresorhus/is" "1.0.0"
@@ -3970,6 +3977,7 @@ renovate@19.30.12:
     parse-diff "0.5.1"
     parse-link-header "1.0.1"
     pnpm "3.7.3"
+    re2 "1.10.0"
     registry-auth-token "4.0.0"
     safe-regex "2.0.2"
     semver "6.3.0"
