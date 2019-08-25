@@ -4010,10 +4010,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.33.1:
-  version "19.33.1"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.33.1.tgz#d4d9e3cfa3fe30014b57b47a333dfd42dac9edd7"
-  integrity sha512-Ydyp5mAF90SJxQZ9kdeNTdsEngG8OAgrbt/sGmAXsc4QIHrXao30aqICYDNOEKUwAhwHPSGxKb/4FNiFsuWVbQ==
+renovate@19.33.2:
+  version "19.33.2"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.33.2.tgz#00a57365de904d021389f1658290f55db365d70b"
+  integrity sha512-iCSoOMRPurpLPtZikgTP33rVcsAvf5v+NN9YdCbgoU9GtIN4FM184xb1iAwHgDGVmfYRBoFLeYoN32xIL5Ed2Q==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@sindresorhus/is" "1.0.0"
@@ -4059,7 +4059,6 @@ renovate@19.33.1:
     parse-diff "0.5.1"
     parse-link-header "1.0.1"
     pnpm "3.7.5"
-    re2 "1.10.0"
     registry-auth-token "4.0.0"
     safe-regex "2.0.2"
     semver "6.3.0"
@@ -4076,6 +4075,8 @@ renovate@19.33.1:
     xmldoc "1.1.2"
     yarn "1.17.3"
     yawn-yaml "1.4.0"
+  optionalDependencies:
+    re2 "1.10.0"
 
 repeat-string@^1.5.4:
   version "1.6.1"
