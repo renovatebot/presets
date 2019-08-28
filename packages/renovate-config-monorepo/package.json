@@ -263,6 +263,15 @@
         "https://github.com/lodash/"
       ]
     },
+    "loopback": {
+      "description": "loopback monorepo",
+      "packagePatterns": [
+        "^loopback-connector"
+      ],
+      "sourceUrlPrefixes": [
+        "https://github.com/strongloop/loopback-next"
+      ]
+    },
     "material": {
       "description": "material monorepo",
       "sourceUrlPrefixes": [
