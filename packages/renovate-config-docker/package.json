@@ -1,13 +1,13 @@
 {
   "name": "renovate-config-docker",
+  "version": "0.0.4",
   "description": "Preset docker configs for Renovate",
   "author": "Rhys Arkins <rhys@arkins.net>",
   "license": "MIT",
-  "homepage": "https://github.com/singapore/renovate-config",
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.4",
+  "homepage": "https://github.com/singapore/renovate-config",
   "renovate-config": {
     "disable": {
       "docker": {
@@ -20,17 +20,17 @@
         "enabled": false
       }
     },
-    "enableMajor": {
-      "docker": {
-        "major": {
-          "enabled": true
-        }
-      }
-    },
     "disableMajor": {
       "docker": {
         "major": {
           "enabled": false
+        }
+      }
+    },
+    "enableMajor": {
+      "docker": {
+        "major": {
+          "enabled": true
         }
       }
     }

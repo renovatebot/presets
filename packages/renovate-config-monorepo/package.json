@@ -1,13 +1,13 @@
 {
   "name": "renovate-config-monorepo",
+  "version": "0.34.2",
   "description": "Preset monorepo configs for Renovate",
   "author": "Rhys Arkins <rhys@arkins.net>",
   "license": "MIT",
-  "homepage": "https://github.com/singapore/renovate-config/packages/renovate-config-monorepo",
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.34.2",
+  "homepage": "https://github.com/singapore/renovate-config/packages/renovate-config-monorepo",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",

@@ -1,13 +1,13 @@
 {
   "name": "renovate-config-schedule",
+  "version": "0.0.7",
   "description": "Preset schedule configs for Renovate",
   "author": "Rhys Arkins <rhys@arkins.net>",
   "license": "MIT",
-  "homepage": "https://github.com/singapore/renovate-config/packages/renovate-config-schedule",
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.7",
+  "homepage": "https://github.com/singapore/renovate-config/packages/renovate-config-schedule",
   "renovate-config": {
     "earlyMondays": {
       "description": "Weekly schedule on early monday mornings",

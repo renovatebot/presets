@@ -1,13 +1,13 @@
 {
   "name": "renovate-config-group",
+  "version": "0.43.0",
   "description": "Preset group configs for Renovate",
   "author": "Rhys Arkins <rhys@arkins.net>",
   "license": "MIT",
-  "homepage": "https://github.com/singapore/renovate-config/packages/renovate-config-monorepo",
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.43.0",
+  "homepage": "https://github.com/singapore/renovate-config/packages/renovate-config-monorepo",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [

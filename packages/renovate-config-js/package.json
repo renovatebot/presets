@@ -1,13 +1,12 @@
 {
   "name": "renovate-config-js",
+  "version": "0.0.1",
   "description": "Preset JavaScript configs for Renovate",
   "author": "Rhys Arkins <rhys@arkins.net>",
   "license": "MIT",
-  "homepage": "https://github.com/singapore/renovate-config",
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.0.1",
-  "renovate-config": {
-  }
+  "homepage": "https://github.com/singapore/renovate-config",
+  "renovate-config": {}
 }

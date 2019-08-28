@@ -1,13 +1,13 @@
 {
   "name": "renovate-config-packages",
+  "version": "0.6.0",
   "description": "Preset packages configs for Renovate",
   "author": "Rhys Arkins <rhys@arkins.net>",
   "license": "MIT",
-  "homepage": "https://github.com/singapore/renovate-config",
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.6.0",
+  "homepage": "https://github.com/singapore/renovate-config",
   "renovate-config": {
     "angularJs": {
       "description": "All angular.js packages",
@@ -24,12 +24,6 @@
         "https://github.com/apollographql/"
       ]
     },
-    "mapbox": {
-      "description": "All mapbox-related packages",
-      "packagePatterns": [
-        "^(leaflet|mapbox)"
-      ]
-    },
     "eslint": {
       "description": "All eslint packages",
       "packageNames": [
@@ -39,39 +33,16 @@
         "^eslint"
       ]
     },
-    "stylelint": {
-      "description": "All stylelint packages",
-      "packagePatterns": [
-        "^stylelint"
-      ]
-    },
-    "tslint": {
-      "description": "All tslint packages",
-      "packageNames": [
-        "codelyzer"
-      ],
-      "packagePatterns": [
-        "\\btslint\\b"
-      ]
-    },
-    "linters": {
-      "description": "All lint-related packages",
+    "gatsby": {
+      "description": "All packages published by Gatsby",
       "extends": [
-        "packages:eslint",
-        "packages:stylelint",
-        "packages:tslint"
-      ],
-      "packageNames": [
-        "remark-lint"
+        "monorepo:gatsby"
       ]
     },
-    "postcss": {
-      "description": "All postcss packages",
-      "packageNames": [
-        "postcss"
-      ],
-      "packagePatterns": [
-        "^postcss-"
+    "jsTest": {
+      "description": "JavaScript test packages",
+      "extends": [
+        "packages:jsUnitTest"
       ]
     },
     "jsUnitTest": {
@@ -92,16 +63,36 @@
         "^should"
       ]
     },
-    "unitTest": {
-      "description": "All unit test packages",
+    "linters": {
+      "description": "All lint-related packages",
       "extends": [
-        "packages:jsUnitTest"
+        "packages:eslint",
+        "packages:stylelint",
+        "packages:tslint"
+      ],
+      "packageNames": [
+        "remark-lint"
       ]
     },
-    "jsTest": {
-      "description": "JavaScript test packages",
-      "extends": [
-        "packages:jsUnitTest"
+    "mapbox": {
+      "description": "All mapbox-related packages",
+      "packagePatterns": [
+        "^(leaflet|mapbox)"
+      ]
+    },
+    "postcss": {
+      "description": "All postcss packages",
+      "packageNames": [
+        "postcss"
+      ],
+      "packagePatterns": [
+        "^postcss-"
+      ]
+    },
+    "stylelint": {
+      "description": "All stylelint packages",
+      "packagePatterns": [
+        "^stylelint"
       ]
     },
     "test": {
@@ -110,10 +101,19 @@
         "packages:unitTest"
       ]
     },
-    "gatsby": {
-      "description": "All packages published by Gatsby",
+    "tslint": {
+      "description": "All tslint packages",
+      "packageNames": [
+        "codelyzer"
+      ],
+      "packagePatterns": [
+        "\\btslint\\b"
+      ]
+    },
+    "unitTest": {
+      "description": "All unit test packages",
       "extends": [
-        "monorepo:gatsby"
+        "packages:jsUnitTest"
       ]
     }
   }

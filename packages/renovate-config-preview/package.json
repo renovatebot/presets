@@ -1,18 +1,24 @@
 {
   "name": "renovate-config-preview",
+  "version": "0.2.0",
   "description": "Preset configs for Renovate preview features",
-  "author": "Rhys Arkins <rhys@arkins.net>",
-  "license": "MIT",
-  "homepage": "https://github.com/singapore/renovate-config",
   "repository": {
     "type": "git",
     "url": "git+https://rarkins@github.com/singapore/renovate-config.git"
   },
+  "author": "Rhys Arkins <rhys@arkins.net>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.2.0",
+  "homepage": "https://github.com/singapore/renovate-config",
   "renovate-config": {
+    "buildkite": {
+      "description": "Enable buildkite functionality",
+      "buildkite": {
+        "enabled": true
+      }
+    },
     "dockerCompose": {
       "description": "Enable docker compose image updating",
       "docker-compose": {
@@ -28,12 +34,6 @@
         "minor": {
           "enabled": true
         }
-      }
-    },
-    "buildkite": {
-      "description": "Enable buildkite functionality",
-      "buildkite": {
-        "enabled": true
       }
     }
   }

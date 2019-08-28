@@ -1,17 +1,17 @@
 {
   "name": "renovate-config-default",
+  "version": "0.16.0",
   "description": "Default preset configs for Renovate",
-  "author": "Rhys Arkins <rhys@arkins.net>",
-  "license": "MIT",
-  "homepage": "https://github.com/singapore/renovate-config",
   "repository": {
     "type": "git",
     "url": "git+https://rarkins@github.com/singapore/renovate-config.git"
   },
+  "author": "Rhys Arkins <rhys@arkins.net>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.16.0",
+  "homepage": "https://github.com/singapore/renovate-config",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
