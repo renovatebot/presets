@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.1.3",
+  "version": "0.2.0",
   "renovate-config": {
     "base": {
       "description": "Default base configuration for all languages",
@@ -20,7 +20,6 @@
         ":combinePatchMinorReleases",
         ":ignoreUnstable",
         ":prImmediately",
-        ":renovatePrefix",
         ":semanticPrefixFixDepsChoreOthers",
         ":updateNotScheduled",
         ":automergeDisabled",
