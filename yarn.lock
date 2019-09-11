@@ -3902,10 +3902,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.41.1:
-  version "19.41.1"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.41.1.tgz#86732bb0c82e02c3916e7d554ebbed55c692b94b"
-  integrity sha512-S4wwN8jCf1sBDuCby4SmkxI6QHMOeey5o4FQnL9WwaqynjvF0478cniF1bxPnbmF8LdN3Yxqi0pNjZxcOeLBoQ==
+renovate@19.41.2:
+  version "19.41.2"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.41.2.tgz#8b75be8dd257e0c93ba8d56fd7da8847a0468805"
+  integrity sha512-4w2urlqmwnnzgto+o021qVximKXPs+vscvSG83oNJ2F9HHwAkOhKd6SHWNnT6ozxZ7I6pF2JVJREvAchEWAdMw==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@sindresorhus/is" "1.0.0"
@@ -3957,7 +3957,7 @@ renovate@19.41.1:
     semver-stable "3.0.0"
     semver-utils "1.1.4"
     simple-git "1.126.0"
-    slugify "1.3.4"
+    slugify "1.3.5"
     toml "3.0.0"
     traverse "0.6.6"
     upath "1.2.0"
@@ -4248,10 +4248,10 @@ slide@^1.1.6, slide@~1.1.3, slide@~1.1.6:
   resolved "https://registry.yarnpkg.com/slide/-/slide-1.1.6.tgz#56eb027d65b4d2dce6cb2e2d32c4d4afc9e1d707"
   integrity sha1-VusCfWW00tzmyy4tMsTUr8nh1wc=
 
-slugify@1.3.4:
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.3.4.tgz#78d2792d7222b55cd9fc81fa018df99af779efeb"
-  integrity sha512-KP0ZYk5hJNBS8/eIjGkFDCzGQIoZ1mnfQRYS5WM3273z+fxGWXeN0fkwf2ebEweydv9tioZIHGZKoF21U07/nw==
+slugify@1.3.5:
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.3.5.tgz#90210678818b6d533cb060083aed0e8238133508"
+  integrity sha512-5VCnH7aS13b0UqWOs7Ef3E5rkhFe8Od+cp7wybFv5mv/sYSRkucZlJX0bamAJky7b2TTtGvrJBWVdpdEicsSrA==
 
 smart-buffer@4.0.2:
   version "4.0.2"
