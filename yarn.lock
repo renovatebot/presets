@@ -2533,6 +2533,11 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "^3.0.0"
 
+lodash.toarray@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.toarray/-/lodash.toarray-4.4.0.tgz#24c4bfcd6b2fba38bfd0594db1179d8e9b656561"
+  integrity sha1-JMS/zWsvuji/0FlNsRedjptlZWE=
+
 lodash.union@~4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.union/-/lodash.union-4.6.0.tgz#48bb5088409f16f1821666641c44dd1aaae3cd88"
@@ -2884,6 +2889,13 @@ nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
+
+node-emoji@1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/node-emoji/-/node-emoji-1.10.0.tgz#8886abd25d9c7bb61802a658523d1f8d2a89b2da"
+  integrity sha512-Yt3384If5H6BYGVHiHwTL+99OzJKHhgp82S8/dktEK73T26BazdgZ4JZh92xSVtGNJvz9UbXdNAc5hcrXV42vw==
+  dependencies:
+    lodash.toarray "^4.4.0"
 
 node-fetch-npm@^2.0.2:
   version "2.0.2"
@@ -3720,10 +3732,10 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-re2@1.10.1:
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/re2/-/re2-1.10.1.tgz#4b9f5da771a40da20850f9ef8bfb38f49f9a21e4"
-  integrity sha512-5i42cjJnoXNhCI7A4aABTYcczS4H6sBwlGDEJpTZIL1N74jTozcXK+mV3iWfWlzBn/utnVjSkxBITig/f6Zt8g==
+re2@1.10.2:
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/re2/-/re2-1.10.2.tgz#5079d41b2b398c04836be3728a2d989af61b6ce4"
+  integrity sha512-PEP7A8VdYMI88Ze80yJKgtdiAf2/eOuXID/HJaqbqfn5WCGmOxA0TBclzILXbxNMLtaVxn2wRFZQlH+uJt2GjQ==
   dependencies:
     nan "^2.14.0"
 
@@ -3962,10 +3974,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.49.0:
-  version "19.49.0"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.49.0.tgz#7886a8638ad1606f24f17eea08833feaad3a21fb"
-  integrity sha512-78kA1+6lbxxEq0XeRc5iifVWBY341johcaoKmsmePkDSlPix+D8/msJNcWHyyXhnyVi47iOZWw+9DnPUHEyk7Q==
+renovate@19.51.0:
+  version "19.51.0"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.51.0.tgz#9c030abd1b4c387a82ab203ff90eab96bcf35d82"
+  integrity sha512-HNmxPDtYtSTDk9N4Irai+7nVhfBmwClFwGFZoObYvIjTcJr+kxOhIQvzAD7p+x73S+FwyuHogMCp22EyQ+sb2g==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@sindresorhus/is" "1.0.0"
@@ -4006,6 +4018,7 @@ renovate@19.49.0:
     minimatch "3.0.4"
     moment "2.24.0"
     moment-timezone "0.5.26"
+    node-emoji "1.10.0"
     node-html-parser "1.1.16"
     npm "6.11.3"
     p-all "2.1.0"
@@ -4029,7 +4042,7 @@ renovate@19.49.0:
     yarn "1.17.3"
     yawn-yaml "1.4.0"
   optionalDependencies:
-    re2 "1.10.1"
+    re2 "1.10.2"
 
 repeat-string@^1.5.4:
   version "1.6.1"
