@@ -1724,13 +1724,13 @@ has@^1.0.1, has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-hasha@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/hasha/-/hasha-5.0.0.tgz#fdc3785caea03df29535fc8adb512c3d3a709004"
-  integrity sha512-PqWdhnQhq6tqD32hZv+l1e5mJHNSudjnaAzgAHfkGiU0ABN6lmbZF8abJIulQHbZ7oiHhP8yL6O910ICMc+5pw==
+hasha@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/hasha/-/hasha-5.1.0.tgz#dd05ccdfcfe7dab626247ce2a58efe461922f4ca"
+  integrity sha512-OFPDWmzPN1l7atOV1TgBVmNtBxaIysToK6Ve9DK+vT6pYuklw/nPNT+HJbZi0KDcI6vWB+9tgvZ5YD7fA3CXcA==
   dependencies:
-    is-stream "^1.1.0"
-    type-fest "^0.3.0"
+    is-stream "^2.0.0"
+    type-fest "^0.8.0"
 
 he@1.1.1:
   version "1.1.1"
@@ -2066,6 +2066,11 @@ is-stream@^1.0.0, is-stream@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
   integrity sha1-EtSj3U5o4Lec6428hBc66A2RykQ=
+
+is-stream@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-2.0.0.tgz#bde9c32680d6fae04129d6ac9d921ce7815f78e3"
+  integrity sha512-XCoy+WlUr7d1+Z8GgSuXmpuUFC9fOhRXglJMx+dwLKTkL44Cjd4W1Z5P+BQZpr+cR93aGP4S/s7Ftw6Nd/kiEw==
 
 is-symbol@^1.0.2:
   version "1.0.2"
@@ -3974,10 +3979,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.51.0:
-  version "19.51.0"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.51.0.tgz#9c030abd1b4c387a82ab203ff90eab96bcf35d82"
-  integrity sha512-HNmxPDtYtSTDk9N4Irai+7nVhfBmwClFwGFZoObYvIjTcJr+kxOhIQvzAD7p+x73S+FwyuHogMCp22EyQ+sb2g==
+renovate@19.52.3:
+  version "19.52.3"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.52.3.tgz#f742706e7e54c951d174bff7d264f1ff570c88ed"
+  integrity sha512-sAdWUaEqdXgr+X2URe72EQK0yJAvjaQaTPWIkUDQNDuMA0CBx860r91lIImzDIdmkBSjBTZAoGKa/xDngh8dtQ==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@sindresorhus/is" "1.0.0"
@@ -4003,7 +4008,7 @@ renovate@19.51.0:
     global-agent "2.1.1"
     got "9.6.0"
     handlebars "4.2.1"
-    hasha "5.0.0"
+    hasha "5.1.0"
     ini "1.3.5"
     js-yaml "3.13.1"
     json-dup-key-validator "1.0.2"
@@ -4758,6 +4763,11 @@ type-fest@^0.3.0:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.3.1.tgz#63d00d204e059474fe5e1b7c011112bbd1dc29e1"
   integrity sha512-cUGJnCdr4STbePCgqNFbpVNCepa+kAVohJs1sLhxzdH+gnEoOd8VhbYa7pD3zZYGiURWM2xzEII3fQcRizDkYQ==
+
+type-fest@^0.8.0:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
+  integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
 typed-rest-client@1.2.0:
   version "1.2.0"
