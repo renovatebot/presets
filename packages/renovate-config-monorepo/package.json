@@ -389,6 +389,12 @@
         "https://github.com/getsentry/sentry-javascript"
       ]
     },
+    "springfox": {
+      "description": "springfox monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/springfox/springfox"
+      ]
+    },
     "storybook": {
       "description": "storybook monorepo",
       "sourceUrlPrefixes": [
