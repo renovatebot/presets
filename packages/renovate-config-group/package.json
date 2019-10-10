@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.43.0",
+  "version": "0.44.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -678,6 +678,7 @@
         "group:router5Monorepo",
         "group:semantic-releaseMonorepo",
         "group:sentryMonorepo",
+        "group:springfoxMonorepo",
         "group:storybookMonorepo",
         "group:strapiMonorepo",
         "group:strykerMonorepo",
@@ -1194,6 +1195,15 @@
           "packagePatterns": [
             "^org.springframework.ws:"
           ]
+        }
+      ]
+    },
+    "springfoxMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from springfox monorepo together",
+          "extends": "monorepo:springfox",
+          "groupName": "springfox monorepo"
         }
       ]
     },
