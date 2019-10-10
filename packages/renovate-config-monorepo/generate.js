@@ -73,6 +73,7 @@ const repoGroups = {
   remark: 'https://github.com/remarkjs/remark',
   router5: 'https://github.com/router5/router5',
   sentry: 'https://github.com/getsentry/sentry-javascript',
+  springfox: 'https://github.com/springfox/springfox',
   storybook: 'https://github.com/storybookjs/storybook',
   strapi: 'https://github.com/strapi/strapi',
   stryker: 'https://github.com/stryker-mutator/stryker',
