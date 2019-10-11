@@ -33,6 +33,12 @@
           "enabled": false
         }
       }
+    },
+    "pinDigests": {
+      "description": "Pin Docker digests",
+      "docker": {
+        "pinDigests": true
+      }
     }
   }
 }
