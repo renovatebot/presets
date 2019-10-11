@@ -1629,10 +1629,10 @@ glob@^7.0.3, glob@^7.1.1, glob@^7.1.3, glob@^7.1.4:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-global-agent@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/global-agent/-/global-agent-2.1.1.tgz#fa4e236f33a3ed6e0a1b9da4ae3298bbf49f6e99"
-  integrity sha512-MjLP2o331SpSxBMBFSWxs5PaWDhjXxysHepQ/hmBCjhjw74cbO9R/IBCbaSJ4GLPKm01dRcgXBtRr7p7XZEnfg==
+global-agent@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/global-agent/-/global-agent-2.1.2.tgz#da746716b0953673a1b71c294b2bfdfca298191f"
+  integrity sha512-cLv8MW4Pydwx2BH4I0eA5nc9g8k/x6/k66u/rRH7FqMTyyZMO+o3bRbbX6Yb4mrUa9QnLnJJLzSiS0+2oGbqUw==
   dependencies:
     boolean "^1.0.0"
     core-js "^3.2.1"
@@ -4058,10 +4058,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.59.5:
-  version "19.59.5"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.59.5.tgz#bf8bd05a912c4228cdb99c0b353acf28b8ed1ccc"
-  integrity sha512-xVHNZ9ehlHkF0SgSYfrbSTkk+W2B0BoiXfH5Dqhho28wOn4hDG1N6MhsXmKtEKrEZl8ziZ/Chf/4jmcbeAvT2A==
+renovate@19.59.6:
+  version "19.59.6"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.59.6.tgz#5b7c14e28ab3e30d2aa6430b443c12f504a9694a"
+  integrity sha512-2VBJeZ6/SVZPtIUR/HSH1lcLinjwFGIF4cbVx/tslN0FRg0RYbWVRjzHeyeg5tsb3RzjQRSEBQsa9qmoPO+mcQ==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@sindresorhus/is" "1.2.0"
@@ -4084,7 +4084,7 @@ renovate@19.59.5:
     fs-extra "8.1.0"
     get-installed-path "4.0.8"
     github-url-from-git "1.5.0"
-    global-agent "2.1.1"
+    global-agent "2.1.2"
     got "9.6.0"
     handlebars "4.4.2"
     hasha "5.1.0"
