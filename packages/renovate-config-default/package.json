@@ -288,12 +288,16 @@
       "description": "Automerge all upgrades (including major) if they pass tests",
       "automerge": true
     },
+    "automergeBranch": {
+      "description": "If automerging, push the new commit directly to base branch (no PR)",
+      "automergeType": "branch"
+    },
     "automergeBranchMergeCommit": {
-      "description": "If automerging, perform a merge-commit on branch (no PR)",
+      "description": "If automerging, perform a merge-commit on branch (no PR) - deprecated, use :automergeBranch instead",
       "automergeType": "branch-merge-commit"
     },
     "automergeBranchPush": {
-      "description": "If automerging, push the new commit directly to base branch (no PR)",
+      "description": "If automerging, push the new commit directly to base branch (no PR) - deprecated, use :automergeBranch instead",
       "automergeType": "branch-push"
     },
     "automergePr": {
