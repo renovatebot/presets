@@ -2916,10 +2916,10 @@ mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
-moment-timezone@0.5.26:
-  version "0.5.26"
-  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.26.tgz#c0267ca09ae84631aa3dc33f65bedbe6e8e0d772"
-  integrity sha512-sFP4cgEKTCymBBKgoxZjYzlSovC20Y6J7y3nanDc5RoBIXKlZhoYwBoZGe3flwU6A372AcRwScH8KiwV6zjy1g==
+moment-timezone@0.5.27:
+  version "0.5.27"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.27.tgz#73adec8139b6fe30452e78f210f27b1f346b8877"
+  integrity sha512-EIKQs7h5sAsjhPCqN6ggx6cEbs94GK050254TIJySD1bzoM5JTYDwAU1IoVOeTOL6Gm27kYJ51/uuvq1kIlrbw==
   dependencies:
     moment ">= 2.9.0"
 
@@ -4095,10 +4095,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.64.0:
-  version "19.64.0"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.64.0.tgz#bbc9a7fdea8aae5ad616269a8563f69c9cbad7b0"
-  integrity sha512-a68xOezAqq4SGdZ0Nk2zyrcDSdVaKtA47DZNkbS/peEzPBKNftsGsoMffve9PlTsindvDlCL4+WjLVrDgfLxMA==
+renovate@19.64.1:
+  version "19.64.1"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.64.1.tgz#f295e5b0d6ba3c8a230c27d8f48152b3b07a8d1a"
+  integrity sha512-+vaGpJOSckvS66PKOMOc2VuczsVEbVMU8bHxW8lqBG3n0ZzG905FyF+2gQ0sNwqfQrQntbn99SOu52SzTHrQtA==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@sindresorhus/is" "1.2.0"
@@ -4138,7 +4138,7 @@ renovate@19.64.0:
     markdown-table "1.1.3"
     minimatch "3.0.4"
     moment "2.24.0"
-    moment-timezone "0.5.26"
+    moment-timezone "0.5.27"
     node-emoji "1.10.0"
     node-html-parser "1.1.16"
     npm "6.12.0"
