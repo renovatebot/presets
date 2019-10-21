@@ -79,7 +79,6 @@
       "packageNames": [
         "coveralls",
         "istanbul",
-        "mocha",
         "mock-fs",
         "nock",
         "nyc",
@@ -89,6 +88,7 @@
       "packagePatterns": [
         "^chai",
         "^jest",
+        "^mocha",
         "^qunit",
         "^sinon",
         "^should"
