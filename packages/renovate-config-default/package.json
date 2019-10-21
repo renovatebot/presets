@@ -363,6 +363,17 @@
         }
       ]
     },
+    "automergeTesters": {
+      "description": "Update testing packages automatically if tests pass",
+      "packageRules": [
+        {
+          "extends": [
+            "packages:test"
+          ],
+          "automerge": true
+        }
+      ]
+    },
     "automergeTypes": {
       "description": "Update @types/* packages automatically if tests pass",
       "packageRules": [
