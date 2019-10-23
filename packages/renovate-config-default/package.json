@@ -69,6 +69,17 @@
         }
       ]
     },
+    "pinDependencies": {
+      "description": "Pin dependency versions for <code>dependencies</code>",
+      "packageRules": [
+        {
+          "depTypeList": [
+            "dependencies"
+          ],
+          "rangeStrategy": "pin"
+        }
+      ]
+    },
     "pinDevDependencies": {
       "description": "Pin dependency versions for <code>devDependencies</code>",
       "packageRules": [
