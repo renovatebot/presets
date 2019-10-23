@@ -69,6 +69,17 @@
         }
       ]
     },
+    "pinDevDependencies": {
+      "description": "Pin dependency versions for <code>devDependencies</code>",
+      "packageRules": [
+        {
+          "depTypeList": [
+            "devDependencies"
+          ],
+          "rangeStrategy": "pin"
+        }
+      ]
+    },
     "pinOnlyDevDependencies": {
       "description": "Pin dependency versions for <code>devDependencies</code> and retain semver ranges for others",
       "packageRules": [
