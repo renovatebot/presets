@@ -377,12 +377,6 @@
         "https://github.com/router5/router5"
       ]
     },
-    "sanity": {
-      "description": "sanity monorepo",
-      "sourceUrlPrefixes": [
-        "https://github.com/sanity-io/sanity"
-      ]
-    },
     "semantic-release": {
       "description": "semantic-release monorepo",
       "sourceUrlPrefixes": [
