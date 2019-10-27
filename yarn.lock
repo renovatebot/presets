@@ -1005,10 +1005,10 @@ editor@~1.0.0:
   resolved "https://registry.yarnpkg.com/editor/-/editor-1.0.0.tgz#60c7f87bd62bcc6a894fa8ccd6afb7823a24f742"
   integrity sha1-YMf4e9YrzGqJT6jM1q+3gjok90I=
 
-email-addresses@3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/email-addresses/-/email-addresses-3.0.3.tgz#fc3c6952f68da24239914e982c8a7783bc2ed96d"
-  integrity sha512-kUlSC06PVvvjlMRpNIl3kR1NRXLEe86VQ7N0bQeaCZb2g+InShCeHQp/JvyYNTugMnRN2NvJhHlc3q12MWbbpg==
+email-addresses@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/email-addresses/-/email-addresses-3.1.0.tgz#cabf7e085cbdb63008a70319a74e6136188812fb"
+  integrity sha512-k0/r7GrWVL32kZlGwfPNgB2Y/mMXVTq/decgLczm/j34whdaspNrZO8CnXPf1laaHxI6ptUlsnAxN+UAPw+fzg==
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -4093,10 +4093,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.65.5:
-  version "19.65.5"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.65.5.tgz#9a854f66801c4881484ed270851bb32e0cad817d"
-  integrity sha512-MtAsw1MRYWPWWklE34t5kzid4WN6cNSSWolR9azzygRzC+R85NgJqSrNg51GSWXc6/NozC6nN/yAMgsqoBhYyA==
+renovate@19.65.6:
+  version "19.65.6"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.65.6.tgz#e85f3853cd624d4af9d7418d1d42aefb01240375"
+  integrity sha512-46vAkZ1AsQefrLtWYgYQFWmw8M+x85QxEhEH5odKdWnmkowmi/RPoftUPMcW9GfwRu5ejydXxMJDnxHEBKin5A==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@sindresorhus/is" "1.2.0"
@@ -4115,7 +4115,7 @@ renovate@19.65.5:
     deepmerge "4.2.1"
     delay "4.3.0"
     detect-indent "6.0.0"
-    email-addresses "3.0.3"
+    email-addresses "3.1.0"
     fs-extra "8.1.0"
     get-installed-path "4.0.8"
     github-url-from-git "1.5.0"
