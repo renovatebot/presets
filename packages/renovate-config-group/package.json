@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.44.0",
+  "version": "0.45.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -676,6 +676,7 @@
         "group:reactrouterMonorepo",
         "group:remarkMonorepo",
         "group:router5Monorepo",
+        "group:sanityMonorepo",
         "group:semantic-releaseMonorepo",
         "group:sentryMonorepo",
         "group:springfoxMonorepo",
@@ -913,6 +914,15 @@
             "^omniauth"
           ],
           "groupName": "omniauth packages"
+        }
+      ]
+    },
+    "sanityMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from sanity monorepo together",
+          "extends": "monorepo:sanity",
+          "groupName": "sanity monorepo"
         }
       ]
     },

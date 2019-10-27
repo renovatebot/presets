@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.35.0",
+  "version": "0.36.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -375,6 +375,12 @@
       "description": "router5 monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/router5/router5"
+      ]
+    },
+    "sanity": {
+      "description": "sanity monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/sanity-io/sanity"
       ]
     },
     "semantic-release": {
