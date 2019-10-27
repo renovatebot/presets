@@ -740,10 +740,10 @@ copy-concurrently@^1.0.0:
     rimraf "^2.5.4"
     run-queue "^1.0.0"
 
-core-js@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.3.2.tgz#cd42da1d7b0bb33ef11326be3a721934277ceb42"
-  integrity sha512-S1FfZpeBchkhyoY76YAdFzKS4zz9aOK7EeFaNA2aJlyXyA+sgqz6xdxmLPGXEAf0nF44MVN1kSjrA9Kt3ATDQg==
+core-js@^3.3.3:
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.3.4.tgz#6b0a23392958317bfb46e40b090529a923add669"
+  integrity sha512-BtibooaAmSOptGLRccsuX/dqgPtXwNgqcvYA6kOTTMzonRxZ+pJS4e+6mvVutESfXMeTnK8m3M+aBu3bkJbR+w==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -1650,16 +1650,16 @@ glob@^7.0.3, glob@^7.1.1, glob@^7.1.3, glob@^7.1.4:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-global-agent@2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/global-agent/-/global-agent-2.1.4.tgz#e8e024de7fbab627af7a23b1515b5e1d29658f84"
-  integrity sha512-RDR6KhsOJ33F917YHEPqtLQW/3jGTGgYdK+j/N2/P+USTbOL3zCWyOhe5mzU36sxO9IVhgjy9DK4UsRllE3KZQ==
+global-agent@2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/global-agent/-/global-agent-2.1.5.tgz#0e9b8367f7068bb6fa360a8f920499e1d873762f"
+  integrity sha512-pYJjCxxNBzYxo6iNO62JZn8iCFVbvpiM0zE4w/G5hBNIvLjnvzIeCVQPMKc3aK8ju5L7Q8NNI/oBSosU0eeSYw==
   dependencies:
     boolean "^2.0.2"
-    core-js "^3.3.2"
+    core-js "^3.3.3"
     es6-error "^4.1.1"
     matcher "^2.0.0"
-    roarr "^2.14.1"
+    roarr "^2.14.2"
     semver "^6.3.0"
     serialize-error "^5.0.0"
 
@@ -4093,10 +4093,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.65.4:
-  version "19.65.4"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.65.4.tgz#65046c329143c6e820cc0dc34a45d664d219c439"
-  integrity sha512-wFjWp8LBTp2bPVa0Ilwf0Y0KY337i19h3we88nT/0p6SuiCuKHB4eknoafvb5vqxTLMHJdlmjl9Lu20q47TnTQ==
+renovate@19.65.5:
+  version "19.65.5"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.65.5.tgz#9a854f66801c4881484ed270851bb32e0cad817d"
+  integrity sha512-MtAsw1MRYWPWWklE34t5kzid4WN6cNSSWolR9azzygRzC+R85NgJqSrNg51GSWXc6/NozC6nN/yAMgsqoBhYyA==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@sindresorhus/is" "1.2.0"
@@ -4119,7 +4119,7 @@ renovate@19.65.4:
     fs-extra "8.1.0"
     get-installed-path "4.0.8"
     github-url-from-git "1.5.0"
-    global-agent "2.1.4"
+    global-agent "2.1.5"
     got "9.6.0"
     handlebars "4.4.5"
     hasha "5.1.0"
@@ -4274,7 +4274,7 @@ rimraf@~2.4.0:
   dependencies:
     glob "^6.0.1"
 
-roarr@^2.14.1:
+roarr@^2.14.2:
   version "2.14.2"
   resolved "https://registry.yarnpkg.com/roarr/-/roarr-2.14.2.tgz#49a51bfe1fd6a399c061f4e5a710e02da8b88ac7"
   integrity sha512-ibqv70DCUhGVMfPe0JSUHBZ9PKLhxdk8VJ/Y2M7vVr+L4VakW1CdVTU9cJQBbM2STQa84CgBAzd7hJGcnALGeg==
