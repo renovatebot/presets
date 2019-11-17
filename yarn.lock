@@ -1743,10 +1743,10 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.3.tgz#4a12ff1b60376ef09862c2093edd908328be8423"
   integrity sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
 
-handlebars@4.5.1:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.5.1.tgz#8a01c382c180272260d07f2d1aa3ae745715c7ba"
-  integrity sha512-C29UoFzHe9yM61lOsIlCE5/mQVGrnIOrOq7maQl76L7tYPCgC1og0Ajt6uWnX4ZTxBPnjw+CUvawphwCfJgUnA==
+handlebars@4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.5.2.tgz#5a4eb92ab5962ca3415ac188c86dc7f784f76a0f"
+  integrity sha512-29Zxv/cynYB7mkT1rVWQnV7mGX6v7H/miQ6dbEpYTKq5eJBN7PsRB+ViYJlcT6JINTSu4dVB9kOqEun78h6Exg==
   dependencies:
     neo-async "^2.6.0"
     optimist "^0.6.1"
@@ -4093,10 +4093,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.66.13:
-  version "19.66.13"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.66.13.tgz#289871ea83b42023adab37a6dc043416ce4ac18b"
-  integrity sha512-OM5UQUZxDxJLyXqSlOnKXe+YFSgN5iEkrqMW746rMfRnt8+gntoG/jOTNewqiA3nrhTDHtKCGkEN3MBy2JxPcw==
+renovate@19.66.14:
+  version "19.66.14"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.66.14.tgz#1746c2635fa1cc79be536ef49e45bef5e092f074"
+  integrity sha512-sy0GZubGA9Sll+6/mEYaSqJk08L/nVtJ1FNXDvvN23DhKNFeLvzLh0VopbE8qvd5V7lMcQIYYhkIWEOwIrPs1A==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@sindresorhus/is" "1.2.0"
@@ -4121,7 +4121,7 @@ renovate@19.66.13:
     github-url-from-git "1.5.0"
     global-agent "2.1.6"
     got "9.6.0"
-    handlebars "4.5.1"
+    handlebars "4.5.2"
     hasha "5.1.0"
     ini "1.3.5"
     js-yaml "3.13.1"
