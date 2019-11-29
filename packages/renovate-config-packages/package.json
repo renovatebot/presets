@@ -59,7 +59,8 @@
       "extends": [
         "packages:eslint",
         "packages:stylelint",
-        "packages:tslint"
+        "packages:tslint",
+        "monorepo:typescript-eslint"
       ],
       "packageNames": [
         "remark-lint"
