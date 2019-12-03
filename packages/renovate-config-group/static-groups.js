@@ -79,6 +79,15 @@ module.exports = {
       },
     ],
   },
+  browserLogos: {
+    description: 'Group all @browser-logos packages together',
+    packageRules: [
+      {
+        groupName: 'Browser Logos',
+        packagePatterns: ['^@browser-logos/'],
+      },
+    ],
+  },
   definitelyTyped: {
     description: 'Group all @types packages together',
     packageRules: [
