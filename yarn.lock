@@ -4124,10 +4124,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.81.2:
-  version "19.81.2"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.81.2.tgz#36961458df36697d6d9c800dc5bf81eccce44743"
-  integrity sha512-qXJLsgGwrxKM8kfy5SKTdNZxpKEpAeCZQom3L6qk5tkfJ39sr/G0WBIRke4L59Au3OeDFIVNsd969K0oTxpCuw==
+renovate@19.82.0:
+  version "19.82.0"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.82.0.tgz#2d5950f7e579093e2068a23c38f5452290830a4f"
+  integrity sha512-8gNeizTgWBeTW9AyHb6/1xFDVnC3AHZ+zx6OLZldOSvTlAjj+fWLT28THKNQXSirvtEzAKKqIqJP1Lr0vMg6eQ==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@renovatebot/ruby-semver" "0.1.3"
