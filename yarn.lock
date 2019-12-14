@@ -25,11 +25,6 @@
   dependencies:
     xregexp "4.2.0"
 
-"@renovatebot/ruby-semver@0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@renovatebot/ruby-semver/-/ruby-semver-0.1.4.tgz#adc36fa426f249cffbe005aaa0c86b9e907f2286"
-  integrity sha512-lM1snOgcu2mJeccOmaFMj2+yCPEdifqfW1alObgNrOgArAGJB1vSH4YgfG41YuOulZX4BwSK/c+2W3XifTYh8g==
-
 "@sindresorhus/is@1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-1.2.0.tgz#63ce3638cb85231f3704164c90a18ef816da3fb7"
@@ -39,6 +34,13 @@
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
+
+"@snyk/ruby-semver@2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@snyk/ruby-semver/-/ruby-semver-2.0.4.tgz#457686ea7a4d60b10efddde99587efb3a53ba884"
+  integrity sha512-ceMD4CBS3qtAg+O0BUvkKdsheUNCqi+/+Rju243Ul8PsUgZnXmGiqfk/2z7DCprRQnxUTra4+IyeDQT7wAheCQ==
+  dependencies:
+    lodash "^4.17.14"
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
@@ -4124,14 +4126,14 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.82.4:
-  version "19.82.4"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.82.4.tgz#46ade840bc94e20b5b2471c95c82a878f76c776a"
-  integrity sha512-Q7giSeDEJVn4eb30oSnqtXo6/uNDsVUAr7JTNCrDc6HlqrF5x+nlRMdceW434HnvfobO3g3sL6JkBcWEgb3ncw==
+renovate@19.82.5:
+  version "19.82.5"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.82.5.tgz#b750fe56dc60e68d316cad080ec5034e3adb8bc2"
+  integrity sha512-VOyab9ZYUsHk1r9eppedqq4onTlb1sDpt8E2fjpwVwAU1eHJqBlAwPJAWXFMqNV/u3DCzTh8U9ODmX2XZJ3O8A==
   dependencies:
     "@renovate/pep440" "0.4.1"
-    "@renovatebot/ruby-semver" "0.1.4"
     "@sindresorhus/is" "1.2.0"
+    "@snyk/ruby-semver" "2.0.4"
     "@yarnpkg/lockfile" "1.1.0"
     aws-sdk "2.585.0"
     azure-devops-node-api "9.0.1"
