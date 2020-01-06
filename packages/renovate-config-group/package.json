@@ -687,6 +687,7 @@
         "group:neutrinoMonorepo",
         "group:nextjsMonorepo",
         "group:ngrxMonorepo",
+        "group:ngx-formlyMonorepo",
         "group:ngxs-storeMonorepo",
         "group:nrwlMonorepo",
         "group:nuxtjsMonorepo",
@@ -761,6 +762,15 @@
           "description": "Group packages from ngrx monorepo together",
           "extends": "monorepo:ngrx",
           "groupName": "ngrx monorepo"
+        }
+      ]
+    },
+    "ngx-formlyMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from ngx-formly monorepo together",
+          "extends": "monorepo:ngx-formly",
+          "groupName": "ngx-formly monorepo"
         }
       ]
     },
