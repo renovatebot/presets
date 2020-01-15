@@ -11,8 +11,7 @@ const repoGroups = {
   'aspnet AspNetWebStack': 'https://github.com/aspnet/AspNetWebStack',
   'aspnet Extensions': 'https://github.com/aspnet/Extensions',
   'aws-cdk': 'https://github.com/aws/aws-cdk',
-  'azure azure-libraries-for-net':
-    'https://github.com/Azure/azure-libraries-for-net',
+  'azure azure-libraries-for-net': 'https://github.com/Azure/azure-libraries-for-net',
   'azure azure-sdk-for-net': 'https://github.com/Azure/azure-sdk-for-net',
   'azure azure-storage-net': 'https://github.com/Azure/azure-storage-net',
   'bugsnag-js': 'https://github.com/bugsnag/bugsnag-js',
@@ -52,6 +51,7 @@ const repoGroups = {
     'https://github.com/dotansimha/graphql-code-generator',
     'https://github.com/dotansimha/graphql-codegen',
   ],
+  hapijs: 'https://github.com/hapijs',
   infrastructure: 'https://github.com/instructure/instructure-ui',
   jest: 'https://github.com/facebook/jest',
   lerna: 'https://github.com/lerna/lerna',

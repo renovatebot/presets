@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.36.1",
+  "version": "0.37.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -225,6 +225,12 @@
       "sourceUrlPrefixes": [
         "https://github.com/dotansimha/graphql-code-generator",
         "https://github.com/dotansimha/graphql-codegen"
+      ]
+    },
+    "hapijs": {
+      "description": "hapijs monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/hapijs"
       ]
     },
     "infrastructure": {
