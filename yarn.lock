@@ -4117,10 +4117,10 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.97.2:
-  version "19.97.2"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.97.2.tgz#1d2dd9f33ffcaa807b6ee4adb4a04a3c04ea209d"
-  integrity sha512-nN0Oc4yFiCF4KIk320zS7RQqsNZNqt/8jDe9LGqWPhbQdrWRUrT6Xn4e1x/IQNStwluwgDysgiCXFi0nilKoEQ==
+renovate@19.97.3:
+  version "19.97.3"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.97.3.tgz#633a7983dbccaeaf2d2d04d131b69b8c2e315ac0"
+  integrity sha512-P63QtyNRG5AxjKrdNRtS81ZPWpHR5GtC6CEYvWofDDkkvaL7KReCeh/p3BbHX4RnIDqadzWG5HRWNgHrPFceFQ==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@sindresorhus/is" "1.2.0"
