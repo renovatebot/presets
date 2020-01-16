@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.36.0",
+  "version": "0.36.1",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -302,7 +302,8 @@
     "neutrino": {
       "description": "neutrino monorepo",
       "sourceUrlPrefixes": [
-        "https://github.com/neutrinojs/neutrino"
+        "https://github.com/neutrinojs/neutrino",
+        "https://github.com/mozilla-neutrino/neutrino-dev"
       ]
     },
     "nextjs": {
