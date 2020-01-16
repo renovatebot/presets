@@ -40,6 +40,7 @@ module.exports = {
       'group:hibernateOgm',
       'group:hibernateCommons',
       'group:illuminate',
+      'group:jekyllEcosystem',
       'group:polymer',
       'group:rubyOmniauth',
       'group:socketio',
@@ -403,6 +404,18 @@ module.exports = {
       {
         extends: 'packages:postcss',
         groupName: 'postcss packages',
+      },
+    ],
+  },
+  jekyllEcosystem: {
+    description: 'Group jekyll and related ruby packages together',
+    packageRules: [
+      {
+        sourceUrlPrefixes: [
+          'https://github.com/jekyll/',
+          'https://github.com/github/pages-gem',
+        ],
+        groupName: 'jekyll ecosystem packages',
       },
     ],
   },

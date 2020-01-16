@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.45.0",
+  "version": "0.46.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -499,6 +499,18 @@
         }
       ]
     },
+    "jekyllEcosystem": {
+      "description": "Group jekyll and related ruby packages together",
+      "packageRules": [
+        {
+          "sourceUrlPrefixes": [
+            "https://github.com/jekyll/",
+            "https://github.com/github/pages-gem"
+          ],
+          "groupName": "jekyll ecosystem packages"
+        }
+      ]
+    },
     "jestMonorepo": {
       "packageRules": [
         {
@@ -855,6 +867,7 @@
         "group:hibernateOgm",
         "group:hibernateCommons",
         "group:illuminate",
+        "group:jekyllEcosystem",
         "group:polymer",
         "group:rubyOmniauth",
         "group:socketio",
