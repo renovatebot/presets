@@ -13,9 +13,12 @@
   },
   "version": "0.0.1",
   "scripts": {
-    "lint": "eslint . --ext .json --ext .js",
+    "lint": "eslint . --ext .json,.js",
+    "lint-fix": "yarn lint --fix",
+    "prettier": "prettier --list-different \"**/*.{ts,js,json,md}\"",
+    "prettier-fix": "prettier --write \"**/*.{ts,js,json,md}\"",
     "validate": "bash validate.sh",
-    "test": "yarn lint && yarn validate"
+    "test": "yarn prettier && yarn lint && yarn validate"
   },
   "prettier": {
     "singleQuote": true,
