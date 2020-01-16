@@ -1,0 +1,70 @@
+name: Test CI
+
+on:
+  push:
+    branches:
+      - master
+
+  pull_request:
+
+env:
+  CI: true
+
+jobs:
+  test:
+    name: test
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      max-parallel: 4
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [12.x]
+
+    steps:
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Init platform
+        id: init
+        shell: bash
+        run: |
+          echo "::set-output name=yarn_cache::$(yarn cache dir)"
+          node --version
+          yarn --version
+
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+
+      - name: Cache Yarn packages
+        uses: actions/cache@v1
+        with:
+          path: ${{ steps.init.outputs.yarn_cache }}
+          key: ${{ runner.os }}-yarn_cache-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn_cache-
+
+      - name: Cache node_modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ matrix.node-version }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.node-version }}-yarn-
+
+      - name: Installing dependencies
+        shell: bash
+        run: |
+          yarn install --frozen-lockfile --link-duplicates
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Prettier
+        run: yarn prettier
+
+      - name: Validate
+        run: yarn validate
