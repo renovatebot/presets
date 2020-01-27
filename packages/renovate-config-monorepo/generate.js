@@ -52,6 +52,7 @@ const repoGroups = {
     'https://github.com/dotansimha/graphql-code-generator',
     'https://github.com/dotansimha/graphql-codegen',
   ],
+  hapijs: 'https://github.com/hapijs',
   infrastructure: 'https://github.com/instructure/instructure-ui',
   jest: 'https://github.com/facebook/jest',
   lerna: 'https://github.com/lerna/lerna',

@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.46.0",
+  "version": "0.47.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -425,6 +425,15 @@
         }
       ]
     },
+    "hapijsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from hapijs monorepo together",
+          "extends": "monorepo:hapijs",
+          "groupName": "hapijs monorepo"
+        }
+      ]
+    },
     "hibernateCommons": {
       "description": "Group Java Hibernate Commons packages",
       "packageRules": [
@@ -663,6 +672,7 @@
         "group:gatsbyMonorepo",
         "group:graphql-modulesMonorepo",
         "group:graphqlcodegeneratorMonorepo",
+        "group:hapijsMonorepo",
         "group:infrastructureMonorepo",
         "group:ionic-nativeMonorepo",
         "group:jestMonorepo",
