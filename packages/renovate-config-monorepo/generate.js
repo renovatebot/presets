@@ -48,10 +48,11 @@ const repoGroups = {
   flopflip: 'https://github.com/tdeekens/flopflip',
   framework7: 'https://github.com/framework7io/framework7',
   gatsby: 'https://github.com/gatsbyjs/gatsby',
-  graphqlcodegenerator: [
+  'graphql-code-generator': [
     'https://github.com/dotansimha/graphql-code-generator',
     'https://github.com/dotansimha/graphql-codegen',
   ],
+  'graphql-toolkit': 'https://github.com/ardatan/graphql-toolkit',
   hapijs: 'https://github.com/hapijs',
   infrastructure: 'https://github.com/instructure/instructure-ui',
   jest: 'https://github.com/facebook/jest',
