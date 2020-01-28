@@ -220,6 +220,12 @@
         "https://github.com/Urigo/graphql-modules"
       ]
     },
+    "graphql-toolkit": {
+      "description": "graphql-toolkit monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/ardatan/graphql-toolkit"
+      ]
+    },
     "graphqlcodegenerator": {
       "description": "graphqlcodegenerator monorepo",
       "sourceUrlPrefixes": [
