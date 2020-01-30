@@ -72,6 +72,7 @@ const repoGroups = {
   nrwl: 'https://github.com/nrwl/',
   nuxtjs: 'https://github.com/nuxt/nuxt.js',
   picasso: 'https://github.com/qlik-oss/picasso.js',
+  pollyjs: 'https://github.com/Netflix/pollyjs',
   pouchdb: 'https://github.com/pouchdb/pouchdb',
   react: 'https://github.com/facebook/react',
   reactrouter: 'https://github.com/ReactTraining/react-router',

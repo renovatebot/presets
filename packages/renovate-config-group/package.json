@@ -691,6 +691,7 @@
         "group:nrwlMonorepo",
         "group:nuxtjsMonorepo",
         "group:picassoMonorepo",
+        "group:pollyjsMonorepo",
         "group:pouchdbMonorepo",
         "group:reactMonorepo",
         "group:react-dndMonorepo",
@@ -797,6 +798,15 @@
           "description": "Group packages from picasso monorepo together",
           "extends": "monorepo:picasso",
           "groupName": "picasso monorepo"
+        }
+      ]
+    },
+    "pollyjsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from pollyjs monorepo together",
+          "extends": "monorepo:pollyjs",
+          "groupName": "pollyjs monorepo"
         }
       ]
     },

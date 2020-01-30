@@ -348,6 +348,12 @@
         "https://github.com/qlik-oss/picasso.js"
       ]
     },
+    "pollyjs": {
+      "description": "pollyjs monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/Netflix/pollyjs"
+      ]
+    },
     "pouchdb": {
       "description": "pouchdb monorepo",
       "sourceUrlPrefixes": [
