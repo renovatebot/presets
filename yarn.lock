@@ -251,10 +251,10 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
-aws-sdk@2.601.0:
-  version "2.601.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.601.0.tgz#7210e4e1edcffbe76e9b2a7181617966c9cfc731"
-  integrity sha512-i8ND3Hn0zjuwyau47io8Uyvbeb6dnOYbC6k34u3DvqH3I/kFDgDAme6L58LUzSHAPDWhUDjNXpScmMsGZVDWrw==
+aws-sdk@2.610.0:
+  version "2.610.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.610.0.tgz#a8633204bed83df763095824f8110ced4a717d2a"
+  integrity sha512-kqcoCTKjbxrUo2KeLQR2Jw6l4PvkbHXSDk8KqF2hXcpHibiOcMXZZPVe9X+s90RC/B2+qU95M7FImp9ByMcw7A==
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
@@ -312,7 +312,7 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bin-links@^1.1.2, bin-links@^1.1.6:
+bin-links@^1.1.2, bin-links@^1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/bin-links/-/bin-links-1.1.7.tgz#34b79ea9d0e575d7308afeff0c6b2fc24c793359"
   integrity sha512-/eaLaTu7G7/o7PV04QPy1HRT65zf+1tFkPGv0sPTV0tRwufooYBQO3zrcyGgm+ja+ZtBf2GEuKjDRJ2pPG+yqA==
@@ -2470,10 +2470,10 @@ libnpmteam@^1.0.2:
     get-stream "^4.0.0"
     npm-registry-fetch "^4.0.0"
 
-libnpx@^10.2.0:
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/libnpx/-/libnpx-10.2.0.tgz#1bf4a1c9f36081f64935eb014041da10855e3102"
-  integrity sha512-X28coei8/XRCt15cYStbLBph+KGhFra4VQhRBPuH/HHMkC5dxM8v24RVgUsvODKCrUZ0eTgiTqJp6zbl0sskQQ==
+libnpx@^10.2.2:
+  version "10.2.2"
+  resolved "https://registry.yarnpkg.com/libnpx/-/libnpx-10.2.2.tgz#5a4171b9b92dd031463ef66a4af9f5cbd6b09572"
+  integrity sha512-ujaYToga1SAX5r7FU5ShMFi88CWpY75meNZtr6RtEyv4l2ZK3+Wgvxq2IqlwWBiDZOqhumdeiocPS1aKrCMe3A==
   dependencies:
     dotenv "^5.0.1"
     npm-package-arg "^6.0.0"
@@ -2694,10 +2694,10 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-luxon@1.21.3:
-  version "1.21.3"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.21.3.tgz#f1d5c2a7e855d039836cf4954f883ecac8fc4727"
-  integrity sha512-lLRwNcNnkZLuv13A1FUuZRZmTWF7ro2ricYvb0L9cvBYHPvZhQdKwrYnZzi103D2XKmlVmxWpdn2wfIiOt2YEw==
+luxon@1.22.0:
+  version "1.22.0"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.22.0.tgz#639525c7c69e594953c7b142794466b8ea85b868"
+  integrity sha512-3sLvlfbFo+AxVEY3IqxymbumtnlgBwjDExxK60W3d+trrUzErNAz/PfvPT+mva+vEUrdIodeCOs7fB6zHtRSrw==
 
 make-dir@^1.0.0:
   version "1.3.0"
@@ -3036,7 +3036,7 @@ node-fetch-npm@^2.0.2:
     json-parse-better-errors "^1.0.0"
     safe-buffer "^5.1.1"
 
-node-gyp@^5.0.2, node-gyp@^5.0.5:
+node-gyp@^5.0.2, node-gyp@^5.0.7:
   version "5.0.7"
   resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-5.0.7.tgz#dd4225e735e840cf2870e4037c2ed9c28a31719e"
   integrity sha512-K8aByl8OJD51V0VbUURTKsmdswkQQusIvlvmTyhHlIT1hBvaSxzdxpSle857XuXa7uc02UEZx9OR5aDxSWS5Qw==
@@ -3053,10 +3053,10 @@ node-gyp@^5.0.2, node-gyp@^5.0.5:
     tar "^4.4.12"
     which "^1.3.1"
 
-node-html-parser@1.1.18:
-  version "1.1.18"
-  resolved "https://registry.yarnpkg.com/node-html-parser/-/node-html-parser-1.1.18.tgz#fca0a0f56759a05a9749afbdfb289d2022a5c8db"
-  integrity sha512-aMMHT8E0Luj3wcgefp+r4bvsKzDtZr5kBCm8e9PwhRlyx1FswXOYie7WaRYOXbw+jwzLXFeu1W9b1GNRkS4G0A==
+node-html-parser@1.1.19:
+  version "1.1.19"
+  resolved "https://registry.yarnpkg.com/node-html-parser/-/node-html-parser-1.1.19.tgz#551ddbea531433d849da98a31d7421c96f9df318"
+  integrity sha512-X7spStiBKw9HQfUdBpT8v4MZf2x4qCLu9w31meeqM9Egpne2B78bxZjC4b1ie6NgFMvyY1qdgjI9+scieXmkeA==
   dependencies:
     he "1.1.1"
 
@@ -3195,10 +3195,10 @@ npm-user-validate@~1.0.0:
   resolved "https://registry.yarnpkg.com/npm-user-validate/-/npm-user-validate-1.0.0.tgz#8ceca0f5cea04d4e93519ef72d0557a75122e951"
   integrity sha1-jOyg9c6gTU6TUZ73LQVXp1Ei6VE=
 
-npm@6.13.6:
-  version "6.13.6"
-  resolved "https://registry.yarnpkg.com/npm/-/npm-6.13.6.tgz#86df8305a4d8269d0934ec907920e7ab079cf5d9"
-  integrity sha512-NomC08kv7HIl1FOyLOe9Hp89kYsOsvx52huVIJ7i8hFW8Xp65lDwe/8wTIrh9q9SaQhA8hTrfXPh3BEL3TmMpw==
+npm@6.13.7:
+  version "6.13.7"
+  resolved "https://registry.yarnpkg.com/npm/-/npm-6.13.7.tgz#9533a3ddc57f9792db8a8b303efabaf878047841"
+  integrity sha512-X967EKTT407CvgrWFjXusnPh0VLERcmR9hZFSVgkEquOomZkvpwLJ5zrQ3qrG9SpPLKJE4bPLUu76exKQ4a3Cg==
   dependencies:
     JSONStream "^1.3.5"
     abbrev "~1.1.1"
@@ -3206,7 +3206,7 @@ npm@6.13.6:
     ansistyles "~0.1.3"
     aproba "^2.0.0"
     archy "~1.0.0"
-    bin-links "^1.1.6"
+    bin-links "^1.1.7"
     bluebird "^3.5.5"
     byte-size "^5.0.1"
     cacache "^12.0.3"
@@ -3249,7 +3249,7 @@ npm@6.13.6:
     libnpmorg "^1.0.1"
     libnpmsearch "^2.0.2"
     libnpmteam "^1.0.2"
-    libnpx "^10.2.0"
+    libnpx "^10.2.2"
     lock-verify "^2.1.0"
     lockfile "^1.0.4"
     lodash._baseindexof "*"
@@ -3268,7 +3268,7 @@ npm@6.13.6:
     mississippi "^3.0.0"
     mkdirp "~0.5.1"
     move-concurrently "^1.0.1"
-    node-gyp "^5.0.5"
+    node-gyp "^5.0.7"
     nopt "~4.0.1"
     normalize-package-data "^2.5.0"
     npm-audit-report "^1.3.2"
@@ -4116,16 +4116,16 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@19.110.0:
-  version "19.110.0"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.110.0.tgz#dd3037b46e9f89f3a54a8534421bd6b82cf2488e"
-  integrity sha512-fnazUIKo5Z0rP2Knk3QoGdv7p+b3Qc9K2uQ3colpMcNhcWxrAJgmallqMbWeeQfLQJgAXrJ64J5J9ic/llM8ow==
+renovate@19.117.0:
+  version "19.117.0"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-19.117.0.tgz#28d17532d7cb6a7d1928a00afde186ca516dc5b1"
+  integrity sha512-pHOWH/+jqxe8JOeifLzn05z2aOPU2EUqIjvixT+27mPrQDJ4qOipyE0GEomNAAJcNX5j1/F9FBPmbC/8YQEHXA==
   dependencies:
     "@renovate/pep440" "0.4.1"
     "@sindresorhus/is" "1.2.0"
     "@snyk/ruby-semver" "2.0.4"
     "@yarnpkg/lockfile" "1.1.0"
-    aws-sdk "2.601.0"
+    aws-sdk "2.610.0"
     azure-devops-node-api "9.0.1"
     bunyan "1.8.12"
     cacache "13.0.1"
@@ -4154,15 +4154,15 @@ renovate@19.110.0:
     later "1.2.0"
     linkify-markdown "1.0.0"
     lodash "4.17.15"
-    luxon "1.21.3"
+    luxon "1.22.0"
     markdown-it "10.0.0"
     markdown-table "1.1.3"
     minimatch "3.0.4"
     moment "2.24.0"
     moment-timezone "0.5.27"
     node-emoji "1.10.0"
-    node-html-parser "1.1.18"
-    npm "6.13.6"
+    node-html-parser "1.1.19"
+    npm "6.13.7"
     p-all "2.1.0"
     parse-diff "0.6.0"
     parse-link-header "1.0.1"
@@ -4171,17 +4171,17 @@ renovate@19.110.0:
     semver "7.1.1"
     semver-stable "3.0.0"
     semver-utils "1.1.4"
-    simple-git "1.130.0"
+    simple-git "1.131.0"
     slugify "1.3.6"
     toml "3.0.0"
     traverse "0.6.6"
     upath "1.2.0"
     validate-npm-package-name "3.0.0"
-    validator "12.1.0"
+    validator "12.2.0"
     www-authenticate "0.6.2"
     xmldoc "1.1.2"
     yarn "1.21.1"
-    yawn-yaml "1.4.0"
+    yawn-yaml "1.5.0"
   optionalDependencies:
     re2 "1.10.5"
 
@@ -4435,10 +4435,10 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
 
-simple-git@1.130.0:
-  version "1.130.0"
-  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-1.130.0.tgz#b689c4163bc021df563a81f256de54482005195d"
-  integrity sha512-gQsPA1uuAkGUa6S+yG4NRknKHVEV+Vnp437w8dJpDpzjtEH566WRSz5z6DoIxlBFaLC7Xwypznsuf1S/J0gtFg==
+simple-git@1.131.0:
+  version "1.131.0"
+  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-1.131.0.tgz#68d85bf6a706e418b8a92cae765d2ad358781e21"
+  integrity sha512-z/art7YYtmPnnLItT/j+nKwJt6ap6nHZ4D8sYo9PdCKK/ug56SN6m/evfxJk7uDV3e9JuCa8qIyDU2P3cxmiNQ==
   dependencies:
     debug "^4.0.1"
 
@@ -5144,10 +5144,10 @@ validate-npm-package-name@3.0.0, validate-npm-package-name@^3.0.0, validate-npm-
   dependencies:
     builtins "^1.0.3"
 
-validator@12.1.0:
-  version "12.1.0"
-  resolved "https://registry.yarnpkg.com/validator/-/validator-12.1.0.tgz#a3a7315d5238cbc15e46ad8d5e479aafa7119925"
-  integrity sha512-gIC2RBuFRi574Rb9vewGCJ7TCLxHXNx6EKthEgs+Iz0pYa9a9Te1VLG/bGLsAyGWrqR5FfR7tbFUI7FEF2LiGA==
+validator@12.2.0:
+  version "12.2.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-12.2.0.tgz#660d47e96267033fd070096c3b1a6f2db4380a0a"
+  integrity sha512-jJfE/DW6tIK1Ek8nCfNFqt8Wb3nzMoAbocBF6/Icgg1ZFSBpObdnwVY2jQj6qUqzhx5jc71fpvBWyLGO7Xl+nQ==
 
 verror@1.10.0:
   version "1.10.0"
@@ -5407,10 +5407,10 @@ yarn@1.21.1:
   resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.21.1.tgz#1d5da01a9a03492dc4a5957befc1fd12da83d89c"
   integrity sha512-dQgmJv676X/NQczpbiDtc2hsE/pppGDJAzwlRiADMTvFzYbdxPj2WO4PcNyriSt2c4jsCMpt8UFRKHUozt21GQ==
 
-yawn-yaml@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/yawn-yaml/-/yawn-yaml-1.4.0.tgz#46513da9d017f411680731968d48322004974a91"
-  integrity sha512-aSnPQaFrr+YsHqD+D5PAAdDIQcCtbYOJ7xFDIJDlNCxw3dEgE0wltLJgdHhe4QSLoTVhwRBe6ZJIt1x0oDsRqg==
+yawn-yaml@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/yawn-yaml/-/yawn-yaml-1.5.0.tgz#95fba7544d5375fce3dc84514f12218ed0d2ebcb"
+  integrity sha512-sH2zX9K1QiWhWh9U19pye660qlzrEAd5c4ebw/6lqz17LZw7xYi7nqXlBoVLVtc2FZFXDKiJIsvVcKGYbLVyFQ==
   dependencies:
     js-yaml "^3.4.2"
     lodash "^4.17.11"
