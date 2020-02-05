@@ -36,7 +36,8 @@
         "**/examples/**",
         "**/__tests__/**",
         "**/test/**",
-        "**/tests/**"
+        "**/tests/**",
+        "**/__fixtures__/**"
       ]
     },
     "includeNodeModules": {
