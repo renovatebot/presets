@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.36.1",
+  "version": "0.39.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -220,11 +220,23 @@
         "https://github.com/Urigo/graphql-modules"
       ]
     },
+    "graphql-toolkit": {
+      "description": "graphql-toolkit monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/ardatan/graphql-toolkit"
+      ]
+    },
     "graphqlcodegenerator": {
       "description": "graphqlcodegenerator monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/dotansimha/graphql-code-generator",
         "https://github.com/dotansimha/graphql-codegen"
+      ]
+    },
+    "hapijs": {
+      "description": "hapijs monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/hapijs"
       ]
     },
     "infrastructure": {
@@ -334,6 +346,12 @@
       "description": "picasso monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/qlik-oss/picasso.js"
+      ]
+    },
+    "pollyjs": {
+      "description": "pollyjs monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/Netflix/pollyjs"
       ]
     },
     "pouchdb": {
