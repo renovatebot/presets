@@ -100,7 +100,7 @@ module.exports = {
     packageRules: [
       {
         groupName: '.NET Core Docker containers',
-        packagePatterns: ['mcr.microsoft.com\/dotnet\/core\/*'],
+        packagePatterns: ['mcr.microsoft.com/dotnet/core/*'],
       },
     ],
   },
