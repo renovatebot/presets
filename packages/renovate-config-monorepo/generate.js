@@ -53,6 +53,7 @@ const repoGroups = {
     'https://github.com/dotansimha/graphql-codegen',
   ],
   'graphql-toolkit': 'https://github.com/ardatan/graphql-toolkit',
+  hamcrest: 'https://github.com/hamcrest/JavaHamcrest',
   hapijs: 'https://github.com/hapijs',
   infrastructure: 'https://github.com/instructure/instructure-ui',
   jest: 'https://github.com/facebook/jest',
