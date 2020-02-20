@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.18.0",
+  "version": "0.20.0",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -36,7 +36,8 @@
         "**/examples/**",
         "**/__tests__/**",
         "**/test/**",
-        "**/tests/**"
+        "**/tests/**",
+        "**/__fixtures__/**"
       ]
     },
     "includeNodeModules": {
@@ -587,6 +588,17 @@
             "{{arg0}}"
           ],
           "followTag": "{{arg1}}"
+        }
+      ]
+    },
+    "githubComToken": {
+      "description": "Use provided token for github.com lookups",
+      "hostRules": [
+        {
+          "domainName": "github.com",
+          "encrypted": {
+            "token": "{{arg0}}"
+          }
         }
       ]
     },

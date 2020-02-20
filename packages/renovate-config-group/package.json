@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.46.0",
+  "version": "0.48.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -425,6 +425,15 @@
         }
       ]
     },
+    "hapijsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from hapijs monorepo together",
+          "extends": "monorepo:hapijs",
+          "groupName": "hapijs monorepo"
+        }
+      ]
+    },
     "hibernateCommons": {
       "description": "Group Java Hibernate Commons packages",
       "packageRules": [
@@ -663,6 +672,7 @@
         "group:gatsbyMonorepo",
         "group:graphql-modulesMonorepo",
         "group:graphqlcodegeneratorMonorepo",
+        "group:hapijsMonorepo",
         "group:infrastructureMonorepo",
         "group:ionic-nativeMonorepo",
         "group:jestMonorepo",
@@ -681,6 +691,7 @@
         "group:nrwlMonorepo",
         "group:nuxtjsMonorepo",
         "group:picassoMonorepo",
+        "group:pollyjsMonorepo",
         "group:pouchdbMonorepo",
         "group:reactMonorepo",
         "group:react-dndMonorepo",
@@ -787,6 +798,15 @@
           "description": "Group packages from picasso monorepo together",
           "extends": "monorepo:picasso",
           "groupName": "picasso monorepo"
+        }
+      ]
+    },
+    "pollyjsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from pollyjs monorepo together",
+          "extends": "monorepo:pollyjs",
+          "groupName": "pollyjs monorepo"
         }
       ]
     },
