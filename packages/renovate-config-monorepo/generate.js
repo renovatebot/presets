@@ -43,6 +43,7 @@ const repoGroups = {
   capacitor: 'https://github.com/ionic-team/capacitor',
   clarity: 'https://github.com/vmware/clarity',
   commitlint: 'https://github.com/conventional-changelog/commitlint',
+  dropwizard: 'https://github.com/dropwizard/dropwizard',
   emotion: 'https://github.com/emotion-js/emotion',
   expo: 'https://github.com/expo/expo',
   fimbullinter: 'https://github.com/fimbullinter/wotan',
