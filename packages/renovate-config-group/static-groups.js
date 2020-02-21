@@ -89,18 +89,13 @@ module.exports = {
       },
     ],
   },
-  dotNet: {
+  dotNetCore: {
     description: '.NET Core Docker containers',
-    packageNames: [
-      'mcr.microsoft.com/dotnet/core/sdk',
-      'mcr.microsoft.com/dotnet/core/aspnet',
-      'mcr.microsoft.com/dotnet/core/runtime',
-      'mcr.microsoft.com/dotnet/core/runtime-deps',
-    ],
     packageRules: [
       {
+        datasources: ['docker'],
+        packagePatterns: ['^mcr.microsoft.com/dotnet/core/'],
         groupName: '.NET Core Docker containers',
-        packagePatterns: ['mcr.microsoft.com/dotnet/core/*'],
       },
     ],
   },
