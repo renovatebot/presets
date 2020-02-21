@@ -72,6 +72,7 @@ const repoGroups = {
   ngrx: 'https://github.com/ngrx/',
   nrwl: 'https://github.com/nrwl/',
   nuxtjs: 'https://github.com/nuxt/nuxt.js',
+  openfeign: 'https://github.com/OpenFeign/feign',
   picasso: 'https://github.com/qlik-oss/picasso.js',
   pollyjs: 'https://github.com/Netflix/pollyjs',
   pouchdb: 'https://github.com/pouchdb/pouchdb',
