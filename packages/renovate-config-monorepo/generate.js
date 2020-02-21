@@ -65,6 +65,7 @@ const repoGroups = {
   lerna: 'https://github.com/lerna/lerna',
   lingui: 'https://github.com/lingui/js-lingui',
   lodash: 'https://github.com/lodash/',
+  loopback: 'https://github.com/strongloop/loopback-next',
   material: 'https://github.com/material-components/material-components-web',
   mdx: 'https://github.com/mdx-js/mdx',
   mui: 'https://github.com/mui-org/material-ui',
