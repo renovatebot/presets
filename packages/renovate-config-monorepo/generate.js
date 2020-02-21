@@ -56,6 +56,7 @@ const repoGroups = {
   'graphql-toolkit': 'https://github.com/ardatan/graphql-toolkit',
   hapijs: 'https://github.com/hapijs',
   infrastructure: 'https://github.com/instructure/instructure-ui',
+  jasmine: 'https://github.com/jasmine/jasmine',
   jest: 'https://github.com/facebook/jest',
   lerna: 'https://github.com/lerna/lerna',
   lingui: 'https://github.com/lingui/js-lingui',
