@@ -324,6 +324,12 @@
         "https://github.com/ngrx/"
       ]
     },
+    "ngx-formly": {
+      "description": "ngx-formly monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/ngx-formly/ngx-formly"
+      ]
+    },
     "ngxs-store": {
       "description": "ngxs-store monorepo",
       "sourceUrlPrefixes": [

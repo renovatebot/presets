@@ -22,6 +22,7 @@ const repoGroups = {
   'graphql-modules': 'https://github.com/Urigo/graphql-modules',
   'ionic-native': 'https://github.com/ionic-team/ionic-native',
   'mdc-react': 'material-components/material-components-web-react',
+  'ngx-formly': 'https://github.com/ngx-formly/ngx-formly',
   'ngxs-store': 'https://github.com/ngxs/store',
   'react-dnd': 'https://github.com/react-dnd/react-dnd',
   'reactivestack-cookies': 'https://github.com/reactivestack/cookies',
