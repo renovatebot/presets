@@ -7,8 +7,14 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.39.0",
+  "version": "0.40.0",
   "renovate-config": {
+    "Swashbuckle": {
+      "description": "Swashbuckle monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/domaindrivendev/Swashbuckle.AspNetCore"
+      ]
+    },
     "accounts": {
       "description": "accounts monorepo",
       "sourceUrlPrefixes": [
@@ -136,6 +142,12 @@
         "https://github.com/igmat/baset"
       ]
     },
+    "brave": {
+      "description": "brave monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/openzipkin/brave"
+      ]
+    },
     "bugsnag-js": {
       "description": "bugsnag-js monorepo",
       "sourceUrlPrefixes": [
@@ -164,6 +176,12 @@
       "description": "devextreme-reactive monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/DevExpress/devextreme-reactive"
+      ]
+    },
+    "dropwizard": {
+      "description": "dropwizard monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/dropwizard/dropwizard"
       ]
     },
     "electron-forge": {
@@ -233,6 +251,12 @@
         "https://github.com/dotansimha/graphql-codegen"
       ]
     },
+    "hamcrest": {
+      "description": "hamcrest monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/hamcrest/JavaHamcrest"
+      ]
+    },
     "hapijs": {
       "description": "hapijs monorepo",
       "sourceUrlPrefixes": [
@@ -249,6 +273,18 @@
       "description": "ionic-native monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/ionic-team/ionic-native"
+      ]
+    },
+    "jasmine": {
+      "description": "jasmine monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/jasmine/jasmine"
+      ]
+    },
+    "jersey": {
+      "description": "jersey monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/eclipse-ee4j/jersey"
       ]
     },
     "jest": {
@@ -277,9 +313,6 @@
     },
     "loopback": {
       "description": "loopback monorepo",
-      "packagePatterns": [
-        "^loopback-connector"
-      ],
       "sourceUrlPrefixes": [
         "https://github.com/strongloop/loopback-next"
       ]
@@ -355,6 +388,12 @@
       "description": "nuxtjs monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/nuxt/nuxt.js"
+      ]
+    },
+    "openfeign": {
+      "description": "openfeign monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/OpenFeign/feign"
       ]
     },
     "picasso": {
