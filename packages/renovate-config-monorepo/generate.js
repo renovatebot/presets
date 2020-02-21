@@ -91,6 +91,7 @@ const repoGroups = {
   strapi: 'https://github.com/strapi/strapi',
   stryker: 'https://github.com/stryker-mutator/stryker',
   surveyjs: 'https://github.com/surveyjs/surveyjs',
+  Swashbuckle: 'https://github.com/domaindrivendev/Swashbuckle.AspNetCore',
   typefaces: 'https://github.com/KyleAMathews/typefaces',
   uppy: 'https://github.com/transloadit/uppy',
   vue: 'https://github.com/vuejs/vue',
