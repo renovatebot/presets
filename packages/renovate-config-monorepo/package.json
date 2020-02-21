@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.35.0",
+  "version": "0.39.0",
   "renovate-config": {
     "accounts": {
       "description": "accounts monorepo",
@@ -220,11 +220,23 @@
         "https://github.com/Urigo/graphql-modules"
       ]
     },
+    "graphql-toolkit": {
+      "description": "graphql-toolkit monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/ardatan/graphql-toolkit"
+      ]
+    },
     "graphqlcodegenerator": {
       "description": "graphqlcodegenerator monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/dotansimha/graphql-code-generator",
         "https://github.com/dotansimha/graphql-codegen"
+      ]
+    },
+    "hapijs": {
+      "description": "hapijs monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/hapijs"
       ]
     },
     "infrastructure": {
@@ -263,6 +275,15 @@
         "https://github.com/lodash/"
       ]
     },
+    "loopback": {
+      "description": "loopback monorepo",
+      "packagePatterns": [
+        "^loopback-connector"
+      ],
+      "sourceUrlPrefixes": [
+        "https://github.com/strongloop/loopback-next"
+      ]
+    },
     "material": {
       "description": "material monorepo",
       "sourceUrlPrefixes": [
@@ -296,7 +317,8 @@
     "neutrino": {
       "description": "neutrino monorepo",
       "sourceUrlPrefixes": [
-        "https://github.com/neutrinojs/neutrino"
+        "https://github.com/neutrinojs/neutrino",
+        "https://github.com/mozilla-neutrino/neutrino-dev"
       ]
     },
     "nextjs": {
@@ -309,6 +331,12 @@
       "description": "ngrx monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/ngrx/"
+      ]
+    },
+    "ngx-formly": {
+      "description": "ngx-formly monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/ngx-formly/ngx-formly"
       ]
     },
     "ngxs-store": {
@@ -333,6 +361,12 @@
       "description": "picasso monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/qlik-oss/picasso.js"
+      ]
+    },
+    "pollyjs": {
+      "description": "pollyjs monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/Netflix/pollyjs"
       ]
     },
     "pouchdb": {
@@ -383,6 +417,12 @@
         "https://github.com/router5/router5"
       ]
     },
+    "sanity": {
+      "description": "sanity monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/sanity-io/sanity"
+      ]
+    },
     "semantic-release": {
       "description": "semantic-release monorepo",
       "sourceUrlPrefixes": [
@@ -393,6 +433,12 @@
       "description": "sentry monorepo",
       "sourceUrlPrefixes": [
         "https://github.com/getsentry/sentry-javascript"
+      ]
+    },
+    "springfox": {
+      "description": "springfox monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/springfox/springfox"
       ]
     },
     "storybook": {

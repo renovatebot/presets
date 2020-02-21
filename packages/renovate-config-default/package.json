@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.16.0",
+  "version": "0.20.0",
   "renovate-config": {
     "enableRenovate": {
       "description": "Enable renovate",
@@ -36,7 +36,8 @@
         "**/examples/**",
         "**/__tests__/**",
         "**/test/**",
-        "**/tests/**"
+        "**/tests/**",
+        "**/__fixtures__/**"
       ]
     },
     "includeNodeModules": {
@@ -66,6 +67,28 @@
             "peerDependencies"
           ],
           "rangeStrategy": "auto"
+        }
+      ]
+    },
+    "pinDependencies": {
+      "description": "Pin dependency versions for <code>dependencies</code>",
+      "packageRules": [
+        {
+          "depTypeList": [
+            "dependencies"
+          ],
+          "rangeStrategy": "pin"
+        }
+      ]
+    },
+    "pinDevDependencies": {
+      "description": "Pin dependency versions for <code>devDependencies</code>",
+      "packageRules": [
+        {
+          "depTypeList": [
+            "devDependencies"
+          ],
+          "rangeStrategy": "pin"
         }
       ]
     },
@@ -288,12 +311,16 @@
       "description": "Automerge all upgrades (including major) if they pass tests",
       "automerge": true
     },
+    "automergeBranch": {
+      "description": "If automerging, push the new commit directly to base branch (no PR)",
+      "automergeType": "branch"
+    },
     "automergeBranchMergeCommit": {
-      "description": "If automerging, perform a merge-commit on branch (no PR)",
+      "description": "If automerging, perform a merge-commit on branch (no PR) - deprecated, use :automergeBranch instead",
       "automergeType": "branch-merge-commit"
     },
     "automergeBranchPush": {
-      "description": "If automerging, push the new commit directly to base branch (no PR)",
+      "description": "If automerging, push the new commit directly to base branch (no PR) - deprecated, use :automergeBranch instead",
       "automergeType": "branch-push"
     },
     "automergePr": {
@@ -354,6 +381,17 @@
         {
           "extends": [
             "packages:linters"
+          ],
+          "automerge": true
+        }
+      ]
+    },
+    "automergeTesters": {
+      "description": "Update testing packages automatically if tests pass",
+      "packageRules": [
+        {
+          "extends": [
+            "packages:test"
           ],
           "automerge": true
         }
@@ -550,6 +588,17 @@
             "{{arg0}}"
           ],
           "followTag": "{{arg1}}"
+        }
+      ]
+    },
+    "githubComToken": {
+      "description": "Use provided token for github.com lookups",
+      "hostRules": [
+        {
+          "domainName": "github.com",
+          "encrypted": {
+            "token": "{{arg0}}"
+          }
         }
       ]
     },

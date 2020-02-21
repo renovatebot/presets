@@ -13,24 +13,28 @@
   },
   "version": "0.0.1",
   "scripts": {
-    "lint": "eslint . --ext .json --ext .js",
+    "lint": "eslint . --ext .json,.js",
+    "lint-fix": "yarn lint --fix",
+    "prettier": "prettier --list-different \"**/*.{ts,js,json,md}\"",
+    "prettier-fix": "prettier --write \"**/*.{ts,js,json,md}\"",
     "validate": "bash validate.sh",
-    "test": "yarn lint && yarn validate"
+    "test": "yarn prettier && yarn lint && yarn validate"
   },
   "prettier": {
     "singleQuote": true,
     "trailingComma": "es5"
   },
   "devDependencies": {
-    "eslint": "6.1.0",
+    "@sindresorhus/is": "^2.1.0",
+    "eslint": "6.8.0",
     "eslint-config-airbnb-base": "14.0.0",
-    "eslint-config-prettier": "6.0.0",
-    "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-json": "1.4.0",
-    "eslint-plugin-prettier": "3.1.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-json": "2.0.1",
+    "eslint-plugin-prettier": "3.1.2",
     "eslint-plugin-promise": "4.2.1",
-    "gh-got": "8.1.0",
-    "prettier": "1.18.2",
-    "renovate": "19.30.5"
+    "gh-got": "9.0.0",
+    "prettier": "1.19.1",
+    "renovate": "19.117.0"
   }
 }

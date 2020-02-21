@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.44.0",
+  "version": "0.48.0",
   "renovate-config": {
     "accountsMonorepo": {
       "packageRules": [
@@ -425,6 +425,15 @@
         }
       ]
     },
+    "hapijsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from hapijs monorepo together",
+          "extends": "monorepo:hapijs",
+          "groupName": "hapijs monorepo"
+        }
+      ]
+    },
     "hibernateCommons": {
       "description": "Group Java Hibernate Commons packages",
       "packageRules": [
@@ -496,6 +505,18 @@
           "description": "Group packages from ionic-native monorepo together",
           "extends": "monorepo:ionic-native",
           "groupName": "ionic-native monorepo"
+        }
+      ]
+    },
+    "jekyllEcosystem": {
+      "description": "Group jekyll and related ruby packages together",
+      "packageRules": [
+        {
+          "sourceUrlPrefixes": [
+            "https://github.com/jekyll/",
+            "https://github.com/github/pages-gem"
+          ],
+          "groupName": "jekyll ecosystem packages"
         }
       ]
     },
@@ -651,6 +672,7 @@
         "group:gatsbyMonorepo",
         "group:graphql-modulesMonorepo",
         "group:graphqlcodegeneratorMonorepo",
+        "group:hapijsMonorepo",
         "group:infrastructureMonorepo",
         "group:ionic-nativeMonorepo",
         "group:jestMonorepo",
@@ -665,10 +687,12 @@
         "group:neutrinoMonorepo",
         "group:nextjsMonorepo",
         "group:ngrxMonorepo",
+        "group:ngx-formlyMonorepo",
         "group:ngxs-storeMonorepo",
         "group:nrwlMonorepo",
         "group:nuxtjsMonorepo",
         "group:picassoMonorepo",
+        "group:pollyjsMonorepo",
         "group:pouchdbMonorepo",
         "group:reactMonorepo",
         "group:react-apolloMonorepo",
@@ -677,8 +701,10 @@
         "group:reactrouterMonorepo",
         "group:remarkMonorepo",
         "group:router5Monorepo",
+        "group:sanityMonorepo",
         "group:semantic-releaseMonorepo",
         "group:sentryMonorepo",
+        "group:springfoxMonorepo",
         "group:storybookMonorepo",
         "group:strapiMonorepo",
         "group:strykerMonorepo",
@@ -741,6 +767,15 @@
         }
       ]
     },
+    "ngx-formlyMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from ngx-formly monorepo together",
+          "extends": "monorepo:ngx-formly",
+          "groupName": "ngx-formly monorepo"
+        }
+      ]
+    },
     "ngxs-storeMonorepo": {
       "packageRules": [
         {
@@ -774,6 +809,15 @@
           "description": "Group packages from picasso monorepo together",
           "extends": "monorepo:picasso",
           "groupName": "picasso monorepo"
+        }
+      ]
+    },
+    "pollyjsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from pollyjs monorepo together",
+          "extends": "monorepo:pollyjs",
+          "groupName": "pollyjs monorepo"
         }
       ]
     },
@@ -863,6 +907,7 @@
         "group:hibernateOgm",
         "group:hibernateCommons",
         "group:illuminate",
+        "group:jekyllEcosystem",
         "group:polymer",
         "group:rubyOmniauth",
         "group:socketio",
@@ -922,6 +967,15 @@
             "^omniauth"
           ],
           "groupName": "omniauth packages"
+        }
+      ]
+    },
+    "sanityMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from sanity monorepo together",
+          "extends": "monorepo:sanity",
+          "groupName": "sanity monorepo"
         }
       ]
     },
@@ -1204,6 +1258,15 @@
           "packagePatterns": [
             "^org.springframework.ws:"
           ]
+        }
+      ]
+    },
+    "springfoxMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from springfox monorepo together",
+          "extends": "monorepo:springfox",
+          "groupName": "springfox monorepo"
         }
       ]
     },
