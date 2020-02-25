@@ -426,6 +426,12 @@
         "https://github.com/react-dnd/react-dnd"
       ]
     },
+    "react-navigation": {
+      "description": "react-navigation monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/react-navigation/react-navigation"
+      ]
+    },
     "reactivestack-cookies": {
       "description": "reactivestack-cookies monorepo",
       "sourceUrlPrefixes": [
