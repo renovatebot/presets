@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.49.0",
+  "version": "0.50.0",
   "renovate-config": {
     "SwashbuckleMonorepo": {
       "packageRules": [
@@ -777,6 +777,7 @@
         "group:pouchdbMonorepo",
         "group:reactMonorepo",
         "group:react-dndMonorepo",
+        "group:react-navigationMonorepo",
         "group:reactivestack-cookiesMonorepo",
         "group:reactrouterMonorepo",
         "group:remarkMonorepo",
@@ -945,6 +946,15 @@
           "description": "Group packages from react-dnd monorepo together",
           "extends": "monorepo:react-dnd",
           "groupName": "react-dnd monorepo"
+        }
+      ]
+    },
+    "react-navigationMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from react-navigation monorepo together",
+          "extends": "monorepo:react-navigation",
+          "groupName": "react-navigation monorepo"
         }
       ]
     },
