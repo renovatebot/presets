@@ -9,3 +9,7 @@ These include:
 - monorepo: Monorepo package lists
 - packages: Package lists
 - schedule: Schedule presets (e.g. weekly, monthly, etc)
+
+## Contributing
+
+Before contributing, make sure to run `yarn` first.
