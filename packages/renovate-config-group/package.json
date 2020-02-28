@@ -7,8 +7,17 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.48.0",
+  "version": "0.49.0",
   "renovate-config": {
+    "SwashbuckleMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from Swashbuckle monorepo together",
+          "extends": "monorepo:Swashbuckle",
+          "groupName": "Swashbuckle monorepo"
+        }
+      ]
+    },
     "accountsMonorepo": {
       "packageRules": [
         {
@@ -239,6 +248,15 @@
         }
       ]
     },
+    "braveMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from brave monorepo together",
+          "extends": "monorepo:brave",
+          "groupName": "brave monorepo"
+        }
+      ]
+    },
     "bugsnag-jsMonorepo": {
       "packageRules": [
         {
@@ -292,6 +310,15 @@
           "description": "Group packages from devextreme-reactive monorepo together",
           "extends": "monorepo:devextreme-reactive",
           "groupName": "devextreme-reactive monorepo"
+        }
+      ]
+    },
+    "dropwizardMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from dropwizard monorepo together",
+          "extends": "monorepo:dropwizard",
+          "groupName": "dropwizard monorepo"
         }
       ]
     },
@@ -416,12 +443,30 @@
         }
       ]
     },
+    "graphql-toolkitMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from graphql-toolkit monorepo together",
+          "extends": "monorepo:graphql-toolkit",
+          "groupName": "graphql-toolkit monorepo"
+        }
+      ]
+    },
     "graphqlcodegeneratorMonorepo": {
       "packageRules": [
         {
           "description": "Group packages from graphqlcodegenerator monorepo together",
           "extends": "monorepo:graphqlcodegenerator",
           "groupName": "graphqlcodegenerator monorepo"
+        }
+      ]
+    },
+    "hamcrestMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from hamcrest monorepo together",
+          "extends": "monorepo:hamcrest",
+          "groupName": "hamcrest monorepo"
         }
       ]
     },
@@ -508,6 +553,15 @@
         }
       ]
     },
+    "jasmineMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from jasmine monorepo together",
+          "extends": "monorepo:jasmine",
+          "groupName": "jasmine monorepo"
+        }
+      ]
+    },
     "jekyllEcosystem": {
       "description": "Group jekyll and related ruby packages together",
       "packageRules": [
@@ -517,6 +571,15 @@
             "https://github.com/github/pages-gem"
           ],
           "groupName": "jekyll ecosystem packages"
+        }
+      ]
+    },
+    "jerseyMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from jersey monorepo together",
+          "extends": "monorepo:jersey",
+          "groupName": "jersey monorepo"
         }
       ]
     },
@@ -605,6 +668,15 @@
         }
       ]
     },
+    "loopbackMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from loopback monorepo together",
+          "extends": "monorepo:loopback",
+          "groupName": "loopback monorepo"
+        }
+      ]
+    },
     "materialMonorepo": {
       "packageRules": [
         {
@@ -636,6 +708,7 @@
       "description": "Group known monorepo packages together",
       "ignoreDeps": [],
       "extends": [
+        "group:SwashbuckleMonorepo",
         "group:accountsMonorepo",
         "group:ag-gridMonorepo",
         "group:algolia-react-instantsearchMonorepo",
@@ -657,11 +730,13 @@
         "group:babelMonorepo",
         "group:babel6Monorepo",
         "group:basetMonorepo",
+        "group:braveMonorepo",
         "group:bugsnag-jsMonorepo",
         "group:capacitorMonorepo",
         "group:clarityMonorepo",
         "group:commitlintMonorepo",
         "group:devextreme-reactiveMonorepo",
+        "group:dropwizardMonorepo",
         "group:electron-forgeMonorepo",
         "group:ember-decoratorsMonorepo",
         "group:emotionMonorepo",
@@ -671,14 +746,19 @@
         "group:framework7Monorepo",
         "group:gatsbyMonorepo",
         "group:graphql-modulesMonorepo",
+        "group:graphql-toolkitMonorepo",
         "group:graphqlcodegeneratorMonorepo",
+        "group:hamcrestMonorepo",
         "group:hapijsMonorepo",
         "group:infrastructureMonorepo",
         "group:ionic-nativeMonorepo",
+        "group:jasmineMonorepo",
+        "group:jerseyMonorepo",
         "group:jestMonorepo",
         "group:lernaMonorepo",
         "group:linguiMonorepo",
         "group:lodashMonorepo",
+        "group:loopbackMonorepo",
         "group:materialMonorepo",
         "group:mdc-reactMonorepo",
         "group:mdxMonorepo",
@@ -687,9 +767,11 @@
         "group:neutrinoMonorepo",
         "group:nextjsMonorepo",
         "group:ngrxMonorepo",
+        "group:ngx-formlyMonorepo",
         "group:ngxs-storeMonorepo",
         "group:nrwlMonorepo",
         "group:nuxtjsMonorepo",
+        "group:openfeignMonorepo",
         "group:picassoMonorepo",
         "group:pollyjsMonorepo",
         "group:pouchdbMonorepo",
@@ -765,6 +847,15 @@
         }
       ]
     },
+    "ngx-formlyMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from ngx-formly monorepo together",
+          "extends": "monorepo:ngx-formly",
+          "groupName": "ngx-formly monorepo"
+        }
+      ]
+    },
     "ngxs-storeMonorepo": {
       "packageRules": [
         {
@@ -789,6 +880,15 @@
           "description": "Group packages from nuxtjs monorepo together",
           "extends": "monorepo:nuxtjs",
           "groupName": "nuxtjs monorepo"
+        }
+      ]
+    },
+    "openfeignMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from openfeign monorepo together",
+          "extends": "monorepo:openfeign",
+          "groupName": "openfeign monorepo"
         }
       ]
     },
