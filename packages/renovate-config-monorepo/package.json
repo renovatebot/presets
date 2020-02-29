@@ -76,6 +76,42 @@
         "https://github.com/apollographql/apollo-link"
       ]
     },
+    "arcus background-jobs": {
+      "description": "arcus background-jobs monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/arcus-azure/arcus.backgroundjobs"
+      ]
+    },
+    "arcus event-grid": {
+      "description": "arcus event-grid monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/arcus-azure/arcus.eventgrid"
+      ]
+    },
+    "arcus messaging": {
+      "description": "arcus messaging monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/arcus-azure/arcus.messaging"
+      ]
+    },
+    "arcus observability": {
+      "description": "arcus observability monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/arcus-azure/arcus.observability"
+      ]
+    },
+    "arcus security": {
+      "description": "arcus security monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/arcus-azure/arcus.security"
+      ]
+    },
+    "arcus webapi": {
+      "description": "arcus webapi monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/arcus-azure/arcus.webapi"
+      ]
+    },
     "aspnet AspNetWebStack": {
       "description": "aspnet AspNetWebStack monorepo",
       "sourceUrlPrefixes": [
