@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.41.0",
+  "version": "0.42.0",
   "renovate-config": {
     "Swashbuckle": {
       "description": "Swashbuckle monorepo",
