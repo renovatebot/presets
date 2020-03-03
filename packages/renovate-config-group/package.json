@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/singapore/renovate-config/issues"
   },
-  "version": "0.50.0",
+  "version": "0.51.0",
   "renovate-config": {
     "SwashbuckleMonorepo": {
       "packageRules": [
@@ -146,6 +146,60 @@
           "description": "Group packages from apollolink monorepo together",
           "extends": "monorepo:apollolink",
           "groupName": "apollolink monorepo"
+        }
+      ]
+    },
+    "arcus background-jobsMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from arcus background-jobs monorepo together",
+          "extends": "monorepo:arcus background-jobs",
+          "groupName": "arcus background-jobs monorepo"
+        }
+      ]
+    },
+    "arcus event-gridMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from arcus event-grid monorepo together",
+          "extends": "monorepo:arcus event-grid",
+          "groupName": "arcus event-grid monorepo"
+        }
+      ]
+    },
+    "arcus messagingMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from arcus messaging monorepo together",
+          "extends": "monorepo:arcus messaging",
+          "groupName": "arcus messaging monorepo"
+        }
+      ]
+    },
+    "arcus observabilityMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from arcus observability monorepo together",
+          "extends": "monorepo:arcus observability",
+          "groupName": "arcus observability monorepo"
+        }
+      ]
+    },
+    "arcus securityMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from arcus security monorepo together",
+          "extends": "monorepo:arcus security",
+          "groupName": "arcus security monorepo"
+        }
+      ]
+    },
+    "arcus webapiMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from arcus webapi monorepo together",
+          "extends": "monorepo:arcus webapi",
+          "groupName": "arcus webapi monorepo"
         }
       ]
     },
@@ -719,6 +773,12 @@
         "group:apollo-serverMonorepo",
         "group:apolloclientMonorepo",
         "group:apollolinkMonorepo",
+        "group:arcus background-jobsMonorepo",
+        "group:arcus event-gridMonorepo",
+        "group:arcus messagingMonorepo",
+        "group:arcus observabilityMonorepo",
+        "group:arcus securityMonorepo",
+        "group:arcus webapiMonorepo",
         "group:aspnet AspNetWebStackMonorepo",
         "group:aspnet ExtensionsMonorepo",
         "group:aws-cdkMonorepo",
