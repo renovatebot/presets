@@ -480,6 +480,12 @@
         "https://github.com/ReactTraining/react-router"
       ]
     },
+    "reakit": {
+      "description": "reakit monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/reakit/reakit"
+      ]
+    },
     "remark": {
       "description": "remark monorepo",
       "sourceUrlPrefixes": [
