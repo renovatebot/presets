@@ -525,6 +525,7 @@ module.exports = {
     description: 'Group aspnetboilerplate packages',
     packageRules: [
       {
+        datasources: ['nuget'],
         groupName: 'aspnetboilerplate',
         packagePatterns: ['^Abp\\.|^Abp$'],
       },
