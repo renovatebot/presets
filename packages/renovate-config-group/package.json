@@ -221,6 +221,20 @@
         }
       ]
     },
+    "aspnetboilerplate": {
+      "description": "Group aspnetboilerplate packages",
+      "packageRules": [
+        {
+          "datasources": [
+            "nuget"
+          ],
+          "groupName": "aspnetboilerplate",
+          "packagePatterns": [
+            "^Abp\\.|^Abp$"
+          ]
+        }
+      ]
+    },
     "aws-cdkMonorepo": {
       "packageRules": [
         {
@@ -840,6 +854,7 @@
         "group:react-navigationMonorepo",
         "group:reactivestack-cookiesMonorepo",
         "group:reactrouterMonorepo",
+        "group:reakitMonorepo",
         "group:remarkMonorepo",
         "group:router5Monorepo",
         "group:sanityMonorepo",
@@ -1045,6 +1060,15 @@
         }
       ]
     },
+    "reakitMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from reakit monorepo together",
+          "extends": "monorepo:reakit",
+          "groupName": "reakit monorepo"
+        }
+      ]
+    },
     "recommended": {
       "description": "Use curated list of recommended non-monorepo package groupings",
       "extends": [
@@ -1084,7 +1108,8 @@
         "group:springStatemachine",
         "group:springWebflow",
         "group:springWs",
-        "group:symfony"
+        "group:symfony",
+        "group:aspnetboilerplate"
       ],
       "ignoreDeps": []
     },
