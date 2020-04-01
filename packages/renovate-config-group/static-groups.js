@@ -68,6 +68,7 @@ module.exports = {
       'group:springWebflow',
       'group:springWs',
       'group:symfony',
+      'group:aspnetboilerplate',
     ],
     ignoreDeps: [],
   },
@@ -517,6 +518,15 @@ module.exports = {
         minor: {
           groupName: 'test packages',
         },
+      },
+    ],
+  },
+  aspnetboilerplate: {
+    description: 'Group aspnetboilerplate packages',
+    packageRules: [
+      {
+        groupName: 'aspnetboilerplate',
+        packagePatterns: ['^Abp\\.|^Abp$'],
       },
     ],
   },
