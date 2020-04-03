@@ -89,6 +89,16 @@ module.exports = {
       },
     ],
   },
+  dotNetCore: {
+    description: '.NET Core Docker containers',
+    packageRules: [
+      {
+        datasources: ['docker'],
+        packagePatterns: ['^mcr.microsoft.com/dotnet/core/'],
+        groupName: '.NET Core Docker containers',
+      },
+    ],
+  },
   fortawesome: {
     description: 'Group all packages by Font Awesome together',
     packageRules: [
