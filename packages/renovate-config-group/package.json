@@ -836,6 +836,7 @@
         "group:pollyjsMonorepo",
         "group:pouchdbMonorepo",
         "group:reactMonorepo",
+        "group:react-apolloMonorepo",
         "group:react-dndMonorepo",
         "group:react-navigationMonorepo",
         "group:reactivestack-cookiesMonorepo",
@@ -997,6 +998,15 @@
           "description": "Group packages from pouchdb monorepo together",
           "extends": "monorepo:pouchdb",
           "groupName": "pouchdb monorepo"
+        }
+      ]
+    },
+    "react-apolloMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from react-apollo monorepo together",
+          "extends": "monorepo:react-apollo",
+          "groupName": "react-apollo monorepo"
         }
       ]
     },

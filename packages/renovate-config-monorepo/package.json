@@ -456,6 +456,12 @@
         "https://github.com/facebook/react"
       ]
     },
+    "react-apollo": {
+      "description": "react-apollo monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/apollographql/react-apollo"
+      ]
+    },
     "react-dnd": {
       "description": "react-dnd monorepo",
       "sourceUrlPrefixes": [
