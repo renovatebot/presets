@@ -367,6 +367,20 @@
         }
       ]
     },
+    "dotNetCore": {
+      "description": ".NET Core Docker containers",
+      "packageRules": [
+        {
+          "datasources": [
+            "docker"
+          ],
+          "packagePatterns": [
+            "^mcr.microsoft.com/dotnet/core/"
+          ],
+          "groupName": ".NET Core Docker containers"
+        }
+      ]
+    },
     "dropwizardMonorepo": {
       "packageRules": [
         {
@@ -841,6 +855,7 @@
         "group:react-navigationMonorepo",
         "group:reactivestack-cookiesMonorepo",
         "group:reactrouterMonorepo",
+        "group:reakitMonorepo",
         "group:remarkMonorepo",
         "group:router5Monorepo",
         "group:sanityMonorepo",
@@ -852,6 +867,7 @@
         "group:strykerMonorepo",
         "group:surveyjsMonorepo",
         "group:telus-tdsMonorepo",
+        "group:treatMonorepo",
         "group:typefacesMonorepo",
         "group:typescript-eslintMonorepo",
         "group:typography-jsMonorepo",
@@ -1052,6 +1068,15 @@
           "description": "Group packages from reactrouter monorepo together",
           "extends": "monorepo:reactrouter",
           "groupName": "reactrouter monorepo"
+        }
+      ]
+    },
+    "reakitMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from reakit monorepo together",
+          "extends": "monorepo:reakit",
+          "groupName": "reakit monorepo"
         }
       ]
     },
@@ -1504,6 +1529,15 @@
           "minor": {
             "groupName": "test packages"
           }
+        }
+      ]
+    },
+    "treatMonorepo": {
+      "packageRules": [
+        {
+          "description": "Group packages from treat monorepo together",
+          "extends": "monorepo:treat",
+          "groupName": "treat monorepo"
         }
       ]
     },
