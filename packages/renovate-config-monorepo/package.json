@@ -558,6 +558,12 @@
         "https://github.com/telusdigital/tds"
       ]
     },
+    "treat": {
+      "description": "treat monorepo",
+      "sourceUrlPrefixes": [
+        "https://github.com/seek-oss/treat"
+      ]
+    },
     "typefaces": {
       "description": "typefaces monorepo",
       "sourceUrlPrefixes": [
