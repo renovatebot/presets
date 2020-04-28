@@ -65,3 +65,6 @@ jobs:
 
       - name: Prettier
         run: yarn prettier
+
+      - name: Validate
+        run: yarn validate
