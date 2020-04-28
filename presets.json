@@ -1,0 +1,416 @@
+{
+  "default": {
+    "app": {
+      "description": "deprecated alias for config:js-app",
+      "extends": ["config:js-app"]
+    },
+    "assignAndReview": {
+      "description": "Set <code>{{arg0}}</code> as assignee and reviewer of PRs",
+      "extends": [":assignee({{arg0}})", ":reviewer({{arg0}})"]
+    },
+    "assignee": {
+      "assignees": ["{{arg0}}"],
+      "description": "Assign PRs to <code>{{arg0}}</code>"
+    },
+    "autodetectPinVersions": {
+      "description": "Autodetect whether to pin dependencies or maintain ranges",
+      "rangeStrategy": "auto"
+    },
+    "automergeAll": {
+      "automerge": true,
+      "description": "Automerge all upgrades (including major) if they pass tests"
+    },
+    "automergeBranch": {
+      "automergeType": "branch",
+      "description": "If automerging, push the new commit directly to base branch (no PR)"
+    },
+    "automergeBranchMergeCommit": {
+      "automergeType": "branch-merge-commit",
+      "description": "If automerging, perform a merge-commit on branch (no PR) - deprecated, use :automergeBranch instead"
+    },
+    "automergeBranchPush": {
+      "automergeType": "branch-push",
+      "description": "If automerging, push the new commit directly to base branch (no PR) - deprecated, use :automergeBranch instead"
+    },
+    "automergeDigest": {
+      "description": "Automerge digest upgrades if they pass tests",
+      "digest": {"automerge": true}
+    },
+    "automergeDisabled": {
+      "automerge": false,
+      "description": "Disable automerging feature - wait for humans to merge all PRs"
+    },
+    "automergeLinters": {
+      "description": "Update lint packages automatically if tests pass",
+      "packageRules": [{"extends": ["packages:linters"], "automerge": true}]
+    },
+    "automergeMajor": {
+      "automerge": true,
+      "description": "Automerge all upgrades (including major) if they pass tests"
+    },
+    "automergeMinor": {
+      "description": "Automerge patch and minor upgrades if they pass tests",
+      "lockFileMaintenance": {"automerge": true},
+      "minor": {"automerge": true},
+      "patch": {"automerge": true},
+      "pin": {"automerge": true}
+    },
+    "automergePatch": {
+      "description": "Automerge patch upgrades if they pass tests",
+      "lockFileMaintenance": {"automerge": true},
+      "patch": {"automerge": true},
+      "pin": {"automerge": true},
+      "separateMinorPatch": true
+    },
+    "automergePr": {
+      "automergeType": "pr",
+      "description": "Raise a PR first before any automerging"
+    },
+    "automergeRequireAllStatusChecks": {
+      "description": "Require all status checks to pass before any automerging",
+      "requiredStatusChecks": []
+    },
+    "automergeTesters": {
+      "description": "Update testing packages automatically if tests pass",
+      "packageRules": [{"extends": ["packages:test"], "automerge": true}]
+    },
+    "automergeTypes": {
+      "description": "Update @types/* packages automatically if tests pass",
+      "packageRules": [{"packagePatterns": ["^@types/"], "automerge": true}]
+    },
+    "base": {
+      "description": "deprecated alias for config:base",
+      "extends": ["config:base"]
+    },
+    "combinePatchMinorReleases": {
+      "description": "Do not separate patch and minor upgrades into separate PRs for the same dependency",
+      "separateMinorPatch": false
+    },
+    "description": "This presets file is intended for simple and commonly used presets. This is a special preset file, because each element below can be accessed using the `:` prefix e.g `:enableRenovate`.",
+    "disableDevDependencies": {
+      "description": "Do not renovate <code>devDependencies</code> versions/ranges",
+      "packageRules": [{"depTypeList": ["devDependencies"], "enabled": false}]
+    },
+    "disableDigestUpdates": {
+      "description": "Disable digest and git hash updates",
+      "digest": {"enabled": false}
+    },
+    "disableLockFiles": {
+      "description": "Disable lock file updates",
+      "updateLockFiles": false
+    },
+    "disableMajorUpdates": {
+      "description": "Disables major updates",
+      "major": {"enabled": false}
+    },
+    "disablePeerDependencies": {
+      "description": "Do not renovate <code>peerDependencies</code> versions/ranges",
+      "packageRules": [{"depTypeList": ["peerDependencies"], "enabled": false}]
+    },
+    "disableRateLimiting": {
+      "description": "Remove hourly and concurrent rate limits",
+      "prConcurrentLimit": 0,
+      "prHourlyLimit": 0
+    },
+    "disableRenovate": {"description": "Disable renovate", "enabled": false},
+    "disableVulnerabilityAlerts": {
+      "description": "Disable vulnerability alerts completely",
+      "vulnerabilityAlerts": {"enabled": false}
+    },
+    "doNotPinPackage": {
+      "description": "Disable version pinning for <code>{{arg0}}</code>",
+      "packageRules": [
+        {"packageNames": ["{{arg0}}"], "rangeStrategy": "replace"}
+      ]
+    },
+    "docker": {
+      "description": "Keep Dockerfile FROM sources updated",
+      "docker": {"enabled": true}
+    },
+    "enableRenovate": {"description": "Enable renovate", "enabled": true},
+    "enableVulnerabilityAlerts": {
+      "description": "Raise PR when vulnerability alerts are detected",
+      "vulnerabilityAlerts": {"enabled": true}
+    },
+    "enableVulnerabilityAlertsWithLabel": {
+      "description": "Raise PR when vulnerability alerts are detected with label <code>{{arg0}}</code>",
+      "vulnerabilityAlerts": {"enabled": true, "labels": ["{{arg0}}"]}
+    },
+    "followTag": {
+      "description": "For package <code>{{arg0}}</code>, strictly follow release tag <code>{{arg1}}</code>",
+      "packageRules": [{"packageNames": ["{{arg0}}"], "followTag": "{{arg1}}"}]
+    },
+    "gitSignOff": {
+      "commitBody": "Signed-off-by: {{{gitAuthor}}}",
+      "description": "Append git Signed-off-by signature to git commits."
+    },
+    "githubComToken": {
+      "description": "Use provided token for github.com lookups",
+      "hostRules": [
+        {"domainName": "github.com", "encrypted": {"token": "{{arg0}}"}}
+      ]
+    },
+    "gomod": {
+      "description": "Enable Go modules support",
+      "gomod": {"enabled": true}
+    },
+    "group": {
+      "description": "Group {{arg1}} packages into same branch/PR",
+      "packageRules": [{"extends": ["{{arg0}}"], "groupName": "{{arg1}}"}]
+    },
+    "ignoreModulesAndTests": {
+      "description": "Ignore `node_modules`, `bower_components`, `vendor` and various test/tests directories",
+      "ignorePaths": [
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/vendor/**",
+        "**/examples/**",
+        "**/__tests__/**",
+        "**/test/**",
+        "**/tests/**",
+        "**/__fixtures__/**"
+      ]
+    },
+    "ignoreUnstable": {
+      "description": "Upgrade to unstable versions only if the existing version is unstable",
+      "ignoreUnstable": true
+    },
+    "includeNodeModules": {
+      "description": "Include <code>package.json</code> files found within <code>node_modules</code> folders or <code>bower_components</code>.",
+      "ignorePaths": []
+    },
+    "label": {
+      "description": "Apply label <code>{{arg0}}</code> to PRs",
+      "labels": ["{{arg0}}"]
+    },
+    "labels": {
+      "description": "Apply labels <code>{{arg0}}</code> and <code>{{arg1}}</code> to PRs",
+      "labels": ["{{arg0}}", "{{arg1}}"]
+    },
+    "library": {
+      "description": "deprecated alias for config:js-lib",
+      "extends": ["config:js-lib"]
+    },
+    "maintainLockFilesDisabled": {
+      "description": "Update existing lock files only when <code>package.json</code> is modified",
+      "lockFileMaintenance": {"enabled": false}
+    },
+    "maintainLockFilesMonthly": {
+      "description": "Run lock file maintenance (updates) on the first day of each month",
+      "lockFileMaintenance": {"enabled": true, "extends": "schedule:monthly"}
+    },
+    "maintainLockFilesWeekly": {
+      "description": "Run lock file maintenance (updates) early Monday mornings",
+      "lockFileMaintenance": {"enabled": true, "extends": "schedule:weekly"}
+    },
+    "masterIssue": {
+      "description": "Enable Renovate master issue creation",
+      "masterIssue": true
+    },
+    "masterIssueApproval": {
+      "description": "Enable Renovate master issue approval workflow",
+      "masterIssueApproval": true
+    },
+    "meteor": {
+      "description": "Keep Meteor Npm.depends packages updated",
+      "meteor": {"enabled": true}
+    },
+    "noUnscheduledUpdates": {
+      "description": "Make no updates to branches when not scheduled",
+      "updateNotScheduled": false
+    },
+    "npm": {
+      "description": "Keep package.json npm dependencies updated",
+      "npm": {"enabled": true}
+    },
+    "onlyNpm": {
+      "description": "Renovate only npm dependencies",
+      "docker": {"enabled": false},
+      "meteor": {"enabled": false}
+    },
+    "pathSemanticCommitType": {
+      "description": "Use semanticCommitType {{arg0}} for all package files matching path {{arg1}}",
+      "packageRules": [
+        {"paths": ["{{arg0}}"], "semanticCommitType": "{{arg1}}"}
+      ]
+    },
+    "pinAllExceptPeerDependencies": {
+      "description": "Pin dependency versions for all except <code>peerDependencies</code>",
+      "packageRules": [
+        {"packagePatterns": ["*"], "rangeStrategy": "pin"},
+        {
+          "depTypeList": ["engines", "peerDependencies"],
+          "rangeStrategy": "auto"
+        }
+      ]
+    },
+    "pinDependencies": {
+      "description": "Pin dependency versions for <code>dependencies</code>",
+      "packageRules": [
+        {"depTypeList": ["dependencies"], "rangeStrategy": "pin"}
+      ]
+    },
+    "pinDevDependencies": {
+      "description": "Pin dependency versions for <code>devDependencies</code>",
+      "packageRules": [
+        {"depTypeList": ["devDependencies"], "rangeStrategy": "pin"}
+      ]
+    },
+    "pinDigestsDisabled": {
+      "description": "Disable pinning of docker dependency digests",
+      "pinDigests": false
+    },
+    "pinOnlyDevDependencies": {
+      "description": "Pin dependency versions for <code>devDependencies</code> and retain semver ranges for others",
+      "packageRules": [
+        {"packagePatterns": ["*"], "rangeStrategy": "replace"},
+        {"depTypeList": ["devDependencies"], "rangeStrategy": "pin"},
+        {"depTypeList": ["peerDependencies"], "rangeStrategy": "widen"}
+      ]
+    },
+    "pinSkipCi": {
+      "description": "Add [skip ci] to commit message body whenever pinning",
+      "pin": {"commitBody": "[skip ci]"}
+    },
+    "pinVersions": {
+      "description": "Use version pinning (maintain a single version only and not semver ranges)",
+      "rangeStrategy": "pin"
+    },
+    "prConcurrentLimit10": {
+      "description": "Limit to maximum 10 open PRs",
+      "prConcurrentLimit": 10
+    },
+    "prConcurrentLimit20": {
+      "description": "Limit to maximum 20 open PRs at any time",
+      "prConcurrentLimit": 20
+    },
+    "prConcurrentLimitNone": {
+      "description": "Remove limit for open PRs",
+      "prConcurrentLimit": 0
+    },
+    "prHourlyLimit1": {
+      "description": "Rate limit PR creation to a maximum of one per hour",
+      "prHourlyLimit": 1
+    },
+    "prHourlyLimit2": {
+      "description": "Rate limit PR creation to a maximum of two per hour",
+      "prHourlyLimit": 2
+    },
+    "prHourlyLimit4": {
+      "description": "Rate limit PR creation to a maximum of four per hour",
+      "prHourlyLimit": 4
+    },
+    "prHourlyLimitNone": {
+      "description": "Removes rate limit for PR creation per hour",
+      "prHourlyLimit": 0
+    },
+    "prImmediately": {
+      "description": "Raise PRs immediately (after branch is created)",
+      "prCreation": "immediate"
+    },
+    "prNotPending": {
+      "description": "Wait until branch tests have passed or failed before creating the PR",
+      "prCreation": "not-pending"
+    },
+    "preserveSemverRanges": {
+      "description": "Preserve (but continue to upgrade) any existing semver ranges",
+      "rangeStrategy": "replace"
+    },
+    "rebaseStalePrs": {
+      "description": "Rebase existing PRs any time the base branch has been updated",
+      "rebaseStalePrs": true
+    },
+    "renovatePrefix": {
+      "branchPrefix": "renovate/",
+      "description": "Use <code>renovate/</code> as prefix for all branch names"
+    },
+    "respectLatest": {
+      "description": "Upgrade versions up to the \"latest\" tag in npm registry",
+      "respectLatest": true
+    },
+    "reviewer": {
+      "description": "Add <code>{{arg0}}</code> as reviewer for PRs",
+      "reviewers": ["{{arg0}}"]
+    },
+    "semanticCommitScope": {
+      "description": "Use semantic commit scope <code>{{arg0}}</code> for all commits and PR titles",
+      "semanticCommitScope": "{{arg0}}"
+    },
+    "semanticCommitScopeDisabled": {
+      "description": "Disable semantic commit scope for all commits and PR titles",
+      "semanticCommitScope": null
+    },
+    "semanticCommitType": {
+      "description": "Use <code>{{arg0}}</code> as semantic commit type for commit messages and PR titles",
+      "semanticCommitType": "{{arg0}}"
+    },
+    "semanticCommitTypeAll": {
+      "description": "If semantic commits detected, use semantic commit type <code>{{arg0}}</code> for all",
+      "packageRules": [
+        {"packagePatterns": ["*"], "semanticCommitType": "{{arg0}}"}
+      ]
+    },
+    "semanticCommits": {
+      "description": "Use semantic prefixes for commit messages and PR titles",
+      "semanticCommits": true
+    },
+    "semanticCommitsDisabled": {
+      "description": "Disable semantic prefixes for commit messages and PR titles",
+      "semanticCommits": false
+    },
+    "semanticPrefixChore": {
+      "description": "Use <code>chore</code> as semantic commit type for commit messages and PR titles",
+      "extends": [":semanticCommitType(chore)"]
+    },
+    "semanticPrefixFix": {
+      "description": "Use <code>fix</code> as semantic commit type for commit messages and PR titles",
+      "extends": [":semanticCommitType(fix)"]
+    },
+    "semanticPrefixFixDepsChoreOthers": {
+      "description": "If semantic commits detected, use semantic commit type <code>fix</code> for dependencies and <code>chore</code> for all others",
+      "packageRules": [
+        {"packagePatterns": ["*"], "semanticCommitType": "chore"},
+        {"depTypeList": ["dependencies"], "semanticCommitType": "fix"}
+      ]
+    },
+    "separateMajorReleases": {
+      "description": "Separate major versions of dependencies into individual branches/PRs",
+      "separateMajorMinor": true
+    },
+    "separateMultipleMajorReleases": {
+      "description": "Separate each available major versions of dependencies into individual branches/PRs",
+      "separateMajorMinor": true,
+      "separateMultipleMajor": true
+    },
+    "separatePatchReleases": {
+      "description": "Separate patch and minor releases of dependencies into separate PRs",
+      "separateMinorPatch": true
+    },
+    "skipStatusChecks": {
+      "description": "Skip status checks and automerge right away",
+      "requiredStatusChecks": null
+    },
+    "timezone": {
+      "description": "Evaluate schedules according to timezone {{arg0}}",
+      "timezone": "{{arg0}}"
+    },
+    "unpublishSafe": {
+      "description": "Set a status check to warn when upgrades <  24 hours old might get unpublished",
+      "unpublishSafe": true
+    },
+    "unpublishSafeDisabled": {
+      "description": "Create branches/PRs for dependency upgrades as soon as they're available",
+      "unpublishSafe": false
+    },
+    "updateNotScheduled": {
+      "description": "Keep existing branches updated even when not scheduled",
+      "updateNotScheduled": true
+    },
+    "widenPeerDependencies": {
+      "description": "Always widen peerDependencies semver ranges when updating, instead of replacing",
+      "packageRules": [
+        {"depTypeList": ["peerDependencies"], "versionStrategy": "widen"}
+      ]
+    }
+  }
+}
