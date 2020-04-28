@@ -29,12 +29,14 @@ async function validate(desc, config, isPreset = false) {
     for (const [category, presets] of Object.entries(presetsJson)) {
       for (const [subcategory, preset] of Object.entries(presets)) {
         const name = category + ':' + subcategory;
-        if (subcategory != 'description') {
-          console.log('Validating ' + name);
+        const ignoredRules = ['default:group', 'default:timezone'];
+        if (!ignoredRules.includes(name) && subcategory != 'description') {
+          // console.log('Validating ' + name);
           try {
             await validate(name, preset, true);
           } catch (err) {
-            console.log(err);
+            console.log({ name, err });
+            returnVal = 1;
           }
         }
       }
@@ -44,6 +46,7 @@ async function validate(desc, config, isPreset = false) {
     console.log(err);
   }
   if (returnVal !== 0) {
+    console.error('Not OK');
     process.exit(returnVal);
   }
   console.log('OK');
