@@ -1,4 +1,51 @@
 {
+  "config": {
+    "base": {
+      "description": "Default base configuration for all languages",
+      "extends": [
+        ":separateMajorReleases",
+        ":combinePatchMinorReleases",
+        ":ignoreUnstable",
+        ":prImmediately",
+        ":semanticPrefixFixDepsChoreOthers",
+        ":updateNotScheduled",
+        ":automergeDisabled",
+        ":ignoreModulesAndTests",
+        ":autodetectPinVersions",
+        ":prHourlyLimit2",
+        ":prConcurrentLimit20",
+        "group:monorepos",
+        "group:recommended",
+        "helpers:disableTypesNodeMajor"
+      ]
+    },
+    "base-js": {
+      "description": "Base configuration for Javascript (deprecated)",
+      "extends": ["config:base"]
+    },
+    "js-app": {
+      "description": "Default configuration for webapps",
+      "extends": ["config:base", ":pinAllExceptPeerDependencies"]
+    },
+    "js-lib": {
+      "description": "Default configuration for libraries",
+      "extends": ["config:base", ":pinOnlyDevDependencies"]
+    },
+    "semverAllMonthly": {
+      "description": "Preserve semver ranges and update everything together once a month",
+      "extends": [
+        ":preserveSemverRanges",
+        "group:all",
+        "schedule:monthly",
+        ":maintainLockFilesMonthly"
+      ],
+      "lockFileMaintenance": {
+        "commitMessageAction": "Update",
+        "extends": ["group:all"]
+      },
+      "separateMajorMinor": false
+    }
+  },
   "default": {
     "app": {
       "description": "deprecated alias for config:js-app",
@@ -445,6 +492,127 @@
     },
     "oddIsUnstablePackages": {
       "description": "DEPRECATED: Preconfigure dependencies where an odd major version indicates unstable (Docker-only)"
+    }
+  },
+  "packages": {
+    "angularJs": {
+      "description": "All angular.js packages",
+      "packageNames": [
+        "angular",
+        "angular-animate",
+        "angular-scroll",
+        "angular-sanitize"
+      ]
+    },
+    "apollographql": {
+      "description": "All packages published by Apollo GraphQL",
+      "sourceUrlPrefixes": ["https://github.com/apollographql/"]
+    },
+    "eslint": {
+      "description": "All eslint packages",
+      "packageNames": ["babel-eslint"],
+      "packagePatterns": ["^eslint"]
+    },
+    "gatsby": {
+      "description": "All packages published by Gatsby",
+      "extends": ["monorepo:gatsby"]
+    },
+    "jsTest": {
+      "description": "JavaScript test packages",
+      "extends": ["packages:jsUnitTest"]
+    },
+    "jsUnitTest": {
+      "description": "Unit test packages for javascript",
+      "packageNames": [
+        "coveralls",
+        "istanbul",
+        "mock-fs",
+        "nock",
+        "nyc",
+        "proxyquire",
+        "supertest"
+      ],
+      "packagePatterns": [
+        "^chai",
+        "^jest",
+        "^mocha",
+        "^qunit",
+        "^sinon",
+        "^should"
+      ]
+    },
+    "linters": {
+      "description": "All lint-related packages",
+      "extends": ["packages:eslint", "packages:stylelint", "packages:tslint"],
+      "packageNames": ["remark-lint"]
+    },
+    "mapbox": {
+      "description": "All mapbox-related packages",
+      "packagePatterns": ["^(leaflet|mapbox)"]
+    },
+    "postcss": {
+      "description": "All postcss packages",
+      "packageNames": ["postcss"],
+      "packagePatterns": ["^postcss-"]
+    },
+    "stylelint": {
+      "description": "All stylelint packages",
+      "packagePatterns": ["^stylelint"]
+    },
+    "test": {"description": "Test packages", "extends": ["packages:unitTest"]},
+    "tslint": {
+      "description": "All tslint packages",
+      "packageNames": ["codelyzer"],
+      "packagePatterns": ["\\btslint\\b"]
+    },
+    "unitTest": {
+      "description": "All unit test packages",
+      "extends": ["packages:jsUnitTest"]
+    }
+  },
+  "preview": {
+    "buildkite": {
+      "buildkite": {"enabled": true},
+      "description": "Enable buildkite functionality"
+    },
+    "dockerCompose": {
+      "description": "Enable docker compose image updating",
+      "docker-compose": {"enabled": true}
+    },
+    "dockerVersions": {
+      "description": "Upgrade docker tags to newer versions",
+      "docker": {"major": {"enabled": true}, "minor": {"enabled": true}}
+    }
+  },
+  "schedule": {
+    "daily": {"description": "Schedule daily", "schedule": "before 2am"},
+    "earlyMondays": {
+      "description": "Weekly schedule on early monday mornings",
+      "schedule": "before 3am on Monday"
+    },
+    "monthly": {
+      "description": "Schedule monthly",
+      "schedule": "before 3am on the first day of the month"
+    },
+    "nonOfficeHours": {
+      "description": "Schedule for typical non-office hours (night time and weekends)",
+      "schedule": [
+        "after 10pm every weekday",
+        "before 5am every weekday",
+        "every weekend"
+      ]
+    },
+    "weekdays": {
+      "description": "Schedule for weekdays",
+      "schedule": "every weekday"
+    },
+    "weekends": {
+      "description": "Schedule for weekends",
+      "schedule": "every weekend"
+    },
+    "weekly": {
+      "description": "Schedule weekly",
+      "extends": ["schedule:earlyMondays"]
     }
   }
 }

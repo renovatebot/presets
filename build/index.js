@@ -3,9 +3,13 @@ const is = require('@sindresorhus/is');
 const prettyJson = require('json-stringify-pretty-compact');
 
 const input = {
+  config: require('./config'),
   default: require('./default'),
   docker: require('./docker'),
   helpers: require('./helpers'),
+  packages: require('./packages'),
+  preview: require('./preview'),
+  schedule: require('./schedule'),
 };
 
 function sort(inObj) {
