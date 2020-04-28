@@ -5,6 +5,7 @@ const prettyJson = require('json-stringify-pretty-compact');
 const input = {
   default: require('./default'),
   docker: require('./docker'),
+  helpers: require('./helpers'),
 };
 
 function sort(inObj) {
