@@ -24,7 +24,6 @@
         ":updateNotScheduled",
         ":automergeDisabled",
         ":ignoreModulesAndTests",
-        ":maintainLockFilesDisabled",
         ":autodetectPinVersions",
         ":prHourlyLimit2",
         ":prConcurrentLimit20",
