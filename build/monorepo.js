@@ -1,7 +1,4 @@
 const is = require('@sindresorhus/is');
-const fs = require('fs');
-const path = require('path');
-const pJson = require('./package.json');
 
 const repoGroups = {
   'ag-grid': 'https://github.com/ag-grid/ag-grid',
@@ -120,29 +117,18 @@ const patternGroups = {
   'aws-java-sdk': '^com.amazonaws:aws-java-sdk-',
 };
 
-async function go() {
-  const config = {};
-  for (const [name, value] of Object.entries(repoGroups)) {
-    config[name] = {
-      description: `${name} monorepo`,
-      sourceUrlPrefixes: is.array(value) ? value : [value],
-    };
-  }
-  for (const [name, value] of Object.entries(patternGroups)) {
-    config[name] = {
-      description: `${name} monorepo`,
-      packagePatterns: is.array(value) ? value : [value],
-    };
-  }
-  // Write rules in alphabetical order
-  pJson['renovate-config'] = {};
-  for (const rule of Object.keys(config).sort()) {
-    pJson['renovate-config'][rule] = config[rule];
-  }
-  fs.writeFileSync(
-    path.join(__dirname, 'package.json'),
-    `${JSON.stringify(pJson, null, 2)}\n`
-  );
+const config = {};
+for (const [name, value] of Object.entries(repoGroups)) {
+  config[name] = {
+    description: `${name} monorepo`,
+    sourceUrlPrefixes: is.array(value) ? value : [value],
+  };
+}
+for (const [name, value] of Object.entries(patternGroups)) {
+  config[name] = {
+    description: `${name} monorepo`,
+    packagePatterns: is.array(value) ? value : [value],
+  };
 }
 
-go();
+module.exports = config;

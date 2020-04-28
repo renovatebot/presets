@@ -1,4 +1,6 @@
-module.exports = {
+const monorepos = require('./monorepo');
+
+const staticGroups = (module.exports = {
   all: {
     description: 'Group all updates together',
     groupName: 'all dependencies',
@@ -530,4 +532,28 @@ module.exports = {
       },
     ],
   },
+});
+
+const config = { ...staticGroups };
+
+const monorepoNames = [];
+for (const monorepo of Object.keys(monorepos)) {
+  const name = `${monorepo}Monorepo`;
+  monorepoNames.push(`group:${name}`);
+  config[name] = {
+    packageRules: [
+      {
+        description: `Group packages from ${monorepo} monorepo together`,
+        extends: `monorepo:${monorepo}`,
+        groupName: `${monorepo} monorepo`,
+      },
+    ],
+  };
+}
+config.monorepos = {
+  description: 'Group known monorepo packages together',
+  ignoreDeps: [],
+  extends: monorepoNames,
 };
+
+module.exports = config;
