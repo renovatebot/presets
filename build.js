@@ -2,6 +2,7 @@ const fs = require('fs-extra');
 const is = require('@sindresorhus/is');
 const prettyJson = require('json-stringify-pretty-compact');
 
+/* eslint-disable global-require */
 const input = {
   config: require('./src/config'),
   default: require('./src/default'),

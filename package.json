@@ -1,24 +1,13 @@
 {
-  "name": "renovate-config",
-  "description": "Monorepo for Renovate preset configs",
-  "author": "",
-  "license": "MIT",
-  "homepage": "https://github.com/singapore/renovate-config",
-  "repository": {
-    "type": "git",
-    "url": "git+https://rarkins@github.com/singapore/renovate-config.git"
-  },
-  "bugs": {
-    "url": "https://github.com/singapore/renovate-config/issues"
-  },
+  "name": "presets",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
     "lint": "eslint . --ext .json,.js",
     "lint-fix": "yarn lint --fix",
     "prettier": "prettier --list-different \"**/*.{ts,js,json,md}\"",
     "prettier-fix": "prettier --write \"**/*.{ts,js,json,md}\"",
-    "validate": "bash validate.sh",
-    "test": "yarn prettier && yarn lint && yarn validate"
+    "test": "yarn prettier && yarn lint"
   },
   "prettier": {
     "singleQuote": true,

@@ -1,6 +1,6 @@
 const monorepos = require('./monorepo');
 
-const staticGroups = (module.exports = {
+const staticGroups = {
   all: {
     description: 'Group all updates together',
     groupName: 'all dependencies',
@@ -532,7 +532,7 @@ const staticGroups = (module.exports = {
       },
     ],
   },
-});
+};
 
 const config = { ...staticGroups };
 
