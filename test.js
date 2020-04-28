@@ -4,6 +4,8 @@ const { massageConfig } = require('renovate/dist/config/massage');
 
 const presetsJson = JSON.parse(fs.readFileSync('presets.json', 'utf8'));
 
+global.repoCache = global.repoCache || {};
+
 let returnVal = 0;
 
 async function validate(desc, config, isPreset = false) {
