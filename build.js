@@ -3,15 +3,15 @@ const is = require('@sindresorhus/is');
 const prettyJson = require('json-stringify-pretty-compact');
 
 const input = {
-  config: require('./config'),
-  default: require('./default'),
-  docker: require('./docker'),
-  group: require('./group'),
-  helpers: require('./helpers'),
-  monorepo: require('./monorepo'),
-  packages: require('./packages'),
-  preview: require('./preview'),
-  schedule: require('./schedule'),
+  config: require('./src/config'),
+  default: require('./src/default'),
+  docker: require('./src/docker'),
+  group: require('./src/group'),
+  helpers: require('./src/helpers'),
+  monorepo: require('./src/monorepo'),
+  packages: require('./src/packages'),
+  preview: require('./src/preview'),
+  schedule: require('./src/schedule'),
 };
 
 function sort(inObj) {
