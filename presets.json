@@ -412,5 +412,18 @@
         {"depTypeList": ["peerDependencies"], "versionStrategy": "widen"}
       ]
     }
+  },
+  "docker": {
+    "disable": {
+      "circleci": {"enabled": false},
+      "docker": {"enabled": false},
+      "docker-compose": {"enabled": false}
+    },
+    "disableMajor": {"docker": {"major": {"enabled": false}}},
+    "enableMajor": {"docker": {"major": {"enabled": true}}},
+    "pinDigests": {
+      "description": "Pin Docker digests",
+      "docker": {"pinDigests": true}
+    }
   }
 }
