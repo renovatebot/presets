@@ -365,7 +365,7 @@
     },
     "rebaseStalePrs": {
       "description": "Rebase existing PRs any time the base branch has been updated",
-      "rebaseStalePrs": true
+      "rebaseWhen": "behind-base-branch"
     },
     "renovatePrefix": {
       "branchPrefix": "renovate/",
@@ -456,7 +456,7 @@
     "widenPeerDependencies": {
       "description": "Always widen peerDependencies semver ranges when updating, instead of replacing",
       "packageRules": [
-        {"depTypeList": ["peerDependencies"], "versionStrategy": "widen"}
+        {"depTypeList": ["peerDependencies"], "rangeStrategy": "widen"}
       ]
     }
   },

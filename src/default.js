@@ -190,7 +190,7 @@ module.exports = {
   rebaseStalePrs: {
     description:
       'Rebase existing PRs any time the base branch has been updated',
-    rebaseStalePrs: true,
+    rebaseWhen: 'behind-base-branch',
   },
   unpublishSafe: {
     description:
@@ -517,7 +517,7 @@ module.exports = {
     packageRules: [
       {
         depTypeList: ['peerDependencies'],
-        versionStrategy: 'widen',
+        rangeStrategy: 'widen',
       },
     ],
   },
