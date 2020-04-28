@@ -7,7 +7,8 @@
     "lint-fix": "yarn lint --fix",
     "prettier": "prettier --list-different \"**/*.{ts,js,json,md}\"",
     "prettier-fix": "prettier --write \"**/*.{ts,js,json,md}\"",
-    "test": "yarn prettier && yarn lint"
+    "test": "yarn prettier && yarn lint && yarn validate",
+    "validate": "node validate"
   },
   "prettier": {
     "singleQuote": true,

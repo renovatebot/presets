@@ -28,9 +28,9 @@ async function validate(desc, config, isPreset = false) {
   try {
     for (const [category, presets] of Object.entries(presetsJson)) {
       for (const [subcategory, preset] of Object.entries(presets)) {
-        const name = category + ':' + subcategory;
+        const name = `${category}:${subcategory}`;
         const ignoredRules = ['default:group', 'default:timezone'];
-        if (!ignoredRules.includes(name) && subcategory != 'description') {
+        if (!ignoredRules.includes(name) && subcategory !== 'description') {
           // console.log('Validating ' + name);
           try {
             await validate(name, preset, true);
@@ -46,8 +46,8 @@ async function validate(desc, config, isPreset = false) {
     console.log(err);
   }
   if (returnVal !== 0) {
-    console.error('Not OK');
+    console.error('Presets failed validation');
     process.exit(returnVal);
   }
-  console.log('OK');
+  console.log('Presets are validated');
 })();
