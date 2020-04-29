@@ -26,6 +26,6 @@
     "gh-got": "9.0.0",
     "json-stringify-pretty-compact": "2.0.0",
     "prettier": "2.0.5",
-    "renovate": "19.221.0"
+    "renovate": "19.221.1"
   }
 }
