@@ -60,6 +60,9 @@ jobs:
         run: |
           yarn install --frozen-lockfile --link-duplicates
 
+      - name: Build
+        run: yarn build
+
       - name: Lint
         run: yarn lint
 
