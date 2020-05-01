@@ -1,5 +1,11 @@
 # Renovate Presets
 
+## Deprecation Warning
+
+This repository is no longer used to host/publish Renovate's built-in presets. They are instead included within the main Renovate repository: https://github.com/renovatebot/renovate/tree/master/lib/config/presets/internal
+
+## Old Content
+
 This repository hosts all of Renovate's "built-in" presets. Renovate pulls from this repo's `master` branch at runtime whenever a config references presets with any of the following prefixes:
 
 - None: e.g. `:preserveSemverRanges`
